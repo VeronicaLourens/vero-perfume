@@ -73,15 +73,14 @@ I used GitHub Agile project management tool to create user stories using issues 
 
 
 
-
-
-
-
-
 ## Wireframes
+I used ```Balsamiq``` to create basic site structure to visualize the site’s potential features which helps me to understand better what needs to be done for the project. The end result might slightly different due to the project development.
+
 * ### Desktop
 * ### Mobile
 ## Design Choice
+The site uses white background with high quality colorful images in a carousel sideshow for the landing page. The site is intuitive with great color contrast which is very user friendly. The project is designed for potentially being used in a real e-commerce online web shop that can be used for both the shopper and the site owner. The application was created using Django MVC structure.
+
 ### Color Scheme
 ### Database ERD
 #### Models
