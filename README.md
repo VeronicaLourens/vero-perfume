@@ -86,6 +86,15 @@ The site uses white background with high quality colorful images in a carousel s
 I used ```Lucidchart``` to create the project's database schema models which helps me to unserstand the relationship between the models. Heroku Postgres database and the SQLite are used for the project.
 
 #### Models
+* **User** - It is used for user information and purchase history.
+* **Django User** - It is the Django built-in User model.
+* **Product** - It is used for the product information.
+* **Catagory** - It is used for the category of the products.
+* **Brand** - It is used for the product's brand.
+* **OrderLineItem** - It is used for combining the product with the order.
+* **Order** - It is used for the order placed by the user when processing online purchase.
+* **Review** - It is used for the customer to review the product / shop.
+* **Wishlist** - It is used for the shopper to save a product on their wishlist for easy access.
 ### Business Model
 The Vero Perfume application is a B2C business model that it does the business directly with the end customer. Customer is able to search the product on the site, complete the order, make a payment through secured payment system and receive goods in the end.
 
