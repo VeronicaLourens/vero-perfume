@@ -1,5 +1,5 @@
 # Site Overview
-VL Perfume is an e-commerce online shop where sells fine fragrance and perfumes. The site provides a smooth online shopping experience to customers. The site processes online orders, online secured payment method and fast delivery service. The site is accessible across all the devices using different browsers. The site sends out marketing newsletters directly to customers and has a Facebook page to promote the selling business.
+Vero Perfume is an e-commerce online shop where sells fine fragrance and perfumes. The site provides a smooth online shopping experience to customers. The site processes online orders, online secured payment method and fast delivery service. The site is accessible across all the devices using different browsers. The site sends out marketing newsletters directly to customers and has a Facebook page to promote the selling business.
 
 # UX
 ## Agile Project Management
@@ -23,7 +23,7 @@ I used GitHub Agile project management tool to create user stories using issues 
 | [#7](https://github.com/VeronicaLourens/vl-perfume/issues/7)  Navigate the site| As a shopper  |   I want to navigate the site easily so that I know what products the site sells to see if I am interested or not.| home | Must Have |
 | [#8](https://github.com/VeronicaLourens/vl-perfume/issues/8) Access the site | As a shopper  | I want to access the site easily so that I can view the site on any media screens using different browsers.| home | Must Have |
 | [#18](https://github.com/VeronicaLourens/vl-perfume/issues/18) View messages | As a shopper  |  I want to view messages so that I know my activities when updating my shopping cart or make a payment. | home | Should Have |
-| [#31](https://github.com/VeronicaLourens/vl-perfume/issues/31)  | As a shopper  |  I want to access the shop's social media platform so that I can follow the shop and get updates instantly. | home | Could Have |
+| [#31](https://github.com/VeronicaLourens/vl-perfume/issues/31)  Access social media / Facebook page| As a shopper  |  I want to access the shop's social media platform so that I can follow the shop and get updates instantly. | home | Could Have |
 | [#32](https://github.com/VeronicaLourens/vl-perfume/issues/32) Contact site owner | As a registered shopper  | I want to make contact to the site owner so that I can contact the owner for any questions.  | home | Should Have |
 | [#33](https://github.com/VeronicaLourens/vl-perfume/issues/33) Advertise shop / product | As a shop owner  | I want to advertise my shop and product so that I can have more customers to buy my products.  | home | Could Have |
 
