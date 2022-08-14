@@ -100,9 +100,35 @@ The Vero Perfume application is a B2C business model that it does the business d
 
 # Exisiting Features
 # Technologies Used
-## Languages
-## Frameworks
-## Programs
+## Languages & Frameworks
+* [HTML5]() - used to create site.
+* [CSS]() -used to add individual styling.
+* [JavaScript]() - used to add interactive features.
+* [Python]() - used to add backend functionality.
+* [Django]() - used to build the project.
+* [Bootstrap]() - used to style the websie.
+
+
+## Others Programs
+* [Heroku]() - used to deploy and host the project's live site.
+* [Heroku PostgreSQL]()  - used to connect the project to the database.
+* [GitHub Git]() - used to host the project's code and version control.
+* [GitPod]() - used to write and push the code for the project.
+* [Balsamiq]() - used to create project's wireframes.
+* [Chrome Dev Tools]() - used to debug and light house testing.
+* [Pep8]() - used to validate the Python code.
+* [W3C Markup Validation Service]() - used to validate the HTML code.
+* [W3C CSS Validation Service]() - used to validate CSS code.
+* [Am I Responsive]() - used to generate the responsive preview screens.
+* [Responsive Design Checker]() - used to check responsiveness.
+* [Lucidchart]() - used to create the database ER diagram.
+* [Font Awesome]() - used to download the icons.
+* [Google Fonts]() - used to style the text.
+* [Compressor.io]() - used to compress the images and screenshots.
+* [Facebook]() - used to create site's Facebook marketing page.
+* [Stripe]() - used to process the online payment with webhooks.
+* [AWS Bucket]() - used to host static files.
+
 # Testing
 # Deployment
 # Clone Project
