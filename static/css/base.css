@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300&family=Ultra&display=swap');
+
+body {
+
+    font-family: Lato, "Open Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+    letter-spacing: 1px;
+}
+
+
+/*----------------------------navbar */
+.logo-img {
+    max-width: 150px;
+}
