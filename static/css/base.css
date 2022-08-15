@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: white;
 
 }
 
@@ -32,6 +33,7 @@ a {
     justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
+    color: white;
 }
 
 
@@ -53,9 +55,17 @@ a {
 
 .border-black {
     border: 1px solid black !important;
+    border-radius: 20px;
     
 }
 
+.input-btn {
+    background-color: rgb(149, 8, 177);
+}
+
+.input-btn:hover {
+    background-color: #3A36BF;
+}
 
 
 /*---------------------------media queries */

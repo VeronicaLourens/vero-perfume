@@ -1,6 +1,6 @@
 
 <!--search box-->
-<div class="list-inline-item">
+<div class="list-inline-item" id="search-box">
     <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown"
         aria-haspopup="true" aria-expanded="false" aria-label="search">
         <div class="text-center">
@@ -10,10 +10,11 @@
     <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
         <form method="GET" action="">
             <div class="input-group w-100">
-                <input class="form-control border border-black rounded-0" type="text" name="q"
+                <input class="form-control border border-black" type="text" name="q"
                     placeholder="Search for your favorite perfume">
                 <div class="input-group-append">
-                    <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+                    <button class="form-control btn input-btn btn-black border border-black" type="submit"
+                        title="Search">
                         <span class="icon">
                             <i class="fas fa-search"></i>
                         </span>
@@ -42,16 +43,16 @@
     </div>
 </div>
 <div class="list-inline-item">
-    <a class="nav-link d-block d-lg-none" href="" id="user-options" aria-label="favorite" aria-haspopup="true"
-        aria-expanded="false">>
+    <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options"
+        aria-haspopup="true" aria-expanded="false" aria-label="favorite">
         <div class="text-center">
             <div><i class="fas fa-heart fa-lg"></i></div>
         </div>
     </a>
 </div>
 <div class="list-inline-item">
-    <a class="nav-link d-block d-lg-none" href="" id="user-options" aria-label="cart" aria-haspopup="true"
-        aria-expanded="false">>
+    <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options" aria-haspopup="true"
+        aria-expanded="false" aria-label="cart">
         <div class="text-center">
             <div><i class="fas fa-shopping-cart fa-lg"></i></div>
         </div>
