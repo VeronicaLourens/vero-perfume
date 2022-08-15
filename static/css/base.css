@@ -43,7 +43,7 @@ a {
 
 .nav-link p {
     font-family: Lato, sans-serif !important;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: black !important;
 }
 
@@ -53,4 +53,5 @@ a {
 
 .border-black {
     border: 1px solid black !important;
+    
 }

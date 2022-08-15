@@ -2,17 +2,19 @@
 
 <header class="container-fluid fixed-top">
     <div class="row pt-lg-2 d-none d-lg-flex bg-white">
+        <!--logo image-->
         <div class="col-12 col-lg-4 my-auto py-lg-0">
             <a href="{% url 'home' %}" class="navbar-brand nav-link">
                 <img class="logo-img float-start img-fluid img-responsive ml-5"
                     src="https://veroperfume.s3.eu-west-2.amazonaws.com/media/logo.jpg" alt="Vero Perfume logo">
             </a>
         </div>
+        <!--search box-->
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
             <form method="GET" action="">
                 <div class="input-group w-100">
                     <input class="form-control border border-black rounded-0" type="text" name="q"
-                        placeholder="Search our site">
+                        placeholder="Search for your favorite perfume">
                     <div class="input-group-append">
                         <button class="form-control btn btn-black border border-black rounded-0" type="submit">
                             <span class="icon">
@@ -23,6 +25,7 @@
                 </div>
             </form>
         </div>
+        <!--account, favorite & shopping cart-->
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
             <ul class="list-inline list-unstyled text-center text-lg-right my-0 mr-5">
                 <li class="list-inline-item dropdown">
@@ -61,4 +64,18 @@
             </ul>
         </div>
     </div>
+
+    <!-- the mobile nav and products nav links -->
+    <div class="row bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light w-100">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            {% include 'includes/mobile-top-header.html' %}
+            {% include 'includes/main-nav.html' %}
+        </nav>
+    </div>
+
+    
 </header>
