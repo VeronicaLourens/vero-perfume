@@ -44,6 +44,8 @@
 
 <body>
 
+     {% include 'includes/header.html' %}
+
     <!--Message container-->
     {% if messages %}
         <div class="message-container"></div>
@@ -55,7 +57,11 @@
 
     {% block postloadjs %}
     {% endblock postloadjs %}
-    
+
+
+    <!--Fontawesome script-->
+    <script src="https://kit.fontawesome.com/c853477dfa.js" crossorigin="anonymous"></script>
+
     
 </body>
 
