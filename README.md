@@ -77,7 +77,109 @@ I used GitHub Agile project management tool to create user stories using issues 
 I used ```Balsamiq``` to create basic site structure to visualize the site’s potential features which helps me to understand better what needs to be done for the project. The end result might slightly different due to the project development.
 
 * ### Desktop
+    * Home page
+    ![Home page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/wireframes/desktop/home.png)
+
+    * <details><summary>Sign up page</summary>
+
+        ![Sign up page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/wireframes/desktop/signup.png)
+
+     </detials>
+
+    * <details><summary>Login page</summary>
+
+        ![Login page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/wireframes/desktop/login.png)
+
+    </detials>
+
+    * <details><summary>Profile page</summary>
+
+        ![Profile page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/wireframes/desktop/profile.png)
+
+    </detials>
+
+    * <details><summary>Product page</summary>
+
+        ![Product page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/wireframes/desktop/product.png)
+
+    </detials>
+
+    * <details><summary>Product detail page</summary>
+
+        ![Product detailpage](https://veroperfume.s3.eu-west-2.amazonaws.com/media/wireframes/desktop/product-detail.png)
+
+    </detials>
+
+    * <details><summary>Shopping cart page</summary>
+
+        ![Shopping car page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/wireframes/desktop/shopping-bag.png)
+
+    </detials>
+
+    * <details><summary>Checkout page</summary>
+
+        ![Checkout page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/wireframes/desktop/checkout.png)
+
+    </detials>
+
+    * <details><summary>Order cinfirmation page</summary>
+
+        ![Order confirmation page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/wireframes/desktop/order-confirmation.png)
+
+    </detials>
+
 * ### Mobile
+
+    * Home page
+    ![Home page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/wireframes/mobile/home.png)
+
+    * <details><summary>Sign up page</summary>
+
+        ![Sign up page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/wireframes/mobile/signup.png)
+
+     </detials>
+
+    * <details><summary>Login page</summary>
+
+        ![Login page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/wireframes/mobile/login.png)
+
+    </detials>
+
+    * <details><summary>Profile page</summary>
+
+        ![Profile page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/wireframes/mobile/profile.png)
+
+    </detials>
+
+    * <details><summary>Product page</summary>
+
+        ![Product page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/wireframes/mobile/product.png)
+
+    </detials>
+
+    * <details><summary>Product detail page</summary>
+
+        ![Product detailpage](https://veroperfume.s3.eu-west-2.amazonaws.com/media/wireframes/mobile/product-detail.png)
+
+    </detials>
+
+    * <details><summary>Shopping cart page</summary>
+
+        ![Shopping car page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/wireframes/mobile/shopping-bag.png)
+
+    </detials>
+
+    * <details><summary>Checkout page</summary>
+
+        ![Checkout page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/wireframes/mobile/checkout.png)
+
+    </detials>
+
+    * <details><summary>Order cinfirmation page</summary>
+
+        ![Order confirmation page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/wireframes/mobile/order-confirmation.png)
+
+    </detials>
 ## Design Choice
 The site uses white background with high quality colorful images in a carousel sideshow for the landing page. The site is intuitive with great color contrast which is very user friendly. The project is designed for potentially being used in a real e-commerce online web shop that can be used for both the shopper and the site owner. The application was created using Django MVC structure.
 
