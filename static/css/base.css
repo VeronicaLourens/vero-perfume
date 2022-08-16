@@ -89,6 +89,12 @@ a {
     font-weight: bold !important;
     background: rgb(149, 8, 177);
     width: 200px;
+    color: white;
+}
+
+.btn-card {
+    height: 50px;
+    width: 200px;
 }
 
 .btn-shop-now:hover,
