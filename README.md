@@ -257,6 +257,26 @@ The Vero Perfume application is a B2C business model that it does the business d
 [Back to top](#vero-perfume)
 
 # Deployment
+The project has been deployed to **Heroku** in the early stage of the proejct development just after creating the site's navigation. 
+
+* ## Heroku App
+
+    1. Login to my Heroku account and click ```Create new app```;
+    2. Give my app a name **veroperfume** and select Europe and click ```Create app``` button;
+    3. Go to the **Resource** tab and attach ```Heroku Postgres``` to ```veroperfume app```;
+    4. Go to the **Settings** tab and set up **Config Vars** with important data;
+    5. Add buildpack ```heroku/python```;
+    6. Go to the **Deploy** tab ```Deployment method```, click the **GitHub** icon and the button ```Connect to GitHub```;
+    7. Select my GitHub repo ```vero-perfume``` and choose the branch ```main```;
+    8. Click ```Enable Automatic Deploys``` and ```Deploy branch```;
+    9. The application was deployed successfully after a few minutes.
+
+    10. <details><summary>Heroku deployment screenshot.</summary>
+
+        ![Heroku deployment](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/heroku-deployment.png)
+
+    </detials>
+
 
 [Back to top](#vero-perfume)
 # Clone Project
