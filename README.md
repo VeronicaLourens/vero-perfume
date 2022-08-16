@@ -257,7 +257,7 @@ The Vero Perfume application is a B2C business model that it does the business d
 [Back to top](#vero-perfume)
 
 # Deployment
-The project has been deployed to **Heroku** in the early stage of the proejct development just after creating the site's navigation. 
+The project has been deployed to **Heroku** in the early stage of the proejct development just after creating the site's navigation. Create **Procfile** and set up environment variables in my project development environment.
 
 * ## Heroku App
 
@@ -276,6 +276,21 @@ The project has been deployed to **Heroku** in the early stage of the proejct de
         ![Heroku deployment](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/heroku-deployment.png)
 
     </detials>
+
+
+* ## Amazon Web Services S3
+    The project's static and media files are stored at the cloud-based storage **AWS S3 Bucket**. 
+
+
+    1. Create an account at [AWS Amazon](https://aws.amazon.com/);
+    2. Create a S3 bucket, go to IAM to create a group and user, manually set the bucket settings;
+    3. Set up CORS configuration and generate the policy;
+    4. Add the AWS keys to Heroku config vars and connect AWS to my Django project in the project's deployment environment;
+    5. Create folders to host the files and images;
+    6. 
+
+
+
 
 
 [Back to top](#vero-perfume)
