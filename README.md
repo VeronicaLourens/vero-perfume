@@ -257,7 +257,7 @@ The Vero Perfume application is a B2C business model that it does the business d
 [Back to top](#vero-perfume)
 
 # Deployment
-The project has been deployed to **Heroku** in the early stage of the proejct development just after creating the site's navigation. Create **Procfile** and set up environment variables in my project development environment.
+The project has been deployed to **Heroku** in the early stage of the proejct development just after creating the site's basic functionalities with the base and basic home page. Created **Procfile** and set up environment variables in my project development environment that helped to successfully deploy the project to Heroku.
 
 * ## Heroku App
 
