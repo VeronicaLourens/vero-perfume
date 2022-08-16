@@ -1,4 +1,4 @@
-# Site Overview
+# Vero Perfume
 Vero Perfume is an e-commerce online shop where sells fine fragrance and perfumes. The site provides a smooth online shopping experience to customers. The site processes online orders, online secured payment method and fast delivery service. The site is accessible across all the devices using different browsers. The site sends out marketing newsletters directly to customers and has a Facebook page to promote the selling business.
 
 # UX
@@ -17,6 +17,8 @@ I used GitHub Agile project management tool to create user stories using issues 
 | [#5](https://github.com/VeronicaLourens/vl-perfume/issues/5)  Admin receive payment| As a shop owner  |  I want to receive payment from customers so that I can enjoy doing business.| Django admin | Must Have |
 | [#6](https://github.com/VeronicaLourens/vl-perfume/issues/6)  Send newsletter| As a shop owner  |  I want to send the newsletters out so that I can promote the products to customer with updates for more business.| Django admin | Should Have |
 
+[Back to top](#vero-perfume)
+
 * #### Epic 2 - Home app
 |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
 | --------------- | -------------- | --------- | --------| -------------|
@@ -27,6 +29,8 @@ I used GitHub Agile project management tool to create user stories using issues 
 | [#32](https://github.com/VeronicaLourens/vl-perfume/issues/32) Contact site owner | As a registered shopper  | I want to make contact to the site owner so that I can contact the owner for any questions.  | home | Should Have |
 | [#33](https://github.com/VeronicaLourens/vl-perfume/issues/33) Advertise shop / product | As a shop owner  | I want to advertise my shop and product so that I can have more customers to buy my products.  | home | Could Have |
 
+[Back to top](#vero-perfume)
+
 * #### Epic 3 - Products app
 |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
 | --------------- | -------------- | --------- | --------| -------------|
@@ -36,6 +40,8 @@ I used GitHub Agile project management tool to create user stories using issues 
 | [#12](https://github.com/VeronicaLourens/vl-perfume/issues/12) Sort products by a specific category  | As a shopper  |  I want to find the best priced or best rated product in a specific category so that I can easily find what I want. | products | Should Have |
 | [#13](https://github.com/VeronicaLourens/vl-perfume/issues/13) Save product to wishlist | As a shopper  |  I want to save product to my wish list so that I can easily select the products to purchase. | products | Should Have |
 
+[Back to top](#vero-perfume)
+
 * #### Epic 4 - Cart app
 |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
 | --------------- | -------------- | --------- | --------| -------------|
@@ -44,6 +50,7 @@ I used GitHub Agile project management tool to create user stories using issues 
 | [#16](https://github.com/VeronicaLourens/vl-perfume/issues/16)  View policy documents| As a shopper  | I want to view the site's documents so that I know the site's terms and conditions when purchasing the product.  | home | Should Have |
 | [#17](https://github.com/VeronicaLourens/vl-perfume/issues/17) Update quantity in the shopping cart | As a shopper  | I want to update the product quantity in my shopping cart so that I can easily add or delete the same product in my shopping cart.  | cart | Should Have |
 
+[Back to top](#vero-perfume)
 
 * #### Epic 5 - Users app
 |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
@@ -58,6 +65,7 @@ I used GitHub Agile project management tool to create user stories using issues 
 | [#26](https://github.com/VeronicaLourens/vl-perfume/issues/26) Unsubscribe newsletter  | As a  registered shopper  | I want to unsubscribe newsletters so that I can no longer receiving regular newsletters.  | home | Could Have |
 | [#27](https://github.com/VeronicaLourens/vl-perfume/issues/27) View purchase history | As a shopper  | I want to view my purchase history so that I can see what I have bought in the past.  | users | Should Have |
 
+[Back to top](#vero-perfume)
 
 * #### Epic 6 - Checkout app
 |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
@@ -72,6 +80,7 @@ I used GitHub Agile project management tool to create user stories using issues 
 | [#30](https://github.com/VeronicaLourens/vl-perfume/issues/30)  | As a registered shopper  | I want to post review or rate a product / shop so that I can share my opinion to the others.  | review | Could Have |
 
 
+[Back to top](#vero-perfume)
 
 ## Wireframes
 I used ```Balsamiq``` to create basic site structure to visualize the site’s potential features which helps me to understand better what needs to be done for the project. The end result might slightly different due to the project development.
@@ -128,6 +137,8 @@ I used ```Balsamiq``` to create basic site structure to visualize the site’s p
 
     </detials>
 
+[Back to top](#vero-perfume)
+
 * ### Mobile
 
     * Home page
@@ -180,10 +191,16 @@ I used ```Balsamiq``` to create basic site structure to visualize the site’s p
         ![Order confirmation page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/wireframes/mobile/order-confirmation.png)
 
     </detials>
+
+[Back to top](#vero-perfume)
+
 ## Design Choice
 The site uses white background with high quality colorful images in a carousel sideshow for the landing page. The site is intuitive with great color contrast which is very user friendly. The project is designed for potentially being used in a real e-commerce online web shop that can be used for both the shopper and the site owner. The application was created using Django MVC structure.
 
 ### Color Scheme
+
+[Back to top](#vero-perfume)
+
 ### Database ERD
 I used ```Lucidchart``` to create the project's database schema models which helps me to unserstand the relationship between the models. Heroku Postgres database and the SQLite are used for the project.
 
@@ -199,6 +216,8 @@ I used ```Lucidchart``` to create the project's database schema models which hel
 * **Wishlist** - It is used for the shopper to save a product on their wishlist for easy access.
 ### Business Model
 The Vero Perfume application is a B2C business model that it does the business directly with the end customer. Customer is able to search the product on the site, complete the order, make a payment through secured payment system and receive goods in the end.
+
+[Back to top](#vero-perfume)
 
 # Exisiting Features
 # Technologies Used
@@ -231,11 +250,28 @@ The Vero Perfume application is a B2C business model that it does the business d
 * [Stripe]() - used to process the online payment with webhooks.
 * [AWS Bucket]() - used to host static files.
 
+[Back to top](#vero-perfume)
+
 # Testing
+
+[Back to top](#vero-perfume)
+
 # Deployment
+
+[Back to top](#vero-perfume)
 # Clone Project
+
+[Back to top](#vero-perfume)
 # Credit
+
+[Back to top](#vero-perfume)
 ## Content
+
+[Back to top](#vero-perfume)
 ## Media
 ## Code
+
+[Back to top](#vero-perfume)
 # Acknowledgement
+
+[Back to top](#vero-perfume)
