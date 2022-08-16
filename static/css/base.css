@@ -43,20 +43,26 @@ a {
     border-radius: 50%;
 }
 
-.nav-link p {
+.text-black {
     font-family: Lato, sans-serif !important;
-    /* text-transform: uppercase; */
-    color: black !important;
+    color: #000 !important;
+    font-weight: bold;
 }
 
-.nav-link i {
+/* .nav-link i {
     color: rgb(149, 8, 177);
+} */
+
+.nav-link:hover {
+    color: #3A36BF !important;
+    text-shadow: 2px 2px 3px #3A36BF;
+    transition: all, .3s ease-in-out;
+    transform: scale(1.1);
 }
 
 .border-black {
     border: 1px solid black !important;
     border-radius: 20px;
-    
 }
 
 .input-btn {
@@ -66,6 +72,7 @@ a {
 .input-btn:hover {
     background-color: #3A36BF;
 }
+
 
 
 /*---------------------------media queries */
@@ -84,6 +91,7 @@ a {
         left: 0;
         z-index: 1999;
     }
+
 
    
 }
