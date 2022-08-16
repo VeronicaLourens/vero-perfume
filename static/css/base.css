@@ -3,6 +3,7 @@
 body {
 
     font-family: Lato, "Open Sans", sans-serif;
+    font-weight: 300;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -39,7 +40,7 @@ a {
 
 /*----------------------------navbar */
 .logo-img {
-    max-width: 150px;
+    max-width: 100px;
     border-radius: 50%;
 }
 
@@ -74,10 +75,27 @@ a {
 }
 
 /*----------------------------Carousel landing hero images */
-#carousel-container {
+/* #carousel-container {
     margin-top: 50px;
+} */
+
+.carousel-text {
+    font-family: fantasy;
+    font-size: 30px;
+    font-weight: bold;
 }
 
+.btn-shop-now {
+    font-weight: bold !important;
+    background: rgb(149, 8, 177);
+    width: 200px;
+}
+
+.btn-shop-now:hover,
+.btn-shop-now:active,
+.btn-shop-now:focus {
+    background: #3A36BF;
+}
 
 
 /*---------------------------media queries */
@@ -93,6 +111,11 @@ a {
 
 @media (min-width:320px) and (max-width: 480px) {
     /* -------------------navbar */
+
+    header {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
     
     .fixed-top {
         position: fixed;
@@ -100,6 +123,10 @@ a {
         right: 0;
         left: 0;
         z-index: 1999;
+    }
+
+    .carousel-item {
+        padding-top: 60px;
     }
 
 
