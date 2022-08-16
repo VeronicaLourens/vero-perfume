@@ -73,10 +73,20 @@ a {
     background-color: #3A36BF;
 }
 
+/*----------------------------Carousel landing hero images */
+#carousel-container {
+    margin-top: 50px;
+}
+
 
 
 /*---------------------------media queries */
 @media (min-width: 1200px) {
+
+    header-container {
+        padding-top: 200px;
+    }
+    
    
 }
 
