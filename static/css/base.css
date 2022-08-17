@@ -106,6 +106,10 @@ a {
     background: #3A36BF;
 }
 
+.info-icon {
+    font-size: 25px;
+}
+
 
 /*---------------------------media queries */
 @media (min-width: 1200px) {
