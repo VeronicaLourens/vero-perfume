@@ -15,7 +15,7 @@
 
 
 
-<form class="signup bg-light" id="signup_form" method="post" action="{% url 'account_signup' %}">
+<form class="signup bg-light mb-5" id="signup_form" method="post" action="{% url 'account_signup' %}">
     {% csrf_token %}
     {{ form|crispy }}
     {% if redirect_field_value %}
