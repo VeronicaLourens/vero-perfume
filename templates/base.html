@@ -46,7 +46,7 @@
 
 <body>
 
-     {% include 'includes/header.html' %}
+    {% include 'includes/header.html' %}
 
     <!--Message container-->
     {% if messages %}
@@ -57,6 +57,8 @@
     {% block content %}
     
     {% endblock content %}
+
+    {% include 'includes/footer.html' %}
 
     {% block postloadjs %}
     {% endblock postloadjs %}

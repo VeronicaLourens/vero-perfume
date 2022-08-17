@@ -111,6 +111,15 @@ a {
 }
 
 
+/*----------------------------footer */
+
+.social-icons a {
+    font-size: 30px;
+    padding: 30px;
+    color: #3A36BF;
+}
+
+
 /*---------------------------media queries */
 @media (min-width: 1200px) {
 
