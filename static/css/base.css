@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300&family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lato:wght@300&family=Open+Sans:wght@300&family=Ultra&display=swap');
 
 body {
 
@@ -75,14 +75,15 @@ a {
 }
 
 /*----------------------------Carousel landing hero images */
-/* #carousel-container {
-    margin-top: 50px;
-} */
+
+.carousel-item img{
+   
+    
+}
 
 .carousel-text {
-    font-family: fantasy;
-    font-size: 30px;
-    font-weight: bold;
+    font-family: Bree Serif;
+    
 }
 
 .btn-shop-now {
@@ -107,9 +108,9 @@ a {
 /*---------------------------media queries */
 @media (min-width: 1200px) {
 
-    header-container {
+    /* header-container {
         padding-top: 200px;
-    }
+    } */
     
    
 }
