@@ -83,7 +83,6 @@ a {
 
 .carousel-text {
     font-family: Bree Serif;
-    
 }
 
 .btn-shop-now {
@@ -94,8 +93,11 @@ a {
 }
 
 .btn-card {
-    height: 50px;
+    height: 40px;
     width: 200px;
+    background: rgb(149, 8, 177);
+    font-weight: bold !important;
+    color: white;
 }
 
 .btn-shop-now:hover,
