@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from .models import UserProfile
 from django.contrib.auth.decorators import login_required
+from .forms import UserProfileForm
 
 
 @login_required
@@ -10,8 +11,17 @@ def profile(request):
     """
     profile = get_object_or_404(UserProfile, user=request.user)
 
-    template = 'profiles/profile.html'
+    if request.method == 'POST':
+        form = UserProfileForm(request.POST, instance=profile)
+        if form.is_valid():
+            form.save()
+
+    else:
+        form = UserProfileForm(isinstance=profile)
+
+    template = 'users/profile.html'
     context = {
+        'form': form,
         'profile': profile,
     }
 
