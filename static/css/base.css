@@ -74,6 +74,14 @@ a {
     background-color: #3A36BF;
 }
 
+.signup-container {
+    margin-top: 100px;
+}
+
+.header-container {
+    padding-top: 200px;
+}
+
 /*----------------------------Carousel landing hero images */
 
 .carousel-item img{
@@ -123,11 +131,17 @@ a {
 /*---------------------------media queries */
 @media (min-width: 1200px) {
 
-    /* header-container {
-        padding-top: 200px;
-    } */
+    
     
    
+}
+
+@media (max-width: 991px) {
+
+    .header-container {
+        padding-top: 60px;
+    }
+
 }
 
 

@@ -1,1 +1,16 @@
 {% extends "base.html" %}
+
+<!--copied from CI Boutique Ado project-->
+{% block content %}
+<div class="container header-container">
+    <!-- <div class="overlay"></div> -->
+    <div class="row mt-6 pt-6 justify-content-center">
+        <div class="col-8">
+            <div class="allauth-form-inner-content">
+                {% block inner_content %}
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
