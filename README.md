@@ -57,7 +57,7 @@ I used GitHub Agile project management tool to create user stories using issues 
 | --------------- | -------------- | --------- | --------| -------------|
 | [#19](https://github.com/VeronicaLourens/vl-perfume/issues/19)  Register an account| As a shopper  | I want to register an account so that I can manage my activities on the site.  | profiles | Must Have |
 | [#20](https://github.com/VeronicaLourens/vl-perfume/issues/20) Login / log out | As a registered shopper  |   I want to login and logout so that I can access my account and manage my purchase on the site. | profiles | Must Have |
-| [#21](https://github.com/VeronicaLourens/vl-perfume/issues/21)  | As a registered shopper  | I want to edit or delete account so that I can personalize my own account profile or delete my account as I wish.  | profiles | Must Have |
+| [#21](https://github.com/VeronicaLourens/vl-perfume/issues/21)  Edit / delete account profile| As a registered shopper  | I want to edit or delete account so that I can personalize my own account profile or delete my account as I wish.  | profiles | Must Have |
 | [#22](https://github.com/VeronicaLourens/vl-perfume/issues/22) Verify email address | As a  registered shopper  | I want to verify my email address so that I can be sure the security of my account and purchase on the site.  | profiles | Must Have |
 | [#23](https://github.com/VeronicaLourens/vl-perfume/issues/23) Receive feedback | As a  registered shopper  |  I want to receive feedback so that I can verify my activities on the site. | profiles | Should Have |
 | [#24](https://github.com/VeronicaLourens/vl-perfume/issues/24) Reset account password | As a  registered shopper  | I want to reset my account password so that I can be sure that I can access my account again in case I forgot the password.  | profiles | Should Have |
@@ -72,7 +72,7 @@ I used GitHub Agile project management tool to create user stories using issues 
 | --------------- | -------------- | --------- | --------| -------------|
 | [#28](https://github.com/VeronicaLourens/vl-perfume/issues/28) Checkout and pay  | As a registered shopper  | I want to check out and pay online so that I can complete the purchase.  | checkout | Must Have |
 | [#29](https://github.com/VeronicaLourens/vl-perfume/issues/29) Receive order confirmation | As a registered shopper  |   I want to receive confirmation after paying so that I know whether my purchase is successful or not. | checkout | Must Have |
-| [#34](https://github.com/VeronicaLourens/vl-perfume/issues/34)  | As a shop owner | I want to process orders online so that I can sell products online  | checkout | Must Have |
+| [#34](https://github.com/VeronicaLourens/vl-perfume/issues/34)  Process online orders| As a shop owner | I want to process orders online so that I can sell products online  | checkout | Must Have |
 
 * #### Epic 7 - Review app
 |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
