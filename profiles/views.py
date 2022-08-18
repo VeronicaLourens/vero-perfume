@@ -19,7 +19,7 @@ def profile(request):
     else:
         form = UserProfileForm(isinstance=profile)
 
-    template = 'users/profile.html'
+    template = 'profiles/profile.html'
     context = {
         'form': form,
         'profile': profile,
