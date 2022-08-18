@@ -9,16 +9,31 @@
 </div>
 {% endblock page_header %}
 
+<!---The profile page has been adapated from CI Boutique Ado project-->
+
 {% block content %}
 <div class="overlay"></div>
-<div class="container">
-    <div class="row">
+<div class="container profile-container">
+    <div class="row justify-content-center">
         <div class="col">
-            <hr>
-            <h2 class="logo-font mb-4">My Profile</h2>
+            <h2 class="mb-4">{{ profile }} Profile</h2>
             <hr>
         </div>
     </div>
-    {{ profile }}
+    <div class="row my-5">
+        <div class="col-12 col-lg-6">
+            <form action="{% url 'profile' %}" method="POST" id="profile-update-form">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <div class="col-12 col-lg-6 ml-auto p-0">
+                    <a class="btn btn-block">Update Information</a>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
 </div>
+
+
 {% endblock %}

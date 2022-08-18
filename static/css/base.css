@@ -78,9 +78,6 @@ a {
     margin-top: 100px;
 }
 
-.header-container {
-    padding-top: 200px;
-}
 
 /*----------------------------Carousel landing hero images */
 
@@ -126,6 +123,11 @@ a {
     margin-top: 300px; */
 }
 
+/*--------------------------profile */
+.profile-container {
+    margin-top: 200px;
+}
+
 
 /*----------------------------footer */
 
@@ -138,6 +140,9 @@ a {
 
 /*---------------------------media queries */
 @media (min-width: 1200px) {
+    .header-container {
+        padding-top: 200px;
+    }
 
     
     
