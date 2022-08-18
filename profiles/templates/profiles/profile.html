@@ -26,7 +26,7 @@
                 {% csrf_token %}
                 {{ form|crispy }}
                 <div class="col-12 col-lg-6 ml-auto p-0">
-                    <a class="btn btn-block">Update Information</a>
+                    <a class="btn btn-black float-right">Update Information</a>
                 </div>
 
             </form>
@@ -36,4 +36,10 @@
 </div>
 
 
+{% endblock %}
+
+
+{% block postloadjs %}
+    {{ block.super }}
+        <script type="text/javascript" src="{% static 'profiles/js/countryfield.js' %}"></script>
 {% endblock %}
