@@ -52,18 +52,18 @@ I used GitHub Agile project management tool to create user stories using issues 
 
 [Back to top](#vero-perfume)
 
-* #### Epic 5 - Users app
+* #### Epic 5 - Profiles app
 |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
 | --------------- | -------------- | --------- | --------| -------------|
-| [#19](https://github.com/VeronicaLourens/vl-perfume/issues/19)  Register an account| As a shopper  | I want to register an account so that I can manage my activities on the site.  | users | Must Have |
-| [#20](https://github.com/VeronicaLourens/vl-perfume/issues/20) Login / log out | As a registered shopper  |   I want to login and logout so that I can access my account and manage my purchase on the site. | users | Must Have |
-| [#21](https://github.com/VeronicaLourens/vl-perfume/issues/21)  | As a registered shopper  | I want to edit or delete account so that I can personalize my own account profile or delete my account as I wish.  | users | Must Have |
-| [#22](https://github.com/VeronicaLourens/vl-perfume/issues/22) Verify email address | As a  registered shopper  | I want to verify my email address so that I can be sure the security of my account and purchase on the site.  | users | Must Have |
-| [#23](https://github.com/VeronicaLourens/vl-perfume/issues/23) Receive feedback | As a  registered shopper  |  I want to receive feedback so that I can verify my activities on the site. | users | Should Have |
-| [#24](https://github.com/VeronicaLourens/vl-perfume/issues/24) Reset account password | As a  registered shopper  | I want to reset my account password so that I can be sure that I can access my account again in case I forgot the password.  | users | Should Have |
+| [#19](https://github.com/VeronicaLourens/vl-perfume/issues/19)  Register an account| As a shopper  | I want to register an account so that I can manage my activities on the site.  | profiles | Must Have |
+| [#20](https://github.com/VeronicaLourens/vl-perfume/issues/20) Login / log out | As a registered shopper  |   I want to login and logout so that I can access my account and manage my purchase on the site. | profiles | Must Have |
+| [#21](https://github.com/VeronicaLourens/vl-perfume/issues/21)  | As a registered shopper  | I want to edit or delete account so that I can personalize my own account profile or delete my account as I wish.  | profiles | Must Have |
+| [#22](https://github.com/VeronicaLourens/vl-perfume/issues/22) Verify email address | As a  registered shopper  | I want to verify my email address so that I can be sure the security of my account and purchase on the site.  | profiles | Must Have |
+| [#23](https://github.com/VeronicaLourens/vl-perfume/issues/23) Receive feedback | As a  registered shopper  |  I want to receive feedback so that I can verify my activities on the site. | profiles | Should Have |
+| [#24](https://github.com/VeronicaLourens/vl-perfume/issues/24) Reset account password | As a  registered shopper  | I want to reset my account password so that I can be sure that I can access my account again in case I forgot the password.  | profiles | Should Have |
 | [#25](https://github.com/VeronicaLourens/vl-perfume/issues/25) Subscribe newsletter | As a  registered shopper  |   I want to receive newsletters so that I receive regular updates about the products. | home | Could Have |
 | [#26](https://github.com/VeronicaLourens/vl-perfume/issues/26) Unsubscribe newsletter  | As a  registered shopper  | I want to unsubscribe newsletters so that I can no longer receiving regular newsletters.  | home | Could Have |
-| [#27](https://github.com/VeronicaLourens/vl-perfume/issues/27) View purchase history | As a shopper  | I want to view my purchase history so that I can see what I have bought in the past.  | users | Should Have |
+| [#27](https://github.com/VeronicaLourens/vl-perfume/issues/27) View purchase history | As a shopper  | I want to view my purchase history so that I can see what I have bought in the past.  | profiles | Should Have |
 
 [Back to top](#vero-perfume)
 
