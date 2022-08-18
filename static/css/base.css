@@ -120,6 +120,12 @@ a {
 
 /*--------------------------messages */
 
+#message-container {
+    position: fixed;
+    /* z-index: 199999;
+    margin-top: 300px; */
+}
+
 
 /*----------------------------footer */
 
