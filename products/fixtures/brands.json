@@ -1,0 +1,134 @@
+[{
+    "pk": 1,
+    "model": "products.brand",
+    "fields": {
+        "name": "gucci",
+        "friendly_name": "GUCCI"
+    }
+}, {
+    "pk": 2,
+    "model": "products.brand",
+    "fields": {
+        "name": "montale",
+        "friendly_name": "Montale"
+    }
+}, {
+    "pk": 3,
+    "model": "products.brand",
+    "fields": {
+        "name": "boss",
+        "friendly_name": "BOSS"
+    }
+}, {
+    "pk": 4,
+    "model": "products.brand",
+    "fields": {
+        "name": "amouage",
+        "friendly_name": "Amouage"
+    }
+}, {
+    "pk": 5,
+    "model": "products.brand",
+    "fields": {
+        "name": "eau_de_Parfum",
+        "friendly_name": "Eau de Parfum"
+    }
+}, {
+    "pk": 6,
+    "model": "products.brand",
+    "fields": {
+        "name": "rook perfumes",
+        "friendly_name": "Rook Perfumes"
+    }
+}, {
+    "pk": 7,
+    "model": "products.brand",
+    "fields": {
+        "name": "bdk parfums",
+        "friendly_name": "BDK Parfums"
+    }
+}, {
+    "pk": 8,
+    "model": "products.brand",
+    "fields": {
+        "name": "Bogue Profumo",
+        "friendly_name": "Bogue Profumo"
+    }
+}, {
+    "pk": 9,
+    "model": "products.brand",
+    "fields": {
+        "name": "Widian",
+        "friendly_name": "Widian"
+    }
+}, {
+    "pk": 10,
+    "model": "products.brand",
+    "fields": {
+        "name": "DIOR",
+        "friendly_name": "DIOR"
+    }
+}, {
+    "pk": 11,
+    "model": "products.brand",
+    "fields": {
+        "name": "Fragrance du Bois",
+        "friendly_name": "Fragrance du Bois"
+    }
+}, {
+    "pk": 12,
+    "model": "products.brand",
+    "fields": {
+        "name": "rook perfumes",
+        "friendly_name": "Rook Perfumes"
+    }
+}, {
+    "pk": 13,
+    "model": "products.brand",
+    "fields": {
+        "name": "Indult",
+        "friendly_name": "Indult"
+    }
+}, {
+    "pk": 14,
+    "model": "products.brand",
+    "fields": {
+        "name": "Stephane Humbert Lucas 777",
+        "friendly_name": "Stephane Humbert Lucas 777"
+    }
+}, {
+    "pk": 15,
+    "model": "products.brand",
+    "fields": {
+        "name": "Piotr Czarnecki",
+        "friendly_name": "Piotr Czarnecki"
+    }
+}, {
+    "pk": 16,
+    "model": "products.brand",
+    "fields": {
+        "name": "M. Micallef",
+        "friendly_name": "M. Micallef"
+    }
+}, {
+    "pk": 17,
+    "model": "products.brand",
+    "fields": {
+        "name": "Escentric Molecules",
+        "friendly_name": "Escentric Molecules"
+    }
+},{
+    "pk": 18,
+    "model": "products.brand",
+    "fields": {
+        "name": "Sarah Baker",
+        "friendly_name": "Sarah Baker"
+    }
+},{
+    "pk": 19,
+    "model": "products.brand",
+    "fields": {
+        "name": "Chloé",
+        "friendly_name": "Chloé"
+    }
+}]

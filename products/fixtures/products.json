@@ -2,7 +2,7 @@
     "pk": 1,
     "model": "products.product",
     "fields": {
-        "sku": "VERO000111202204301",
+        "sku": "VERO00011120220088001",
         "name": "Gucci Bloom",
         "category": 2,
         "brand": "GUCCI",
@@ -20,7 +20,7 @@
     "pk": 2,
     "model": "products.product",
     "fields": {
-        "sku": "VERO000111202203502",
+        "sku": "VERO00011120220088002",
         "name": "Gucci Guilty EDT Pour Femme",
         "category": 2,
         "brand": "GUCCI",
@@ -38,7 +38,7 @@
     "pk": 3,
     "model": "products.product",
     "fields": {
-        "sku": "VERO000111202201563",
+        "sku": "VERO00011120220088003",
         "name": "Gucci Guilty Absolute",
         "category": 5,
         "brand": "GUCCI",
@@ -56,7 +56,7 @@
     "pk": 4,
     "model": "products.product",
     "fields": {
-        "sku": "VERO00032120220221",
+        "sku": "VERO00011120220088004",
         "name": "Velvet Fantasy Eau de Parfum",
         "category": 5,
         "brand": "Montale",
@@ -74,7 +74,7 @@
     "pk": 5,
     "model": "products.product",
     "fields": {
-        "sku": "VERO00551120225201",
+        "sku": "VERO00011120220088005",
         "name": "BOSS THE SCENT PRIVATE ACCORD",
         "category": 2,
         "brand": "BOSS",
@@ -92,7 +92,7 @@
     "pk": 6,
     "model": "products.product",
     "fields": {
-        "sku": "VERO000111202252203",
+        "sku": "VERO00011120220088006",
         "name": "BOSS BOTTLED NIGHT",
         "category": 2,
         "brand": "BOSS",
@@ -110,7 +110,7 @@
     "pk": 7,
     "model": "products.product",
     "fields": {
-        "sku": "VERO000111202252237",
+        "sku": "VERO00011120220088007",
         "name": "HUGO ICED EAU DE TOILETTE",
         "category": 2,
         "brand": "BOSS",
@@ -128,7 +128,7 @@
     "pk": 8,
     "model": "products.product",
     "fields": {
-        "sku": "VERO00978111002228",
+        "sku": "VERO00011120220088008",
         "name": "Interlude Black Iris",
         "category": 5,
         "brand": "Amouage",
@@ -146,7 +146,7 @@
     "pk": 9,
     "model": "products.product",
     "fields": {
-        "sku": "VERO67009347893210",
+        "sku": "VERO00011120220088009",
         "name": "Thurible Eau de Parfum",
         "category": 5,
         "brand": "Rook Perfumes",
@@ -164,7 +164,7 @@
     "pk": 10,
     "model": "products.product",
     "fields": {
-        "sku": "VERO670096754096124",
+        "sku": "VERO00011120220088010",
         "name": "Suede Eau de Parfum",
         "category": 3,
         "brand": "Rook Perfumes",
@@ -182,7 +182,7 @@
     "pk": 11,
     "model": "products.product",
     "fields": {
-        "sku": "VERO000111202203503",
+        "sku": "VERO00011120220088011",
         "name": "Amber Eau de Parfum",
         "category": 3,
         "brand": "Rook Perfumes",
@@ -200,7 +200,7 @@
     "pk": 12,
     "model": "products.product",
     "fields": {
-        "sku": "VERO000111202203504",
+        "sku": "VERO00011120220088012",
         "name": "Bouquet de Hongrie Eau de Parfum",
         "category": 3,
         "brand": "BDK Parfums",
@@ -218,7 +218,7 @@
     "pk": 13,
     "model": "products.product",
     "fields": {
-        "sku": "VERO0001112022035014",
+        "sku": "VERO00011120220088013",
         "name": "Creme de Cuir Eau de Parfum",
         "category": 3,
         "brand": "BDK Parfums",
@@ -236,7 +236,7 @@
     "pk": 14,
     "model": "products.product",
     "fields": {
-        "sku": "VERO0001112022042323",
+        "sku": "VERO00011120220088014",
         "name": "Pas Ce Soir Eau de Parfum",
         "category": 3,
         "brand": "BDK Parfums",
@@ -254,7 +254,7 @@
     "pk": 15,
     "model": "products.product",
     "fields": {
-        "sku": "VERO0123111199200350",
+        "sku": "VERO00011120220088015",
         "name": "Douleur! Eau de Parfum",
         "category": 5,
         "brand": "Bogue Profumo",
@@ -272,7 +272,7 @@
     "pk": 16,
     "model": "products.product",
     "fields": {
-        "sku": "VERO00012348908902",
+        "sku": "VERO00011120220088016",
         "name": "I Love YY",
         "category": 5,
         "brand": "Bogue Profumo",
@@ -290,7 +290,7 @@
     "pk": 17,
     "model": "products.product",
     "fields": {
-        "sku": "VERO0001112123456543",
+        "sku": "VERO00011120220088017",
         "name": "Limited 71 Intense Eau de Parfum",
         "category": 3,
         "brand": "Widian",
@@ -308,7 +308,7 @@
     "pk": 18,
     "model": "products.product",
     "fields": {
-        "sku": 1,
+        "sku": "VERO00011120220088018",
         "name": "Hili Eau de Parfum",
         "category": 3,
         "brand": "Widian",
@@ -326,7 +326,7 @@
     "pk": 19,
     "model": "products.product",
     "fields": {
-        "sku": "VERO0001112022138743",
+        "sku": "VERO00011120220088019",
         "name": "New York Eau de Parfum",
         "category": 3,
         "brand": "Widian",
@@ -344,7 +344,7 @@
     "pk": 20,
     "model": "products.product",
     "fields": {
-        "sku": "VERO000111202201332",
+        "sku": "VERO00011120220088020",
         "name": "Gold II Sahara Parfum Extrait",
         "category": 3,
         "brand": "Widian",
@@ -363,7 +363,7 @@
     "pk": 21,
     "model": "products.product",
     "fields": {
-        "sku": "VERO00011120222367412",
+        "sku": "VERO00011120220088021",
         "name": "J'ADORE",
         "category": 2,
         "brand": "DIOR",
@@ -382,7 +382,7 @@
     "pk": 22,
     "model": "products.product",
     "fields": {
-        "sku": "VERO00011120220144551",
+        "sku": "VERO00011120220088022",
         "name": "J'ADORE",
         "category": 5,
         "brand": "DIOR",
@@ -401,7 +401,7 @@
     "pk": 23,
     "model": "products.product",
     "fields": {
-        "sku": "VERO000111202201445011",
+        "sku": "VERO00011120220088023",
         "name": "POISON",
         "category": 5,
         "brand": "DIOR",
@@ -419,7 +419,7 @@
     "pk": 24,
     "model": "products.product",
     "fields": {
-        "sku": "VERO000111202201445390",
+        "sku": "VERO00011120220088024",
         "name": "POISON GIRL",
         "category": 3,
         "brand": "DIOR",
@@ -437,7 +437,7 @@
     "pk": 25,
     "model": "products.product",
     "fields": {
-        "sku": "VERO000111202201965120",
+        "sku": "VERO00011120220088025",
         "name": "DUNE",
         "category": 2,
         "brand": "DIOR",
@@ -455,7 +455,7 @@
     "pk": 26,
     "model": "products.product",
     "fields": {
-        "sku": "VERO0001112022019655669",
+        "sku": "VERO00011120220088026",
         "name": "DIORESSENCE",
         "category": 2,
         "brand": "DIOR",
@@ -473,7 +473,7 @@
     "pk": 27,
     "model": "products.product",
     "fields": {
-        "sku": "VERO00011120220196512789",
+        "sku": "VERO00011120220088027",
         "name": "FOREVER AND EVER DIOR",
         "category": 2,
         "brand": "DIOR",
@@ -491,7 +491,7 @@
     "pk": 28,
     "model": "products.product",
     "fields": {
-        "sku": "VERO000111202201900123",
+        "sku": "VERO00011120220088028",
         "name": "Delma Eau de Parfum",
         "category": 3,
         "brand": "Widian",
@@ -509,7 +509,7 @@
     "pk": 29,
     "model": "products.product",
     "fields": {
-        "sku": "VERO000111202201333",
+        "sku": "VERO00011120220088029",
         "name": "Oud Orange Intense Eau de Parfum",
         "category": 2,
         "brand": "Fragrance du Bois",
@@ -527,7 +527,7 @@
     "pk": 30,
     "model": "products.product",
     "fields": {
-        "sku": "VERO000111202201353",
+        "sku": "VERO00011120220088030",
         "name": "Sahraa Oud Eau de Parfum",
         "category": 3,
         "brand": "Fragrance du Bois",
@@ -545,7 +545,7 @@
     "pk": 31,
     "model": "products.product",
     "fields": {
-        "sku": "VERO0001112022015673",
+        "sku": "VERO00011120220088031",
         "name": "London Oud Eau de Parfum",
         "category": 3,
         "brand": "Fragrance du Bois",
@@ -563,7 +563,7 @@
     "pk": 32,
     "model": "products.product",
     "fields": {
-        "sku": "VERO0001112022015666",
+        "sku": "VERO00011120220088032",
         "name": "Tihota Eau de Parfum",
         "category": 3,
         "brand": "Indult",
@@ -581,7 +581,7 @@
     "pk": 33,
     "model": "products.product",
     "fields": {
-        "sku": "VERO0890136022322013",
+        "sku": "VERO00011120220088033",
         "name": "2022 Generation Homme Eau de Parfum",
         "category": 3,
         "brand": "Stephane Humbert Lucas 777",
@@ -599,7 +599,7 @@
     "pk": 34,
     "model": "products.product",
     "fields": {
-        "sku": "VERO000111200987652313",
+        "sku": "VERO00011120220088034",
         "name": "Shihan Eau de Parfum",
         "category": 5,
         "brand": "Piotr Czarnecki",
@@ -617,7 +617,7 @@
     "pk": 35,
     "model": "products.product",
     "fields": {
-        "sku": "VERO09871287009876513",
+        "sku": "VERO00011120220088035",
         "name": "Black Gemstone Eau de Parfum",
         "category": 3,
         "brand": "Stephane Humbert Lucas 777",
@@ -635,7 +635,7 @@
     "pk": 36,
     "model": "products.product",
     "fields": {
-        "sku": "VERO0001112020081763",
+        "sku": "VERO00011120220088036",
         "name": "Oumma Eau de Parfum",
         "category": 5,
         "brand": "Stephane Humbert Lucas 777",
@@ -653,7 +653,7 @@
     "pk": 37,
     "model": "products.product",
     "fields": {
-        "sku": "VERO00201086532313",
+        "sku": "VERO00011120220088037",
         "name": "Rose de Petra Eau de Parfum",
         "category": 3,
         "brand": "Stephane Humbert Lucas 777",
@@ -671,7 +671,7 @@
     "pk": 38,
     "model": "products.product",
     "fields": {
-        "sku": "VERO00011120308762313",
+        "sku": "VERO00011120220088038",
         "name": "Khol de Bahrein Eau de Parfum",
         "category": 3,
         "brand": "Stephane Humbert Lucas 777",
@@ -689,7 +689,7 @@
     "pk": 39,
     "model": "products.product",
     "fields": {
-        "sku": "VERO002016092201332",
+        "sku": "VERO00011120220088039",
         "name": "Avant Garde Eau de Parfum",
         "category": 3,
         "brand": "M. Micallef",
@@ -706,7 +706,7 @@
     "pk": 40,
     "model": "products.product",
     "fields": {
-        "sku": "VERO00201867015673",
+        "sku": "VERO00011120220088040",
         "name": "Homme (Aoud) Eau de Parfum",
         "category": 3,
         "brand": "M. Micallef",
@@ -724,7 +724,7 @@
     "pk": 41,
     "model": "products.product",
     "fields": {
-        "sku": "VERO000111202111996",
+        "sku": "VERO00011120220088041",
         "name": "Gaiac Eau de Parfum",
         "category": 3,
         "brand": "M. Micallef",
@@ -742,7 +742,7 @@
     "pk": 42,
     "model": "products.product",
     "fields": {
-        "sku": "VERO00013891111099",
+        "sku": "VERO00011120220088042",
         "name": "Vanille Oud Eau de Parfum",
         "category": 3,
         "brand": "M. Micallef",
@@ -760,7 +760,7 @@
     "pk": 43,
     "model": "products.product",
     "fields": {
-        "sku": "VERO000120061233803",
+        "sku": "VERO00011120220088043",
         "name": "Royal Muska Eau de Parfum",
         "category": 5,
         "brand": "M. Micallef",
@@ -778,7 +778,7 @@
     "pk": 44,
     "model": "products.product",
     "fields": {
-        "sku": "VERO089012876532233",
+        "sku": "VERO00011120220088044",
         "name": "Escentric 05 Eau de Toilette",
         "category": 2,
         "brand": "Escentric Molecules",
@@ -796,7 +796,7 @@
     "pk": 45,
     "model": "products.product",
     "fields": {
-        "sku": "VERO001289654303002",
+        "sku": "VERO00011120220088045",
         "name": "Molecule 05 Eau de Toilette",
         "category": 3,
         "brand": "Escentric Molecules",
@@ -814,7 +814,7 @@
     "pk": 46,
     "model": "products.product",
     "fields": {
-        "sku": "VERO00309872000013",
+        "sku": "VERO00011120220088046",
         "name": "BOSS BOTTLED MARINE",
         "category": 3,
         "brand": "BOSS",
@@ -832,7 +832,7 @@
     "pk": 47,
     "model": "products.product",
     "fields": {
-        "sku": "VERO02003896543440332",
+        "sku": "VERO00011120220088047",
         "name": "Atlante Extrait de Parfum",
         "category": 3,
         "brand": "Sarah Baker",
@@ -850,7 +850,7 @@
     "pk": 48,
     "model": "products.product",
     "fields": {
-        "sku": "VERO0020044558973",
+        "sku": "VERO00011120220088048",
         "name": "Jungle Jezebel Extrait de Parfum",
         "category": 3,
         "brand": "Sarah Baker",
@@ -868,7 +868,7 @@
     "pk": 49,
     "model": "products.product",
     "fields": {
-        "sku": "VERO06329202201497611",
+        "sku": "VERO00011120220088049",
         "name": "Chloé eau de parfum naturelle",
         "category": 3,
         "brand": "Chloé",
@@ -886,7 +886,7 @@
     "pk": 50,
     "model": "products.product",
     "fields": {
-        "sku": "VERO022922014651090",
+        "sku": "VERO00011120220088050",
         "name": "Chloé nomade absolu",
         "category": 3,
         "brand": "Chloé",
@@ -904,7 +904,7 @@
     "pk": 51,
     "model": "products.product",
     "fields": {
-        "sku": "VERO065901220098765003",
+        "sku": "VERO00011120220088051",
         "name": "Love story eau sensuelle",
         "category": 3,
         "brand": "Chloé",
