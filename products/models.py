@@ -86,6 +86,8 @@ class Product(models.Model):
         default=''
     )
     description = models.TextField()
+    notes = models.TextField( null=True, blank=True)
+
     image_url = models.URLField(
         max_length=1024,
         null=True,
