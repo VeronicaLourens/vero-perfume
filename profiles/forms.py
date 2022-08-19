@@ -2,7 +2,7 @@ from django import forms
 from .models import UserProfile
 
 """
-The user profile form is from CI Boutique Ado project.
+The user profile form is adapted from CI Boutique Ado project.
 """
 
 class UserProfileForm(forms.ModelForm):
