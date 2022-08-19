@@ -1,20 +1,231 @@
-﻿[{
-    "pk": 1,
-    "model": "products.product",
-    "fields": {
-        "sku": 1,
-        "name": "",
-        "category": 3,
-        "brand": "",
-        "size": 50,
-        "rating": 5,
-        "price": 99.99,
-        "description": "",
-        "image URL": "",
-        "image": ""
+﻿[
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": 1,
+            "name": "Gucci Bloom",
+            "category": 2,
+            "brand": "GUCCI",
+            "size": "100ml",
+            "rating": 5,
+            "price": 119.99,
+            "description": "The newest addition to the Gucci Bloom bouquet is a lighter, more luminous interpretation of the original scent that gently encourages women become the truest version of themselves. Developed wholly under the idea of the House’s Creative Director, Alessandro Michele, the fragrance is characterized by a trio of Jasmine Bud extract, Tuberose and Rangoon Creeper. Further enriching the scent, a honeyed sweetness and green citrus facet is captured through the addition of Neroli accord—its delicate freshness and ethereal radiance embody the glowing twist on Bloom’s white floral signature.",
+            "notes": "Neroli Accord, Lemon Sfumatrice Essence, Mandarin Essence, Bergamot Essence",
+            "image URL": "media/products/Gucci-Bloom.jpg",
+            "image": "Gucci-Bloom.jpg"
 
-    }
-    
+        }
+        
     },
-    
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": 1,
+            "name": "Gucci Guilty EDT Pour Femme",
+            "category": 2,
+            "brand": "GUCCI",
+            "size": 50,
+            "rating": 5,
+            "price": 99.99,
+            "description": "Heart notes of Lilac combined with the fruity blend of Peach and Raspberry and with notes of Egyptian Geranium resulting in a delicate and harmonious contrast.",
+            "notes": "Mandarin are blended with Pink Pepper for a bright and vibrant freshness.",
+            "image URL": "media/products/Gucci-Guilty-EDT.jpg",
+            "image": "Gucci-Guilty-EDT"
+
+        }
+
+    },
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": 1,
+            "name": "Gucci Guilty Absolute",
+            "category": 5,
+            "brand": "GUCCI",
+            "size": 50,
+            "rating": 5,
+            "price":129.99,
+            "description": "Born out of a special collaboration between Creative Director Alessandro Michele and master perfumer Alberto Morillas, Gucci Guilty Absolute Pour Femme is created using a particular blend with a structure that remains unchanged from the first time it is applied to the skin. Goldenwood is complemented with a mysterious note of blackberry, creating a non-traditional chypre fruity fragrance for a contemporary woman. The fragrance’s composition is intensified with patchouli oils and Bulgarian rose.",
+            "notes": "Created using a special linear structure with four key ingredients: Blackberry.",
+            "image URL": "media/products/Gucci-Guilty-Absolute.jpg",
+            "image": "Gucci-Guilty-Absolute.jpg"
+
+        }
+
+    },
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": 1,
+            "name": "Velvet Fantasy Eau de Parfum",
+            "category": 5,
+            "brand": "Montale",
+            "size": 50,
+            "rating": 4.9,
+            "price": 99.99,
+            "description": "Velvet Fantasy is a solar fragrance where citrus and velvety fruits mingle with the elegance of rose and the gourmand femininity of violet. Thereafter, incense unveils amber and white musk to create a bewitching and wild dance. What We Think A sweet and fruity fragrance with a rich long lasting warmth. Like a decadent dessert, it starts off bringing together the bright freshness of the tangerine with some sweet berry and apple notes and the creaminess of the toffee and vanilla. The fragrance smoothly transitions into a deliciously bold blend of amber, leather, sweet vanilla and creamy woods. Absolutely mouthwatering.",
+            "notes": "tangerine,  pink pepper,  black coffee,  leather,  violet,  jasmine,  lily of the valley,  heliotrope powder,  vanilla,  amber, sandalwood,  toffee,  musk,  oakmoss",
+            "image URL": "media/products/354013.jpg",
+            "image": "354013.jpg"
+
+        }
+
+    },
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": 1,
+            "name": "BOSS THE SCENT PRIVATE ACCORD",
+            "category": 2,
+            "brand": "BOSS",
+            "size": 50,
+            "rating": 5,
+            "price": 99.99,
+            "description": "A captivating fragrance that seduces the senses, BOSS The Scent Private Accord for Him combines ginger with exotic maninka fruit and sophisticated mocha. Magnetic cocoa absolute vibrates at the heart of this modern eau de toilette. ",
+            "notes": "Alcohol Denat, Water, Fragrance, Limonene",
+            "image URL": "media/products/hboss1.jpg",
+            "image": "hboss1.jpg"
+
+        }
+
+    },
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": 1,
+            "name": "BOSS BOTTLED NIGHT",
+            "category": 2,
+            "brand": "BOSS",
+            "size": 100,
+            "rating": 5,
+            "price": 109.99,
+            "description": "A unique composition between elegance and seduction. An intense and spicy scent with a purposeful, edgy, masculine character. Woods are key in the scent: BOSS Bottled Night introduces a scent replica of a rich and exotic new wood, louro amarelo. Treat your fragrance rotation to this captivating scent.",
+            "notes": "Alcohol Denat, Water, Fragrance",
+            "image URL": "media/products/hboss2.jpg",
+            "image": "hboss1.jpg"
+
+        }
+
+    },
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": 1,
+            "name": "HUGO ICED EAU DE TOILETTE",
+            "category": 2,
+            "brand": "",
+            "size": 75,
+            "rating": 4.8,
+            "price": 89.99,
+            "description": "This invigorating scent from HUGO brings a wave of icy freshness and energy to the modern man. The revitalising head notes of iced mint leaves stimulate the senses, while the scent of wild tea awakens the mind and spirit and the aromatic root of Indian vetiver creates the intensity of the masculine base note.",
+            "notes": "STYLE HUGO ICED EDT",
+            "image URL": "media/products/hboss3.jpg",
+            "image": "hboss3.jpg"
+
+        }
+
+    },
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": 1,
+            "name": "Interlude Black Iris",
+            "category": 5,
+            "brand": "Amouage",
+            "size": 50,
+            "rating": 5,
+            "price": 69.99,
+            "description": "he intense aromatic oregano and rosemary of the original is toned down here, leaving the opening relatively cool, sparkling, and wet, which in turn unlocks the narcotic smoothness of buttery orris and violet leaf. Richly smoky agarwood and frankincense still carry their royal splendor, but the base leans more towards sandalwood and cedar, creamy and robust. ",
+            "notes": "Bergamot, rosemary, violet leaves, orris, amber, frankincense, cistus, myrrh, vanilla, leather, agarwood smoke, patchouli, sandalwood, cedar",
+            "image URL": "media/products/41899.jpg",
+            "image": "41899.jpg"
+
+        }
+
+    },
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": 1,
+            "name": "Thurible Eau de Parfum",
+            "category": 5,
+            "brand": "Rook Perfumes",
+            "size": 50,
+            "rating": 5,
+            "price": 99.99,
+            "description": "Thurible is the rare incense scent that seems to contain it all, a wonderfully complex ode to this beloved material that still coalesces into a beautifully wearable and stylish signature. A sweet, clove-forward spice and herb blend supplements the church-ier aspects of the incense- cool, smoky, and sheer- while warmer, more resinous facets intertwine with rich, earthy labdanum and patchouli. A third chord- clean, sparkling incense with fresh rose and oakmoss- pulls everything together with a timeless twinkle.",
+            "notes": "clove, ash, sage, black pepper, labdanum, incense, rose, patchouli, leather, ambergris and moss",
+            "image URL": "media/products/859004.jpg",
+            "image": "859004.jpg"
+
+        }
+
+    },
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": 1,
+            "name": "Suede Eau de Parfum",
+            "category": 3,
+            "brand": "Rook Perfumes",
+            "size": 50,
+            "rating": 5,
+            "price": 99.99,
+            "description": "Polarizing and provocative, Rook's take on leather is perhaps not as smooth as the name Suede might suggest, but for those who love animalic, realistically raw leather, there's nothing else like it. Smoky, rugged, untanned leather is the star, still recognizably charred and fleshy, harkening back to times where leather was still made by hand. It weaves in a rich tobacco leaf, earthy, sweet, and natural, like the leathermaker was sitting at his tanning bench with a rolled cigarette dangling from his lips.",
+            "notes": "suede, tobacco leaf, leather",
+            "image URL": "media/products/859005.jpg",
+            "image": "859005.jpg"
+
+        }
+
+    },
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": 1,
+            "name": "Amber Eau de Parfum",
+            "category": 3,
+            "brand": "Rook Perfumes",
+            "size": 50,
+            "rating": 5,
+            "price": 99.99,
+            "description": "Amber has in multitudes. It opens with a genuinely hypnotic smoke note- sweetened with saffron, but rich and animalic, coaxing out the syrupy amber-maple heart like semi-fossilized resin seeping from ancient bark. A tonka bean base adds a touch of familiar vanillic tone, but stripped of the typically creamy dessert trappings. This amber glows with the intensity of late summer dusk in the wilderness, satisfyingly sweet but also exhilarating and primal.",
+            "notes": " saffron, smoke, incense, amber, maple, black musk, tonka bean and resins",
+            "image URL": "media/products/859006.jpg",
+            "image": "859006.jpg"
+
+        }
+
+    },
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": 1,
+            "name": "",
+            "category": 3,
+            "brand": "",
+            "size": 50,
+            "rating": 5,
+            "price": 99.99,
+            "description": "",
+            "notes": "",
+            "image URL": "",
+            "image": ""
+
+        }
+
+    },
+
 ]
