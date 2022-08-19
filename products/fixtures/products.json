@@ -3,7 +3,7 @@
         "pk": 1,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO000111202204301",
             "name": "Gucci Bloom",
             "category": 2,
             "brand": "GUCCI",
@@ -19,15 +19,15 @@
         
     },
     {
-        "pk": 1,
+        "pk": 2,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO000111202203502",
             "name": "Gucci Guilty EDT Pour Femme",
             "category": 2,
             "brand": "GUCCI",
             "rating": 5,
-            "price": 99.99,
+            "price": 139.99,
             "gender": "Women",
             "description": "Heart notes of Lilac combined with the fruity blend of Peach and Raspberry and with notes of Egyptian Geranium resulting in a delicate and harmonious contrast.",
             "notes": "Mandarin are blended with Pink Pepper for a bright and vibrant freshness.",
@@ -38,14 +38,14 @@
 
     },
     {
-        "pk": 1,
+        "pk": 3,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO000111202201563",
             "name": "Gucci Guilty Absolute",
             "category": 5,
             "brand": "GUCCI",
-            "rating": 5,
+            "rating": 4.8,
             "price":129.99,
             "gender": "Women",
             "description": "Born out of a special collaboration between Creative Director Alessandro Michele and master perfumer Alberto Morillas, Gucci Guilty Absolute Pour Femme is created using a particular blend with a structure that remains unchanged from the first time it is applied to the skin. Goldenwood is complemented with a mysterious note of blackberry, creating a non-traditional chypre fruity fragrance for a contemporary woman. The fragrance’s composition is intensified with patchouli oils and Bulgarian rose.",
@@ -57,10 +57,10 @@
 
     },
     {
-        "pk": 1,
+        "pk": 4,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO00032120220221",
             "name": "Velvet Fantasy Eau de Parfum",
             "category": 5,
             "brand": "Montale",
@@ -76,14 +76,14 @@
 
     },
     {
-        "pk": 1,
+        "pk": 5,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO00551120225201",
             "name": "BOSS THE SCENT PRIVATE ACCORD",
             "category": 2,
             "brand": "BOSS",
-            "rating": 5,
+            "rating": 4.9,
             "price": 99.99,
             "gender": "Men",
             "description": "A captivating fragrance that seduces the senses, BOSS The Scent Private Accord for Him combines ginger with exotic maninka fruit and sophisticated mocha. Magnetic cocoa absolute vibrates at the heart of this modern eau de toilette. ",
@@ -95,10 +95,10 @@
 
     },
     {
-        "pk": 1,
+        "pk": 6,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO000111202252203",
             "name": "BOSS BOTTLED NIGHT",
             "category": 2,
             "brand": "BOSS",
@@ -114,10 +114,10 @@
 
     },
     {
-        "pk": 1,
+        "pk": 7,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO000111202252237",
             "name": "HUGO ICED EAU DE TOILETTE",
             "category": 2,
             "brand": "BOSS",
@@ -133,14 +133,14 @@
 
     },
     {
-        "pk": 1,
+        "pk": 8,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO00978111002228",
             "name": "Interlude Black Iris",
             "category": 5,
             "brand": "Amouage",
-            "rating": 5,
+            "rating": 4.2,
             "price": 69.99,
             "gender": "Men",
             "description": "he intense aromatic oregano and rosemary of the original is toned down here, leaving the opening relatively cool, sparkling, and wet, which in turn unlocks the narcotic smoothness of buttery orris and violet leaf. Richly smoky agarwood and frankincense still carry their royal splendor, but the base leans more towards sandalwood and cedar, creamy and robust. ",
@@ -152,14 +152,14 @@
 
     },
     {
-        "pk": 1,
+        "pk": 9,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO67009347893210",
             "name": "Thurible Eau de Parfum",
             "category": 5,
             "brand": "Rook Perfumes",
-            "rating": 5,
+            "rating": 4.0,
             "price": 99.99,
             "gender": "Men",
             "description": "Thurible is the rare incense scent that seems to contain it all, a wonderfully complex ode to this beloved material that still coalesces into a beautifully wearable and stylish signature. A sweet, clove-forward spice and herb blend supplements the church-ier aspects of the incense- cool, smoky, and sheer- while warmer, more resinous facets intertwine with rich, earthy labdanum and patchouli. A third chord- clean, sparkling incense with fresh rose and oakmoss- pulls everything together with a timeless twinkle.",
@@ -171,15 +171,15 @@
 
     },
     {
-        "pk": 1,
+        "pk": 10,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO670096754096124",
             "name": "Suede Eau de Parfum",
             "category": 3,
             "brand": "Rook Perfumes",
             "rating": 5,
-            "price": 99.99,
+            "price": 79.99,
             "gender": "Men",
             "description": "Polarizing and provocative, Rook's take on leather is perhaps not as smooth as the name Suede might suggest, but for those who love animalic, realistically raw leather, there's nothing else like it. Smoky, rugged, untanned leather is the star, still recognizably charred and fleshy, harkening back to times where leather was still made by hand. It weaves in a rich tobacco leaf, earthy, sweet, and natural, like the leathermaker was sitting at his tanning bench with a rolled cigarette dangling from his lips.",
             "notes": "suede, tobacco leaf, leather",
@@ -190,14 +190,14 @@
 
     },
     {
-        "pk": 1,
+        "pk": 11,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO000111202203503",
             "name": "Amber Eau de Parfum",
             "category": 3,
             "brand": "Rook Perfumes",
-            "rating": 5,
+            "rating": 4.2,
             "price": 99.99,
             "gender": "Men",
             "description": "Amber has in multitudes. It opens with a genuinely hypnotic smoke note- sweetened with saffron, but rich and animalic, coaxing out the syrupy amber-maple heart like semi-fossilized resin seeping from ancient bark. A tonka bean base adds a touch of familiar vanillic tone, but stripped of the typically creamy dessert trappings. This amber glows with the intensity of late summer dusk in the wilderness, satisfyingly sweet but also exhilarating and primal.",
@@ -209,15 +209,15 @@
 
     },
     {
-        "pk": 1,
+        "pk": 12,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO000111202203504",
             "name": "Bouquet de Hongrie Eau de Parfum",
             "category": 3,
             "brand": "BDK Parfums",
-            "rating": 5,
-            "price": 99.99,
+            "rating": 4.7,
+            "price": 109.99,
             "gender": "women",
             "description": "She's getting ready. It's a beautiful day. The sky is blue. She puts her naked foot on the floor and like a dancer, travels the distance of the mirrored hallway to the dressing table. It's one of her favorite spots. She likes getting pretty there. There are only flowers from the garden, and both her hands, fresh and clean. Her right hand, agile and light, grabs her powder, then a bottle of perfume. Her left hand clutches eye shadow and nude lipstick. She then moves on to the closet, where she picks a light dress and fixes a rebel strap. She slides on pair of heels and fastens a belt around her waist.",
             "notes": " Pear, Blackcurrant, Strawberry, Rose of Turkey, Sambac jasmine, Lorenox, Musk, Cedar, Amber",
@@ -228,10 +228,10 @@
 
     },
     {
-        "pk": 1,
+        "pk": 13,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO0001112022035014",
             "name": "Creme de Cuir Eau de Parfum",
             "category": 3,
             "brand": "BDK Parfums",
@@ -247,10 +247,10 @@
 
     },
     {
-        "pk": 1,
+        "pk": 14,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO0001112022042323",
             "name": "Pas Ce Soir Eau de Parfum",
             "category": 3,
             "brand": "BDK Parfums",
@@ -266,10 +266,10 @@
 
     },
     {
-        "pk": 1,
+        "pk": 15,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO0123111199200350",
             "name": "Douleur! Eau de Parfum",
             "category": 5,
             "brand": "Bogue Profumo",
@@ -285,10 +285,10 @@
 
     },
     {
-        "pk": 1,
+        "pk": 16,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO00012348908902",
             "name": "I Love YY",
             "category": 5,
             "brand": "Bogue Profumo",
@@ -304,10 +304,10 @@
 
     },
     {
-        "pk": 1,
+        "pk": 17,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO0001112123456543",
             "name": "Limited 71 Intense Eau de Parfum",
             "category": 3,
             "brand": "Widian",
@@ -323,15 +323,15 @@
 
     },
     {
-        "pk": 1,
+        "pk": 18,
         "model": "products.product",
         "fields": {
             "sku": 1,
             "name": "Hili Eau de Parfum",
             "category": 3,
             "brand": "Widian",
-            "rating": 5,
-            "price": 99.99,
+            "rating": 4.8,
+            "price": 119.99,
             "gender": "men",
             "description": "A lush flower garden surrounding extraordinarily preserved structures and sites dating back to the Bronze Age, the Hili Archaeological Park and Gardens is one of the true treasures of the Emirate of Abu Dhabi. Drawing inspiration from the magical location, Hili, the latest from Widian's Velvet Collection, is a stunning floral oriental that captures the delicate beauty of the gardens and the intriguing mysteries of the historic site in one compelling fragrance.",
             "notes": "Bergamot, pink pepper, coriander, cinnamon, jasmine, tuberose",
@@ -342,15 +342,15 @@
 
     },
     {
-        "pk": 1,
+        "pk": 19,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO0001112022138743",
             "name": "New York Eau de Parfum",
             "category": 3,
             "brand": "Widian",
-            "rating": 5,
-            "price": 99.99,
+            "rating": 4.7,
+            "price": 89.99,
             "gender": "men",
             "description": " New York City in the spring may be the most magical place in the world. For once a year, the electric bustle of the city is balanced with delightfully mild temperatures, gentle sunshine, and a fresh breeze that draws even the most cynical citydwellers out into New York's beautiful and far-flung public spaces, now teeming with the energy of new life. This is the inspiration for New York, the latest in Widian's tribute to the great cities, an explosion of bright citrus, spicy florals, and musky woods that positively vibrates with the extraordinary dynamism of the Big Apple.",
             "notes": "Bergamot, mandarin, lemon, pink pepper, lavender, coriander, juniper, geranium",
@@ -361,15 +361,15 @@
 
     },
     {
-        "pk": 1,
+        "pk": 20,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO000111202201332",
             "name": "Gold II Sahara Parfum Extrait",
             "category": 3,
             "brand": "Widian",
             "rating": 4.7,
-            "price": 99.99,
+            "price": 69.99,
             "gender": "men",
             "description": "Gold II Sahara) is built around the fragrance accord most associated with the precious metal- amber. But while Gold I's amber was powerful and opulent, Sahara is luxuriously smooth, a floral musk with a deep, soft muskiness that evaporates the concerns and trivialities of everyday life in a wondrous cloud of creamy, gently powdery sensuality.\nOn the very first spray of Sahara, a remarkably uplifting opening of bright citrus, rich saffron and spicy elemi invigorates",
             "notes": "affron, orange, elemi, rose, orange blossom",
@@ -380,10 +380,10 @@
 
     },
     {
-        "pk": 1,
+        "pk": 21,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO00011120222367412",
             "name": "J'ADORE",
             "category": 2,
             "brand": "DIOR",
@@ -400,10 +400,10 @@
 
     },
     {
-        "pk": 1,
+        "pk": 22,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO00011120220144551",
             "name": "J'ADORE",
             "category": 5,
             "brand": "DIOR",
@@ -421,10 +421,10 @@
     },
     
     {
-        "pk": 1,
+        "pk": 23,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO000111202201445011",
             "name": "POISON",
             "category": 5,
             "brand": "DIOR",
@@ -440,13 +440,13 @@
 
     },
     {
-        "pk": 1,
+        "pk": 24,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO000111202201445390",
             "name": "POISON GIRL",
             "category": 3,
-            "brand": "",
+            "brand": "DIOR",
             "rating": 4.5,
             "price": 139.99,
             "gender": "women",
@@ -459,13 +459,13 @@
 
     },
     {
-        "pk": 1,
+        "pk": 25,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO000111202201965120",
             "name": "DUNE",
             "category": 2,
-            "brand": "",
+            "brand": "DIOR",
             "rating": 5,
             "price": 149.99,
             "gender": "women",
@@ -478,10 +478,10 @@
 
     },
     {
-        "pk": 1,
+        "pk": 26,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO0001112022019655669",
             "name": "DIORESSENCE",
             "category": 2,
             "brand": "DIOR",
@@ -497,10 +497,10 @@
 
     },
     {
-        "pk": 1,
+        "pk": 27,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO00011120220196512789",
             "name": "FOREVER AND EVER DIOR",
             "category": 2,
             "brand": "DIOR",
@@ -516,10 +516,10 @@
 
     },
     {
-        "pk": 1,
+        "pk": 28,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO000111202201900123",
             "name": "Delma Eau de Parfum",
             "category": 3,
             "brand": "Widian",
@@ -535,15 +535,15 @@
 
     },
     {
-        "pk": 1,
+        "pk": 29,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO000111202201333",
             "name": "Oud Orange Intense Eau de Parfum",
             "category": 2,
             "brand": "Fragrance du Bois",
             "rating": 4.3,
-            "price": 99.99,
+            "price": 109.99,
              "gender": "men",
             "description": " A beautiful rendering of a dark chocolate Mounds bar in perfume form. The opening notes of Oud Orange Intense are smoky and nutty, bringing to mind a pile of coconut husks smoldering in the ashes of a fire. Creamy musks and bourbon vanilla bring a cocoa-tinted softness to the mix, restraining the beachy exuberance of the coconut, and also its sweetness. What emerges is a dry, woody vanilla with a luxuriously boozy touch, like a log of driftwood rubbed lightly with coconut liquor.",
             "notes": " Coconut, fruits, bourbon vanilla, oud, musk",
@@ -554,10 +554,10 @@
 
     },
     {
-        "pk": 1,
+        "pk": 30,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO000111202201353",
             "name": "Sahraa Oud Eau de Parfum",
             "category": 3,
             "brand": "Fragrance du Bois",
@@ -573,15 +573,15 @@
 
     },
     {
-        "pk": 1,
+        "pk": 31,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO0001112022015673",
             "name": "London Oud Eau de Parfum",
             "category": 3,
             "brand": "Fragrance du Bois",
             "rating": 5,
-            "price": 99.99,
+            "price": 89.99,
             "gender": "men",
             "description": "Too good not to share! That's what former World Heavyweight Boxing Champion David Haye, said to Fragrance du Bois when they handed him this originally bespoke fragrance. So they unleashed it on the world, and boy, are we glad. Composed to reflect the exciting mix of cultures and stories of the city Haye loves, London Oud is a true melting pot of a fragrance that pulls together opposing elements that you'd think won't work together but absolutely do",
             "notes": "lemon, bergamot, mint, lavender, jasmine, white flowers, marine",
@@ -592,10 +592,10 @@
 
     },
     {
-        "pk": 1,
+        "pk": 32,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO0001112022015666",
             "name": "Tihota Eau de Parfum",
             "category": 3,
             "brand": "Indult",
@@ -611,15 +611,15 @@
 
     },
     {
-        "pk": 1,
+        "pk": 33,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO0890136022322013",
             "name": "2022 Generation Homme Eau de Parfum",
             "category": 3,
             "brand": "Stephane Humbert Lucas 777",
             "rating": 5,
-            "price": 99.99,
+            "price": 129.99,
         "gender": "men",
             "description": " 2022 represents an important year for the future of the Middle East: as Qatar will play host to the World Cup, the eyes of the world will be upon a great gathering in the heart of the region, an event that, at best, has the potential to demonstrate true sharing among more developed nations and states that are still struggling. Against this backdrop, Stephane Humbert Lucas presents 2022 Generation Man, a fragrance that employs a unique blend of timeless opulence and sleek modernity to represent the distinct character of today's sophisticated Middle Eastern man.\n2022 Generation Man opens with an unexpectedly bright burst of juicy blackcurrant and zesty yuzu, kept cool with a spritz of fresh mint. ",
             "notes": "Yuzu zest, blackcurrant, mint, Cambodian oud, precious",
@@ -630,10 +630,10 @@
 
     },
     {
-        "pk": 1,
+        "pk": 34,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO000111200987652313",
             "name": "Shihan Eau de Parfum",
             "category": 5,
             "brand": "Piotr Czarnecki",
@@ -649,15 +649,15 @@
 
     },
     {
-        "pk": 1,
+        "pk": 35,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO09871287009876513",
             "name": "Black Gemstone Eau de Parfum",
             "category": 3,
             "brand": "Stephane Humbert Lucas 777",
             "rating": 5,
-            "price": 99.99,
+            "price": 79.99,
             "gender": "men",
             "description": "A fragrance named for the sacred cornerstone of the very center of the Grand Mosque of Mecca demands a refinement and respect for both subject and composition. But StÃ©phane Humbert Lucas is no mere tourist, and Black Gemstone, through its captivatingly complex blend of myrrh, lemon and smoky incense, indeed inspires a profound respect bordering on wonderment. \nThe Black Stone of Mecca is purported to have fallen directly from Heaven, and the ingredients of Black Gemstone are clearly intended to come as close to otherworldly as possible. ",
             "notes": "Infusion of three cedars lemon, myrrh, tar, incense",
@@ -668,15 +668,15 @@
 
     },
     {
-        "pk": 1,
+        "pk": 36,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO0001112020081763",
             "name": "Oumma Eau de Parfum",
             "category": 5,
             "brand": "Stephane Humbert Lucas 777",
             "rating": 5,
-            "price": 99.99,
+            "price": 119.99,
             "gender": "men",
             "description": "StÃ©phane Humbert Lucas describes Oumma as a study of the contrasts of agarwood (oud), a substance he views with mystical reverence. A single sniff of Oumma can more than explain why: based around the finest Burmese oud and buttressed by Moroccan Rose, Egyptian jasmine and Peruvian Balsam, this fragrance is drawn from the rarest sources on the planet and yet, it hardly feels earthly at all. Instead, Oumma seems to rise from the ground, stretching out each extraordinary facet of its central ingredient until the smoky, spicy wood and subtly sharp",
             "notes": "Egyptian jasmine, Moroccan rose, Peruvian balsam, balsam tolu",
@@ -687,15 +687,15 @@
 
     },
     {
-        "pk": 1,
+        "pk": 37,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO00201086532313",
             "name": "Rose de Petra Eau de Parfum",
             "category": 3,
             "brand": "Stephane Humbert Lucas 777",
             "rating": 4.5,
-            "price": 99.99,
+            "price": 109.99,
             "gender": "men",
             "description": " What begins as a simple, beautiful journey opens itself to mystery and wonder- that clean, bright rose we smell is no single, simple note but rather an intense rose oxide given body and mouthwatering juiciness from pomegranate and litchi. As the heart of pure, natural Bulgarian rose expands, so too do the spices- cardamom, cumin and pepper, intense enough to invigorate",
             "notes": "Rose oxide, pomegranate, litchi, Bulgarian rose",
@@ -706,15 +706,15 @@
 
     },
     {
-    "pk": 1,
+    "pk": 38,
     "model": "products.product",
     "fields": {
-        "sku": 1,
+        "sku": "VERO00011120308762313",
         "name": "Khol de Bahrein Eau de Parfum",
         "category": 3,
         "brand": "Stephane Humbert Lucas 777",
         "rating": 4.6,
-        "price": 99.99,
+        "price": 79.99,
         "gender": "men",
         "description": "Think Elizabeth Taylor as Cleopatra, immaculate jet-black lines of khÃ´l framing piercing violet eyes, infusing what was already stunning with near-mystical seductive power. KhÃ´l de Bahrein is a tribute to the elegance and ingenuity of the ancient world, where the untold balsamic depths of a sumptuous amber-benzene heart frame a strikingly lovely violet and iris led floral with masterful precision. \nKhÃ´l de Bahrein opens with complimentary waves of deep, resinous amber and an iris both richly earthy and subtly sweet. As the iris evolves to an almost candied sweetness, the violet and ambergris weave seamlessly in, lending a powdery softness that anchors without ever diluting.",
         "notes": "Violet, nougat, gums, iris powder, sandalwood, benzoin",
@@ -725,10 +725,10 @@
 
     },
     {
-    "pk": 1,
+    "pk": 39,
     "model": "products.product",
     "fields": {
-        "sku": 1,
+        "sku": "VERO002016092201332",
         "name": "Avant Garde Eau de Parfum",
         "category": 3,
         "brand": "M. Micallef",
@@ -743,15 +743,15 @@
 
     },
     {
-        "pk": 1,
+        "pk": 40,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO00201867015673",
             "name": "Homme (Aoud) Eau de Parfum",
             "category": 3,
             "brand": "M. Micallef",
             "rating": 5,
-            "price": 99.99,
+            "price": 119.99,
             "gender": "WOmen",
             "description": "Micallef's spicy, honeyed rendition of precious aoud, with its mix of golden saffron and dark-red roses, is sensual and wonderfully exotic. The dry smokiness of the fragrance makes us think of the ritual in Arabia, in which women stand over an oud burner, perfuming their skin and clothes with the unique, enthralling fragrance. Balmily sweet and spicily bitter, Micallef's Aoud is a complex, endlessly intriguing scent. I",
             "notes": "rose, aoud, sandalwood, cinnamon, saffron",
@@ -762,15 +762,15 @@
 
     },
     {
-        "pk": 1,
+        "pk": 41,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO000111202111996",
             "name": "Gaiac Eau de Parfum",
             "category": 3,
             "brand": "M. Micallef",
             "rating": 4.7,
-            "price": 99.99,
+            "price": 119.99,
             "gender": "WOmen",
             "description": "The aroma of gaiac is complex, eluding definition. The precious wood smells balsamic and fresh, sweet and earthy and smoky. Micallef's rendition of gaiac is fittingly complex, inclusive of the many facets of the scent. Bergamot and jasmine infuse the blend with freshness, cloves add spice, vetiver brings out the earthiness of the wood and vanilla sweetens the blend, softening the sharp angles, turning Gaiac into a sensual and tranquil perfume, with a your-skin-but-better base. Perfect for men and women.",
             "notes": "bergamot, jasmine, cloves, gaiac, vetiver, vanilla",
@@ -781,10 +781,10 @@
 
     },
     {
-        "pk": 1,
+        "pk": 42,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO00013891111099",
             "name": "Vanille Oud Eau de Parfum",
             "category": 3,
             "brand": "M. Micallef",
@@ -800,15 +800,15 @@
 
     },
     {
-        "pk": 1,
+        "pk": 43,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO000120061233803",
             "name": "Royal Muska Eau de Parfum",
             "category": 5,
             "brand": "M. Micallef",
             "rating": 4.9,
-            "price": 99.99,
+            "price": 109.99,
             "gender": "WOmen",
             "description": "Just like in Baudelaire's poem, the sensual aroma of musk in Micallef's Royal Muska,ï¿½sings, transporting the soul and sense.ï¿½ï¿½ Infused with the creamy sensuality of the indolent flowers of ylang ylang and with the honeyed opulence of roses, the fragrance is exotic and infinitely feminine. The base of benzoin and ripe fruits puts a delicious twist on the composition, giving it a tropical air. This is the scent of tanned skin, of hot days and sultry nights, the heavenly aroma of passionate paradise.",
             "notes": "ylang ylang, rose, precious woods, white musks, fruits, benzoin",
@@ -819,10 +819,10 @@
 
     },
     {
-        "pk": 1,
+        "pk": 44,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO089012876532233",
             "name": "Escentric 05 Eau de Toilette",
             "category": 2,
             "brand": "Escentric Molecules",
@@ -838,15 +838,15 @@
 
     },
     {
-        "pk": 1,
+        "pk": 45,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO001289654303002",
             "name": "Molecule 05 Eau de Toilette",
             "category": 3,
             "brand": "Escentric Molecules",
             "rating": 4.5,
-            "price": 99.99,
+            "price": 159.99,
             "gender": "WOmen",
             "description": "Cashmeran, the sole fragrant component in Molecule 05, has an unusually complex character for a single molecule. It combines a cocooning, musky softness with dry, aromatic woodiness, as well as a sweet and resinous note reminiscent of pine. Since its creation by IFF in the late 1970s, it's been the backbone of hit fragrances across the spectrum, with its sensuous versatility enhancing everything from fruity gourmands to boldly spicy orientals to musky skin scents.",
             "notes": "Cashmeran",
@@ -857,10 +857,10 @@
 
     },
     {
-        "pk": 1,
+        "pk": 46,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO00309872000013",
             "name": "BOSS BOTTLED MARINE",
             "category": 3,
             "brand": "BOSS",
@@ -876,15 +876,15 @@
 
     },
     {
-        "pk": 1,
+        "pk": 47,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO02003896543440332",
             "name": "Atlante Extrait de Parfum",
             "category": 3,
             "brand": "Sarah Baker",
             "rating": 5,
-            "price": 99.99,
+            "price": 149.99,
             "gender": "WOmen",
             "description": "A sense of the ocean permeates all layers of this fresh, taut fragrance. Here, it's a primordial, mythological sea. Beginning with the form of the sea shell, and giving birth to the goddess of beauty. Surrealistically symbolic, as in the work of French cineaste Germaine Dulac, where strong desire and sexuality are never far beneath the shimmering surface. Fresh and beautiful, but not without an undertow.",
             "notes": "Yuzu, seaweed, orris, lily of the valley, pink pepper, wet rock, cedar, ambergris",
@@ -895,15 +895,15 @@
 
     },
     {
-        "pk": 1,
+        "pk": 48,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO0020044558973",
             "name": "Jungle Jezebel Extrait de Parfum",
             "category": 3,
             "brand": "Sarah Baker",
             "rating": 5,
-            "price": 99.99,
+            "price": 89.99,
             "gender": "WOmen",
             "description": "Inspired by cult performer and singer, Divine, this is a fragrance with real attitude. A heady mÃ©lange of tropical fruits. The exotic sweetness is balanced with far heavier, sexy tonalities that become more prominent as it dries down. The unique combinations are unexpected and make this a fragrance that stands apart, at once memorable and perhaps even a little shocking on first encounter. Yet, like its inspiration, the scandalous first impression reveals a craft that impresses and remains memorable. One for daring people who walk their own path.",
             "notes": "Orange, banana, grape, peach, bubble gum, rose, tuberose",
@@ -914,10 +914,10 @@
 
     },
     {
-        "pk": 1,
+        "pk": 49,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO06329202201497611",
             "name": "Chloé eau de parfum naturelle",
             "category": 3,
             "brand": "Chloé",
@@ -933,10 +933,10 @@
 
     },
     {
-        "pk": 1,
+        "pk": 50,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO022922014651090",
             "name": "Chloé nomade absolu",
             "category": 3,
             "brand": "Chloé",
@@ -952,10 +952,10 @@
 
     },
     {
-        "pk": 1,
+        "pk": 51,
         "model": "products.product",
         "fields": {
-            "sku": 1,
+            "sku": "VERO065901220098765003",
             "name": "Love story eau sensuelle",
             "category": 3,
             "brand": "Chloé",
