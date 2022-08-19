@@ -64,7 +64,7 @@
         "price": 99.99,
         "gender": "Men",
         "description": "Velvet Fantasy is a solar fragrance where citrus and velvety fruits mingle with the elegance of rose and the gourmand femininity of violet. Thereafter, incense unveils amber and white musk to create a bewitching and wild dance. What We Think A sweet and fruity fragrance with a rich long lasting warmth. Like a decadent dessert, it starts off bringing together the bright freshness of the tangerine with some sweet berry and apple notes and the creaminess of the toffee and vanilla. The fragrance smoothly transitions into a deliciously bold blend of amber, leather, sweet vanilla and creamy woods. Absolutely mouthwatering.",
-        "notes": "tangerine,  pink pepper,  black coffee,  leather,  violet,  jasmine,  lily of the valley,  heliotrope powder,  vanilla,  amber, sandalwood,  toffee,  musk,  oakmoss",
+        "notes": "tangerine,  pink pepper,  black coffee,  leather,  violet,  jasmine,  lily of the valley.",
         "image_url": "media/products/354013.jpg",
         "image": "354013.jpg"
 
@@ -445,7 +445,7 @@
         "price": 149.99,
         "gender": "women",
         "description": "An oceanic fragrance, created in harmony with nature, this radiant, fresh and subtle accord captures the landscape where the sky meets the sea in a warm, oceanic floral bouquet. Enveloping, serene and sensual.",
-        "notes": "",
+        "notes": "heliotrope powder,  vanilla,  amber, sandalwood,  toffee,  musk,  oakmoss",
         "image_url": "media/products/dior5.jpg",
         "image": "dior5.jpg"
 
@@ -463,7 +463,7 @@
         "price": 169.99,
         "gender": "women",
         "description": "A very feminine amber fragrance with a mysterious sensuality captured in notes of geranium, cinnamon and patchouli. Voluptuous and captivating.",
-        "notes": "",
+        "notes": "heliotrope powder,  vanilla,  amber, sandalwood,  toffee,  musk,  oakmoss",
         "image_url": "media/products/dior6.jpg",
         "image": "dior6.jpg"
 
@@ -481,7 +481,7 @@
         "price": 169.99,
         "gender": "women",
         "description": "Freesia and Jasmine petals blended with Bulgarian Rose make Forever and Ever Dior a tender and delicate fragrance.",
-        "notes": "",
+        "notes": "heliotrope powder,  vanilla,  amber, sandalwood,  toffee,  musk,  oakmoss",
         "image_url": "media/products/dior7.jpg",
         "image": "dior7.jpg"
 
@@ -517,7 +517,7 @@
         "price": 109.99,
         "gender": "men",
         "description": " A beautiful rendering of a dark chocolate Mounds bar in perfume form. The opening notes of Oud Orange Intense are smoky and nutty, bringing to mind a pile of coconut husks smoldering in the ashes of a fire. Creamy musks and bourbon vanilla bring a cocoa-tinted softness to the mix, restraining the beachy exuberance of the coconut, and also its sweetness. What emerges is a dry, woody vanilla with a luxuriously boozy touch, like a log of driftwood rubbed lightly with coconut liquor.",
-        "notes": " Coconut, fruits, bourbon vanilla, oud, musk",
+        "notes": "Coconut, fruits, bourbon vanilla, oud, musk",
         "image_url": "media/products/75701.jpg",
         "image": "75701.jpg"
 
@@ -587,7 +587,7 @@
         "brand": "Stephane Humbert Lucas 777",
         "rating": 5,
         "price": 129.99,
-    "gender": "men",
+        "gender": "men",
         "description": " 2022 represents an important year for the future of the Middle East: as Qatar will play host to the World Cup, the eyes of the world will be upon a great gathering in the heart of the region, an event that, at best, has the potential to demonstrate true sharing among more developed nations and states that are still struggling. Against this backdrop, Stephane Humbert Lucas presents 2022 Generation Man, a fragrance that employs a unique blend of timeless opulence and sleek modernity to represent the distinct character of today's sophisticated Middle Eastern man.\n2022 Generation Man opens with an unexpectedly bright burst of juicy blackcurrant and zesty yuzu, kept cool with a spritz of fresh mint. ",
         "notes": "Yuzu zest, blackcurrant, mint, Cambodian oud, precious",
         "image_url": "media/products/65510.jpg",
@@ -822,7 +822,7 @@
         "price": 199.99,
         "gender": "WOmen",
         "description": "Escape to cooler climes this summer with BOSS Bottled Marine, a limited-edition fragrance that opens with a revitalising burst of frozen apple. The aroma leads to warm woody notes, bringing a unique freshness to the iconic BOSS Bottled scent.",
-        "notes": "",
+        "notes": "heliotrope powder,  vanilla,  amber, sandalwood,  toffee,  musk,  oakmoss",
         "image_url": "media/products/hboss4.jpg",
         "image": "hboss4.jpg"
 
@@ -876,7 +876,7 @@
         "price": 259.99,
         "gender": "WOmen",
         "description": "The emblematic rose of Chloé Signature radiates from the heart of this new perfume for her, created by the Michel Almairac. It joins neroli in a velvety bouquet while lifting the fresh and vivid citron and blackcurrant buds. Soft and sunny mimosa absolute blends its sensuous floral spirit with distinctive ceda",
-        "notes": "",
+        "notes": "heliotrope powder,  vanilla,  amber, sandalwood,  toffee,  musk,  oakmoss",
         "image_url": "media/products/chole1.jpg",
         "image": "chole1.jpg"
 
