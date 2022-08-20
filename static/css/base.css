@@ -145,6 +145,15 @@ a {
 }
 
 
+/*---------------------product page */
+
+.product-detail-container {
+    margin-top: 200px;
+}
+
+
+
+
 
 
 /*----------------------------footer */
@@ -177,12 +186,20 @@ a {
 
 @media (max-width: 991px) {
 
+    body {
+        height: calc(100vh - 116px);
+    }
+
     .header-container {
-        padding-top: 60px;
+        padding-top: 116px;
     }
 
     .product-page-container {
         margin-top: 0px;
+    }
+
+    .product-detail-container {
+        margin-top: 50px;
     }
 
 }
