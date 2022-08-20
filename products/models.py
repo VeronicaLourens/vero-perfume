@@ -51,6 +51,14 @@ class Product(models.Model):
         (WOMEN, 'Women')
     ]
 
+    SIZE_CHOICES = [
+        ('30ml', '30ml'),
+        ('50ml', '50ml'),
+        ('75ml', '75ml'),
+        ('100ml', '100ml'),
+
+    ]
+
     sku = models.CharField(
         max_length=254,
         null=True, blank=True
@@ -80,13 +88,19 @@ class Product(models.Model):
         max_digits=6,
         decimal_places=2
     )
+
+    size = models.CharField(
+        choices=SIZE_CHOICES,
+        max_length=12,
+        default=''
+    )
     gender = models.CharField(
         choices=GENDER_CHOICES,
         max_length=24,
         default=''
     )
     description = models.TextField()
-    notes = models.TextField( null=True, blank=True)
+    notes = models.TextField(null=True, blank=True)
 
     image_url = models.URLField(
         max_length=1024,
@@ -98,4 +112,3 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
-
