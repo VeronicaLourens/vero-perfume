@@ -5,6 +5,9 @@ class Category(models.Model):
     To create product's catogory.
     """
 
+    class Meta:
+        verbose_name_plural = 'Categories'
+
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(
         max_length=254,

@@ -6,14 +6,14 @@ from .models import Category, Brand, Product
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
 
-    list_display = ('name',)
+    list_display = ('name', 'friendly_name')
     list_filter = ('name',)
     search_fields = ('name',)
 
 @admin.register(Brand)
 class BrandAdmin(admin.ModelAdmin):
 
-    list_display = ('name',)
+    list_display = ('name','friendly_name')
     list_filter = ('name',)
     search_fields = ('name',)
 
@@ -22,7 +22,16 @@ class BrandAdmin(admin.ModelAdmin):
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
 
-    list_display = ('name','brand', 'category')
-    list_filter = ('name', 'brand')
+    list_display = (
+        'sku',
+        'name',
+        'brand',
+        'category',
+        'price',
+        'gender',
+    )
+
+    ordering = ('sku',)
+
+    list_filter = ('brand',)
     search_fields = ('brand', 'gender')
-    
