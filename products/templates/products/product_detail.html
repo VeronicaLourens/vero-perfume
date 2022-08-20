@@ -32,20 +32,67 @@
             </div>
         </div>      
         <div class="col col-12 col-md-6 col-lg-4">
-            <div class="card-body pb-0">
-                <p class="mb-0">{{ product.name }}</p>
+            <div class="col-sm-12 text-center">
+                <h2 class="mb-3 font-weight-bold">{{ product.name }}</h2>
             </div>
-            <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
-            {% if product.rating %}
-                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
-            {% else %}
-                <small class="text-muted">No Rating</small>
-            {% endif %}
-            {% if product.gender %}
-                <small class="text-muted">{{ product.gender }}</small>
-            {% else %}
-                <small class="text-muted">Unisex</small>
-            {% endif %}
+             <div class="row justify-content-center">
+                <div class="col-sm-6 text-center">
+                    <small class="fw-bold">{{ product.category.friendly_name }}</small>
+                </div>
+             </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-6 text-center">
+                    {% if product.gender %}
+                    <small class="text-muted">{{ product.gender }}</small>
+                    {% else %}
+                    <small class="text-muted">Unisex</small>
+                    {% endif %}
+                </div>
+                <div class="col-sm-6 text-center">
+                    {% if product.rating %}
+                    <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                    {% else %}
+                    <small class="text-muted">No Rating</small>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-sm-12 my-4">
+                <div class="row size-variants radio-group d-flex">
+                    <div class="col-sm-12">
+                        <input type="radio" class="size-input mx-3" name="size" value="size" checked readonly>
+                        <label for="size">30ml</label>
+                        <p class="mx-5 float-right ">€{{ product.price }}</p>
+                    </div>
+                    <div class="col-sm-12">
+                        <input type="radio" class="size-input mx-3" name="size" value="size" checked readonly>
+                        <label for="size">50ml</label>
+                        <p class="mx-5 float-right ">€{{ product.price }}</p>
+                    </div>
+                    <div class="col-sm-12">
+                        <input type="radio" class="size-input mx-3" name="size" value="size" checked readonly>
+                        <label for="size">75ml</label>
+                        <p class="mx-5 float-right ">€{{ product.price }}</p>
+                    </div>
+                    <div class="col-sm-12">
+                        <input type="radio" class="size-input mx-3" name="size" value="size" checked readonly>
+                        <label for="size">100ml</label>
+                        <p class="mx-5 float-right ">€{{ product.price }}</p>
+                    </div>
+                </div>
+                <div class="add-to-cart my-5 text-center">
+                    <a href="{% url 'products' %}" class="btn btn-success btn-shop-now fs-4">
+                        <i class="fas fa-shopping-cart fa-lg mr-3"></i>
+                        Add to cart
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-12"></div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col mt-3">
+            <h2 class="">Description</h2>
+            <hr class="w-70 mb-1">
             <p class="mt-3">{{ product.description }}</p>
         </div>
     </div>
