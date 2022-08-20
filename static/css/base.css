@@ -50,7 +50,7 @@ a {
 
 /*----------------------------navbar */
 .logo-img {
-    max-width: 100px;
+    max-width: 80px;
     border-radius: 50%;
 }
 
@@ -139,6 +139,12 @@ a {
 }
 
 
+.card-img-top {
+    width: 220px;
+    height: auto;
+}
+
+
 
 
 /*----------------------------footer */
@@ -162,10 +168,9 @@ a {
 
 @media (min-width: 991px) {
 
-   /*------------------------product page */
 
    .product-page-container {
-       margin-top: 100px;
+       margin-top: 80px;
    }
 
 }
@@ -174,6 +179,10 @@ a {
 
     .header-container {
         padding-top: 60px;
+    }
+
+    .product-page-container {
+        margin-top: 0px;
     }
 
 }

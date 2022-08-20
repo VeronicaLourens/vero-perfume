@@ -20,7 +20,7 @@
             <hr class="w-50 mb-1">
         </div>
     </div>
-    <div class="row">
+    <div class="row justify-content-center">
         <div class="product-container ">
             <div class="row my-2">
 
@@ -28,7 +28,7 @@
             <div class="row">
                 {% for product in products %}
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                    <div class="card h-100 border-0">
+                    <div class="card h-100 border-0 justify-content-center align-items-center">
                         {% if product.image %}
                         <a href="">
                             <img class="card-img-top img-fluid" src="{{ product.image_url }}" alt="{{ product.name }}">
@@ -52,6 +52,15 @@
                                         5</small>
                                     {% else %}
                                     <small class="text-muted">No Rating</small>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    {% if product.gender %}
+                                    <small class="text-muted">{{ product.gender }}</small>
+                                    {% else %}
+                                    <small class="text-muted">Unisex</small>
                                     {% endif %}
                                 </div>
                             </div>

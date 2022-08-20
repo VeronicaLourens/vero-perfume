@@ -48,10 +48,12 @@ class Product(models.Model):
 
     MEN = 'Men'
     WOMEN = 'Women'
+    UNISEX = 'Unisex'
 
     GENDER_CHOICES = [
         (MEN, 'Men'),
-        (WOMEN, 'Women')
+        (WOMEN, 'Women'),
+        (UNISEX, 'Unisex')
     ]
 
     SIZE_CHOICES = [
