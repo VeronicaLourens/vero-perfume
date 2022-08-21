@@ -1,18 +1,33 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Product
+from .models import Product, Category, Brand
 from django.contrib import messages
 from django.db.models import Q
 
 def products(request):
-    """ 
+    """
     To render all products page.
     Sorting, filtering and search queries.
     """
 
     products = Product.objects.all()
     query = None
+    categories = None
+    brands = None
 
     if request.GET:
+
+        if 'brand' in request.GET:
+            brands = request.GET['brand'].split(',')
+            products = products.filter(brand__name__in=brands)
+            brands = Category.objects.filter(name__in=brands)
+
+
+        if 'category' in request.GET:
+            categories = request.GET['category'].split(',')
+            products = products.filter(category__name__in=categories)
+            categories = Category.objects.filter(name__in=categories)
+
+
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
@@ -25,6 +40,8 @@ def products(request):
     context = {
         'products': products,
         'search_term': query,
+        'current_categories': categories,
+        'current_brands': brands,
     }
 
     return render(request, 'products/products.html', context)

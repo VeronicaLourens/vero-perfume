@@ -19,13 +19,13 @@
                 Brands
             </a>
             <div class="dropdown-menu" aria-labelledby="brands-link">
-                <a href="" class="dropdown-item">Chloé</a>
-                <a href="" class="dropdown-item">DIOR</a>
-                <a href="" class="dropdown-item">Hugo Boss</a>
-                <a href="" class="dropdown-item">GUCCI</a>
-                <a href="" class="dropdown-item">Sarah Baker</a>
-                <a href="" class="dropdown-item">M. Micallef</a>
-                <a href="" class="dropdown-item">Others</a>
+                <a href="{% url 'products' %}?brand=Chloé" class="dropdown-item">Chloé</a>
+                <a href="{% url 'products' %}?brand=DIOR" class="dropdown-item">DIOR</a>
+                <a href="{% url 'products' %}?brand=Boss" class="dropdown-item">Hugo Boss</a>
+                <a href="{% url 'products' %}?brand=Gucci" class="dropdown-item">GUCCI</a>
+                <a href="{% url 'products' %}?brand=Sarah Baker" class="dropdown-item">Sarah Baker</a>
+                <a href="{% url 'products' %}?brand=M. Micallef" class="dropdown-item">M. Micallef</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All brands</a>
             </div>
         </li>
         <li class="main-nav-item dropdown">
@@ -34,9 +34,9 @@
                 Special Offers
             </a>
             <div class="dropdown-menu" aria-labelledby="sale-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Sale</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class=" dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=sale" class="dropdown-item">Sale</a>
             </div>
         </li>
     </ul>
