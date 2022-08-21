@@ -66,6 +66,7 @@ def products(request):
         'current_categories': categories,
         'current_brands': brands,
         'gender': gender,
+        'current_sorting': current_sorting,
     }
 
     return render(request, 'products/products.html', context)

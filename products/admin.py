@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Category, Brand, Product
+from .models import Category, Brand, Gender, Product
 
 # Register models to admin
 
@@ -12,6 +12,13 @@ class CategoryAdmin(admin.ModelAdmin):
 
 @admin.register(Brand)
 class BrandAdmin(admin.ModelAdmin):
+
+    list_display = ('name','friendly_name')
+    list_filter = ('name',)
+    search_fields = ('name',)
+
+@admin.register(Gender)
+class GenderAdmin(admin.ModelAdmin):
 
     list_display = ('name','friendly_name')
     list_filter = ('name',)
