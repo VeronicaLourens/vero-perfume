@@ -41,6 +41,26 @@ class Brand(models.Model):
         return self.friendly_name
 
 
+class Gender(models.Model):
+    """
+    To create product's gender.
+    """
+
+    name = models.CharField(max_length=254)
+    friendly_name = models.CharField(
+        max_length=254,
+        null=True,
+        blank=True
+    )
+
+    def __str__(self):
+        return self.name
+
+    def get_friendly_name(self):
+        return self.friendly_name
+
+
+
 class Product(models.Model):
     """
     To create product with the product details.

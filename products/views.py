@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Product, Category, Brand
+from .models import Product, Category, Brand, Gender
 from django.contrib import messages
 from django.db.models import Q
 
@@ -22,13 +22,7 @@ def products(request):
         if 'gender' in request.GET:
             gender = request.GET['gender'].split(',')
             products = products.filter(gender__in=gender)
-
-            # if 'men' in gender:
-            #     gender.append('Men')
-            # if 'women' in gender:
-            #     gender.append('Women')
-            # if 'unisex' in gender:
-            #     gender.append('Unisex')
+            gender = Category.objects.filter(name__in=gender)
 
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
