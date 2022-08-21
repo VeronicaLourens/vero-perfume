@@ -15,8 +15,20 @@ def products(request):
     brands = None
     sort = None
     direction = None
+    gender = None
 
     if request.GET:
+
+        if 'gender' in request.GET:
+            gender = request.GET['gender'].split(',')
+            products = products.filter(gender__in=gender)
+
+            # if 'men' in gender:
+            #     gender.append('Men')
+            # if 'women' in gender:
+            #     gender.append('Women')
+            # if 'unisex' in gender:
+            #     gender.append('Unisex')
 
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
@@ -59,6 +71,7 @@ def products(request):
         'search_term': query,
         'current_categories': categories,
         'current_brands': brands,
+        'gender': gender,
     }
 
     return render(request, 'products/products.html', context)

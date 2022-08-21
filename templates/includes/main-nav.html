@@ -7,6 +7,7 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}?sort=brand&direction=asc" class="dropdown-item">By Brand</a>
+                <a href="{% url 'products' %}?sort=gender&direction=desc" class="dropdown-item">By Gender</a>
                 <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item">By Rating</a>
@@ -26,6 +27,19 @@
                 <a href="{% url 'products' %}?brand=Sarah Baker" class="dropdown-item">Sarah Baker</a>
                 <a href="{% url 'products' %}?brand=M. Micallef" class="dropdown-item">M. Micallef</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All brands</a>
+            </div>
+        </li>
+        <li class="main-nav-item dropdown">
+            <a href="{% url 'products' %}" class="text-black nav-link" href="#" id="gender-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Gender
+            </a>
+            <div class="dropdown-menu" aria-labelledby="gender-link">
+               
+                <a href="{% url 'products' %}?sort=gender&direction=desc" class="dropdown-item">Women</a>
+                <a href="{% url 'products' %}?gender=men" class="dropdown-item ">Men</a>
+                <a href="{% url 'products' %}?gender=unisex" class="dropdown-item">Unisex</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
         <li class="main-nav-item dropdown">
