@@ -50,14 +50,14 @@
                         </p>
                     {% endif %}
                     {% if product.gender %}
-                        <small class="text-muted">{{ product.gender }} | </small>
+                        <p class="text-muted mt-3">{{ product.gender }}</p>
                     {% else %}
-                        <small class="text-muted">N/A</small>
+                        <p class="text-muted">N/A</p>
                     {% endif %}
                     {% if product.rating %}
-                        <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                        <p class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</p>
                     {% else %}
-                        <small class="text-muted">No Rating</small>
+                        <p class="text-muted">No Rating</p>
                     {% endif %}
                 </div>
             </div>
@@ -85,14 +85,19 @@
                         <p class="mx-5 float-right ">€{{ product.price }}</p>
                     </div>
                 </div>
-                <div class="add-to-cart my-5 text-center">
-                    <a href="{% url 'products' %}" class="btn btn-success btn-shop-now fs-4">
-                        <i class="fas fa-shopping-cart fa-lg mr-3"></i>
-                        Add to cart
-                    </a>
-                </div>
             </div>
             <div class="col-sm-12"></div>
+        </div>
+    </div>
+    <div class="row add-to-cart my-5 justify-content-center">
+        <div class="col-12 text-center">
+            <a href="{% url 'products' %}" class="btn btn-success btn-shop-now fs-4">
+                Back to Products
+            </a>
+            <a href="{% url 'products' %}" class="btn btn-success btn-shop-now fs-4">
+                <i class="fas fa-shopping-cart fa-md mr-3"></i>
+                Add to cart
+            </a>
         </div>
     </div>
     <div class="row justify-content-center">
