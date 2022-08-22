@@ -151,6 +151,11 @@ a {
     margin-top: 200px;
 }
 
+a.category-badge>span.badge:hover {
+    background: #3A36BF !important;
+    color: #fff !important;
+}
+
 
 
 

@@ -17,28 +17,53 @@
     <div class="row mt-5 pt-5">
         <div class="col text-center mt-3">
             <h2 class="">Products</h2>
-
-            {% for c in current_categories %}
-            <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
-                <span
-                    class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
-            </a>
-            {% endfor %}
+            {% if current_categories %}
+                <div class="col text-center">
+                    {% for c in current_categories %}
+                    <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
+                        <span
+                            class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
+                    </a>
+                    {% endfor %}
+                </div>
+            {% endif %}
+            {% if brands %}
+                <div class="col text-center">
+                        {% for b in brands %}
+                        <a class="category-badge text-decoration-none" href="{% url 'products' %}?brand={{ b.friendly_name }}">
+                            <span
+                                class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ b.friendly_name }}</span>
+                        </a>
+                    {% endfor %}
+                </div>
+            {% endif %}
            
             <hr class="w-100 mb-1">
         </div>
     </div>
     <div class="row justify-content-center">
         <div class="product-container ">
-            <div class="row my-2 justify-content-center">
-                <div class="col-12">
-                    <p class="text-muted mt-1 text-center">
+            <div class="row my-2 mx-3 justify-content-center">
+                <div class="col-6 justify-content-start">
+                    <p class="text-muted mt-1">
                         {% if search_term or current_categories or current_sorting != 'None_None' %}
                         <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
                         {% endif %}
                         {{ products|length }} Products{% if search_term %} found for
                         <strong>"{{ search_term }}"</strong>{% endif %}
                     </p>
+                </div>
+                <div class="col-6 my-auto order-md-last d-flex justify-content-end">
+                    <div class="sort-select-wrapper w-50">
+                        <select id="sort-selector"
+                            class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                            <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
+                            <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}> Price(low to high)</option>
+                            <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price(high to low)</option>
+                            <option value="rating_asc" {% if current_sorting == 'rating_asc' %}selected{% endif %}>Rating (low to high)</option>
+                            <option value="rating_desc"{% if current_sorting == 'rating_desc' %}selected{% endif %}>Rating (high to low)</option>
+                        </select>
+                    </div>
                 </div>
             </div>
             <div class="row">
