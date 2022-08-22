@@ -137,3 +137,6 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+    def get_size(self):
+        return self.SIZE_CHOICES[self.get_size]
