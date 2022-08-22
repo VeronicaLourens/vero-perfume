@@ -147,6 +147,13 @@ a {
 
 /*---------------------product page */
 
+.product-card:hover {
+    transition: all, .3s ease-in-out;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
 .product-detail-container {
     margin-top: 200px;
 }
