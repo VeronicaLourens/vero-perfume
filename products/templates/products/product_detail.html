@@ -36,32 +36,36 @@
                 <h2 class="mb-3 font-weight-bold">{{ product.name }}</h2>
             </div>
              <div class="row justify-content-center">
-                <div class="col-sm-6 text-center">
+                <div class="col-6 text-center">
+                    {% if product.brand %}
+                    <p class="small mt-1 mb-0">
+                        <a class="text-black" href="{% url 'products' %}?brand={{ product.brand.name }}">
+                            <i class="fas fa-tag mr-1"></i>{{ product.brand.friendly_name }}
+                        </a>
+                    </p>
+                    {% endif %}
+                </div>
+                <div class="col-6 text-center">
                     <small class="fw-bold">{{ product.category.friendly_name }}</small>
                 </div>
              </div>
-            <div class="row justify-content-center">
-                <div class="col">
-                    {% if product.brand %}
-                        <p class="small mt-1 mb-0">
-                            <a class="text-muted" href="{% url 'products' %}?brand={{ product.brand.name }}">
-                                <i class="fas fa-tag mr-1"></i>{{ product.brand.friendly_name }}
-                            </a>
-                        </p>
-                    {% endif %}
+             <div class="row justify-content-center">
+                <div class="col-6 text-center">
                     {% if product.gender %}
-                        <p class="text-muted mt-3">{{ product.gender }}</p>
-                    {% else %}
-                        <p class="text-muted">N/A</p>
-                    {% endif %}
-                    {% if product.rating %}
-                        <p class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</p>
-                    {% else %}
-                        <p class="text-muted">No Rating</p>
+                    <p class="small mt-1 mb-0 text-muted">
+                        <i class="fas fa-image-portrait mr-1"></i>{{ product.gender }}
+                    </p>
                     {% endif %}
                 </div>
-            </div>
-           
+                 <div class="col-6 text-center">
+                    {% if product.rating %}
+                    <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} /
+                        5</small>
+                    {% else %}
+                    <small class="text-muted">No Rating</small>
+                    {% endif %}
+                 </div>
+             </div>
             <div class="col-sm-12 my-4">
                 <div class="row size-variants radio-group d-flex">
                     <div class="col-sm-12">
