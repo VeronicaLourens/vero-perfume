@@ -153,6 +153,13 @@ a {
     transform: scale(1.1);
 }
 
+.fa-star {
+    color: rgb(247, 188, 28);
+}
+
+.fa-tag {
+    color: #3A36BF;
+}
 
 .product-detail-container {
     margin-top: 200px;
