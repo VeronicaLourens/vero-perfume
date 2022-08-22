@@ -147,10 +147,10 @@ a {
 
 /*---------------------product page */
 
-.product-card:hover {
+.product-card img:hover {
     transition: all, .3s ease-in-out;
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.13);
+    transform: scale(1.13);
 }
 
 .fa-star {
