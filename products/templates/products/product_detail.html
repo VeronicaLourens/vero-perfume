@@ -35,7 +35,7 @@
             <div class="col-sm-12 text-center">
                 <h2 class="mb-3 font-weight-bold">{{ product.name }}</h2>
             </div>
-             <div class="row justify-content-center">
+            <div class="row justify-content-center">
                 <div class="col-6 text-center">
                     {% if product.brand %}
                     <p class="small mt-1 mb-0">
@@ -48,8 +48,8 @@
                 <div class="col-6 text-center">
                     <small class="fw-bold">{{ product.category.friendly_name }}</small>
                 </div>
-             </div>
-             <div class="row justify-content-center">
+            </div>
+            <div class="row justify-content-center">
                 <div class="col-6 text-center">
                     {% if product.gender %}
                     <p class="small mt-1 mb-0 text-muted">
@@ -57,17 +57,20 @@
                     </p>
                     {% endif %}
                 </div>
-                 <div class="col-6 text-center">
+                <div class="col-6 text-center">
                     {% if product.rating %}
                     <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} /
                         5</small>
                     {% else %}
                     <small class="text-muted">No Rating</small>
                     {% endif %}
-                 </div>
-             </div>
-            <div class="col-sm-12 my-4">
+                </div>
+            </div>
+            <div class="col-sm-12 my-3">
                 <div class="row size-variants radio-group d-flex">
+                   <div class="col-sm-12">
+                       <p class="ml-3 float-left">Size:</p>
+                   </div>
                     <div class="col-sm-12">
                         <input type="radio" class="size-input mx-3" name="size" value="size" checked readonly>
                         <label for="size">30ml</label>
