@@ -156,8 +156,15 @@ a.category-badge>span.badge:hover {
     color: #fff !important;
 }
 
+.btt-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
 
-
+.btt-link {
+    cursor: pointer;
+}
 
 
 
