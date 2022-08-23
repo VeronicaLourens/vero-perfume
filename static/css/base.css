@@ -181,6 +181,12 @@ a.category-badge>span.badge:hover {
 }
 
 
+/*-------------------------cart page */
+.cart-container {
+    margin-top: 180px;
+}
+
+
 
 /*----------------------------footer */
 
@@ -208,6 +214,7 @@ a.category-badge>span.badge:hover {
        margin-top: 80px;
    }
 
+
 }
 
 @media (max-width: 991px) {
@@ -226,6 +233,10 @@ a.category-badge>span.badge:hover {
 
     .product-detail-container {
         margin-top: 50px;
+    }
+
+    .cart-container {
+        margin-top: 80px;
     }
 
 }
