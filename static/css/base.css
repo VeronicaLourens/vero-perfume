@@ -184,6 +184,10 @@ a.category-badge>span.badge:hover {
     cursor: pointer;
 }
 
+.product-size-hidden {
+    display: none;
+}
+
 
 /*-------------------------cart page */
 .cart-container {

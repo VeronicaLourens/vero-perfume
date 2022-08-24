@@ -107,31 +107,40 @@
                                         <div class="input-group">
                                             <label for="size_input" hidden>Size</label>
                                             <select class="form-control mx-auto" name="product_size"
-                                                id='id_product_size'>
+                                                id="product-size">
                                                 {% for size in form.size %}
-                                                <option value="{{ size }}"></option>
+                                                <option value="30ml">{{ size }}</option>
+                                                <!-- <option value="50ml">{{ size }}</option>
+                                                <option value="75ml">{{ size }}</option>
+                                                <option value="100ml">{{ size }}</option> -->
                                                 {% endfor %}
                                             </select>
                                         </div>
                                         {% endif %}
                                     </div>
+                                    <div id="30ml" class="product-size-hidden"></div>
+                                    <div id="50ml" class="product-size-hidden"></div>
+                                    <div id="75ml" class="product-size-hidden"></div>
+                                    <div id="100ml" class="product-size-hidden"></div>
+
                                 </div>
+                                 
                                 <div class="col-6">
                                     <p class="mt-1"><strong>Price:</strong></p>
                                     <div class="form-group w-100">
                                         {% if product.price %}
-                                        {% for price in prices %}
-                                        <div class="input-group">
-                                            <label for="size_input" hidden>Price</label>
-                                            <p class="mx-auto" name="product_price"
-                                                id='id_product_price'>
-                                                <option value="{{ price }}">€ {{ price }}</option>
-                                            </p>
-                                        </div>
-                                        {% endfor %}
+                                            {% for price in prices %}
+                                            <div class="hidden">
+                                                <label for="size_input" hidden>Price</label>
+                                                <p class="mx-auto" name="product_price" id='id_product_price'>
+                                                    <option value="{{ price }}">€ {{ price }}</option>
+                                                </p>
+                                            </div>
+                                            {% endfor %}
                                         {% endif %}
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                         <div class="col-12">
@@ -174,3 +183,9 @@
     </div>
 </div>
 {% endblock content %}
+
+{% block postloadjs %}
+    <script src="{% static 'js/product.js' %}"></script>
+
+{% endblock postloadjs %}
+
