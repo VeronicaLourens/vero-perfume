@@ -66,37 +66,9 @@
                     {% endif %}
                 </div>
             </div>
-            <!-- <div class="col-sm-12 my-2">
-                <div class="row size-variants radio-group d-flex">
-                    <div class="col-sm-12">
-                        <p class="ml-3 float-left">Size:</p>
-                    </div>
-                    <div class="col-sm-12">
-                        <input type="radio" class="size-input mx-3" name="size" value="size" checked readonly>
-                        <label for="size">30ml</label>
-                        <p class="mx-5 float-right ">€{{ product.price }}</p>
-                    </div>
-                    <div class="col-sm-12">
-                        <input type="radio" class="size-input mx-3" name="size" value="size" checked readonly>
-                        <label for="size">50ml</label>
-                        <p class="mx-5 float-right ">€{{ product.price }}</p>
-                    </div>
-                    <div class="col-sm-12">
-                        <input type="radio" class="size-input mx-3" name="size" value="size" checked readonly>
-                        <label for="size">75ml</label>
-                        <p class="mx-5 float-right ">€{{ product.price }}</p>
-                    </div>
-                    <div class="col-sm-12">
-                        <input type="radio" class="size-input mx-3" name="size" value="size" checked readonly>
-                        <label for="size">100ml</label>
-                        <p class="mx-5 float-right ">€{{ product.price }}</p>
-                    </div>
-                </div>
-            </div> -->
             <div class="col-sm-12">
                 <form action="" class="form ml-3" action="{% url 'add_to_cart' product.id %}" method="POST" enctype="multipart/form-data">
                     {% csrf_token %}
-                    
                     <div class="form-row">
                         <div class="col-12">
                             <div class="row">
@@ -119,11 +91,13 @@
                                     </div>
 
                                     <!--The below code works that displays different prices base on the size selected-->
-                                    <div id="30ml" class="product-size-hidden">€ 1{{ price }}</div>
-                                    <div id="50ml" class="product-size-hidden">€ 2{{ price }}</div>
-                                    <div id="75ml" class="product-size-hidden">€ 3{{ price }}</div>
-                                    <div id="100ml" class="product-size-hidden">€ {{ product.price }}</div>
-
+                                    <div>
+                                        <p class="mt-1"><strong>Price:</strong></p>
+                                        <div id="30ml" class="product-size-hidden">€ 1{{ price }}</div>
+                                        <div id="50ml" class="product-size-hidden">€ 2{{ price }}</div>
+                                        <div id="75ml" class="product-size-hidden">€ 3{{ price }}</div>
+                                        <div id="100ml" class="product-size-hidden">€ {{ product.price }}</div>
+                                    </div>
                                 </div>
                                  
                                 <!--Display different prices-->
@@ -142,7 +116,6 @@
                                         {% endif %}
                                     </div>
                                 </div>
-
                             </div>
                         </div>
 

@@ -95,12 +95,6 @@ def product_detail(request, product_id):
             new_price = round(price, 2)
             prices.append(new_price)
             reduction += Decimal(.30)
-
-            if size == '100ml':
-                price = product.price
-
-            elif size == '75ml':
-                price = new_price
                 
 
     context = {
