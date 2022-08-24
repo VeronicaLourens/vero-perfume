@@ -71,6 +71,12 @@ a {
     transform: scale(1.1);
 }
 
+.list-inline-item:hover,
+.main-nav-item:hover {
+    border-bottom: 1px solid #3A36BF;
+
+}
+
 .border-black {
     border: 1px solid black !important;
     border-radius: 20px;
