@@ -3,6 +3,9 @@ from .models import Product, Category, Brand, Gender
 from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
+from decimal import Decimal
+from .forms import AddToCartForm, SIZE_CHOICES
+
 
 def products(request):
     """
@@ -81,9 +84,22 @@ def product_detail(request, product_id):
     """ To render the product detail page."""
 
     product = get_object_or_404(Product, pk=product_id)
+    form = AddToCartForm()
+    
+
+    if product.size:
+        reduction = Decimal(1)
+        prices = []
+        for size in SIZE_CHOICES:
+            price = product.price * reduction
+            new_price = round(price, 2)
+            prices.append(new_price)
+            reduction += Decimal(.30)
 
     context = {
         'product': product,
+        'prices': prices,
+        'form': form
     }
 
     return render(request, 'products/product_detail.html', context)

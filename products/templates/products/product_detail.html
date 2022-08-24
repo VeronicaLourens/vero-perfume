@@ -66,7 +66,7 @@
                     {% endif %}
                 </div>
             </div>
-            <div class="col-sm-12 my-2">
+            <!-- <div class="col-sm-12 my-2">
                 <div class="row size-variants radio-group d-flex">
                     <div class="col-sm-12">
                         <p class="ml-3 float-left">Size:</p>
@@ -92,19 +92,61 @@
                         <p class="mx-5 float-right ">€{{ product.price }}</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="col-sm-12">
-                <form action="" class="form ml-3" action="{% url 'add_to_cart' product.id %}" method="POST">
+                <form action="" class="form ml-3" action="{% url 'add_to_cart' product.id %}" method="POST" enctype="multipart/form-data">
                     {% csrf_token %}
+                    
                     <div class="form-row">
                         <div class="col-12">
-                            <p class="mt-1"><strong>Quantity:</strong></p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="mt-1"><strong>Size:</strong></p>
+                                    <div class="form-group w-100">
+                                        {% if product.size %}
+                                        <div class="input-group">
+                                            <label for="size_input" hidden>Size</label>
+                                            <select class="form-control mx-auto" name="product_size"
+                                                id='id_product_size'>
+                                                {% for size in form.size %}
+                                                <option value="{{ size }}"></option>
+                                                {% endfor %}
+                                            </select>
+                                        </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <p class="mt-1"><strong>Price:</strong></p>
+                                    <div class="form-group w-100">
+                                        {% if product.price %}
+                                        {% for price in prices %}
+                                        <div class="input-group">
+                                            <label for="size_input" hidden>Price</label>
+                                            <p class="mx-auto" name="product_price"
+                                                id='id_product_price'>
+                                                <option value="{{ price }}">€ {{ price }}</option>
+                                            </p>
+                                        </div>
+                                        {% endfor %}
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            
+
+                        </div>
+                        <div class="col-12">
+                            <!--<p class="mt-1"><strong>Quantity:</strong></p>
                             <div class="form-group w-100">
                                 <div class="input-group">
+                                    <label for="qty_input" hidden>Quantity</label>
                                     <input class="form-control qty_input" type="number" name="quantity" value="1"
                                         min="1" max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
                                 </div>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                     <div class="row add-to-cart justify-content-center">
