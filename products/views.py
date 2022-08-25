@@ -95,7 +95,6 @@ def product_detail(request, product_id):
             new_price = round(price, 2)
             prices.append(new_price)
             reduction += Decimal(.30)
-                
 
     context = {
         'product': product,
