@@ -117,7 +117,7 @@ class Product(models.Model):
     size = models.CharField(
         choices=SIZE_CHOICES,
         max_length=12,
-        default='50ml'
+        default='100ml'
     )
     gender = models.CharField(
         choices=GENDER_CHOICES,

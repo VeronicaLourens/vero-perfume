@@ -32,6 +32,14 @@
             <div class="product-details-container mb-5 mt-md-5">
                 <h3 class="mb-0">{{ product.name }}</h3>
                 <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+                 <!--The below code works that displays different prices base on the size selected-->
+                <div>
+                    <p class="mt-1"><strong>Price:</strong></p>
+                    <div id="30ml" class="product-size-hidden">€ 1{{ price }}</div>
+                    <div id="50ml" class="product-size-hidden">€ 2{{ price }}</div>
+                    <div id="75ml" class="product-size-hidden">€ 3{{ price }}</div>
+                    <div id="100ml" class="product-size-hidden">€ {{ product.price }}</div>
+                </div>
                  {% if product.brand %}
                 <p class="small mt-1 mb-0">
                     <a class="text-black" href="{% url 'products' %}?brand={{ product.brand.name }}">
@@ -67,9 +75,9 @@
 
                                 <!--method 2-->
                                 <option value="30ml">30ml</option>
-                                <option value="50ml" selected>50ml</option>
+                                <option value="50ml">50ml</option>
                                 <option value="75ml">75ml</option>
-                                <option value="100ml">100ml</option>
+                                <option value="100ml" selected>100ml</option>
                             </select>
                         {% endif %}
                         </div>
