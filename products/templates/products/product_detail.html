@@ -31,8 +31,6 @@
         <div class="col-12 col-md-6 col-lg-4">
             <div class="product-details-container mb-5 mt-md-5">
                 <h3 class="mb-0">{{ product.name }}</h3>
-                
-                
                  {% if product.brand %}
                 <p class="small mt-1 mb-0">
                     <a class="text-black" href="{% url 'products' %}?brand={{ product.brand.name }}">
@@ -52,40 +50,52 @@
                 {% else %}
                 <small class="text-muted">No Rating</small>
                 {% endif %}
-               
-                
                 <form class="form" action="{% url 'add_to_cart' product.id %}" method="POST">
                     {% csrf_token %}
                     <div class="form-row">
-                       {% if product.size %}
-                        <div class="col-12">
-                            
-                            <!--The below code works that displays different prices base on the size selected-->
-                            <p class="lead mb-0 text-left font-weight-bold">€ {{ product.price }}</p>
-                            <div>
-                                
-                                <p id="30ml" class="product-size-hidden">€ 1{{ price }}</p>
-                                <p id="50ml" class="product-size-hidden">€ 2{{ price }}</p>
-                                <p id="75ml" class="product-size-hidden">€ 3{{ price }}</p>
-                                <p id="100ml" class="product-size-hidden">€ {{ product.price }}</p>
-                            </div>
-                            <p class="mt-3"><strong>Size:</strong></p>
-                            <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
-                                <!--method 1-->
-                                {% for size in form.size %}
-                                <option>{{ size }}</option>
-                                {% endfor %}
+                        <div class="col-6">
 
-                                <!--method 2-->
-                                <!-- <option value="30ml">30ml</option>
-                                <option value="50ml">50ml</option>
-                                <option value="75ml">75ml</option>
-                                <option value="100ml" selected>100ml</option> -->
-                            </select>
-                        {% endif %}
+                            <!--The below code works that displays different prices base on the size selected-->
+                            <div>
+                                <p class="mt-1"><strong>Price:</strong></p>
+                                <div id="30ml" class="product-size-hidden">€ 1{{ price }}</div>
+                                <div id="50ml" class="product-size-hidden">€ 2{{ price }}</div>
+                                <div id="75ml" class="product-size-hidden">€ 3{{ price }}</div>
+                                <div id="100ml" class="product-size-hidden">€ {{ product.price }}</div>
+                            </div>
+                            <p class="mt-1"><strong>Size:</strong></p>
+
+                            <!--Display the dropdown list of sizes-->
+                            <div class="form-group w-100">
+                                {% if product.size %}
+                                <div class="input-group">
+                                    <label for="size_input" hidden>Size</label>
+                                    <select class="form-control mx-auto" name="product_size" id="product-size">
+                                        {% for size in form.size %}
+                                        <option>{{ size }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                                {% endif %}
+                            </div>
                         </div>
 
-                       
+                        <!--Display different prices-->
+                        <!-- <div class="col-6">
+                            <p class="mt-1"><strong>Price:</strong></p>
+                            <div class="form-group w-100">
+                                {% if product.price %}
+                                {% for price in prices %}
+                                <div class="hidden">
+                                    <label for="size_input" hidden>Price</label>
+                                    <p class="mx-auto" name="product_price" id='id_product_price'>
+                                        <option value="{{ price }}">€ {{ price }}</option>
+                                    </p>
+                                </div>
+                                {% endfor %}
+                                {% endif %}
+                            </div>
+                        </div> -->
                        
                         <div class="col-12">
                             <p class="mt-3"><strong>Quantity:</strong></p>
@@ -112,7 +122,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="col{% if s %}-12 mt-2{% endif %}">
                             <a href="{% url 'products' %}" class="btn btn-outline-black btn-shop-now rounded-0 mt-5">
                                 <span class="icon">
