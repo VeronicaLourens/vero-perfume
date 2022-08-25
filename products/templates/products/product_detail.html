@@ -56,7 +56,7 @@
                 <form class="form" action="{% url 'add_to_cart' product.id %}" method="POST">
                     {% csrf_token %}
                     <div class="form-row">
-                      
+                       {% if product.size %}
                         <div class="col-12">
                             <p><strong>Size:</strong></p>
                             <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
@@ -71,6 +71,7 @@
                                 <option value="75ml">75ml</option>
                                 <option value="100ml">100ml</option> -->
                             </select>
+                        {% endif %}
                         </div>
                        
                         <div class="col-12">
