@@ -327,9 +327,23 @@ Steps to clone the project from GitHub as following:
 
 [Back to top](#vero-perfume)
 ## Media
+
+* The carousel images and card images are from [Unsplash]().
+* 
+
 ## Code
+
+* The code in ```product.js``` is from [How to display content depending on dropdown menue user selection](https://stackoverflow.com/questions/18115916/how-to-display-content-depending-on-dropdown-menue-user-selection)
 
 [Back to top](#vero-perfume)
 # Acknowledgement
+
+Whilst I have tried to deviate as much as possible, I have taken the certain code from the walk through e-commerce project ```Boutique Ado``` at Code Institute which I learn how to build the e-commerce website for a real world application.
+
+I relied upon the support from Code Institue online [tutors](), mentor [Precious Ijege](), [Slack]() community and my [families](). Great thanks to all of those who support my learning journey.
+
+I use ```Django``` documentation, ```W3schools```, ```YouTube``` and ```Stack Overflow``` for general references throughout the project. I watched the tutorial videos on Youtube to gain extra knowledge about Django framework.
+
+[Vero Perfume](https://veroperfume.herokuapp.com/) website is intended for education purpose of completing the Portfolio Project 5 E-commerce project for the Diploma of Full Stack Software Development course at [Code Institue]().
 
 [Back to top](#vero-perfume)
