@@ -39,6 +39,7 @@ I used GitHub Agile project management tool to create user stories using issues 
 | [#11](https://github.com/VeronicaLourens/vero-perfume/issues/11)  Filter and view search product result| As a shopper  |  I want to filter products so that I can quickly find the products I am looking for. | products | Should Have |
 | [#12](https://github.com/VeronicaLourens/vero-perfume/issues/12) Sort products by a specific category  | As a shopper  |  I want to find the best priced or best rated product in a specific category so that I can easily find what I want. | products | Should Have |
 | [#13](https://github.com/VeronicaLourens/vero-perfume/issues/13) Save product to wishlist | As a shopper  |  I want to save product to my wish list so that I can easily select the products to purchase. | products | Should Have |
+| [#35](https://github.com/VeronicaLourens/vero-perfume/issues/35) View and select product size | As a shopper  |  I want to view and select the product size so that I can buy the product with the size and the price as I wish.| products | Should Have |
 
 [Back to top](#vero-perfume)
 
