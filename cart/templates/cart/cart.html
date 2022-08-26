@@ -58,7 +58,7 @@
                                 <div class="form-group">
                                     <div class="input-group">
                                         <div class="input-group-prepend">
-                                            <button class="decrement-qty btn btn-sm btn-black rounded-0"
+                                            <button class="decrement-qty btn btn-sm btn-success rounded-0"
                                                 data-item_id="{{ item.item_id }}"
                                                 id="decrement-qty_{{ item.item_id }}">
                                                 <span>
@@ -70,7 +70,7 @@
                                             name="quantity" value="{{ item.quantity }}" min="1" max="99"
                                             data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
                                         <div class="input-group-append">
-                                            <button class="increment-qty btn btn-sm btn-black rounded-0"
+                                            <button class="increment-qty btn btn-sm btn-success rounded-0"
                                                 data-item_id="{{ item.item_id }}"
                                                 id="increment-qty_{{ item.item_id }}">
                                                 <span>
@@ -81,7 +81,7 @@
                                     </div>
                                 </div>
                             </form>
-                            <a class="update-link text-info"><small>Update</small></a>
+                            <a class="update-item text-info"><small>Update</small></a>
                             <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"
                                 data-product_size="{{ item.size }}"><small>Remove</small></a>
                         </td>
@@ -134,3 +134,12 @@
     </div>
 </div>
 {% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+
+    {% include 'products/includes/qty_input_script.html' %}
+    {% include 'cart/includes/cart_qty_script.html' %}
+
+{% endblock postloadjs %}
+
