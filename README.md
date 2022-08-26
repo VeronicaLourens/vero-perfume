@@ -320,6 +320,11 @@ Steps to clone the project from GitHub as following:
 [Back to top](#vero-perfume)
 ## Content
 
+* Vero Perfume project was inspired by [Code Institute]()'s walk through project ```Boutique Ado```. The code for setting up the e-commerce project, product page, shopping cart, the payment system as well as the JS code are taken and adapted from the tutorial materials.
+
+* I use [Kaggle](https://www.kaggle.com/) to get some of product images and other information.
+* I couldn't find the perfume images from the famous brands on the free image website so that I use the official websites to get the product images and other information. Credit to [Gucci](https://www.gucci.com/us/en/ca/beauty/fragrances/fragrances-for-women-c-fragrances-for-women), [Hugo Boss](https://www.hugoboss.com/fragrances-men/),  [DIOR](https://www.dior.com/nl_nl/beauty/geuren/damesgeur/alle-producten), [Chloé](https://www.chloe.com/nl/fragrance_cod46568417bo.html).
+
 [Back to top](#vero-perfume)
 ## Media
 ## Code
