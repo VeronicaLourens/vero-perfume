@@ -1,6 +1,8 @@
 # Vero Perfume
 Vero Perfume is an e-commerce online shop where sells fine fragrance and perfumes. The site provides a smooth online shopping experience to customers. The site processes online orders, online secured payment method and fast delivery service. The site is accessible across all the devices using different browsers. The site sends out marketing newsletters directly to customers and has a Facebook page to promote the selling business.
 
+Deployed live site: [Vero Perfume](https://veroperfume.herokuapp.com/)
+
 # UX
 ## Agile Project Management
 I used GitHub Agile project management tool to create user stories using issues and planned the user stories into three different stages using Kanban board with three columns that are ```To do```, ```In progress``` and ```Done```. The user stories are labeled with **MoSCoW** techniques to prioritize the project’s tasks.
