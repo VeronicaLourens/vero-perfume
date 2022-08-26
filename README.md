@@ -297,6 +297,21 @@ The project has been deployed to **Heroku** in the early stage of the proejct de
 [Back to top](#vero-perfume)
 # Clone Project
 
+Steps to clone the project from GitHub as following:
+
+* On my GitHub ```vero-perfume``` repository page, click the ```Code``` tab next to the green Gitpod button;
+
+* In the Clone board, click the icon on the right side of the URL under ```HTTPS``` to copy the given URL;
+
+* Go to my local IDE VS Studio Code and click ```Clone Git Repository```.
+
+  
+* Paste the copied project's URL to the search bar, then click enter to select a local repository location for the project.
+
+* Select a repository to complete the clone process.
+
+    ![Clone project](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/clone.png)
+
 [Back to top](#vero-perfume)
 # Credit
 
