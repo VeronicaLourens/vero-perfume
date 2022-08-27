@@ -205,6 +205,14 @@ a.category-badge>span.badge:hover {
 } */
 
 
+.wishlist-link {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    color: #3A36BF;
+}
+
+
 /*-------------------------cart page */
 .cart-container {
     margin-top: 180px;
