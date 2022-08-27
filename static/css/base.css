@@ -196,6 +196,14 @@ a.category-badge>span.badge:hover {
     display: none;
 }
 
+.btn-add-to-cart {
+    margin-top: 10px;
+}
+
+/* .btn-checkout {
+    margin-right: 10px;
+} */
+
 
 /*-------------------------cart page */
 .cart-container {
@@ -266,6 +274,16 @@ a.category-badge>span.badge:hover {
 
     .cart-container {
         margin-top: 80px;
+    }
+
+    
+
+}
+
+@media (max-width: 767px) {
+
+    .btn-checkout {
+        margin-top: 10px;
     }
 
 }
