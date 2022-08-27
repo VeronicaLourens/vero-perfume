@@ -30,13 +30,13 @@
         <div class="col-12 col-md-6 col-lg-4">
             <div class="product-details-container mb-5 mt-md-5">
                 <h3 class="mb-0">{{ product.name }}</h3>
-                 {% if product.brand %}
+                {% if product.brand %}
                 <p class="small mt-1 mb-0">
                     <a class="text-black" href="{% url 'products' %}?brand={{ product.brand.name }}">
                         <i class="fas fa-tag mr-1"></i>{{ product.brand.friendly_name }}
                     </a>
                 </p>
-                 {% endif %}
+                {% endif %}
                 {% if product.gender %}
                 <p class="small mt-1 mb-0">
                     <a class="text-muted" href="{% url 'products' %}?gender={{ product.gender }}">
@@ -57,10 +57,13 @@
                             <!--The below code works that displays different prices base on the size selected-->
                             <div>
                                 <p class="mt-1"><strong>Price:</strong></p>
+                                
+                                    
                                 <div id="30ml" class="product-size-hidden">€ 1{{ price }}</div>
                                 <div id="50ml" class="product-size-hidden">€ 2{{ price }}</div>
                                 <div id="75ml" class="product-size-hidden">€ 3{{ price }}</div>
                                 <div id="100ml" class="product-size-hidden">€ {{ product.price }}</div>
+                               
                             </div>
                             <p class="mt-1"><strong>Size:</strong></p>
 
@@ -103,7 +106,7 @@
                                     <div class="input-group-prepend">
                                         <button class="decrement-qty btn btn-success decrement-qty_{{ product.id }}" 
                                             data-item_id="{{ product.id }}" aria-label="Decrement quantity">
-                                            <span class="icon">
+                                            <span class="qty-icon">
                                                 <i class="fas fa-minus"></i>
                                                 
                                             </span>
@@ -117,7 +120,7 @@
                                     <div class="input-group-append">
                                         <button class="increment-qty btn btn-success increment-qty_{{ product.id }}" 
                                             data-item_id="{{ product.id }}" aria-label="Increment quantity">
-                                            <span class="icon">
+                                            <span class="qty-icon">
                                                 <i class="fas fa-plus"></i>
                                                 
                                             </span>
@@ -129,7 +132,7 @@
                         <div class="row">
                             <div class="col-12 col-md-6">
                                 <a href="{% url 'products' %}"
-                                    class="btn btn-outline-black btn-shop-now rounded-0 mt-5">
+                                    class="btn btn-outline-black btn-shop rounded-0 mt-5">
                                     <span class="icon">
                                         <i class="fas fa-chevron-left mr-2"></i>
                                     </span>
@@ -137,7 +140,7 @@
                                 </a>
                             </div>
                             <div class="col-12 col-md-6">
-                                <input type="submit" class="btn btn-black rounded-0 btn-shop-now 
+                                <input type="submit" class="btn btn-black rounded-0 btn-shop
                                     text-uppercase mt-5" value="Add to Cart">
                             </div>
                         </div>

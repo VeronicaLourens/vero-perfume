@@ -140,3 +140,4 @@ class Product(models.Model):
 
     def get_size(self):
         return self.SIZE_CHOICES[self.get_size]
+        

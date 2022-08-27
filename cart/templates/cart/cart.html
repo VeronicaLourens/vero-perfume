@@ -21,7 +21,6 @@
             <hr>
         </div>
     </div>
-
     <div class="row">
         <div class="col">
             {% if cart_items %}
@@ -31,7 +30,6 @@
                         <tr>
                             <th scope="col">Product Info</th>
                             <th scope="col">Name</th>
-                            <th scope="col">Size</th>
                             <th scope="col">Price</th>
                             <th scope="col">Qty</th>
                             <th scope="col">Subtotal</th>
@@ -40,20 +38,18 @@
 
                     {% for item in cart_items %}
                     <tr>
-                        <td class="p-3 w-25">
-                            <img class="img-fluid rounded" src="{{ item.product.image_url }}">
+                        <td class="p-3">
+                            <img class="img-fluid rounded cart-img" src="{{ item.product.image_url }}">
                         </td>
-                        <td class="py-3">
+                        <td class="py-3 w-10">
                             <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                            <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
-                        </td>
-                        <td class="py-3">
+                            <p class="my-0 small text-muted">sku: {{ item.product.sku|upper }}</p>
                             <p class="my-0">{{ item.product.size }}</p>
                         </td>
                         <td class="py-3">
                             <p class="my-0">€ {{ item.product.price }}</p>
                         </td>
-                        <td class="py-3 w-25">
+                        <td class="py-3">
                             <form class="form update-form" method="POST" action="{% url 'update_cart' item.item_id %}">
                                 {% csrf_token %}
                                 <div class="form-group">
@@ -62,7 +58,7 @@
                                             <button class="decrement-qty btn btn-sm btn-success rounded-0"
                                                 data-item_id="{{ item.item_id }}"
                                                 id="decrement-qty_{{ item.item_id }}">
-                                                <span>
+                                                <span class="qty-icon">
                                                     <i class="fas fa-minus fa-sm"></i>
                                                 </span>
                                             </button>
@@ -74,7 +70,7 @@
                                             <button class="increment-qty btn btn-sm btn-success rounded-0"
                                                 data-item_id="{{ item.item_id }}"
                                                 id="increment-qty_{{ item.item_id }}">
-                                                <span>
+                                                <span class="qty-icon">
                                                     <i class="fas fa-plus fa-sm"></i>
                                                 </span>
                                             </button>
@@ -82,12 +78,18 @@
                                     </div>
                                 </div>
                             </form>
-                            <a class="update-link text-info"><small>Update</small></a>
-                            <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"
-                                data-product_size="{{ item.size }}"><small>Remove</small></a>
+                            <a class="update-link text-dark text-muted">
+                                <small><i class="fas fa-check"></i>  Update</small>
+                            </a>
                         </td>
                         <td class="py-3">
                             <p class="my-0">€ {{ item.product.price | calc_subtotal:item.quantity }}</p>
+                        </td>
+                        <td>
+                            <a class="remove-item text-danger pt-5" id="remove_{{ item.item_id }}"
+                                data-product_size="{{ item.size }}">
+                                <small><i class="fas fa-trash"></i> Delete</small>
+                            </a>
                         </td>
                     </tr>
                     {% endfor %}
@@ -106,15 +108,15 @@
                     </tr>
                     <tr>
                         <td colspan="5" class="text-right">
-                            <a href="{% url 'products' %}" class="btn btn-outline-black btn-success rounded-0 btn-lg mr-3">
+                            <a href="{% url 'products' %}" class="btn btn-outline-black btn-shop rounded-0 mr-3">
                                 <span class="icon">
-                                    <i class="fas fa-chevron-left"></i>
+                                    <i class="fas fa-chevron-left mr-2"></i>
                                 </span>
                                 <span class="text-uppercase">Keep Shopping</span>
                             </a>
-                            <a href="" class="btn btn-black rounded-0 btn-lg btn-success">
-                                <span class="text-uppercase">Secure Checkout</span>
-                                <span class="icon">
+                            <a href="" class="btn btn-black rounded-0 btn-shop">
+                                <span class="text-uppercase mr-2">Secure Checkout</span>
+                                <span class="">
                                     <i class="fas fa-lock"></i>
                                 </span>
                             </a>

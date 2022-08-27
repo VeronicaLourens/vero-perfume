@@ -110,10 +110,10 @@ a {
     font-family: Bree Serif;
 }
 
-.btn-shop-now {
+.btn-shop {
     font-weight: bold !important;
     background: rgb(149, 8, 177);
-    width: 200px;
+    width: 250px;
     color: white;
 }
 
@@ -125,9 +125,9 @@ a {
     color: white;
 }
 
-.btn-shop-now:hover,
-.btn-shop-now:active,
-.btn-shop-now:focus {
+.btn-shop:hover,
+.btn-shop:active,
+.btn-shop:focus {
     background: #3A36BF;
 }
 
@@ -200,6 +200,19 @@ a.category-badge>span.badge:hover {
 /*-------------------------cart page */
 .cart-container {
     margin-top: 180px;
+}
+
+.cart-img {
+    width: 60px;
+    height: auto;
+}
+
+.table td {
+    vertical-align: middle !important;
+}
+
+.update-form {
+    width: 150px;
 }
 
 
