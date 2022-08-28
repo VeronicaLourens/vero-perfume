@@ -175,6 +175,10 @@ a {
     margin-top: 200px;
 }
 
+.image-container {
+    margin-top: 50px;
+}
+
 a.category-badge>span.badge:hover {
     background: #3A36BF !important;
     color: #fff !important;
@@ -207,8 +211,7 @@ a.category-badge>span.badge:hover {
 
 .wishlist-link {
     position: absolute;
-    top: 20px;
-    right: 50px;
+    top: 60px;
     color: #3A36BF;
 }
 
@@ -219,7 +222,7 @@ a.category-badge>span.badge:hover {
 }
 
 .cart-img {
-    width: 60px;
+    width: 70px;
     height: auto;
 }
 
