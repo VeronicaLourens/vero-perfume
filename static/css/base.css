@@ -175,10 +175,6 @@ a {
     margin-top: 200px;
 }
 
-.image-container {
-    margin-top: 50px;
-}
-
 a.category-badge>span.badge:hover {
     background: #3A36BF !important;
     color: #fff !important;
@@ -211,7 +207,7 @@ a.category-badge>span.badge:hover {
 
 .wishlist-link {
     position: absolute;
-    top: 60px;
+    top: 20px;
     color: #3A36BF;
 }
 
@@ -259,7 +255,7 @@ a.category-badge>span.badge:hover {
 
 
    .product-page-container {
-       margin-top: 80px;
+       margin-top: 70px;
    }
 
 
@@ -280,7 +276,20 @@ a.category-badge>span.badge:hover {
     }
 
     .product-detail-container {
-        margin-top: 50px;
+        margin-top: 100px;
+    }
+
+    .image-container {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wishlist-link {
+        position: absolute;
+        top: 20px;
+        right: 80px;
+
     }
 
     .cart-container {
@@ -296,6 +305,7 @@ a.category-badge>span.badge:hover {
     .btn-checkout {
         margin-top: 10px;
     }
+
 
 }
 
@@ -318,6 +328,13 @@ a.category-badge>span.badge:hover {
 
     .carousel-item {
         padding-top: 60px;
+    }
+
+    .wishlist-link {
+        position: absolute;
+        top: 20px;
+        right: 50px;
+
     }
 
 
