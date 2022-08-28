@@ -211,6 +211,13 @@ a.category-badge>span.badge:hover {
     color: #3A36BF;
 }
 
+.description-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+   
+}
+
 
 /*-------------------------cart page */
 .cart-container {
@@ -305,6 +312,26 @@ a.category-badge>span.badge:hover {
     .btn-checkout {
         margin-top: 10px;
     }
+
+    .product-info-form {
+       margin: 0 auto !important;
+    }
+
+    .btn-div {
+        justify-content: center !important;
+        align-items: center;
+    }
+
+    .description-container {
+        margin-top: 10px;
+    }
+
+    .btn-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 
 
 }

@@ -33,7 +33,7 @@
             </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
-            <div class="product-info-container mt-md-1">
+            <div class="product-info mt-md-1">
                 <h3 class="mb-0">{{ product.name }}</h3>
                 {% if product.brand %}
                 <p class="small mt-1 mb-0">
@@ -50,31 +50,29 @@
                 <form class="form" action="{% url 'add_to_cart' product.id %}" method="POST">
                     {% csrf_token %}
                     <div class="form-row">
-                        <div class="col-6">
-                            <!--The below code works that displays different prices base on the size selected-->
-                            <div class="price-container mt-2">
-                                <p id="30ml" class="product-size-hidden font-weight-bold">€ 1{{ price }}</p>
-                                <p id="50ml" class="product-size-hidden font-weight-bold">€ 2{{ price }}</p>
-                                <p id="75ml" class="product-size-hidden font-weight-bold">€ 3{{ price }}</p>
-                                <p id="100ml" class="product-size-hidden font-weight-bold">€ {{ product.price }}</p>
-                            </div>
-                          
-                            <!--Display the dropdown list of sizes-->
-                            <div class="form-group w-100">
-                                <p>Size:</p>
-                                {% if product.size %}
-                                <div class="input-group">
-                                    <label for="size_input" hidden>Size</label>
-                                    <select class="form-control mx-auto" name="product_size" id="product-size">
-                                        {% for size in form.size %}
-                                        {{ size }}
-                                        {% endfor %}
-                                    </select>
-                                </div>
-                                {% endif %}
-                            </div>
+                        
+                        <!--The below code works that displays different prices base on the size selected-->
+                        <div class="price-container mt-2">
+                            <p id="30ml" class="product-size-hidden font-weight-bold">€ 1{{ price }}</p>
+                            <p id="50ml" class="product-size-hidden font-weight-bold">€ 2{{ price }}</p>
+                            <p id="75ml" class="product-size-hidden font-weight-bold">€ 3{{ price }}</p>
+                            <p id="100ml" class="product-size-hidden font-weight-bold">€ {{ product.price }}</p>
                         </div>
-
+                        
+                        <!--Display the dropdown list of sizes-->
+                        <div class="form-group w-100">
+                            <p>Size:</p>
+                            {% if product.size %}
+                            <div class="input-group">
+                                <label for="size_input" hidden>Size</label>
+                                <select class="form-control mx-auto" name="product_size" id="product-size">
+                                    {% for size in form.size %}
+                                    {{ size }}
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            {% endif %}
+                        </div>
                         <!--Display different prices-->
                         <!-- <div class="col-6">
                             <p class="mt-1"><strong>Price:</strong></p>
@@ -92,38 +90,36 @@
                             </div>
                         </div> -->
 
-                        <div class="col-12">
+                        <div class="form-group w-100">
                             <p class="mt-0"><strong>Quantity:</strong></p>
-                            <div class="form-group w-50">
-                                <div class="input-group input-group-{{ product.id }}">
-                                    <div class="input-group-prepend">
-                                        <button class="decrement-qty btn btn-success decrement-qty_{{ product.id }}"
-                                            data-item_id="{{ product.id }}" aria-label="Decrement quantity">
-                                            <span class="qty-icon">
-                                                <i class="fas fa-minus"></i>
-
-                                            </span>
-                                        </button>
-                                    </div>
-                                    <label for="qty_input" hidden>Quantity</label>
-                                    {% for quantity in form.quantity %}
-                                    <input class="form-control qty_input id_qty_{{ product.id }}" id="qty_input"
-                                        type="number" name="quantity" value="1" min="1" max="99"
-                                        data-item_id="{{ product.id }}">
-                                    {% endfor %}
-                                    <div class="input-group-append">
-                                        <button class="increment-qty btn btn-success increment-qty_{{ product.id }}"
-                                            data-item_id="{{ product.id }}" aria-label="Increment quantity">
-                                            <span class="qty-icon">
-                                                <i class="fas fa-plus"></i>
-                                            </span>
-                                        </button>
-                                    </div>
+                            <div class="input-group input-group-{{ product.id }}">
+                                <div class="input-group-prepend">
+                                    <button class="decrement-qty btn btn-success decrement-qty_{{ product.id }}"
+                                        data-item_id="{{ product.id }}" aria-label="Decrement quantity">
+                                        <span class="qty-icon">
+                                            <i class="fas fa-minus"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                                <label for="qty_input" hidden>Quantity</label>
+                                {% for quantity in form.quantity %}
+                                <input class="form-control qty_input id_qty_{{ product.id }}" id="qty_input"
+                                    type="number" name="quantity" value="1" min="1" max="99"
+                                    data-item_id="{{ product.id }}">
+                                {% endfor %}
+                                <div class="input-group-append">
+                                    <button class="increment-qty btn btn-success increment-qty_{{ product.id }}"
+                                        data-item_id="{{ product.id }}" aria-label="Increment quantity">
+                                        <span class="qty-icon">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                        <div class="row btn-div mt-3">
-                            <div class="col-12">
+                       
+                        <div class="row btn-div mt-3 ">
+                            <div class=" col w-100">
                                 <a href="{% url 'products' %}" class="btn btn-keep-shopping btn-shop rounded-0">
                                     <span class="icon">
                                         <i class="fas fa-chevron-left mr-2"></i>
@@ -131,7 +127,7 @@
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>
                             </div>
-                            <div class="col-12">
+                            <div class="col">
                                 <input type="submit" class="btn btn-add-to-cart rounded-0 btn-shop
                                     text-uppercase" value="Add to Cart">
                             </div>
@@ -142,9 +138,9 @@
             </div>
         </div>
     </div>
-    <div class="row justify-content-center">
-        <div class="col-8 mt-3">
-            <h2 class="">Description</h2>
+    <div class="containe description-container justify-content-center align-items-center">
+        <div class="col-10 mt-3">
+            <h3 class="">Description</h3>
             <hr class="w-100 mb-1">
             <p class="mt-3">{{ product.description }}</p>
         </div>
