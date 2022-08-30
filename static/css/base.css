@@ -289,6 +289,22 @@ a.category-badge>span.badge:hover {
     width: 150px;
 }
 
+#product-count {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 6px;
+    vertical-align: top;
+    margin-left: -9px;
+}
+
+.badge {
+    padding-left: 9px;
+    padding-right: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+}
+
 
 
 /*----------------------------footer */

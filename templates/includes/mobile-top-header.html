@@ -59,7 +59,10 @@
     <a class="text-black nav-link d-block d-lg-none" href="{% url 'view_cart' %}" id="user-options" aria-haspopup="true"
         aria-expanded="false" aria-label="cart">
         <div class="text-center">
-            <div><i class="fas fa-shopping-cart fa-lg"></i></div>
+            <div>
+                <i class="fas fa-shopping-cart fa-lg"></i>
+                <span id="product-count" class="badge badge-danger">{{ product_count }}</span>
+            </div>
         </div>
     </a>
 </div>
