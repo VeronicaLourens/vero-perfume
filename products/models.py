@@ -117,7 +117,7 @@ class Product(models.Model):
     size = models.CharField(
         choices=SIZE_CHOICES,
         max_length=12,
-        default=''
+        default='100ml'
     )
     gender = models.CharField(
         choices=GENDER_CHOICES,
@@ -140,4 +140,3 @@ class Product(models.Model):
 
     def get_size(self):
         return self.SIZE_CHOICES[self.get_size]
-        

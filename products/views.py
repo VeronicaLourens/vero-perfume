@@ -96,10 +96,12 @@ def product_detail(request, product_id):
             prices.append(new_price)
             reduction += Decimal(.30)
 
+
     context = {
         'product': product,
+        'form': form,
+        # 'price': price,
         'prices': prices,
-        'form': form
     }
 
     return render(request, 'products/product_detail.html', context)
