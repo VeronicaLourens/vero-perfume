@@ -57,8 +57,7 @@ def add_to_cart(request, item_id):
             cart[item_id] += quantity
             messages.success(
                 request, (
-                    f'Updated {product.name}'
-                    f'quantity to {cart[item_id]}'
+                    f'Updated {product.name}  quantity to {cart[item_id]}'
                 )
             )
         else:
@@ -92,8 +91,7 @@ def update_cart(request, item_id):
             cart[item_id]['items_by_size'][size] = quantity
             messages.success(
                 request, (
-                    f'Updated size {size.upper()}'
-                    f'{product.name} quantity to '
+                    f'Updated size {size.upper()} {product.name} quantity to '
                     f'{cart[item_id]["items_by_size"][size]}'
                 )
             )
@@ -103,8 +101,7 @@ def update_cart(request, item_id):
                 cart.pop(item_id)
             messages.success(
                 request, (
-                    f'Removed size {size.upper()} '
-                    f'{product.name} from your cart'
+                    f'Removed size {size.upper()} {product.name} from your cart'
                 )
             )
     else:
@@ -112,8 +109,7 @@ def update_cart(request, item_id):
             cart[item_id] = quantity
             messages.success(
                 request, (
-                    f'Updated {product.name}'
-                    f'quantity to {cart[item_id]}'
+                    f'Updated {product.name} quantity to {cart[item_id]}'
                 )
             )
         else:
