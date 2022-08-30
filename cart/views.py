@@ -41,16 +41,14 @@ def add_to_cart(request, item_id):
                 cart[item_id]['items_by_size'][size] = quantity
                 messages.success(
                     request, (
-                        f'Added size {size}'
-                        f'{product.name} to your cart'
+                        f'Added size {size} {product.name} to your cart'
                     )
                 )
         else:
             cart[item_id] = {'items_by_size': {size: quantity}}
             messages.success(
                 request, (
-                    f'Added size {size}'
-                    f'{product.name} to your cart'
+                    f'Added size {size} {product.name} to your cart'
                 )
             )
 
