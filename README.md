@@ -335,6 +335,8 @@ Steps to clone the project from GitHub as following:
 
 * The code in ```product.js``` is from [How to display content depending on dropdown menue user selection](https://stackoverflow.com/questions/18115916/how-to-display-content-depending-on-dropdown-menue-user-selection)
 
+* The CSS code for the total count of the shopping cart is adapted from [How to put the number at top right corner of cart icon?](https://stackoverflow.com/questions/51304169/how-to-put-the-number-at-top-right-corner-of-cart-icon)
+
 [Back to top](#vero-perfume)
 # Acknowledgement
 
