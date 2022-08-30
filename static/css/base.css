@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lato:wght@300&family=Open+Sans:wght@300&family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300&display=swap');
 
 body {
 
@@ -113,11 +113,12 @@ a {
 .btn-shop {
     font-weight: bold !important;
     background: rgb(149, 8, 177);
-    width: 250px;
+    /* width: 250px; */
     color: white;
 }
 
-.btn-card {
+.btn-card,
+.btn-carousel {
     height: 40px;
     width: 200px;
     background: rgb(149, 8, 177);
@@ -196,9 +197,14 @@ a.category-badge>span.badge:hover {
     display: none;
 }
 
-.btn-add-to-cart {
+/* .btn-add-to-cart {
     margin-top: 10px;
-}
+} */
+
+/* .btn-keep-shopping {
+   width: 300px;
+
+} */
 
 /* .btn-checkout {
     margin-right: 10px;
@@ -296,22 +302,14 @@ a.category-badge>span.badge:hover {
         position: absolute;
         top: 20px;
         right: 80px;
-
     }
 
     .cart-container {
         margin-top: 80px;
     }
-
-    
-
 }
 
 @media (max-width: 767px) {
-
-    .btn-checkout {
-        margin-top: 10px;
-    }
 
     .product-info-form {
        margin: 0 auto !important;

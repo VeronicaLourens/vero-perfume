@@ -67,7 +67,7 @@
                                 <label for="size_input" hidden>Size</label>
                                 <select class="form-control mx-auto" name="product_size" id="product-size">
                                     {% for size in form.size %}
-                                    {{ size }}
+                                        <option value="size" placeholder="select size">{{ size }}</option>
                                     {% endfor %}
                                 </select>
                             </div>
@@ -118,19 +118,15 @@
                             </div>
                         </div>
                        
-                        <div class="row btn-div mt-3 ">
-                            <div class=" col w-100">
-                                <a href="{% url 'products' %}" class="btn btn-keep-shopping btn-shop rounded-0">
-                                    <span class="icon">
-                                        <i class="fas fa-chevron-left mr-2"></i>
-                                    </span>
-                                    <span class="text-uppercase">Keep Shopping</span>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <input type="submit" class="btn btn-add-to-cart rounded-0 btn-shop
-                                    text-uppercase" value="Add to Cart">
-                            </div>
+                        <div class="col-12 col-md-6">
+                            <a href="{% url 'products' %}" class="btn btn-keep-shopping btn-shop rounded-0 w-100 my-3">
+                                <span class="icon">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                                <span class="text-uppercase">Keep Shopping</span>
+                            </a>
+                            <input type="submit" class="btn btn-add-to-cart btn-shop rounded-0 w-100
+                                text-uppercase" value="Add to Cart">
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     </div>
