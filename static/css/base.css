@@ -136,12 +136,21 @@ a {
     font-size: 20px;
 }
 
-/*--------------------------messages */
+/*--------------------------Bootstrap toasts */
 
-#message-container {
+.message-container {
     position: fixed;
-    /* z-index: 199999;
-    margin-top: 300px; */
+    z-index: 9999999999;
+    top: 72px;
+    right: 15px;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
 }
 
 /*--------------------------profile */
