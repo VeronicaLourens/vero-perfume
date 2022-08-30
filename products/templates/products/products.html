@@ -80,9 +80,8 @@
                         </a>
                         {% else %}
                         <a href="{% url 'product_detail' product.id %}">
-                            <div class="card-img-top my-3">
-                                <p class="text-center text-muted">Image Not Available</p>
-                            </div>
+                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}No-Image.png"
+                                alt="{{ product.name }}">
                         </a>
                         {% endif %}
                         <div class="card-body pb-0">

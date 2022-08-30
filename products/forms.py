@@ -8,6 +8,14 @@ SIZE_CHOICES = [
         ('100ml', '100ml'),
     ]
 
+sizes = {
+    '30ml': '30ml',
+    '50ml': '50ml',
+    '75ml': '75ml',
+    '100ml': '100ml',
+    
+}
+
 
 class AddToCartForm(forms.Form):
     """
