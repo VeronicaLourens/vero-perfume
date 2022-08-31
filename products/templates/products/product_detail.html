@@ -53,9 +53,9 @@
 
                         <!--The below code works that displays different prices base on the size selected-->
                         <div class="price-container mt-2">
-                            <p id="30ml" class="product-size-hidden font-weight-bold">€ 45</p>
-                            <p id="50ml" class="product-size-hidden font-weight-bold">€ 55</p>
-                            <p id="75ml" class="product-size-hidden font-weight-bold">€ 75</p>
+                            <p id="30ml" class="product-size-hidden font-weight-bold">€ 1{{ price }}</p>
+                            <p id="50ml" class="product-size-hidden font-weight-bold">€ 2{{ price }}</p>
+                            <p id="75ml" class="product-size-hidden font-weight-bold">€ 3{{ price }}</p>
                             <p id="100ml" class="product-size-hidden font-weight-bold">€ {{ product.price }}</p>
                         </div>
 
@@ -67,7 +67,7 @@
                                 <label for="size_input" hidden>Size</label>
                                 <select class="form-control mx-auto" name="product_size" id="product_size">
                                     {% for size in form.size %}
-                                    <option class="size-selected">{{ size }}</option>
+                                    <option>{{ size }}</option>
                                     {% endfor %}
                                 </select>
                             </div>

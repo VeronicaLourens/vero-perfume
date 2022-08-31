@@ -1,3 +1,6 @@
+// To display product prices depending on the size dropdown selection.
+
+
 let ids = ["30ml", "50ml", "75ml", "100ml"];
 let SizeDropDown = document.getElementById("product_size");
 

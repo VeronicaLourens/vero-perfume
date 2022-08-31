@@ -102,7 +102,6 @@ def product_detail(request, product_id):
         'product': product,
         'prices': prices,
         'form': form,
-        # 'price': price,
        
     }
 
