@@ -18,7 +18,7 @@
             <div class="image-container">
                 {% if product.image %}
                 <a href="{{ product.image_url }}" target="_blank">
-                    <img class="card-img-top img-fluid" src="{{ product.image_url }}" alt="{{ product.name }}"> 
+                    <img class="card-img-top img-fluid" src="{{ product.image_url }}" alt="{{ product.name }}">
                 </a>
                 <a class="wishlist-link" href="#" title="Save to WishList">
                     <div class="text-center">
@@ -50,29 +50,15 @@
                 <form class="form" action="{% url 'add_to_cart' product.id %}" method="POST">
                     {% csrf_token %}
                     <div class="form-row">
-                        
+
                         <!--The below code works that displays different prices base on the size selected-->
                         <div class="price-container mt-2">
-                            <p id="30ml" class="product-size-hidden font-weight-bold">€ 1{{ price }}</p>
-                            <p id="50ml" class="product-size-hidden font-weight-bold">€ 2{{ price }}</p>
-                            <p id="75ml" class="product-size-hidden font-weight-bold">€ 3{{ price }}</p>
+                            <p id="30ml" class="product-size-hidden font-weight-bold">€ 45</p>
+                            <p id="50ml" class="product-size-hidden font-weight-bold">€ 55</p>
+                            <p id="75ml" class="product-size-hidden font-weight-bold">€ 75</p>
                             <p id="100ml" class="product-size-hidden font-weight-bold">€ {{ product.price }}</p>
                         </div>
 
-                        <!--Display the product prices depending on the size selected-->
-                        <div class="col-6">
-                            <p class="mt-1"><strong>Price:</strong></p>
-                            <div class="form-group w-100">
-                                {% if product.price %}
-                                <div>
-                                    <label for="size_input" hidden>Price</label>
-                                    <p class="mx-auto" name="product_price" id='product_price'>
-                                    </p>
-                                </div>
-                                {% endif %}
-                            </div>
-                        </div>
-                        
                         <!--Display the dropdown list of sizes-->
                         <div class="form-group w-100">
                             <p>Size:</p>
@@ -81,13 +67,28 @@
                                 <label for="size_input" hidden>Size</label>
                                 <select class="form-control mx-auto" name="product_size" id="product_size">
                                     {% for size in form.size %}
-                                        <option class="size-picked">{{ size }}</option>
+                                    <option class="size-selected">{{ size }}</option>
                                     {% endfor %}
                                 </select>
                             </div>
                             {% endif %}
                         </div>
-                       
+                        <!--Display the product prices depending on the size selected-->
+                        <!-- <div class="col-6">
+                            <p class="mt-1"><strong>Price:</strong></p>
+                            <div class="form-group w-100">
+                                {% if product.price %}
+                                {% for price in prices %}
+                                <div class="hidden">
+                                    <label for="size_input" hidden>Price</label>
+                                    <p class="mx-auto" name="product_price" id='id_product_price'>
+                                        <option value="{{ price }}">€ {{ price }}</option>
+                                    </p>
+                                </div>
+                                {% endfor %}
+                                {% endif %}
+                            </div>
+                        </div> -->
 
                         <div class="form-group w-100">
                             <p class="mt-0"><strong>Quantity:</strong></p>
@@ -116,15 +117,16 @@
                                 </div>
                             </div>
                         </div>
-                       
+
                         <div class="col-12 col-md-6">
                             <a href="{% url 'products' %}" class="btn btn-keep-shopping btn-shop rounded-0 w-100 my-3">
                                 <span class="icon">
                                     <i class="fas fa-chevron-left"></i>
                                 </span>
-                                <span class="text-center">Keep Shopping</span>
+                                <span class="text-uppercase">Keep Shopping</span>
                             </a>
-                            <input type="submit" class="btn btn-add-to-cart btn-shop rounded-0 w-100" value="Add to Cart">
+                            <input type="submit" class="btn btn-add-to-cart btn-shop rounded-0 w-100
+                                text-uppercase" value="Add to Cart">
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     </div>
@@ -143,9 +145,9 @@
 {% endblock content %}
 
 {% block postloadjs %}
-    {{ block.super }}
-    <script src="{% static 'js/product.js' %}"></script>
+{{ block.super }}
+<script src="{% static 'js/product.js' %}"></script>
 
-    {% include 'products/includes/qty_input_script.html' %}
+{% include 'products/includes/qty_input_script.html' %}
 
 {% endblock postloadjs %}

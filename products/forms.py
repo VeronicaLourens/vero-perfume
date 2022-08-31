@@ -15,3 +15,6 @@ class AddToCartForm(forms.Form):
 
     size = forms.ChoiceField(choices=SIZE_CHOICES)
     quantity = forms.IntegerField(max_value=10, min_value=1)
+
+   
+        

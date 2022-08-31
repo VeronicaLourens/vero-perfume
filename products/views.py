@@ -100,9 +100,10 @@ def product_detail(request, product_id):
 
     context = {
         'product': product,
+        'prices': prices,
         'form': form,
         # 'price': price,
-        'prices': prices,
+       
     }
 
     return render(request, 'products/product_detail.html', context)
