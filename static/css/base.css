@@ -270,6 +270,11 @@ a.category-badge>span.badge:hover {
    
 }
 
+.hidden {
+    /* visibility: hidden; */
+    display: none;
+}
+
 
 /*-------------------------cart page */
 .cart-container {

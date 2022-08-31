@@ -89,6 +89,7 @@ def product_detail(request, product_id):
 
     if product.size:
         reduction = Decimal(1)
+        product.price = 120
         prices = []
         for size in SIZE_CHOICES:
             price = product.price / reduction
