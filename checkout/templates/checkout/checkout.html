@@ -3,24 +3,25 @@
 {% load cart_tools %}
 
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+<!-- Extra css for checkout page -->
+    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock extra_css %}
 
 {% block page_header %}
-<div class="container header-container">
+<div class="containe header-container">
     <div class="row">
-        <div class="col"></div>
+
     </div>
 </div>
+
 {% endblock page_header %}
 
 {% block content %}
 <div class="overlay"></div>
-<div class="container">
+<div class="container checkout-container">
     <div class="row">
-        <div class="col">
-            <hr>
-            <h2 class="logo-font mb-4">Checkout</h2>
+        <div class="col col-12">
+            <h3 class="my-3">Checkout</h3>
             <hr>
         </div>
     </div>
@@ -54,7 +55,7 @@
                     <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
                 </div>
                 <div class="col-3 text-right">
-                    <p class="my-0 small text-muted">${{ item.product.price | calc_subtotal:item.quantity }}</p>
+                    <p class="my-0 small text-muted">€ {{ item.product.price | calc_subtotal:item.quantity }}</p>
                 </div>
             </div>
             {% endfor %}
@@ -66,9 +67,9 @@
                     <p class="my-0">Grand Total:</p>
                 </div>
                 <div class="col-3">
-                    <p class="my-0">${{ total | floatformat:2 }}</p>
-                    <p class="my-0">${{ delivery | floatformat:2 }}</p>
-                    <p class="my-0"><strong>${{ grand_total | floatformat:2 }}</strong></p>
+                    <p class="my-0">€ {{ total | floatformat:2 }}</p>
+                    <p class="my-0">€ {{ delivery | floatformat:2 }}</p>
+                    <p class="my-0"><strong>€ {{ grand_total | floatformat:2 }}</strong></p>
                 </div>
             </div>
         </div>
@@ -84,12 +85,13 @@
                 <fieldset class="rounded px-3 mb-5">
                     <legend class="fieldset-label small text-black px-2 w-auto">Delivery</legend>
                     {{ order_form.phone_number | as_crispy_field }}
-                    {{ order_form.country | as_crispy_field }}
-                    {{ order_form.postcode | as_crispy_field }}
-                    {{ order_form.city | as_crispy_field }}
                     {{ order_form.street_address1 | as_crispy_field }}
                     {{ order_form.street_address2 | as_crispy_field }}
+                    {{ order_form.city | as_crispy_field }}
                     {{ order_form.county | as_crispy_field }}
+                    {{ order_form.postcode | as_crispy_field }}
+                    {{ order_form.country | as_crispy_field }}
+                  
                     <div class="form-check form-check-inline float-right mr-0">
                         {% if user.is_authenticated %}
                         <label class="form-check-label" for="id-save-info">Save this delivery information to my
@@ -130,7 +132,7 @@
                         <span class="icon">
                             <i class="fas fa-exclamation-circle"></i>
                         </span>
-                        <span>Your card will be charged <strong>${{ grand_total|floatformat:2 }}</strong></span>
+                        <span>Your card will be charged <strong>€ {{ grand_total|floatformat:2 }}</strong></span>
                     </p>
                 </div>
             </form>

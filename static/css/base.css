@@ -276,8 +276,9 @@ a.category-badge>span.badge:hover {
 }
 
 
-/*-------------------------cart page */
-.cart-container {
+/*----------------------cart and checkout page */
+.cart-container,
+.checkout-container {
     margin-top: 180px;
 }
 
