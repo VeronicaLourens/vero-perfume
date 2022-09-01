@@ -79,17 +79,14 @@ def products(request):
     return render(request, 'products/products.html', context)
 
 
-
 def product_detail(request, product_id):
     """ To render the product detail page."""
 
     product = get_object_or_404(Product, pk=product_id)
     form = AddToCartForm()
-    
 
     if product.size:
         reduction = Decimal(1)
-        product.price = 120
         prices = []
         for size in SIZE_CHOICES:
             price = product.price / reduction
@@ -97,12 +94,10 @@ def product_detail(request, product_id):
             prices.append(new_price)
             reduction += Decimal(.30)
 
-
     context = {
         'product': product,
         'prices': prices,
-        'form': form,
-       
+        'form': form, 
     }
 
     return render(request, 'products/product_detail.html', context)
