@@ -1,4 +1,9 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import (
+    render,
+    redirect,
+    reverse,
+    get_object_or_404
+)
 from django.contrib import messages
 from django.conf import settings
 
@@ -95,3 +100,26 @@ def checkout(request):
     }
 
     return render(request, template, context)
+
+
+def checkout_success(request, order_number):
+    """
+    To render the checkout confirmation page,
+    and save the order in the profile page.
+    """
+    save_info = request.session.get('save_info')
+    order = get_object_or_404(Order, order_number=order_number)
+    messages.success(request, f'Order successfully processed! \
+        Your order number is {order_number}. A confirmation \
+        email will be sent to {order.email}.')
+
+    if 'cart' in request.session:
+        del request.session['cart']
+
+    template = 'checkout/checkout_success.html'
+    context = {
+        'order': order,
+    }
+
+    return render(request, template, context)
+    
