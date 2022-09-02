@@ -8,11 +8,11 @@ from django.contrib import messages
 from django.conf import settings
 
 from .forms import OrderForm
+from .models import Order, OrderLineItem
 from products.models import Product
 from cart.contexts import cart_contents
 
 import stripe
-
 
 
 def checkout(request):
@@ -84,7 +84,7 @@ def checkout(request):
             currency=settings.STRIPE_CURRENCY,
         )
 
-    order_form = OrderForm()
+        order_form = OrderForm()
 
     if not stripe_public_key:
         messages.warning(request, 'Stripe public key is missing. \
@@ -120,3 +120,4 @@ def checkout_success(request, order_number):
     }
 
     return render(request, template, context)
+    
