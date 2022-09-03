@@ -6,7 +6,9 @@ body {
     font-weight: 300;
     display: flex;
     flex-direction: column;
+    max-width: 100%;
     min-height: 100vh;
+    overflow-x: hidden;
     background-color: white;
 
 }
@@ -315,7 +317,7 @@ a.category-badge>span.badge:hover {
 
 .social-icons a {
     font-size: 30px;
-    padding: 30px;
+    padding: 50px 30px 10px;
     color: #3A36BF;
 }
 
