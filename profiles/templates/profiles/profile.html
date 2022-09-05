@@ -9,29 +9,44 @@
 </div>
 {% endblock page_header %}
 
-<!---The profile page has been adapated from CI Boutique Ado project-->
-
 {% block content %}
 <div class="overlay"></div>
 <div class="container profile-container">
     <div class="row justify-content-center">
         <div class="col">
-            <h2 class="mb-4">{{ profile }} Profile</h2>
+            <h3 class="mb-2 font-weight-bold">My Profile</h3>
             <hr>
         </div>
     </div>
-    <div class="row my-5">
-        <div class="col-12 col-lg-6">
-            <form action="{% url 'profile' %}" method="POST" id="profile-update-form">
-                {% csrf_token %}
-                {{ form|crispy }}
-                <div class="col-12 col-lg-6 ml-auto p-0">
-                    <a class="btn btn-primary fw-bold my-3 float-right">Update Information</a>
+    <div class="card mb-3 border-0">
+        <div class="row no-gutters">
+            <div class="col-md-3">
+                <div class="list-group border-0">
+                    <a href="#" class="list-group-item list-group-item-action btn border-0">
+                        <i class="fas fa-user mr-3"></i>Personal details
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action btn border-0">
+                        <i class="fas fa-home mr-3"></i>My address
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action btn border-0">
+                        <i class="fas fa-box mr-3"></i>My orders
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action btn border-0">
+                        <i class="fas fa-envelope mr-3"></i>Newsletters
+                        </a>
+                    <a href="#" class="list-group-item list-group-item-action btn border-0">
+                        <i class="fas fa-question mr-3"></i>Help & questions
+                    </a>
                 </div>
-
-            </form>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Hello {{ user.username }} !</h5>
+                    <p class="card-text">Welcome to your account! You can manage all your personal details, orders and other account information here.</p>
+                    <p class="card-text">Happy Shopping!</p>
+                </div>
+            </div>
         </div>
-
     </div>
 </div>
 
