@@ -217,8 +217,7 @@ a {
     height: auto;
 }
 
-#personal-details-div,
-#orders-div {
+#personal-details-div {
     display: none;
 }
 
