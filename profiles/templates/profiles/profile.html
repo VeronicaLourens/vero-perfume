@@ -22,13 +22,13 @@
         <div class="row no-gutters">
             <div class="col-md-3">
                 <div class="list-group border-0">
-                    <a href="#" class="list-group-item list-group-item-action btn border-0">
+                    <a href="#" class="list-group-item list-group-item-action btn border-0" id="btn-personal-details">
                         <i class="fas fa-user mr-3"></i>Personal details
                     </a>
                     <a href="#" class="list-group-item list-group-item-action btn border-0">
                         <i class="fas fa-home mr-3"></i>My address
                     </a>
-                    <a href="#" class="list-group-item list-group-item-action btn border-0">
+                    <a href="#" class="list-group-item list-group-item-action btn border-0" id="btn-my-orders">
                         <i class="fas fa-box mr-3"></i>My orders
                     </a>
                     <a href="#" class="list-group-item list-group-item-action btn border-0">
@@ -40,10 +40,12 @@
                 </div>
             </div>
             <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title font-weight-bold">Hello {{ user.username }} !</h5>
-                    <p class="card-text">Welcome to your account! You can manage all your personal details, orders and other account information here.</p>
-                    <p class="card-text">Happy Shopping!</p>
+            
+                <div id="welcome-div">
+                    <h5 class="font-weight-bold">Hello {{ user.username }} !</h5>
+                    <p class="card-text">Welcome to your account! You can manage all your personal details, orders
+                        and other account information here.</p>
+                    <p class="text">Happy Shopping!</p>
                 </div>
             </div>
         </div>

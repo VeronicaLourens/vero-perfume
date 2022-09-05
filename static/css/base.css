@@ -217,6 +217,11 @@ a {
     height: auto;
 }
 
+#personal-details-div,
+#orders-div {
+    display: none;
+}
+
 
 /*---------------------product page */
 
