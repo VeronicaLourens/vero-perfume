@@ -22,7 +22,7 @@ class UserProfileForm(forms.ModelForm):
             'default_street_address2': 'Street Address 2',
             'default_city': 'City',
             'default_county': 'County',
-            'default_postcode': 'Postcode',
+            'default_postcode': 'Postal Code',
             'default_country': 'Country, State or Locality',
         }
 

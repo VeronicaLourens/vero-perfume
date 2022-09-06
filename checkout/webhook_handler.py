@@ -47,7 +47,7 @@ class StripeWH_Handler:
             if save_info:
                 profile.default_phone_number = shipping_details.phone
                 profile.default_country = shipping_details.address.country
-                profile.default_postcode = shipping_details.address.post_code
+                profile.default_postcode = shipping_details.address.postal_code
                 profile.default_city = shipping_details.address.city
                 profile.default_street_address1 = shipping_details.address.line1
                 profile.default_street_address2 = shipping_details.address.line2
@@ -63,7 +63,7 @@ class StripeWH_Handler:
                     email__iexact=billing_details.email,
                     phone_number__iexact=shipping_details.phone,
                     country__iexact=shipping_details.address.country,
-                    postcode__iexact=shipping_details.address.post_code,
+                    postcode__iexact=shipping_details.address.postal_code,
                     city__iexact=shipping_details.address.city,
                     street_address1__iexact=shipping_details.address.line1,
                     street_address2__iexact=shipping_details.address.line2,
@@ -90,7 +90,7 @@ class StripeWH_Handler:
                     email=billing_details.email,
                     phone_number=shipping_details.phone,
                     country=shipping_details.address.country,
-                    postcode=shipping_details.address.post_code,
+                    postcode=shipping_details.address.postal_code,
                     city=shipping_details.address.city,
                     street_address1=shipping_details.address.line1,
                     street_address2=shipping_details.address.line2,
