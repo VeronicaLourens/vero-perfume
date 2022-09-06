@@ -228,3 +228,5 @@ STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 
 CSRF_TRUSTED_ORIGINS = ['https://veroperfume.herokuapp.com/']
+
+DEFAULT_FROM_EMAIL = 'veroperfume@example.com'
