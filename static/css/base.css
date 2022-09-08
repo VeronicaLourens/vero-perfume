@@ -338,7 +338,6 @@ a.category-badge>span.badge:hover {
 
 @media (min-width: 991px) {
 
-
    .product-page-container {
        margin-top: 70px;
    }
@@ -352,8 +351,20 @@ a.category-badge>span.badge:hover {
         height: calc(100vh - 116px);
     }
 
+    h3,
+    h4 {
+        font-size: 1.2rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+
     .header-container {
         padding-top: 116px;
+    }
+
+    .navbar {
+        justify-content: space-evenly;
     }
 
     .product-page-container {
@@ -410,6 +421,11 @@ a.category-badge>span.badge:hover {
 
     .profile-container {
         margin-top: 100px;
+    }
+
+    .social-icons a {
+        font-size: 25px;
+        padding: 20px 10px 5px;
     }
 
 
