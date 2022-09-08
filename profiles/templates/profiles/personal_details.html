@@ -41,14 +41,12 @@
             </div>
             <div class="col-md-8">
 
-                <div>
-                    <p class="font-weight-bold">Default Delivery Address</p>
-                    <form class="mt-3" action="{% url 'profile' %}" method="POST" id="profile-update-form">
-                        {% csrf_token %}
-                        {{ form|crispy }}
-                        <button class="btn btn-shop rounded-0 float-right">Update Information</button>
-                    </form>
-                </div>
+                  <div class="card-body pl-5">
+                      <p><span class="fw-bold">Username:</span> {{ user.username }}</p>
+                      <p><span class="fw-bold">Email:</span> {{ user.email }}</p>
+                      <p><span class="fw-bold">Phone:</span> {{ user.profile.phone_number }}</p>
+                      <p><span class="fw-bold">City:</span> {{ user.default_city }}</p>
+                  </div>
             </div>
         </div>
         <hr>
