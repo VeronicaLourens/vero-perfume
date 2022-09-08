@@ -35,6 +35,19 @@ def profile(request):
     return render(request, template, context)
 
 
+def personal_details(request):
+    """
+    To render the personal details page.
+    """
+
+    template = 'profiles/personal_details.html'
+    context = {
+        'form': UserProfileForm
+    }
+
+    return render(request, template, context)
+
+
 def order_history(request, order_number):
     
     order = get_object_or_404(Order, order_number=order_number)
@@ -51,5 +64,4 @@ def order_history(request, order_number):
     }
 
     return render(request, template, context)
-
 
