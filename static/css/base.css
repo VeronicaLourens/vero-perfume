@@ -380,6 +380,11 @@ a.category-badge>span.badge:hover {
     .checkout-container {
         margin-top: 80px;
     }
+
+    .profile-container {
+        margin-top: 100px;
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -401,6 +406,10 @@ a.category-badge>span.badge:hover {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .profile-container {
+        margin-top: 100px;
     }
 
 
