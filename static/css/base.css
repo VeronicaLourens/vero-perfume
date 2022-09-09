@@ -383,6 +383,10 @@ a.category-badge>span.badge:hover {
         font-size: 1rem;
     }
 
+    .main-nav-item {
+        margin-left: 40px;
+    }
+
     .display-4 {
         font-size: 2rem;
     }
@@ -424,6 +428,11 @@ a.category-badge>span.badge:hover {
 }
 
 @media (max-width: 767px) {
+
+    .main-nav-item {
+        margin-left: 35px;
+    }
+
 
     .product-info-form {
        margin: 0 auto !important;
@@ -476,6 +485,10 @@ a.category-badge>span.badge:hover {
 
     .navbar-toggler {
         font-size: 0.8rem;
+    }
+
+    .main-nav-item {
+        margin-left: 25px;
     }
 
     .carousel-item {
