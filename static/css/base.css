@@ -112,7 +112,8 @@ a {
     font-family: Bree Serif;
 }
 
-.btn-shop {
+.btn-shop,
+.btn-primary {
     font-weight: bold !important;
     background: rgb(149, 8, 177);
     color: white;
@@ -129,8 +130,11 @@ a {
 
 .btn-shop:hover,
 .btn-shop:active,
-.btn-shop:focus {
+.btn-shop:focus,
+.btn-primary:hover,
+.btn-carousel:hover {
     background: #3A36BF;
+    color: white;
 }
 
 .info-icon {
@@ -326,14 +330,22 @@ a.category-badge>span.badge:hover {
 }
 
 
+
+
+
 /*---------------------------media queries */
 @media (min-width: 1200px) {
     .header-container {
         padding-top: 200px;
     }
 
+}
 
-   
+@media (min-width: 991px) and (max-width: 1199px) {
+    .allauth-form-inner-content {
+        margin-top: 200px;
+    }
+
 }
 
 @media (min-width: 991px) {
@@ -341,7 +353,6 @@ a.category-badge>span.badge:hover {
    .product-page-container {
        margin-top: 70px;
    }
-
 
 }
 
@@ -370,6 +381,15 @@ a.category-badge>span.badge:hover {
     .navbar-toggler {
         padding: 0.1rem 0.4rem;
         font-size: 1rem;
+    }
+
+    .display-4 {
+        font-size: 2rem;
+    }
+
+    .increment-qty,
+    .decrement-qty {
+        padding: .25rem .5rem !important;
     }
 
     .product-page-container {
