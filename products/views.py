@@ -49,19 +49,17 @@ def products(request):
             products = products.filter(brand__name__in=brands)
             brands = Category.objects.filter(name__in=brands)
 
-
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
-
 
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
                 messages.error(request, "You didn't enter any search criteria!")
                 return redirect(reverse('products'))
-            
+
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
@@ -97,8 +95,7 @@ def product_detail(request, product_id):
     context = {
         'product': product,
         'prices': prices,
-        'form': form, 
+        'form': form,
     }
 
     return render(request, 'products/product_detail.html', context)
-
