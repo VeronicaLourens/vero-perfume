@@ -1,5 +1,7 @@
 from django import forms
 from .models import UserProfile
+from django.contrib.auth.models import User
+from django.forms import ModelForm
 
 """
 The user profile form is adapted from CI Boutique Ado project.
@@ -37,3 +39,12 @@ class UserProfileForm(forms.ModelForm):
                 self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'border-black rounded-0 profile-form-input'
             self.fields[field].label = False
+
+
+class ProfileDeleteForm(forms.ModelForm):
+    """
+    To delete the user profile in the database.
+    """
+    class Meta:
+        model = User
+        fields = []

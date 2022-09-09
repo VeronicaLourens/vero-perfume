@@ -1,8 +1,8 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from .models import UserProfile
-from .forms import UserProfileForm
+from .forms import UserProfileForm, ProfileDeleteForm
 from checkout.models import Order
 
 
@@ -57,3 +57,26 @@ def order_history(request, order_number):
     }
 
     return render(request, template, context)
+
+
+def delete_profile(request):
+    """
+    To delete the user profile and associated data from the database.
+    """
+    if request.method == 'POST':
+        delete_profile = ProfileDeleteForm(request.POST, instance=request.user)
+        user = request.user
+        user.delete()
+
+        messages.success(request,  f'Your profile has been deleted!')
+        return redirect('home')
+
+    else:
+        delete_profile = ProfileDeleteForm(instance=request.user)
+
+    context = {
+        'delete_profile': delete_profile,
+        'title': 'UserProfile'
+    }
+
+    return render(request, 'profiles/delete_profile.html', context)

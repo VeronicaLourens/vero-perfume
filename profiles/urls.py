@@ -11,4 +11,8 @@ urlpatterns = [
         'personal_details/',
         views.personal_details,
         name='personal_details'),
+    path(
+        'delete_profile/',
+        views.delete_profile,
+        name='delete_profile'),
 ]
