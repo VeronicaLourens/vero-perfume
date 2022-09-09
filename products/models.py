@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Category(models.Model):
     """
     To create product's catogory.
@@ -58,7 +59,6 @@ class Gender(models.Model):
 
     def get_friendly_name(self):
         return self.friendly_name
-
 
 
 class Product(models.Model):

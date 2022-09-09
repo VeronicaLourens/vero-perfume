@@ -35,7 +35,7 @@ def cart_contents(request):
                     'product': product,
                     'size': size,
                 })
-                
+          
     if total < settings.FREE_DELIVERY_THRESHOLD:
         delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
         free_delivery_delta = settings.FREE_DELIVERY_THRESHOLD - total

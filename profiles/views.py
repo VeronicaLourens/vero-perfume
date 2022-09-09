@@ -6,7 +6,6 @@ from .forms import UserProfileForm
 from checkout.models import Order
 
 
-
 @login_required
 def profile(request):
     """
@@ -19,7 +18,6 @@ def profile(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'Your profile updated successfully')
-
     else:
         form = UserProfileForm(instance=profile)
 
@@ -31,7 +29,6 @@ def profile(request):
         'orders': orders,
         'on_profile_page': True
     }
-
     return render(request, template, context)
 
 
@@ -39,24 +36,20 @@ def personal_details(request):
     """
     To render the personal details page.
     """
-
     template = 'profiles/personal_details.html'
     context = {
         'form': UserProfileForm
     }
-
     return render(request, template, context)
 
 
 def order_history(request, order_number):
-    
-    order = get_object_or_404(Order, order_number=order_number)
 
+    order = get_object_or_404(Order, order_number=order_number)
     messages.info(request, (
         f'This is a past confirmation for order number {order_number}. '
         'A confirmation email was sent on the order date.'
     ))
-
     template = 'checkout/checkout_success.html'
     context = {
         'order': order,
@@ -64,4 +57,3 @@ def order_history(request, order_number):
     }
 
     return render(request, template, context)
-

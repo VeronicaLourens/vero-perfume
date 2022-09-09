@@ -12,7 +12,6 @@ class Order(models.Model):
     """
     To save a purchase instance with user info and the product purchased.
     """
-
     order_number = models.CharField(
         max_length=32,
         null=False,
@@ -103,8 +102,6 @@ class Order(models.Model):
         default=''
     )
 
-
-
     def _generate_order_number(self):
         """
         To generate an order number using UUID
@@ -135,7 +132,6 @@ class Order(models.Model):
 
     def __str__(self):
         return self.order_number
-
 
 
 class OrderLineItem(models.Model):
@@ -183,4 +179,3 @@ class OrderLineItem(models.Model):
 
     def __str__(self):
         return f'SKU {self.product.sku} on order {self.order.order_number}'
-        

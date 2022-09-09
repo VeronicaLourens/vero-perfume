@@ -10,20 +10,21 @@ class CategoryAdmin(admin.ModelAdmin):
     list_filter = ('name',)
     search_fields = ('name',)
 
+
 @admin.register(Brand)
 class BrandAdmin(admin.ModelAdmin):
 
-    list_display = ('name','friendly_name')
+    list_display = ('name', 'friendly_name')
     list_filter = ('name',)
     search_fields = ('name',)
+
 
 @admin.register(Gender)
 class GenderAdmin(admin.ModelAdmin):
 
-    list_display = ('name','friendly_name')
+    list_display = ('name', 'friendly_name')
     list_filter = ('name',)
     search_fields = ('name',)
-
 
 
 @admin.register(Product)
