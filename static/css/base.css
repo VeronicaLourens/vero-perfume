@@ -211,7 +211,8 @@ a {
 
 
 /*--------------------------profile */
-.profile-container {
+.profile-container,
+.error-page-container {
     margin-top: 200px;
 }
 
