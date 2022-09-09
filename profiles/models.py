@@ -18,6 +18,11 @@ class UserProfile(models.Model):
         on_delete=models.
         CASCADE
     )
+    default_full_name = models.CharField(
+        max_length=50,
+        null=True,
+        blank=True
+    )
     default_phone_number = models.CharField(
         max_length=20,
         null=True,

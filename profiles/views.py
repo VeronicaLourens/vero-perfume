@@ -17,7 +17,7 @@ def profile(request):
         form = UserProfileForm(request.POST, instance=profile)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Your profile updated successfully')
+            messages.success(request, 'Your profile has been updated successfully!')
     else:
         form = UserProfileForm(instance=profile)
 
@@ -68,7 +68,7 @@ def delete_profile(request):
         user = request.user
         user.delete()
 
-        messages.success(request,  f'Your profile has been deleted!')
+        messages.success(request, f'Your profile has been deleted!')
         return redirect('home')
 
     else:
