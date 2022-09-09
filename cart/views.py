@@ -1,5 +1,5 @@
 from django.shortcuts import (
-    render, redirect, reverse, 
+    render, redirect, reverse,
     HttpResponse, get_object_or_404
 )
 from django.contrib import messages
@@ -145,7 +145,7 @@ def remove_from_cart(request, item_id):
 
             messages.success(
                request,
-                f'Removed {product.name} (size {size}) from your cart'
+               f'Removed {product.name} (size {size}) from your cart'
             )
         else:
             cart.pop(item_id)

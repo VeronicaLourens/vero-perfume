@@ -12,7 +12,7 @@ class Category(models.Model):
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(
         max_length=254,
-        null=True, 
+        null=True,
         blank=True
     )
 
@@ -31,7 +31,7 @@ class Brand(models.Model):
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(
         max_length=254,
-        null=True, 
+        null=True,
         blank=True
     )
 

@@ -33,7 +33,7 @@ def products(request):
             sort = sortkey
             if sortkey == 'name':
                 sortkey = 'lower_name'
-               products = products.annotate(lower_name=Lower('name'))
+                products = products.annotate(lower_name=Lower('name'))
 
             if sortkey == 'category':
                 sortkey = 'category__name'

@@ -9,6 +9,6 @@ urlpatterns = [
         name='order_history'),
     path(
         'personal_details/',
-        views.personal_details, 
+        views.personal_details,
         name='personal_details'),
 ]

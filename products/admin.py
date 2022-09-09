@@ -3,6 +3,7 @@ from .models import Category, Brand, Gender, Product
 
 # Register models to admin
 
+
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
 
