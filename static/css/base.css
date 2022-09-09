@@ -254,7 +254,7 @@ a.category-badge>span.badge:hover {
 .btt-button {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 10px;
 }
 
 .btt-link,
@@ -425,6 +425,12 @@ a.category-badge>span.badge:hover {
         margin-top: 100px;
     }
 
+    .bi-arrow-up-square-fill {
+        width: 25px;
+        height: 25px;
+    }
+
+
 }
 
 @media (max-width: 767px) {
@@ -462,7 +468,7 @@ a.category-badge>span.badge:hover {
         padding: 20px 10px 5px;
     }
 
-
+   
 
 }
 
@@ -505,6 +511,13 @@ a.category-badge>span.badge:hover {
     .nav-link i.fa-lg {
         font-size: 15px;
     }
+
+    .bi-arrow-up-square-fill {
+        width: 20px;
+        height: 20px;
+        right: 5px;
+    }
+
 
    
 }

@@ -24,45 +24,53 @@
     <div class="row">
         <div class="col">
             {% if cart_items %}
-            <div class="d-block d-md-none">
-                <div class="row">
-                    <div class="col">
-                        {% include 'cart/cart_total.html' %}
-                    </div>
-
-                </div>
-                <div class="row">
-                    <div class="col">
-                        {% include 'cart/checkout_buttons.html' %}
-                        <p class="text-muted my-4">A summary of your shopping cart contents is below: </p>
-                    </div>
-                </div>
-                {% for item in cart_items %}
+                <div class="d-block d-md-none">
                     <div class="row">
-                        <div class="col-12 col-sm-6 mb-2">
-                            {% include 'cart/product_image.html' %}
+                        <div class="col">
+                            {% include 'cart/cart_total.html' %}
                         </div>
-                        <div class="col-12 col-sm-6  mb-2">
-                            {% include 'cart/product_info.html' %}
-                        </div>
-                        <div class="col-12 col-sm-6 order-sm-last  mb-2">
-                            <p class="my-0">Price: € {{ item.product.price }}</p>
-                            <p><span class="font-weight-bold">Subtotal: </span>€ {{ item.product.price | calc_subtotal:item.quantity }}</p>
-                        </div>
-                        <div class="col-12 col-sm-6  mb-2">
-                            {% include 'cart/quantity_form.html' %}
-                        </div>
-                        <div class="col-12 col-sm-6  mb-2">
-                            {% include 'cart/delete_product_btn.html' %}
-                        </div>
+
                     </div>
                     <div class="row">
                         <div class="col">
-                            <hr>
+                            {% include 'cart/checkout_buttons.html' %}
+                            <p class="text-muted my-4">A summary of your shopping cart contents is below: </p>
                         </div>
                     </div>
+                    {% for item in cart_items %}
+                        <div class="row">
+                            <div class="col-12 col-sm-6 mb-2">
+                                {% include 'cart/product_image.html' %}
+                            </div>
+                            <div class="col-12 col-sm-6  mb-2">
+                                {% include 'cart/product_info.html' %}
+                            </div>
+                            <div class="col-12 col-sm-6 order-sm-last  mb-2">
+                                <p class="my-0">Price: € {{ item.product.price }}</p>
+                                <p><span class="font-weight-bold">Subtotal: </span>€ {{ item.product.price | calc_subtotal:item.quantity }}</p>
+                            </div>
+                            <div class="col-12 col-sm-6  mb-2">
+                                {% include 'cart/quantity_form.html' %}
+                            </div>
+                            <div class="col-12 col-sm-6  mb-2">
+                                {% include 'cart/delete_product_btn.html' %}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <hr>
+                            </div>
+                        </div>
                 {% endfor %}
-
+                <div class="btt-button shadow-sm rounded-0 mb-5 mr-3 font-weight-bold">
+                    <a class="btt-link d-flex h-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="rgb(149, 8, 177)"
+                            class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z" />
+                        </svg>
+                    </a>
+                </div>
             </div>
             <div class="table-responsive rounded d-none d-md-block">
                 <table class="table table-sm table-borderless">
@@ -126,6 +134,11 @@
 
 {% block postloadjs %}
     {{ block.super }}
+    <script type="text/javascript">
+        $('.btt-link').click(function (e) {
+            window.scrollTo(0, 0)
+        })
+    </script>
 
     {% include 'products/includes/qty_input_script.html' %}
     {% include 'cart/includes/cart_qty_script.html' %}
