@@ -13,7 +13,7 @@ I used GitHub Agile project management tool to create user stories using issues 
 |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
 | --------------- | -------------- | --------- | --------| -------------|
 | [#1](https://github.com/VeronicaLourens/vero-perfume/issues/1) Admin CRUD | As a shop owner  | I want to navigate the admin panel so that I can create, read, update and delete data on the site. | Django admin | Must Have |
-| [#2](https://github.com/VeronicaLourens/vero-perfume/issues/2) Admin add / delete product | As a shop owner  | I want to add or delete product so that I can easily add new product or delete unavailable product on the site.| Django admin | Must Have |
+| [#2](https://github.com/VeronicaLourens/vero-perfume/issues/2) Admin add, update and delete product | As a shop owner  |  I want to add, update and delete product so that I can easily add new product or delete unavailable product on the site as well as update product information.| Django admin | Must Have |
 | [#3](https://github.com/VeronicaLourens/vero-perfume/issues/3) Admin edit product | As a shop owner  |  I want to edit the product so that I can update the product information.| Django admin | Must Have |
 | [#4](https://github.com/VeronicaLourens/vero-perfume/issues/4)  Admin manage reviews | As a shop owner  |  I want to manage the customer review so that I can filter out and approve the reviews that user wants to post on the site.| Django admin | Must Have |
 | [#5](https://github.com/VeronicaLourens/vero-perfume/issues/5)  Admin receive payment| As a shop owner  |  I want to receive payment from customers so that I can enjoy doing business.| Django admin | Must Have |
