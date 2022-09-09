@@ -1,5 +1,5 @@
 from django import forms
-from .models import Product
+from .models import Product, Category
 
 SIZE_CHOICES = [
         ('30ml', '30ml'),
@@ -17,3 +17,20 @@ class AddToCartForm(forms.Form):
     size = forms.ChoiceField(choices=SIZE_CHOICES)
     quantity = forms.IntegerField(max_value=10, min_value=1)
 
+
+class ProductForm(forms.ModelForm):
+    """
+    To manage the product by the admin.
+    """
+    class Meta:
+        model = Product
+        fields = '__all__'
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        categories = Category.objects.all()
+        friendly_names = [(c.id, c.get_friendly_name()) for c in categories]
+
+        self.fields['category'].choices = friendly_names
+        for field_name, field in self.fields.items():
+            field.widget.attrs['class'] = 'border-black rounded-0'
