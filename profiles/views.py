@@ -59,6 +59,7 @@ def order_history(request, order_number):
     return render(request, template, context)
 
 
+@login_required
 def delete_profile(request):
     """
     To delete the user profile and associated data from the database.
