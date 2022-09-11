@@ -244,7 +244,8 @@ a {
 }
 
 .product-detail-container,
-.add-product-container {
+.add-product-container,
+.edit-product-container {
     margin-top: 200px;
 }
 
@@ -403,7 +404,8 @@ a.category-badge>span.badge:hover {
     }
 
     .product-detail-container,
-    .add-product-container {
+    .add-product-container,
+    .edit-product-container {
         margin-top: 100px;
     }
 
