@@ -243,7 +243,8 @@ a {
     color: #3A36BF;
 }
 
-.product-detail-container {
+.product-detail-container,
+.add-product-container {
     margin-top: 200px;
 }
 
@@ -401,7 +402,8 @@ a.category-badge>span.badge:hover {
         margin-top: 0px;
     }
 
-    .product-detail-container {
+    .product-detail-container,
+    .add-product-container {
         margin-top: 100px;
     }
 

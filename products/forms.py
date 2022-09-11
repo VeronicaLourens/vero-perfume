@@ -20,7 +20,7 @@ class AddToCartForm(forms.Form):
 
 class ProductForm(forms.ModelForm):
     """
-    To manage the product by the admin.
+    To manage the product by the shop owner/admin.
     """
     class Meta:
         model = Product
