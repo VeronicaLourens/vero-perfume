@@ -4,7 +4,7 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 from decimal import Decimal
-from .forms import AddToCartForm, SIZE_CHOICES, ProductForm
+from .forms import AddToCartForm, SIZE_CHOICES, ProductForm, ReviewForm
 from django.contrib.auth.decorators import login_required
 
 
@@ -166,3 +166,31 @@ def delete_product(request, product_id):
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
 
+
+def add_review(request, product_id):
+    """
+    To add a review.
+    """
+    if request.user.is_authenticated:
+        product = Product.objects.get(id=id)
+        if request.method == 'POST':
+            form = ReviewForm(request.POST or None)
+            if form.is_valid():
+                data = form.save(commit=False)
+                data.user = request.user
+                data.product = product
+                data.content = request.POST['content']
+                data.rating = request.POST['star_rating']
+                data.save()
+                return redirect('product_detail')
+     
+        else:
+            form = ReviewForm()
+
+        context = {
+            'form': form,
+        }
+        return render(request, 'products/product_detail.html', context)
+
+    else:
+        return redirect('accounts/login.html')

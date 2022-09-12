@@ -127,6 +127,35 @@
             <p class="mt-3">{{ product.description }}</p>
         </div>
     </div>
+    <div class="row justify-content-center align-items-center">
+        <div class="card">
+            <div class="card-body ">
+                <h3 class="font-weight-bold">Reviews</h3>
+                <form class="form" action="" method="POST">
+                    {% csrf_token %}
+                    <label for="review">message</label>
+                    <textarea name="review" id="review" cols="30" rows="5" class="form-control"></textarea>
+                    <label for="star_rating">Rating</label>
+                    <input type="interger" id="star_rating" for="star_rating">
+                    <br>
+                    <button type="submit" class="btn btn-shop">Add review</button>
+                </form>
+                <div class="card review-container">
+                    <div class="card-body">
+                        <p class="text-center">{{ review.title }}</p>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p>{{ review.user.username }}</p>
+                                <p><i class="fas fa-star mr-1"></i> {{ review.star_rating }} / 5</p>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock content %}
 
