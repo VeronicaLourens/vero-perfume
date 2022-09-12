@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 
 class Category(models.Model):
@@ -141,3 +142,43 @@ class Product(models.Model):
 
     def get_size(self):
         return self.SIZE_CHOICES[self.get_size]
+
+
+class Review(models.Model):
+    """
+    To create a review.
+    """
+    user = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True
+    )
+    title = models.CharField(
+        max_length=25,
+        null=False,
+        blank=False
+    )
+    content = models.TextField(
+        max_length=250,
+        null=False,
+        blank=False
+    )
+    product = models.ForeignKey(
+        Product,
+        on_delete=models.CASCADE
+    )
+    created_on = models.DateTimeField(
+        auto_now_add=True
+    )
+    star_rating = models.IntegerField(
+        default=5
+    )
+    approved = models.BooleanField(default=False)
+
+
+    class Meta:
+        ordering = ['id']
+
+    def __str__(self):
+        return f'{self.title}'
