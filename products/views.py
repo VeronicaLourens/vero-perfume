@@ -82,6 +82,7 @@ def product_detail(request, product_id):
     """ To render the product detail page."""
 
     product = get_object_or_404(Product, pk=product_id)
+    reviews = product.reviews.all()
     form = AddToCartForm()
 
     if product.size:
@@ -93,7 +94,6 @@ def product_detail(request, product_id):
             prices.append(new_price)
             reduction += Decimal(.30)
 
-    reviews = Review.objects.all()
     if request.method == 'POST':
         review_form = ReviewForm(data=request.POST or None)
 
