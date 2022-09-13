@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
 from .models import Product, Category, Brand, Gender, Review
 from django.contrib import messages
 from django.db.models import Q
@@ -115,7 +115,7 @@ def product_detail(request, product_id):
         'form': form,
         'reviews': reviews,
         'review_form': review_form,
-        
+   
     }
 
     return render(request, 'products/product_detail.html', context)
@@ -219,4 +219,18 @@ def add_review(request, product_id):
 
     else:
         return redirect('accounts/login.html')
+
+@login_required()
+def delete_review(request, review_id):
+    """
+    To delete the review on a specific product.
+    """
+    if request.user.is_authenticated:
+        review = get_object_or_404(Review, pk=review_id)
+        product = review.product
+        if request.user == review.user:
+            review.delete()
+            messages.success(request, 'Successfully delted review!')
+
+    return redirect(reverse('product_detail', args=[product.id]))
 
