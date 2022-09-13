@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
-from .models import Product, Category, Brand, Gender
+from .models import Product, Category, Brand, Gender, Review
 from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
@@ -93,10 +93,29 @@ def product_detail(request, product_id):
             prices.append(new_price)
             reduction += Decimal(.30)
 
+    reviews = Review.objects.all()
+    if request.method == 'POST':
+        review_form = ReviewForm(data=request.POST or None)
+
+        if request.user.is_authenticated and review_form.is_valid():
+            review_form.instance.user = request.user
+            review = review_form.save(commit=False)
+            review.product = product
+            review.save()
+
+            messages.success(request, 'Successfully added review!')
+            return redirect(reverse('product_detail', args=[product.id]))
+
+    else:
+        review_form = ReviewForm()
+
     context = {
         'product': product,
         'prices': prices,
         'form': form,
+        'reviews': reviews,
+        'review_form': review_form,
+        
     }
 
     return render(request, 'products/product_detail.html', context)
@@ -167,30 +186,37 @@ def delete_product(request, product_id):
     return redirect(reverse('products'))
 
 
+@login_required
 def add_review(request, product_id):
     """
     To add a review.
     """
-    if request.user.is_authenticated:
-        product = Product.objects.get(id=id)
-        if request.method == 'POST':
-            form = ReviewForm(request.POST or None)
-            if form.is_valid():
-                data = form.save(commit=False)
-                data.user = request.user
-                data.product = product
-                data.content = request.POST['content']
-                data.rating = request.POST['star_rating']
-                data.save()
-                return redirect('product_detail')
-     
+    product = get_object_or_404(Product, pk=product_id)
+    review = Review.objects.all()
+
+    if request.method == 'POST':
+        title = request.POST.get('title')
+        content = request.POST.get('content', '')
+        review_form = ReviewForm(request.POST or None)
+        if request.user.is_authenticated and review_form.is_valid():
+            review_form.instance.user = request.user
+            review = review_form.save(commit=False)
+            review.product = product
+            review.save()
+
+            messages.success(request, 'Successfully added review!')
+            return redirect(reverse('product_detail', args=[product.id]))
+
         else:
-            form = ReviewForm()
+            review_form = ReviewForm()
 
         context = {
-            'form': form,
+            'product': product,
+            'review_form': review_form,
+            'review': review,
         }
         return render(request, 'products/product_detail.html', context)
 
     else:
         return redirect('accounts/login.html')
+

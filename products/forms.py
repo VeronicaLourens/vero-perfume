@@ -1,6 +1,7 @@
 from django import forms
 from .models import Product, Category, Review
 from .widgets import CustomClearableFileInput
+from django.forms import ModelForm
 
 SIZE_CHOICES = [
         ('30ml', '30ml'),
@@ -43,13 +44,14 @@ class ProductForm(forms.ModelForm):
             field.widget.attrs['class'] = 'border-black rounded-0'
 
 
-class ReviewForm(forms.ModelForm):
+class ReviewForm(ModelForm):
     """
     To create review and give rating.
     """
-    model = Review
-    fields = (
-        'title',
-        'content',
-        'star_rating',
-    )
+    class Meta:
+        model = Review
+        fields = (
+            'title',
+            'content',
+            'star_rating',
+        )

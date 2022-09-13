@@ -128,32 +128,43 @@
         </div>
     </div>
     <div class="row justify-content-center align-items-center">
-        <div class="card">
-            <div class="card-body ">
-                <h3 class="font-weight-bold">Reviews</h3>
-                <form class="form" action="" method="POST">
-                    {% csrf_token %}
-                    <label for="review">message</label>
-                    <textarea name="review" id="review" cols="30" rows="5" class="form-control"></textarea>
-                    <label for="star_rating">Rating</label>
-                    <input type="interger" id="star_rating" for="star_rating">
-                    <br>
-                    <button type="submit" class="btn btn-shop">Add review</button>
-                </form>
-                <div class="card review-container">
-                    <div class="card-body">
-                        <p class="text-center">{{ review.title }}</p>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <p>{{ review.user.username }}</p>
-                                <p><i class="fas fa-star mr-1"></i> {{ review.star_rating }} / 5</p>
-                            </div>
-                           
-                        </div>
+        <div class="card col-12 col-md-6">
+            <h4>Customer Reviews:</h4>
+            {% if reviews %}
+            <div class="review-container">
+                {% for review in reviews %}
+                <div class="row card-body">
+                    <div class="col-6">
+                        <p>{{ review.user.username }}</p>
+                        <p><i class="fas fa-star mr-1"></i> {{ review.star_rating }} / 5</p>
                     </div>
-                    
+                    <div class="col-6">
+                        <p class="font-weight-bold">{{ review.title }}</p>
+                        <p>{{ review.content }}</p>
+                    </div>
                 </div>
+                {% endfor %}
             </div>
+            {% else %}
+            <div class="row">
+                <p>No reviews.</p>
+            </div>
+            {% endif %}
+            
+        </div>
+        <div class="col-12 col-md-6">
+            {% if request.user.is_authenticated %}
+            <div class="review-container ">
+                <h4 class="font-weight-bold">Reviews</h3>
+                <form class="review-form" action="{% url 'product_detail' product.id %}" method="POST">
+                    {% csrf_token %}
+                    {{ review_form|crispy }}
+
+                    <button type="submit" class="btn btn-success font-weight-bold">Add review</button>
+                </form>
+            </div>
+            {% endif %}
+
         </div>
     </div>
 </div>

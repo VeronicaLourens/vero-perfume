@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Category, Brand, Gender, Product
+from .models import Category, Brand, Gender, Product, Review
 
 # Register models to admin
 
@@ -44,3 +44,6 @@ class ProductAdmin(admin.ModelAdmin):
 
     list_filter = ('brand',)
     search_fields = ('brand', 'gender')
+
+
+admin.site.register(Review)
