@@ -81,3 +81,21 @@ def delete_profile(request):
     }
 
     return render(request, 'profiles/delete_profile.html', context)
+
+
+def wishlist(request):
+    """
+    To render wishlist.
+    """
+    wishlist = None
+    try:
+        wishlist = WishList.objects.get(user=request.user)
+    except WishList.DoesNotExist:
+        pass
+
+    context = {
+        'wishlist': wishlist,
+    }
+
+    return render(request, profiles/wishlist.html, context)
+

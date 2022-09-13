@@ -6,6 +6,7 @@ from django.db.models.functions import Lower
 from decimal import Decimal
 from .forms import AddToCartForm, SIZE_CHOICES, ProductForm, ReviewForm
 from django.contrib.auth.decorators import login_required
+from profiles.models import WishList, WishListItem
 
 
 def products(request):
@@ -82,6 +83,12 @@ def product_detail(request, product_id):
     """ To render the product detail page."""
 
     product = get_object_or_404(Product, pk=product_id)
+    wishlist = None
+    try:
+        wishlistitem = WishListItem.objects.get(user=request.user)
+    except WishList.DoesNotExist:
+        pass
+
     reviews = product.reviews.all()
     form = AddToCartForm()
 
@@ -122,6 +129,7 @@ def product_detail(request, product_id):
         'form': form,
         'reviews': reviews,
         'review_form': review_form,
+        'wishlist': wishlist,
    
     }
 
