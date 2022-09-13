@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django_countries.fields import CountryField
 from django.db.models.signals import post_save
 from django.dispatch import receiver
+from products.models import Product
 
 
 # The user profile model has been adapted from CI Boutique Ado project.
@@ -72,3 +73,43 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
         UserProfile.objects.create(user=instance)
 
     instance.userprofile.save()
+
+
+
+class WishList(models.Model):
+    """
+    To save products on user's wishlist.
+    """
+    user = models.OneToOneField(
+        User,
+        on_delete=models.CASCADE,
+    )
+    products = models.ManyToManyField(
+        Product,
+        through='WishListItem',
+        related_name='product_wishlists'
+    )
+
+    def __str__(self):
+        return f'Wishlist ({self.user})'
+
+
+class WishListItem(models.Model):
+    """
+    This model is for user to add products to the wishlist.
+    """
+    product = models.ForeignKey(
+        Product,
+        null=False,
+        blank=False,
+        on_delete=models.CASCADE
+    )
+    wishlist = models.ForeignKey(
+        WishList,
+        null=False,
+        blank=False,
+        on_delete=models.CASCADE
+    )
+
+    def __str__(self):
+        return self.product.name
