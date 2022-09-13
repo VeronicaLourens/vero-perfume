@@ -104,6 +104,13 @@ def product_detail(request, product_id):
             review.save()
 
             messages.success(request, 'Successfully added review!')
+
+            if product.rating:
+                product.rating = (product.rating)
+            else:
+                product.rating = review.star_rating
+            product.save()
+            
             return redirect(reverse('product_detail', args=[product.id]))
 
     else:

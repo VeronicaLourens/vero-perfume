@@ -148,6 +148,13 @@ class Review(models.Model):
     """
     To create a review.
     """
+    STAR_CHOICES = [
+        (1, '1'),
+        (2, '2'),
+        (3, '3'),
+        (4, '4'),
+        (5, '5'),
+    ]
     user = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
@@ -173,7 +180,8 @@ class Review(models.Model):
         auto_now_add=True
     )
     star_rating = models.IntegerField(
-        default=5
+        choices=STAR_CHOICES,
+        default=5,
     )
     approved = models.BooleanField(default=False)
 
