@@ -230,7 +230,7 @@ def delete_review(request, review_id):
         product = review.product
         if request.user == review.user:
             review.delete()
-            messages.success(request, 'Successfully delted review!')
+            messages.success(request, 'Successfully deleted review!')
 
     return redirect(reverse('product_detail', args=[product.id]))
 

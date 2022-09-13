@@ -41,6 +41,7 @@ I used GitHub Agile project management tool to create user stories using issues 
 | [#11](https://github.com/VeronicaLourens/vero-perfume/issues/11)  Filter and view search product result| As a shopper  |  I want to filter products so that I can quickly find the products I am looking for. | products | Should Have |
 | [#12](https://github.com/VeronicaLourens/vero-perfume/issues/12) Sort products by a specific category  | As a shopper  |  I want to find the best priced or best rated product in a specific category so that I can easily find what I want. | products | Should Have |
 | [#13](https://github.com/VeronicaLourens/vero-perfume/issues/13) Save product to wishlist | As a shopper  |  I want to save product to my wish list so that I can easily select the products to purchase. | products | Should Have |
+| [#30](https://github.com/VeronicaLourens/vero-perfume/issues/30) Post / delete review and rate a product | As a registered shopper  | I want to post, delete review or rate a product / shop so that I can share my opinion to the others.  | products | Could Have |
 | [#35](https://github.com/VeronicaLourens/vero-perfume/issues/35) View and select product size | As a shopper  |  I want to view and select the product size so that I can buy the product with the size and the price as I wish.| products | Should Have |
 
 [Back to top](#vero-perfume)
@@ -76,11 +77,6 @@ I used GitHub Agile project management tool to create user stories using issues 
 | [#28](https://github.com/VeronicaLourens/vero-perfume/issues/28) Checkout and pay  | As a registered shopper  | I want to check out and pay online so that I can complete the purchase.  | checkout | Must Have |
 | [#29](https://github.com/VeronicaLourens/vero-perfume/issues/29) Receive order confirmation | As a registered shopper  |   I want to receive confirmation after paying so that I know whether my purchase is successful or not. | checkout | Must Have |
 | [#34](https://github.com/VeronicaLourens/vero-perfume/issues/34)  Process online orders| As a shop owner | I want to process orders online so that I can sell products online  | checkout | Must Have |
-
-* #### Epic 7 - Review app
-|  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
-| --------------- | -------------- | --------- | --------| -------------|
-| [#30](https://github.com/VeronicaLourens/vero-perfume/issues/30)  | As a registered shopper  | I want to post review or rate a product / shop so that I can share my opinion to the others.  | review | Could Have |
 
 
 [Back to top](#vero-perfume)
