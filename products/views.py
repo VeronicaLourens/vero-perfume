@@ -83,11 +83,11 @@ def product_detail(request, product_id):
     """ To render the product detail page."""
 
     product = get_object_or_404(Product, pk=product_id)
-    wishlist = None
-    try:
-        wishlistitem = get_object_or_404(WishListItem, user=request.user.id)
-    except WishList.DoesNotExist:
-        pass
+    # wishlist = None
+    # try:
+    #     wishlistitem = get_object_or_404(WishListItem, product_id)
+    # except WishList.DoesNotExist:
+    #     pass
 
     reviews = product.reviews.all()
     form = AddToCartForm()
@@ -129,7 +129,7 @@ def product_detail(request, product_id):
         'form': form,
         'reviews': reviews,
         'review_form': review_form,
-        'wishlist': wishlist,
+        
    
     }
 

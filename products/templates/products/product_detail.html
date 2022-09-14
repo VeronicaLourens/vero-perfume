@@ -20,7 +20,7 @@
                 <a href="{{ product.image_url }}" target="_blank">
                     <img class="card-img-top img-fluid" src="{{ product.image_url }}" alt="{{ product.name }}">
                 </a>
-                <a class="wishlist-link" href="#" title="Save to WishList">
+                <a class="wishlist-link" href="{% url 'add_to_wishlist' product.id %}" title="Save to WishList">
                     <div class="text-center">
                         <i class="fas fa-heart fa-lg"></i>
                     </div>

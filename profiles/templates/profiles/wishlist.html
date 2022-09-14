@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 {% load static %}
-{% load cart_tools %}
 
 {% block page_header %}
 <div class="containe header-container">
@@ -22,7 +21,7 @@
         </div>
     </div>
     <div class="row mt-3">
-        {% for product in products %}
+        {% for product in wishlist.products.all %}
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
             <div class="card product-card h-100 border-0 justify-content-center align-items-center">
                 {% if product.image %}
@@ -36,37 +35,41 @@
                 {% endif %}
                 <div class="card-body pb-0">
                     <p class="mb-0">{{ product.name }}</p>
-                </div>
-                <div class="card-footer bg-white pt-0 border-0 text-left">
-                    <div class="row my-2">
-                        <div class="col">
-                            <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            {% if product.brand %}
-                            <p class="small mt-1 mb-0">
-                                <a class="text-muted" href="{% url 'products' %}?brand={{ product.brand.name }}">
-                                    <i class="fas fa-tag mr-1"></i>{{ product.brand.friendly_name }}
-                                </a>
-                            </p>
-                            {% endif %}
-                            {% if product.gender %}
-                            <p class="small mt-1 mb-0 text-muted">
-                                <i class="fas fa-image-portrait mr-1"></i>{{ product.gender }}
-                            </p>
-                            {% endif %}
-                            {% if product.rating %}
-                            <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
-                            {% else %}
-                            <small class="text-muted">No Rating</small>
-                            {% endif %}
-                        </div>
-                    </div>
+                    <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
+                    {% if product.brand %}
+                        <p class="small mt-1 mb-0">
+                            <a class="text-muted" href="{% url 'products' %}?brand={{ product.brand.name }}">
+                                <i class="fas fa-tag mr-1"></i>{{ product.brand.friendly_name }}
+                            </a>
+                        </p>
+                    {% endif %}
+                    <small class="">
+                        <a href="{% url 'product_detail' product.id %}">Details</a> |
+                        <a class="text-danger" href="">Delete</a>
+                    </small>
                 </div>
             </div>
         </div>
+            {% if forloop.counter|divisibleby:1 %}
+                <div class="col-12 d-sm-none mb-3">
+                    <hr>
+                </div>
+            {% endif %}
+            {% if forloop.counter|divisibleby:2 %}
+                <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-3">
+                    <hr>
+                </div>
+            {% endif %}
+            {% if forloop.counter|divisibleby:3 %}
+                <div class="col-12 d-none d-lg-block d-xl-none mb-3">
+                    <hr>
+                </div>
+            {% endif %}
+            {% if forloop.counter|divisibleby:4 %}
+                <div class="col-12 d-none d-xl-block mb-3">
+                    <hr>
+                </div>
+            {% endif %}
         {% endfor %}
     </div>
 </div>

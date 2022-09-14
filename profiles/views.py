@@ -1,9 +1,10 @@
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from .models import UserProfile, WishList, WishListItem
 from .forms import UserProfileForm, ProfileDeleteForm
 from checkout.models import Order
+from products.models import Product
 
 
 @login_required
@@ -92,10 +93,23 @@ def wishlist(request):
         wishlist = WishList.objects.get(user=request.user)
     except WishList.DoesNotExist:
         pass
-
     context = {
         'wishlist': wishlist,
     }
-
     return render(request, 'profiles/wishlist.html', context)
 
+
+@login_required
+def add_to_wishlist(request, product_id):
+    """
+    To add a product to the wishlist.
+    """
+    product = get_object_or_404(Product, pk=product_id)
+
+    # Create a wishlist for the user if they don't have one
+    wishlist, _ = WishList.objects.get_or_create(user=request.user)
+    # Add product to the wishlist
+    wishlist.products.add(product)
+    messages.success(request, 'Added ' + product.name + ' to your wishlist.')
+
+    return redirect(request.META.get('HTTP_REFERER'))
