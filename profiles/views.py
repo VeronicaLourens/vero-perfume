@@ -88,13 +88,19 @@ def wishlist(request):
     """
     To render wishlist.
     """
-    wishlist = None
+    wishlist_items = [] 
+    wishlist_count = 0
+    wishlist = request.session.get('wishlist', {})
+
     try:
         wishlist = WishList.objects.get(user=request.user)
     except WishList.DoesNotExist:
         pass
+
     context = {
         'wishlist': wishlist,
+        'wishlist_items': wishlist_items,
+        'wishlist_count': wishlist_count,
     }
     return render(request, 'profiles/wishlist.html', context)
 

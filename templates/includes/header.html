@@ -51,7 +51,12 @@
                 <li class="list-inline-item">
                     <a class="text-black nav-link" href="{% url 'wishlist' %}" title="WishList">
                         <div class="text-center">
-                            <div><i class="fas fa-heart fa-lg"></i></div> 
+                            <div>
+                                <i class="fas fa-heart fa-lg"></i>
+                                <span id="product-count" class="badge badge-danger">
+                                    {{ product_count }}
+                                </span>
+                            </div> 
                         </div>
                     </a>
                 </li>
