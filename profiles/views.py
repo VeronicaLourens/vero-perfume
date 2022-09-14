@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
-from .models import UserProfile
+from .models import UserProfile, WishList, WishListItem
 from .forms import UserProfileForm, ProfileDeleteForm
 from checkout.models import Order
 
@@ -97,5 +97,5 @@ def wishlist(request):
         'wishlist': wishlist,
     }
 
-    return render(request, profiles/wishlist.html, context)
+    return render(request, 'profiles/wishlist.html', context)
 

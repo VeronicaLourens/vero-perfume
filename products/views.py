@@ -85,7 +85,7 @@ def product_detail(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     wishlist = None
     try:
-        wishlistitem = WishListItem.objects.get(user=request.user)
+        wishlistitem = get_object_or_404(WishListItem, user=request.user.id)
     except WishList.DoesNotExist:
         pass
 

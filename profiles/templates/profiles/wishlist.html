@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% load static %}
+{% load cart_tools %}
+
+{% block page_header %}
+<div class="containe header-container">
+    <div class="row">
+
+    </div>
+</div>
+
+{% endblock page_header %}
+
+{% block content %}
+
+<div class="overlay"></div>
+<div class="container cart-container">
+    <div class="row">
+        <div class="col col-12">
+            <h3 class="my-3">Favoriete items</h3>
+            <hr>
+        </div>
+    </div>
+    <div class="row mt-3">
+        {% for product in products %}
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+            <div class="card product-card h-100 border-0 justify-content-center align-items-center">
+                {% if product.image %}
+                <a href="{% url 'product_detail' product.id %}">
+                    <img class="card-img-top img-fluid" src="{{ product.image_url }}" alt="{{ product.name }}">
+                </a>
+                {% else %}
+                <a href="{% url 'product_detail' product.id %}">
+                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}No-Image.png" alt="{{ product.name }}">
+                </a>
+                {% endif %}
+                <div class="card-body pb-0">
+                    <p class="mb-0">{{ product.name }}</p>
+                </div>
+                <div class="card-footer bg-white pt-0 border-0 text-left">
+                    <div class="row my-2">
+                        <div class="col">
+                            <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            {% if product.brand %}
+                            <p class="small mt-1 mb-0">
+                                <a class="text-muted" href="{% url 'products' %}?brand={{ product.brand.name }}">
+                                    <i class="fas fa-tag mr-1"></i>{{ product.brand.friendly_name }}
+                                </a>
+                            </p>
+                            {% endif %}
+                            {% if product.gender %}
+                            <p class="small mt-1 mb-0 text-muted">
+                                <i class="fas fa-image-portrait mr-1"></i>{{ product.gender }}
+                            </p>
+                            {% endif %}
+                            {% if product.rating %}
+                            <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                            {% else %}
+                            <small class="text-muted">No Rating</small>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}
+
+
