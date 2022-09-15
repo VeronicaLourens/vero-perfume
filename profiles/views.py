@@ -1,7 +1,7 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
-from .models import UserProfile, WishList, WishListItem
+from .models import UserProfile, WishList
 from .forms import UserProfileForm, ProfileDeleteForm
 from checkout.models import Order
 from products.models import Product
@@ -18,7 +18,10 @@ def profile(request):
         form = UserProfileForm(request.POST, instance=profile)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Your profile has been updated successfully!')
+            messages.success(
+                request,
+                'Your profile has been updated successfully!'
+            )
     else:
         form = UserProfileForm(instance=profile)
 
@@ -45,7 +48,9 @@ def personal_details(request):
 
 
 def order_history(request, order_number):
-
+    """
+    To render the order list.
+    """
     order = get_object_or_404(Order, order_number=order_number)
     messages.info(request, (
         f'This is a past confirmation for order number {order_number}. '
@@ -63,14 +68,18 @@ def order_history(request, order_number):
 @login_required
 def delete_profile(request):
     """
-    To delete the user profile and associated data from the database.
+    To delete the user profile
+    and associated data from the database.
     """
     if request.method == 'POST':
-        delete_profile = ProfileDeleteForm(request.POST, instance=request.user)
+        delete_profile = ProfileDeleteForm(
+            request.POST,
+            instance=request.user
+        )
         user = request.user
         user.delete()
 
-        messages.success(request, f'Your profile has been deleted!')
+        messages.success(request, 'Your profile has been deleted!')
         return redirect('home')
 
     else:
@@ -88,13 +97,13 @@ def wishlist(request):
     """
     To render wishlist.
     """
-    wishlist_items = [] 
+    wishlist_items = []
     wishlist_count = 0
     wishlist = request.session.get('wishlist', {})
 
     try:
         wishlist = WishList.objects.get(user=request.user)
-    except WishList.DoesNotExist:
+    except wishlist.DoesNotExist:
         pass
 
     context = {
@@ -114,9 +123,19 @@ def add_to_wishlist(request, product_id):
 
     # Create a wishlist for the user if they don't have one
     wishlist, _ = WishList.objects.get_or_create(user=request.user)
+
     # Add product to the wishlist
-    wishlist.products.add(product)
-    messages.info(request, 'Added ' + product.name + ' to your wishlist.')
+    if product in wishlist.products.all():
+        messages.error(
+            request,
+            product.name + ' is already in your wishlist.'
+        )
+    else:
+        wishlist.products.add(product)
+        messages.info(
+            request,
+            'Added ' + product.name + ' to your wishlist.'
+        )
 
     return redirect(request.META.get('HTTP_REFERER'))
 
@@ -131,6 +150,9 @@ def remove_from_wishlist(request, product_id):
 
     # Remove product from the wishlist
     wishlist.products.remove(product)
-    messages.info(request, product.name + ' was removed from your wishlist.')
+    messages.info(
+        request,
+        product.name + ' was removed from your wishlist.'
+    )
 
     return redirect(request.META.get('HTTP_REFERER'))
