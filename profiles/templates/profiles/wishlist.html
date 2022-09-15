@@ -16,7 +16,7 @@
 <div class="container cart-container">
     <div class="row">
         <div class="col col-12">
-            <h3 class="my-3">Favoriete items</h3>
+            <h3 class="my-3">Favoriete items ( {{product_count }})</h3>
             <hr>
         </div>
     </div>
@@ -37,9 +37,9 @@
                     <p class="mb-0">{{ product.name }}</p>
                     <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
                     <small class="">
-                        <a href="{% url 'product_detail' product.id %}">Details</a> &nbsp; | &nbsp;
-                        <a class="text-danger" href="{% url 'remove_from_wishlist' product.id %}"><i
-                                class="fas fa-trash"></i></a>
+                        <a href="{% url 'product_detail' product.id %}" title="View details">Details</a> &nbsp; |  &nbsp;
+                        <a class="text-danger" href="{% url 'remove_from_wishlist' product.id %}"
+                            title="Remove from WishList"><i class="fas fa-trash"></i></a>
                     </small>
                 </div>
             </div>
