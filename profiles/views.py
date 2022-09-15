@@ -105,6 +105,8 @@ def wishlist(request):
         wishlist = WishList.objects.get(user=request.user)
     except wishlist.DoesNotExist:
         pass
+    else:
+        wishlist_items = wishlist.products.all()
 
     context = {
         'wishlist': wishlist,
