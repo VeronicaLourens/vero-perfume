@@ -13,12 +13,17 @@ def contact(request):
         contact_form = ContactUsForm(data=request.POST)
 
         if contact_form.is_valid():
+
+            full_name = contact_form.cleaned_data['full_name']
+            email = contact_form.cleaned_data['email']
+            message = contact_form.cleaned_data['message']
+
             contact = contact_form.save(commit=False)
             contact.save()
 
             send_mail(
                 'Contact us',
-                'Thank you for contacint us!',
+                'Thank you for contacting us!',
                 'info@veroperfume.com',
                 ['info@gmail.com']
             )
