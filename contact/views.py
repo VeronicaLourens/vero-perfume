@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
+from django.core.mail import send_mail
 from .forms import ContactUsForm
 
 
@@ -14,6 +15,13 @@ def contact(request):
         if contact_form.is_valid():
             contact = contact_form.save(commit=False)
             contact.save()
+
+            send_mail(
+                'Contact us',
+                'Thank you for contacint us!',
+                'info@veroperfume.com',
+                ['info@gmail.com']
+            )
             messages.success(request, 'Successfully sent the message!')
             return redirect('home')
     else:
