@@ -25,11 +25,15 @@
                         <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}No-Image.png" alt="{{ product.name }}">
                     </a>
                 {% endif %}
-                <a class="wishlist-link" href="{% url 'add_to_wishlist' product.id %}" title="Save to WishList">
-                    <div class="text-center">
-                        <i class="fas fa-heart fa-lg"></i>
-                    </div>
-                </a>
+                <form action="{% url 'add_to_wishlist' product.id %}" method="POST">
+                    {% csrf_token %}
+                    <input type="hidden" name="product_id" value="{{ product.id }}">
+                    <button type="submit" class="wishlist-link bg-white" title="Save to WishList">
+                        <div class="text-center">
+                            <i class="fas fa-heart fa-lg"></i>
+                        </div>
+                    </button>
+                </form>
             </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4">

@@ -12,14 +12,15 @@ def wishlist_context(request):
     wishlist_count = 0
     wishlist = request.session.get('wishlist', {})
 
-    if request.user.is_authenticated:
-        return {
-            'wishlist_count': WishList.objects.filter(user=request.user).count()
-        }
-    else:
-        return {
-            'wishlist_count': wishlist_count,
-        }
+    # if request.user.is_authenticated:
+    #     return {
+    #         'wishlist_count': WishList.objects.filter(user=request.user).count()
+    #     }
+    # else:
+    #     return {
+    #         'wishlist_count': wishlist_count,
+    #     }
+    
 
     context = {
         'wishlist_items': wishlist_items,
