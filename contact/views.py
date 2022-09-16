@@ -7,12 +7,12 @@ def contact_us(request):
     """
     To render and handle the contact form.
     """
-    if request.POST.get('action') == 'post':
-        email = request.POST.get('email')
-        content = request.POST.get('content')
-        ContactUs.objects.create(email=email, content=content)
+    # if request.POST.get('action') == 'post':
+    #     email = request.POST.get('email')
+    #     content = request.POST.get('content')
+    #     ContactUs.objects.create(email=email, content=content)
        
-        #messages.success(request, 'Successfully sent the message!')
-        response = JsonResponse({'msg': 'your message has been sent'})
+    #     messages.success(request, 'Successfully sent the message!')
+        
 
-        return response
+    return render(request, 'contact/contact_us.html')
