@@ -3,7 +3,7 @@ from django.forms import ModelForm
 from .models import ContactUs
 
 
-class ContactUsForm(forms.ModelForm):
+class ContactUsForm(ModelForm):
     """
     The form is for user to contact the shop owner.
     """
@@ -11,5 +11,5 @@ class ContactUsForm(forms.ModelForm):
         model = ContactUs
         fields = [
             'email',
-            'contect',
+            'content',
         ]

@@ -248,4 +248,3 @@ def delete_review(request, review_id):
             messages.success(request, 'Successfully deleted review!')
 
     return redirect(reverse('product_detail', args=[product.id]))
-
