@@ -10,6 +10,7 @@ class ContactUsForm(ModelForm):
     class Meta:
         model = ContactUs
         fields = [
+            'full_name',
             'email',
-            'content',
+            'message',
         ]

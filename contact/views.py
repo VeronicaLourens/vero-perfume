@@ -1,11 +1,13 @@
 from django.shortcuts import render
 from .models import ContactUs
+from .forms import ContactUsForm
 
 
 def contact(request):
     """
     To render and handle the contact form.
     """
+    contact_form = ContactUsForm(data=request.POST)
     # if request.method == POST:
     #     contact_form = ContactUsForm(data=request.POST)
     #     if contact_form.is_valid():
@@ -18,8 +20,8 @@ def contact(request):
     #     else:
     #         contact_form = ContactUsForm()
 
-    # context = {
-    #     'contact_form': contact_form,
-    # }
+    context = {
+        'contact_form': contact_form,
+    }
 
-    return render(request, 'contact/contact.html')
+    return render(request, 'contact/contact.html', context)

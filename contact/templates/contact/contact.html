@@ -20,5 +20,16 @@
             <hr>
         </div>
     </div>
+    <div class="row contact-form">
+        <div class="col-6">
+            <form action="" method="POST" class="form mb-2" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ contact_form|crispy }}
+                <button type="submit" class="btn btn-success font-weight-bold rounded-0">Send</button>
+            </form>
+
+        </div>
+        
+    </div>
 </div>
 {% endblock content %}

@@ -5,8 +5,14 @@ class ContactUs(models.Model):
     """
     To contact the shop owner.
     """
+    full_name = models.CharField(
+        max_length=100,
+        null=False,
+        blank=False,
+        default=''
+    )
     email = models.EmailField()
-    content = models.TextField(
+    message = models.TextField(
         max_length=250,
         null=False,
         blank=False
