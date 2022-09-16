@@ -19,7 +19,7 @@ class ContactUs(models.Model):
         """
         Meta data for the contact.
         """
-        ordering = ('-date_sent')
+        ordering = ('-date_sent',)
 
     def __str__(self):
         return f'{self.email}'
