@@ -316,7 +316,7 @@ Steps to clone the project from GitHub as following:
 [Back to top](#vero-perfume)
 ## Content
 
-* Vero Perfume project was inspired by [Code Institute]()'s walk through project ```Boutique Ado```. The code for setting up the e-commerce project, product page, shopping cart, the payment system as well as the JS code are taken and adapted from the tutorial materials.
+* Vero Perfume project was inspired by [Code Institute]()'s walk through project ```Boutique Ado```. The code for setting up the e-commerce project, product page, shopping cart, the Stripe payment system as well as the JS code are taken and adapted from the tutorial materials.
 
 * I use [Kaggle](https://www.kaggle.com/) to get some of product images and other information.
 * I couldn't find the perfume images from the famous brands on the free image website so that I use the official websites to get the product images and other information. Credit to [Gucci](https://www.gucci.com/us/en/ca/beauty/fragrances/fragrances-for-women-c-fragrances-for-women), [Hugo Boss](https://www.hugoboss.com/fragrances-men/),  [DIOR](https://www.dior.com/nl_nl/beauty/geuren/damesgeur/alle-producten), [Chloé](https://www.chloe.com/nl/fragrance_cod46568417bo.html).
@@ -332,6 +332,10 @@ Steps to clone the project from GitHub as following:
 * The code in ```product.js``` is from [How to display content depending on dropdown menue user selection](https://stackoverflow.com/questions/18115916/how-to-display-content-depending-on-dropdown-menue-user-selection)
 
 * The CSS code for the total count of the shopping cart is adapted from [How to put the number at top right corner of cart icon?](https://stackoverflow.com/questions/51304169/how-to-put-the-number-at-top-right-corner-of-cart-icon)
+
+* The Wishlist code was inspired and taken from CI Slack channel where fellow coders shared the tips and tricks.
+
+* I learned how to implement the contact form for site users to contact the shop owner on Youtube [Code With Stein](https://www.youtube.com/watch?v=dnhEnF7_RyM)
 
 [Back to top](#vero-perfume)
 # Acknowledgement
