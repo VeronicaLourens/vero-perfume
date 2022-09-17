@@ -100,19 +100,14 @@ a {
     background-color: #3A36BF;
 }
 
-/*----------------------------Carousel landing hero images */
+/*--------------------Carousel landing hero images */
 .carousel-text {
     font-family: Bree Serif;
 }
 
-.btn-shop,
-.btn-primary {
-    font-weight: bold !important;
-    background: rgb(149, 8, 177);
-    color: white;
-}
-
+/*---------------------------------buttons */
 .btn-card,
+.btn-shop,
 .btn-carousel {
     height: 40px;
     width: 200px;
@@ -128,6 +123,15 @@ a {
 .btn-carousel:hover {
     background: #3A36BF;
     color: white;
+}
+
+.btn-form {
+    height: 40px;
+    width: 200px;
+    font-weight: bold !important;
+    color: white;
+    border-radius: 18px !important;
+
 }
 
 .info-icon {
