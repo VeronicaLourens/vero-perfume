@@ -15,18 +15,26 @@
 <div class="overlay"></div>
 <div class="container cart-container">
     <div class="row justify-content-center align-items-center">
-        <div class="col col-md-6 col-sm-12">
-            <h3 class="text-center my-3">Contact us</h3>
+        <div class="col">
+            <h3 class="text-center my-3 font-weight-bold">Contact us</h3>
+            <p class="lead text-center">Questions to ask? Fill out the form below to reach us</p>
             <hr>
+        </div>
+    </div>
+    <div class="row justify-content-center align-items-center mt-3" id="contact-box">
+        <div class="col-md-5">
             <div class="contact-form">
-                <div class="">
-                    <form action="" method="POST" class="form mb-2" enctype="multipart/form-data">
-                        {% csrf_token %}
-                        {{ contact_form|crispy }}
-                        <button type="submit" class="btn btn-form btn-shop font-weight-bold rounded-0">Send</button>
-                    </form>
-                </div>
+                <form action="" method="POST" class="form my-3" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ contact_form|crispy }}
+                    <button type="submit" class="btn btn-form btn-shop font-weight-bold rounded-0">Send</button>
+                </form>
             </div>
+        </div>
+        <div class="col-md-5 d-none d-md-block">
+            <span>
+                <img src="{{ MEDIA_URL}}images/lady.jpg" alt="A lady enjoys the perfume" class="img-fluid rounded">
+            </span>
         </div>
     </div>
 </div>

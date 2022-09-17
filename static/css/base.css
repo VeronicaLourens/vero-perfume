@@ -356,6 +356,12 @@ a.category-badge>span.badge:hover {
     color: #3A36BF;
 }
 
+/*----------------------contact page */
+
+#contact-box {
+    box-shadow: 0px 0px 13px 13px rgb(156, 151, 182);
+}
+
 
 
 
