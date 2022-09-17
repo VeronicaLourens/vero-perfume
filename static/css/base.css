@@ -517,10 +517,8 @@ a.category-badge>span.badge:hover {
         padding: 20px 10px 5px;
     }
 
-    .btn-form,
-    .btn-card,
-    .btn-carousel,
-    .btn-shop {
+    .btn-1,
+    .btn-2 {
         height: 40px;
         width: 130px;
         font-weight: bold !important;
@@ -575,6 +573,9 @@ a.category-badge>span.badge:hover {
     }
     .btn-1 {
         float: left;
+    }
+    .btn-checkout {
+        margin-top: 10px;
     }
 
 
