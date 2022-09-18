@@ -367,6 +367,19 @@ a.category-badge>span.badge:hover {
     color: #3A36BF;
 }
 
+/*---------------------------policy modal*/
+
+.modal-header {
+    border-bottom: 1px solid #3A36BF;
+}
+.modal-footer {
+    border-top: 1px solid #3A36BF;
+}
+.modal-content {
+    padding: 18px;
+    box-shadow: 0px 0px 10px 10px #3A36BF;
+}
+
 
 /*----------------------contact page */
 
