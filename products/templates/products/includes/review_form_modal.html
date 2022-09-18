@@ -1,0 +1,28 @@
+<!-- Scrollable modal -->
+<div class="modal fade" id="reviewForm" data-backdrop="static" data-keyboard="false" tabindex="-1"
+    aria-labelledby="reviewsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title" id="reviewForm">Post review</h1>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body bg-light">
+                {% if request.user.is_authenticated %}
+                <div class="review-container ">
+                    <form class="review-form" action="{% url 'product_detail' product.id %}" method="POST">
+                        {% csrf_token %}
+                        {{ review_form|crispy }}
+                        <button type="submit" class="btn btn-shop font-weight-bold">Add review</button>
+                    </form>
+                </div>
+                {% endif %}
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-shop" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
