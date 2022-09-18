@@ -18,7 +18,8 @@
             <div class="col-12 text-center">
                 <a href="{% url 'contact' %}" class="btn btn-success" title="Contact Us">
                     <i class="fas fa-envelope mr-2"></i>Contact</a>
-                <a href="{% url 'policy' %}" class="btn btn-success" title="Terms & Conditions">
+                <a href="#" class="btn btn-success" title="Terms & Conditions" data-target="#policy"
+                    data-toggle="modal">
                     <i class="fas fa-file mr-2"></i>Policy</a>
                 <a href="" class="btn btn-success" target="_blank" title="Follow us on Facebook"
                     rel="noopener nofollow" aria-label="Visit our Facebook page (open in a new tab"
@@ -35,3 +36,4 @@
         </p>
     </div>
 </footer>
+{% include 'includes/policy/policy_modal.html' %}
