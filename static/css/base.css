@@ -366,6 +366,9 @@ a.category-badge>span.badge:hover {
     padding: 50px 30px 10px;
     color: #3A36BF;
 }
+.policy-container {
+    margin-top: 200px;
+}
 
 /*----------------------contact page */
 
@@ -446,7 +449,8 @@ a.category-badge>span.badge:hover {
 
     .product-detail-container,
     .add-product-container,
-    .edit-product-container {
+    .edit-product-container,
+    .policy-container {
         margin-top: 100px;
     }
 
