@@ -519,6 +519,9 @@ a.category-badge>span.badge:hover {
     .description-container {
         margin-top: 10px;
     }
+    .review-container {
+        margin-top: 10px !important;
+    }
 
     .btn-div {
         display: flex;
