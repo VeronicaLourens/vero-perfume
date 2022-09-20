@@ -367,6 +367,13 @@ a.category-badge>span.badge:hover {
     color: #3A36BF;
 }
 
+#mc_embed_signup {
+    background: #fff;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+    width: 500px;
+}
+
 /*---------------------------policy modal*/
 
 .modal-header {
