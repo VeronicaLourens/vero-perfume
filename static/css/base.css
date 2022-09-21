@@ -370,9 +370,16 @@ a.category-badge>span.badge:hover {
 #mc_embed_signup {
     background: #fff;
     clear: left;
-    font: 14px Helvetica, Arial, sans-serif;
-    width: 500px;
+    font: 12px Helvetica, Arial, sans-serif;
+    /* width: 300px; */
+    
 }
+
+.brandingLogo img {
+    width: 150px;
+    border-radius: 10px;
+}
+
 
 /*---------------------------policy modal*/
 
