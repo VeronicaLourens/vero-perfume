@@ -3,4 +3,3 @@ from .models import ContactUs
 
 
 admin.site.register(ContactUs)
-

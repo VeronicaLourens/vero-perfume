@@ -37,7 +37,7 @@ def contact(request):
                 ['user@email.com'],
                 html_message=html
             )
-            messages.success(request, 'Successfully sent the message!')
+            messages.info(request, 'Successfully sent the message!')
             return redirect('home')
     else:
         contact_form = ContactUsForm()
