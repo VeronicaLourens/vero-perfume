@@ -145,6 +145,11 @@ a {
     border-radius: 18px !important;
 }
 
+.btn-checkout-deals {
+    background: rgb(149, 8, 177);
+    color: white;
+}
+
 .info-icon {
     font-size: 20px;
 }
@@ -476,7 +481,7 @@ a.category-badge>span.badge:hover {
     .decrement-qty {
         padding: .25rem .5rem !important;
     }
-
+    
     .product-page-container {
         margin-top: 0px;
     }
@@ -500,9 +505,13 @@ a.category-badge>span.badge:hover {
         right: 80px;
     }
 
-    .cart-container,
-    .checkout-container {
+    .cart-container {
         margin-top: 80px;
+    }
+
+    .checkout-success-container,
+    .checkout-container {
+        margin-top: 90px !important;
     }
 
     .profile-container {
