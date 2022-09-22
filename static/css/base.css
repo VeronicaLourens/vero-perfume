@@ -119,6 +119,11 @@ a {
     right: 19%;
 }
 
+.home-page-card img {
+    width: fit-content;
+    height: auto;
+}
+
 /*---------------------------------buttons */
 .btn-card,
 .btn-shop,
