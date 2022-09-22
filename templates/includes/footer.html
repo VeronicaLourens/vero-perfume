@@ -27,17 +27,15 @@
                                 <div class="clear foot pb-3">
                                     <button type="submit" class="btn btn-form btn-shop subscribe-btn font-weight-bold rounded-0">Subscribe</button>
                                     <p class="brandingLogo">
-                                        <img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_light_dtp.svg">
+                                        <img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_light_dtp.svg" alt="Mailchimp logo">
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </form>
                 </div>
-                <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'>
-                </script>
-
-                <script type='text/javascript'>
+                <script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+                <script>
                     (function ($) {
                         window.fnames = new Array();
                         window.ftypes = new Array();
@@ -60,18 +58,18 @@
             </div>
             <div class="col-xs-12 col-md-4 mt-3">
                 <div class="col text-center mb-3">
-                    <a href="" class="" target="_blank" title="Follow us on Facebook" rel="noopener nofollow"
+                    <a href="" class="footer-link" target="_blank" title="Follow us on Facebook" rel="noopener nofollow"
                         aria-label="Visit our Facebook page (open in a new tab" aria-hidden="true">
                         <i class="fab fa-facebook mr-2"></i> Facebook
                     </a>
                 </div>
                 <div class="col text-center mb-3">
-                    <a href="{% url 'contact' %}" class="" title="Contact Us">
+                    <a href="{% url 'contact' %}" class="footer-link" title="Contact Us">
                         <i class="fas fa-envelope mr-2"></i>Contact Us
                     </a>
                 </div>
                 <div class="col text-center mb-3">
-                    <a href="#" class="" title="Terms & Conditions" data-target="#policy" data-toggle="modal">
+                    <a href="#" class="footer-link" title="Terms & Conditions" data-target="#policy" data-toggle="modal">
                         <i class="fas fa-file mr-2"></i>Our Policy
                     </a>
                 </div>

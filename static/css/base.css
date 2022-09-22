@@ -72,6 +72,11 @@ a {
     transition: all, .3s ease-in-out;
     transform: scale(1.1);
 }
+.fa-user,
+.fa-heart,
+.fa-shopping-cart {
+    color: #3A36BF !important;
+}
 
 .list-inline-item:hover,
 .main-nav-item:hover {
@@ -349,7 +354,8 @@ a.category-badge>span.badge:hover {
     width: 150px;
 }
 
-#product-count {
+#product-count,
+#wishlist-count {
     font-size: 12px;
     font-weight: bold;
     padding: 0 6px;
@@ -392,6 +398,10 @@ a.category-badge>span.badge:hover {
 
 .newsletter {
     box-shadow: 0px 0px 8px 3px rgb(219, 214, 248);
+}
+
+.footer-link {
+    color: #3A36BF !important;
 }
 
 
