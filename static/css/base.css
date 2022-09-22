@@ -371,7 +371,6 @@ a.category-badge>span.badge:hover {
     background: #fff;
     clear: left;
     font: 12px Helvetica, Arial, sans-serif;
-    /* width: 300px; */
     
 }
 
@@ -380,6 +379,10 @@ a.category-badge>span.badge:hover {
     border-radius: 10px;
 }
 
+.subscribe-btn {
+    width: 130px !important;
+    
+}
 
 /*---------------------------policy modal*/
 
@@ -614,4 +617,8 @@ a.category-badge>span.badge:hover {
     .btn-checkout {
         margin-top: 10px;
     }
+    .subscribe-btn {
+        margin-bottom: 10px;
+    }
+
 }
