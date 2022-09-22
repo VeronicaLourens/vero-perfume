@@ -14,7 +14,7 @@
 <div class="container profile-container">
     <div class="row justify-content-center">
         <div class="col">
-            <h3 class="mb-2 font-weight-bold">My Profile</h3>
+            <h3 class="mb-2 font-weight-bold text-center">My Profile</h3>
             <hr>
         </div>
     </div>
@@ -41,11 +41,11 @@
                 </div>
             </div>
             <div class="col-md-8">
-            
                 <div id="welcome-div">
                     <h6 class="font-weight-bold">Hello {{ user.username }} !</h6>
-                    <p class="card-text">Welcome to your account! You can manage all your personal details, orders
-                        and other account information here.</p>
+                    <p class="card-text">Welcome to your account! <br> You can manage all your personal details, orders
+                        and other account information here.
+                    </p>
                 </div>
             </div>
         </div>
@@ -53,14 +53,14 @@
         <div class="row">
             <div class="col-12 col-lg-6">
                 <p class="font-weight-bold"> <i class="fas fa-home mr-3"></i> Delivery Address</p>
-                <form class="mt-3" action="{% url 'profile' %}" method="POST" id="profile-update-form">
+                <form class="mt-3 text-center" action="{% url 'profile' %}" method="POST" id="profile-update-form">
                     {% csrf_token %}
                     {{ form|crispy }}
-                    <button class="btn btn-shop rounded-0 float-left">Update Details</button>
-                    <a href="{% url 'delete_profile' %}" class="btn btn-shop rounded-0 float-right">Delete Profile</a>
+                    <button class="btn btn-shop rounded-0 mt-2">Update Details</button>
+                    <a href="{% url 'delete_profile' %}" class="btn btn-shop rounded-0 mt-2">Delete Profile</a>
                 </form> 
             </div> 
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6 mt-5">
                 <p class="font-weight-bold"><i class="fas fa-box mr-3"></i>Order History</p>
                 <div class="order-history table-responsive">
                     <table class="table table-sm table-borderless">
