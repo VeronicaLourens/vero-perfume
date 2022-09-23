@@ -255,6 +255,7 @@ The Vero Perfume application is a B2C business model that it does the business d
 * [Facebook]() - used to create site's Facebook marketing page.
 * [Stripe]() - used to process the online payment with webhooks.
 * [AWS Bucket]() - used to host static files.
+* [Sitemap]() - used to generate the sitemap.xml
 
 [Back to top](#vero-perfume)
 
