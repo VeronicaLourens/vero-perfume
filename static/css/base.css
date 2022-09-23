@@ -360,7 +360,8 @@ a.category-badge>span.badge:hover {
 }
 
 #product-count,
-#wishlist-count {
+#wishlist-count,
+#item-count {
     font-size: 12px;
     font-weight: bold;
     padding: 0 6px;
@@ -553,6 +554,11 @@ a.category-badge>span.badge:hover {
     .carousel-container {
         margin-top: 50px;
     }
+    .home-page-card img {
+        max-width: 300px;
+        height: auto;
+    }
+
 
     .product-info-form {
        margin: 0 auto !important;
