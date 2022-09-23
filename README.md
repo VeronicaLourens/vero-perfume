@@ -21,14 +21,14 @@ I used GitHub Agile project management tool to create user stories using issues 
 
 [Back to top](#vero-perfume)
 
-* #### Epic 2 - Home app
+* #### Epic 2 - Home & Contact app
 |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
 | --------------- | -------------- | --------- | --------| -------------|
 | [#7](https://github.com/VeronicaLourens/vero-perfume/issues/7)  Navigate the site| As a shopper  |   I want to navigate the site easily so that I know what products the site sells to see if I am interested or not.| home | Must Have |
 | [#8](https://github.com/VeronicaLourens/vero-perfume/issues/8) Access the site | As a shopper  | I want to access the site easily so that I can view the site on any media screens using different browsers.| home | Must Have |
 | [#18](https://github.com/VeronicaLourens/vero-perfume/issues/18) View messages | As a shopper  |  I want to view messages so that I know my activities when updating my shopping cart or make a payment. | home | Should Have |
 | [#31](https://github.com/VeronicaLourens/vero-perfume/issues/31)  Access social media / Facebook page| As a shopper  |  I want to access the shop's social media platform so that I can follow the shop and get updates instantly. | home | Could Have |
-| [#32](https://github.com/VeronicaLourens/vero-perfume/issues/32) Contact site owner | As a registered shopper  | I want to make contact to the site owner so that I can contact the owner for any questions.  | home | Should Have |
+| [#32](https://github.com/VeronicaLourens/vero-perfume/issues/32) Contact site owner | As a shopper  | I want to make contact to the site owner so that I can contact the owner for any questions.  | Contact | Should Have |
 | [#33](https://github.com/VeronicaLourens/vero-perfume/issues/33) Advertise shop / product | As a shop owner  | I want to advertise my shop and product so that I can have more customers to buy my products.  | home | Could Have |
 
 [Back to top](#vero-perfume)
@@ -40,7 +40,6 @@ I used GitHub Agile project management tool to create user stories using issues 
 | [#10](https://github.com/VeronicaLourens/vero-perfume/issues/10) View product details | As a shopper  |  I want to view the product details so that I can have enough information about the individual product before I purchase. | home | Must Have |
 | [#11](https://github.com/VeronicaLourens/vero-perfume/issues/11)  Filter and view search product result| As a shopper  |  I want to filter products so that I can quickly find the products I am looking for. | products | Should Have |
 | [#12](https://github.com/VeronicaLourens/vero-perfume/issues/12) Sort products by a specific category  | As a shopper  |  I want to find the best priced or best rated product in a specific category so that I can easily find what I want. | products | Should Have |
-| [#13](https://github.com/VeronicaLourens/vero-perfume/issues/13) Add / delete product to wishlist | As a shopper  |  I want to add / delete product to my wish list so that I can easily select the products to purchase. | products | Should Have |
 | [#30](https://github.com/VeronicaLourens/vero-perfume/issues/30) Post / delete review and rate a product | As a registered shopper  | I want to post, delete review or rate a product / shop so that I can share my opinion to the others.  | products | Could Have |
 | [#35](https://github.com/VeronicaLourens/vero-perfume/issues/35) View and select product size | As a shopper  |  I want to view and select the product size so that I can buy the product with the size and the price as I wish.| products | Should Have |
 
@@ -59,6 +58,7 @@ I used GitHub Agile project management tool to create user stories using issues 
 * #### Epic 5 - Profiles app
 |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
 | --------------- | -------------- | --------- | --------| -------------|
+| [#13](https://github.com/VeronicaLourens/vero-perfume/issues/13) Add / delete product to wishlist | As a shopper  |  I want to add / delete product to my wish list so that I can easily select the products to purchase. | products | Should Have |
 | [#19](https://github.com/VeronicaLourens/vero-perfume/issues/19)  Register an account| As a shopper  | I want to register an account so that I can manage my activities on the site.  | profiles | Must Have |
 | [#20](https://github.com/VeronicaLourens/vero-perfume/issues/20) Login / log out | As a registered shopper  |   I want to login and logout so that I can access my account and manage my purchase on the site. | profiles | Must Have |
 | [#21](https://github.com/VeronicaLourens/vero-perfume/issues/21)  Edit / delete account profile| As a registered shopper  | I want to edit or delete account so that I can personalize my own account profile or delete my account as I wish.  | profiles | Must Have |
