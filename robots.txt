@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /profiles/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /checkout/checkout_success/
+Sitemap: https://veroperfume.herokuapp.com/sitemap.xml
