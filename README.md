@@ -4,8 +4,6 @@ Vero Perfume is an e-commerce online shop where sells fine fragrance and perfume
 Deployed live site: [Vero Perfume](https://veroperfume.herokuapp.com/)
 
 # UX
-## Agile Project Management
-I used GitHub Agile project management tool to create user stories using issues and planned the user stories into three different stages using Kanban board with three columns that are ```To do```, ```In progress``` and ```Done```. The user stories are labeled with **MoSCoW** techniques to prioritize the project’s tasks.
 
 ### Epics & User Stories
 
@@ -198,10 +196,19 @@ The site uses white background with high quality colorful images in a carousel s
 
 ### Color Scheme
 
+I have chosen the white color for the site's background and using purple and blue colors for the buttons.
+    ![Color theme](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/color-theme.png) 
+
 [Back to top](#vero-perfume)
+
+## Agile Project Management
+I used GitHub Agile project management tool to create user stories using issues and planned the user stories into three different stages using Kanban board with three columns that are ```To do```, ```In progress``` and ```Done```. The user stories are labeled with **MoSCoW** techniques to prioritize the project’s tasks.
+
+![Agile](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/agile.png)
 
 ### Database ERD
 I used ```Lucidchart``` to create the project's database schema models which helps me to unserstand the relationship between the models. Heroku Postgres database and the SQLite are used for the project.
+    ![ERD](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/ERD.png)
 
 #### Models
 * **User** - It is used for user information and purchase history.
