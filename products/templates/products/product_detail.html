@@ -73,7 +73,7 @@
                                 <label for="product_size" hidden>Size</label>
                                 <select class="form-control mx-auto" name="product_size" id="product_size">
                                     {% for size in form.size %}
-                                    <option value="size">{{ size }}</option>
+                                    <option value="{{ size }}" name="product_size">{{ size }}</option>
                                     {% endfor %}
                                 </select>
                             </div>
