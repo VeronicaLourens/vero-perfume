@@ -70,10 +70,10 @@
                             <p>Size:</p>
                             {% if product.size %}
                             <div class="input-group">
-                                <label for="product_size" hidden>Size</label>
+                                <label for="size_input" hidden>Size</label>
                                 <select class="form-control mx-auto" name="product_size" id="product_size">
                                     {% for size in form.size %}
-                                    <option value="{{ size }}" name="product_size">{{ size }}</option>
+                                    <option value="30ml">{{ size }}</option>
                                     {% endfor %}
                                 </select>
                             </div>
