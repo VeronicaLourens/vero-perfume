@@ -74,7 +74,8 @@ a {
 }
 .fa-user,
 .fa-heart,
-.fa-shopping-cart {
+.fa-shopping-cart,
+.reviews-links {
     color: #3A36BF !important;
 }
 
@@ -181,6 +182,10 @@ a {
 
 .toast-capper {
     height: 2px;
+}
+
+.toast-cart-icon i {
+    color: white !important;
 }
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
@@ -313,6 +318,8 @@ a.category-badge>span.badge:hover {
     /* visibility: hidden; */
     display: none;
 }
+
+.text-
 
 /* -------------------Product Form */
 .btn-file {
