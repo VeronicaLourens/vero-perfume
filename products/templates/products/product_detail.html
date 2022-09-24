@@ -29,9 +29,7 @@
                     {% csrf_token %}
                     <input type="hidden" name="product_id" value="{{ product.id }}">
                     <button type="submit" class="wishlist-link bg-white" title="Save to WishList">
-                        <div class="text-center">
-                            <i class="fas fa-heart fa-lg"></i>
-                        </div>
+                        <i class="fas fa-heart fa-lg text-center"></i>
                     </button>
                 </form>
             </div>
@@ -72,10 +70,10 @@
                             <p>Size:</p>
                             {% if product.size %}
                             <div class="input-group">
-                                <label for="size_input" hidden>Size</label>
+                                <label for="product_size" hidden>Size</label>
                                 <select class="form-control mx-auto" name="product_size" id="product_size">
                                     {% for size in form.size %}
-                                    <option>{{ size }}</option>
+                                    <option value="size">{{ size }}</option>
                                     {% endfor %}
                                 </select>
                             </div>
