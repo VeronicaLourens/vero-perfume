@@ -30,28 +30,28 @@
     "pk": 5,
     "model": "products.brand",
     "fields": {
-        "name": "Fragrance du Bois",
+        "name": "Fragrance_du_Bois",
         "friendly_name": "Fragrance du Bois"
     }
 },{
     "pk": 6,
     "model": "products.brand",
     "fields": {
-        "name": "Stephane Humbert Lucas 777",
+        "name": "Stephane_Humbert_Lucas_777",
         "friendly_name": "Stephane Humbert Lucas 777"
     }
 }, {
     "pk": 7,
     "model": "products.brand",
     "fields": {
-        "name": "M. Micallef",
+        "name": "M_Micallef",
         "friendly_name": "M. Micallef"
     }
 }, {
     "pk": 8,
     "model": "products.brand",
     "fields": {
-        "name": "Sarah Baker",
+        "name": "Sarah_Baker",
         "friendly_name": "Sarah Baker"
     }
 },{
