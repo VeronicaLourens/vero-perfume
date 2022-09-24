@@ -8,7 +8,7 @@
 {% block inner_content %}
 
 <div class="text-center fw-bold">
-    <h3 class="logo-font mb-4">{% trans "Confirm E-mail Address" %}</h3>
+    <h3 class="font-weight-bold mb-4">{% trans "Confirm E-mail Address" %}</h3>
     <hr>
 </div>
 
@@ -23,7 +23,7 @@
     <form method="post" action="{% url 'account_confirm_email' confirmation.key %}">
     {% csrf_token %}
         <div class="col-12">
-            <button type="submit">{% trans 'Confirm' %}</button>
+            <button class="btn btn-shop" type="submit">{% trans 'Confirm' %}</button>
         </div>
     </form>
 
@@ -31,7 +31,7 @@
 
         {% url 'account_email' as email_url %}
 
-        <p>{% blocktrans %}This e-mail confirmation link expired or is invalid. Please <a href="{{ email_url }}">issue a new e-mail confirmation request</a>.{% endblocktrans %}</p>
+        <p class="text-center">{% blocktrans %}This e-mail confirmation link expired or is invalid. Please <a href="{{ email_url }}">issue a new e-mail confirmation request</a>.{% endblocktrans %}</p>
 
 {% endif %}
 

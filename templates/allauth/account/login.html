@@ -8,7 +8,7 @@
 {% block inner_content %}
 
 <div class="text-center fw-bold">
-  <h3 class="logo-font mb-4">{% trans "Sign In" %}</h3>
+  <h3 class="font-weight-bold mb-4">{% trans "Sign In" %}</h3>
   <hr>
 
   <p class="my-3">{% blocktrans %}No account yet? Then please <a href="{{ signup_url }}">sign
@@ -47,8 +47,8 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
   {% endif %}
 
   <div class="form-group text-center">
-    <a class="btn btn-primary fw-bold mb-3" href="{% url 'home' %}">Back</a>
-    <button class="btn btn-primary fw-bold mb-3" type="submit">{% trans "Sign In" %}</button>
+    <a class="btn btn-shop fw-bold mb-3" href="{% url 'home' %}">Back</a>
+    <button class="btn btn-shop fw-bold mb-3" type="submit">{% trans "Sign In" %}</button>
     <p>
       <a class="button secondaryAction d-block"
         href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>

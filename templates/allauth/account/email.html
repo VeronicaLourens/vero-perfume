@@ -8,7 +8,7 @@
 
     
   <div class="text-center fw-bold">
-    <h3 class="logo-font mb-4">{% trans "E-mail Addresses" %}</h3>
+    <h3 class="font-weight-bold mb-4">{% trans "E-mail Addresses" %}</h3>
     <hr>
   </div>
    
@@ -47,7 +47,7 @@
 </form>
 
 {% else %}
-<p><strong>{% trans 'Warning:'%}</strong> {% trans "You currently do not have any e-mail address set up. You should really add an e-mail address so you can receive notifications, reset your password, etc." %}</p>
+<p class="text-center"><strong>{% trans 'Warning:'%}</strong> {% trans "You currently do not have any e-mail address set up. You should really add an e-mail address so you can receive notifications, reset your password, etc." %}</p>
 
 {% endif %}
 
@@ -56,15 +56,15 @@
 
     <form method="post" action="{% url 'account_email' %}" class="add_email">
         {% csrf_token %}
-        {{ form.as_p }}
-        <button name="action_add" type="submit">{% trans "Add E-mail" %}</button>
+        {{ form|crispy }}
+        <button class="btn btn-shop" name="action_add" type="submit">{% trans "Add E-mail" %}</button>
     </form>
 
 {% endblock %}
 
 
 {% block extra_body %}
-<script type="text/javascript">
+<script>
 (function() {
   var message = "{% trans 'Do you really want to remove the selected e-mail address?' %}";
   var actions = document.getElementsByName('action_remove');
