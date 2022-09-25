@@ -310,10 +310,6 @@ a.category-badge>span.badge:hover {
    
 }
 
-.add-product-container {
-    box-shadow: 0px 0px 13px 13px rgb(156, 151, 182);
-}
-
 .hidden {
     /* visibility: hidden; */
     display: none;
@@ -422,26 +418,22 @@ a.category-badge>span.badge:hover {
 }
 .modal-content {
     padding: 18px;
-    box-shadow: 0px 0px 10px 10px #3A36BF;
+    box-shadow: 0px 0px 10px 6px #3A36BF;
 }
 
-/*---------------------------allauth forms*/
+/*---------------------------forms*/
 
 #signup_form,
 #login-form,
 #address-form,
 .password_reset,
 #payment-form,
-#order-confirmation {
+#order-confirmation,
+#add-product-form,
+#edit-product-form,
+#contact-box {
     box-shadow: 0px 0px 8px 3px rgb(219, 214, 248);
     
-}
-
-
-/*----------------------contact page */
-
-#contact-box {
-    box-shadow: 0px 0px 13px 13px rgb(156, 151, 182);
 }
 
 /*---------------------------media queries */
@@ -655,9 +647,7 @@ a.category-badge>span.badge:hover {
         height: 20px;
         right: 5px;
     }
-    .btn-1 {
-        float: left;
-    }
+
     .btn-checkout {
         margin-top: 10px;
     }

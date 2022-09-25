@@ -22,7 +22,7 @@
     </div>
     <div class="row justify-content-center align-items-center">
         <div class="col-md-8 col-sm-8 mb-3">
-            <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
+            <form method="POST" action="{% url 'add_product' %}" id="add-product-form" class="form mb-2 p-3" enctype="multipart/form-data">
                 {% csrf_token %}
                 {% for field in form %}
                     {% if field.name != 'image' %}
@@ -32,8 +32,8 @@
                     {% endif %}
                 {% endfor %}
                 <div class="text-right mt-3">
-                    <a class="btn btn-shop rounded-0 btn-1" href="{% url 'products' %}">Cancel</a>
-                    <button class="btn btn-shop rounded-0 btn-2" type="submit">Add Product</button>
+                    <a class="btn btn-shop rounded-0 btn-1 mb-3" href="{% url 'products' %}">Cancel</a>
+                    <button class="btn btn-shop rounded-0 btn-2 mb-3" type="submit">Add Product</button>
                 </div>
             </form>
         </div>
