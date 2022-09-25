@@ -60,30 +60,17 @@
 
 <!--three cards-->
 <div class="container">
-    <div class="row my-5 justify-content-center">
-        <div class="col-lg-4 col-sm-8">
-            <div class="card border-0">
-                <div class="card-body text-center home-pg-card">
-                    <img src="{{ MEDIA_URL }}images/card11.jpg" class="img-fluid" alt="Perfume set on the table">
-                    <a href="{% url 'products' %}" class="btn btn-card btn-shop my-3">SHOP NOW</a>
-                </div>
-            </div>
+    <div class="row my-4 justify-content-center align-items-center">
+        <div class="col-md-6 text-start text-center">
+            <h2 class="text-center">
+                <div class="display-3">Vero Perfume</div>
+                <div class="display-6 text-muted">Top brands & exclusive collections</div>
+            </h2>
+            <p class="lead my-3">We sell perfume that makes memories</p>
+            <a href="{% url 'products' %}" class="btn btn-card btn-shop my-3">SHOP NOW</a>
         </div>
-        <div class="col-lg-4 col-sm-8">
-            <div class="card border-0">
-                <div class="card-body text-center home-pg-card">
-                    <img src="{{ MEDIA_URL }}images/card22.jpg" class="img-fluid" alt="Victor Path perfume">
-                    <a href="{% url 'products' %}" class="btn btn-card btn-shop my-3">SHOP NOW</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-sm-8">
-            <div class="card border-0">
-                <div class="card-body text-center home-pg-card">
-                    <img src="{{ MEDIA_URL }}images/card33.jpg" class="img-fluid" alt="Si perfume">
-                    <a href="{% url 'products' %}" class="btn btn-card btn-shop my-3">SHOW NOW</a>
-                </div>
-            </div>
+        <div class="col-md-6 text-center d-md-block">
+            <img src="{{ MEDIA_URL }}images/card11.jpg" class="img-fluid" alt="Perfume set on the table">
         </div>
     </div>
 </div>
