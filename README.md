@@ -222,8 +222,21 @@ I used ```Lucidchart``` to create the project's database schema models which hel
 * **Wishlist** - It is used for the shopper to save a product on their wishlist for easy access.
 ### Business Model
 The Vero Perfume application is a B2C business model that it does the business directly with the end customer. Customer is able to search the product on the site, complete the order, make a payment through secured payment system and receive goods in the end.
+* #### Marketing
+    Vero Perfume has a Facebook page for reaching all the customers instantly. Shop owner is able to post any updates or promotions to gather sales. The Facebook page provides a great effective way of communicating with shoppers.
+
+    I created ```Vero Perfume Facebook page```. However, the page was only for the education purpose of the e-commerce project and it's not a real business page. Therefore, I made a screenshot of the Facebook page and deleted it afterwards in order to avoid any problems under Facebook's rules. The Facebook link in the footer opens the link to Facebook but not the actual ```Vero Perfume Facebook page```. Here is the one but deleted page.
+
+    ![Vero Perfume Facebook page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/vero-fackbook.png)
 
 [Back to top](#vero-perfume)
+
+* #### Search Engine Optimisation (SEO)
+    I added two meta tags with names of keywords and description on the page head, and I generated robots.txt and sitemap.xml to make sure Google and search engines crawl the site.
+
+* #### Mailchimp newsletter subscription
+    Vero Perfume sends out regular newsletters and user can subscribe using email address. This is a great way for store owner to reach out existing and potential customers with any updates or promotions.
+
 
 # Exisiting Features
 # Technologies Used
