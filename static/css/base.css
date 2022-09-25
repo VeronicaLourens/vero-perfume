@@ -407,6 +407,10 @@ a.category-badge>span.badge:hover {
     color: #3A36BF !important;
 }
 
+.copyright-text {
+    background: #3A36BF;
+}
+
 
 /*---------------------------policy modal*/
 
