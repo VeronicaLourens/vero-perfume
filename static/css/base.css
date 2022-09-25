@@ -386,12 +386,6 @@ a.category-badge>span.badge:hover {
 
 /*----------------------------footer */
 
-.social-icons a {
-    font-size: 30px;
-    padding: 50px 30px 10px;
-    color: #3A36BF;
-}
-
 #mc_embed_signup {
     background: #fff;
     clear: left;
@@ -545,11 +539,6 @@ a.category-badge>span.badge:hover {
         width: 25px;
         height: 25px;
     }
-
-    /* .btn-1 {
-        margin-bottom: 10px;
-    } */
-
 
 }
 
