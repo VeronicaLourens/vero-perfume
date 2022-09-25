@@ -425,6 +425,18 @@ a.category-badge>span.badge:hover {
     box-shadow: 0px 0px 10px 10px #3A36BF;
 }
 
+/*---------------------------allauth forms*/
+
+#signup_form,
+#login-form,
+#address-form,
+.password_reset,
+#payment-form,
+#order-confirmation {
+    box-shadow: 0px 0px 8px 3px rgb(219, 214, 248);
+    
+}
+
 
 /*----------------------contact page */
 

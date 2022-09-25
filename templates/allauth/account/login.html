@@ -11,7 +11,7 @@
   <h3 class="font-weight-bold mb-4">{% trans "Sign In" %}</h3>
   <hr>
 
-  <p class="my-3">{% blocktrans %}No account yet? Then please <a href="{{ signup_url }}">sign
+  <p class="my-3 pb-3">{% blocktrans %}No account yet? Then please <a href="{{ signup_url }}">sign
       up</a> first.{% endblocktrans %}</p>
 </div>
 
@@ -39,7 +39,7 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
 
 {% endif %}
 
-<form class="login bg-light mb-5 pb-3" method="POST" action="{% url 'account_login' %}">
+<form class="login bg-light p-3" id="login-form" method="POST" action="{% url 'account_login' %}">
   {% csrf_token %}
   {{ form|crispy }}
   {% if redirect_field_value %}
