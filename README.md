@@ -247,8 +247,6 @@ The site's landing page with carousel images to show what the online shop sells.
 ![Home page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/home.png)
 
 
-
-
 # Technologies Used
 ## Languages & Frameworks
 * [HTML5]() - used to create site.
