@@ -246,11 +246,12 @@ The site's landing page with carousel images to show what the online shop sells.
 
 ![Home page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/home-page.png)
 
+[Back to top](#vero-perfume)
 ## Products Page
 Products page contains a list of different perfumes available on the site. Every product has name, price, brand tag, gender and star ratings.
 
 * General user views the page.
-![Products page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/products.png)
+    ![Products page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/products.png)
 
 * Store owner views the page with edit and delete links
     <details><summary>Store owner views the page</summary>
@@ -259,6 +260,14 @@ Products page contains a list of different perfumes available on the site. Every
 
     </detials>
 
+* Store owner is able to edit the product through the form
+    <details><summary>Edit product form</summary>
+
+    ![Edit product](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/products-admin-edit.png)
+
+    </detials>
+
+[Back to top](#vero-perfume)
 ## Product Details Page
 Product details page contains image, name, brand tag, star ratings, size, quantity form, description, back and add to cart buttons, wishlist icon link and product reviews.
 
@@ -299,7 +308,8 @@ Product details page contains image, name, brand tag, star ratings, size, quanti
 
     </detials>
 
-## Shopping cart page
+[Back to top](#vero-perfume)
+## Shopping Cart Page
 
 User is able to add product to the cart, update the product quantity and remove the product from the cart as user wishes.
 * <details><summary>Add product to shopping cart</summary>
@@ -320,15 +330,41 @@ User is able to add product to the cart, update the product quantity and remove 
 
     </detials>
 
-* <details><summary>Add product to shopping cart</summary>
+* <details><summary>Remove product to shopping cart</summary>
 
     ![Remove product](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/shopping-cart-remove.png)
 
     </detials>
 
+[Back to top](#vero-perfume)
+## Checkout Page
+Checkout page contains a delivery details form and payment card authorization form for user to fill in for completing the order. There is an order summary where user can clearly see the items and total amount of the order. The site uses the Stripe payment method to process the eletronic money transfer.
 
+* <details><summary>Checkout form</summary>
 
+    ![Checkout](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/checkout.png)
 
+    </detials>
+
+* <details><summary>Stripe</summary>
+
+    ![Stripe](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/stripe1.png)
+
+    </detials>
+
+* <details><summary>Checkout success page / order confirmation</summary>
+
+    ![Checkout](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/checkout-success.png)
+
+    </detials>
+
+* <details><summary>Order details from profile page</summary>
+
+    ![Checkout](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/checkout-success-from-profile.png)
+
+    </detials>
+
+[Back to top](#vero-perfume)
 
 # Technologies Used
 ## Languages & Frameworks
