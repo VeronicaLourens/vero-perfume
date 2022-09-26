@@ -249,15 +249,41 @@ The site's landing page with carousel images to show what the online shop sells.
 ## Products Page
 Products page contains a list of different perfumes available on the site. Every product has name, price, brand tag, gender and star ratings.
 
-* General user views the page as below.
+* General user views the page.
 ![Products page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/products.png)
 
-* Store owner views the page as below with edit and delete links
+* Store owner views the page with edit and delete links
     <details><summary>Store owner views the page</summary>
 
     ![Products page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/products-admin.png)
 
     </detials>
+
+## Product Details Page
+Product details page contains image, name, brand tag, star ratings, size, quantity form, description, back and add to cart buttons, wishlist icon link and product reviews.
+
+* General user views the page with product reviews link.
+    <details><summary>Product details 1</summary>
+
+    ![Product details 1](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/product-detail-general-user.png)
+
+    </detials>
+* Signed in user views the page with product reviews and post a review links.
+     <details><summary>Product details 2</summary>
+
+    ![Product details 1](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/product-detail-signin.png)
+
+    </detials>
+* Store owner views the page with edit, delete, product reviews and post a review links.
+     <details><summary>Product details 3</summary>
+
+    ![Product details 1](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/product-detail-signin.png)
+
+    </detials>
+
+
+
+
 
 
 # Technologies Used
