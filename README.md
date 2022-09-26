@@ -280,7 +280,51 @@ Product details page contains image, name, brand tag, star ratings, size, quanti
     ![Product details 1](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/product-detail-admin.png)
 
     </detials>
+* Product reviews popup modal
+    * <details><summary>Product no reviews</summary>
 
+        ![Product no reviews](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/product-no-reviews-modal.png)
+
+    </detials>
+
+   *  <details><summary>Product customer reviews </summary>
+
+        ![Product customer reviews](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/product-reviews-modal.png)
+
+    </detials>
+
+    * <details><summary>Post product reviews</summary>
+
+        ![Post product reviews](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/product-post-review-modal.png)
+
+    </detials>
+
+## Shopping cart page
+
+User is able to add product to the cart, update the product quantity and remove the product from the cart as user wishes.
+* <details><summary>Add product to shopping cart</summary>
+
+    ![Add to cart](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/shopping-cart-add.png)
+
+    </detials>
+
+* <details><summary>Shopping cart overview</summary>
+
+    ![Shopping cart](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/shopping-cart.png)
+
+    </detials>
+
+* <details><summary>Update shopping cart</summary>
+
+    ![Update shopping cart](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/shopping-cart-update.png)
+
+    </detials>
+
+* <details><summary>Add product to shopping cart</summary>
+
+    ![Remove product](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/shopping-cart-remove.png)
+
+    </detials>
 
 
 
