@@ -244,7 +244,7 @@ All of pages has the same navigation menu and the same footer. The navigatoin me
 ## Home Page
 The site's landing page with carousel images to show what the online shop sells.
 
-![Home page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/home.png)
+![Home page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/home-page.png)
 
 ## Products Page
 Products page contains a list of different perfumes available on the site. Every product has name, price, brand tag, gender and star ratings.
