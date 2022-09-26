@@ -277,7 +277,7 @@ Product details page contains image, name, brand tag, star ratings, size, quanti
 * Store owner views the page with edit, delete, product reviews and post a review links.
      <details><summary>Product details 3</summary>
 
-    ![Product details 1](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/product-detail-signin.png)
+    ![Product details 1](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/product-detail-admin.png)
 
     </detials>
 
