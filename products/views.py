@@ -1,15 +1,20 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
-from .models import Product, Category, Brand, Gender, Review
+"""
+Products app views
+"""
+from decimal import Decimal
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
-from decimal import Decimal
-from .forms import AddToCartForm, SIZE_CHOICES, ProductForm, ReviewForm
 from django.contrib.auth.decorators import login_required
-from profiles.models import WishList, WishListItem
+from .models import Product, Category, Review
+from .forms import AddToCartForm, SIZE_CHOICES, ProductForm, ReviewForm
 
 
-def products(request):
+# pylint: disable=no-member
+
+
+def all_products(request):
     """
     To render all products page.
     Sorting, filtering and search queries.
@@ -59,10 +64,14 @@ def products(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(
+                    request,
+                    "You didn't enter any search criteria!")
                 return redirect(reverse('products'))
 
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = Q(
+                name__icontains=query
+            ) | Q(description__icontains=query)
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
@@ -81,13 +90,7 @@ def products(request):
 
 def product_detail(request, product_id):
     """ To render the product detail page."""
-
     product = get_object_or_404(Product, pk=product_id)
-    # wishlist = None
-    # try:
-    #     wishlistitem = get_object_or_404(WishListItem, product_id)
-    # except WishList.DoesNotExist:
-    #     pass
 
     reviews = product.reviews.all()
     form = AddToCartForm()
@@ -100,6 +103,7 @@ def product_detail(request, product_id):
             new_price = round(price, 2)
             prices.append(new_price)
             reduction += Decimal(.30)
+            return size
 
     if request.method == 'POST':
         review_form = ReviewForm(data=request.POST or None)
@@ -117,7 +121,7 @@ def product_detail(request, product_id):
             else:
                 product.rating = review.star_rating
             product.save()
-            
+
             return redirect(reverse('product_detail', args=[product.id]))
 
     else:
@@ -129,8 +133,6 @@ def product_detail(request, product_id):
         'form': form,
         'reviews': reviews,
         'review_form': review_form,
-        
-   
     }
 
     return render(request, 'products/product_detail.html', context)
@@ -149,7 +151,10 @@ def add_product(request):
             messages.success(request, 'Successfully added product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            messages.error(
+                request,
+                'Failed to add product. Please ensure the form is valid'
+            )
     else:
         form = ProductForm()
 
@@ -175,7 +180,10 @@ def edit_product(request, product_id):
             messages.success(request, 'Successfully updated product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+            messages.error(
+                request,
+                'Failed to update product. Please ensure the form is valid'
+            )
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
@@ -210,8 +218,6 @@ def add_review(request, product_id):
     review = Review.objects.all()
 
     if request.method == 'POST':
-        title = request.POST.get('title')
-        content = request.POST.get('content', '')
         review_form = ReviewForm(request.POST or None)
         if request.user.is_authenticated and review_form.is_valid():
             review_form.instance.user = request.user
@@ -234,6 +240,7 @@ def add_review(request, product_id):
 
     else:
         return redirect('accounts/login.html')
+
 
 @login_required()
 def delete_review(request, review_id):
