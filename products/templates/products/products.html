@@ -14,13 +14,11 @@
 <div class="container-fluid product-page-container">
     <div class="row mt-5 pt-5">
         <div class="col text-center mt-3">
-           
             {% if current_categories %}
                 <div class="col text-center">
                     {% for c in current_categories %}
                     <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
-                        <span
-                            class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
+                        <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
                     </a>
                     {% endfor %}
                 </div>
@@ -29,13 +27,11 @@
                 <div class="col text-center">
                         {% for b in brands %}
                         <a class="category-badge text-decoration-none" href="{% url 'products' %}?brand={{ b.friendly_name }}">
-                            <span
-                                class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ b.friendly_name }}</span>
+                            <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ b.friendly_name }}</span>
                         </a>
                     {% endfor %}
                 </div>
             {% endif %}
-           
             <hr class="w-100 mb-1">
         </div>
     </div>
@@ -44,11 +40,13 @@
             <div class="row my-2 mx-3 mb-4 justify-content-center">
                 <div class="col-6 justify-content-start">
                     <p class="text-muted mt-1">
-                        {% if search_term or current_categories or current_sorting != 'None_None' %}
-                        <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
+                        {{ products|length }} Products
+                        <!--link for admin to add product-->
+                        {% if request.user.is_superuser %}
+                        <a href="{% url 'add_product' %}" class="btn front-weight-bold" title="Add product" aria-label="Add product">
+                            <i class="fas fa-plus"></i>
+                        </a>
                         {% endif %}
-                        {{ products|length }} Products{% if search_term %} found for
-                        <strong>"{{ search_term }}"</strong>{% endif %}
                     </p>
                 </div>
                 <div class="col-6 my-auto order-md-last d-flex justify-content-end">
@@ -111,6 +109,7 @@
                                     {% else %}
                                     <small class="text-muted">No Rating</small>
                                     {% endif %}
+                                    <!--links for admin to edit and delete product-->
                                     {% if request.user.is_superuser %}
                                     <small class="ml-3">
                                         <a href="{% url 'edit_product' product.id %}">Edit</a> |
