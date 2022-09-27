@@ -1,0 +1,31 @@
+{% load static %}
+
+<div class="container review-container justify-content-center align-items-center"> 
+    {% if reviews %}
+    <div class="review">
+        {% for review in reviews %}
+        <div class="row card-body">
+            <div class="col-6">
+                <p>{{ review.user.username }}</p>
+                <p><i class="fas fa-star mr-1"></i> {{ review.star_rating }} / 5</p>
+            </div>
+            <div class="col-6">
+                <p class="font-weight-bold">{{ review.title }}</p>
+                <p>{{ review.content }}</p>
+            </div>
+            {% if request.user == review.user or request.user.is_superuser %}
+            <a class="text-danger" href="{% url 'delete_review' review.id %}">Delete review</a>
+            {% endif %}
+        </div>
+        <hr>
+        {% endfor %}
+    </div>
+    {% else %}
+    <div class="review-container">
+        <div class="card-body">
+            <p>No reviews.</p>
+        </div>
+    </div>
+    {% endif %}
+</div>
+

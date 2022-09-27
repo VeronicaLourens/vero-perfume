@@ -393,7 +393,8 @@ a.category-badge>span.badge:hover {
     border-radius: 10px;
 }
 
-.subscribe-btn {
+.subscribe-btn,
+.add-review-btn {
     width: 130px !important;
     
 }
@@ -434,7 +435,8 @@ a.category-badge>span.badge:hover {
 #order-confirmation,
 #add-product-form,
 #edit-product-form,
-#contact-box {
+#contact-box,
+.review-form {
     box-shadow: 0px 0px 8px 3px rgb(219, 214, 248);
     
 }
