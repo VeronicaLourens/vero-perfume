@@ -1,3 +1,4 @@
+"""Products app models"""
 from django.db import models
 from django.contrib.auth.models import User
 
@@ -8,6 +9,7 @@ class Category(models.Model):
     """
 
     class Meta:
+        """Category name"""
         verbose_name_plural = 'Categories'
 
     name = models.CharField(max_length=254)
@@ -18,9 +20,10 @@ class Category(models.Model):
     )
 
     def __str__(self):
-        return self.name
+        return f'{self.name}'
 
     def get_friendly_name(self):
+        """Category friendly name"""
         return self.friendly_name
 
 
@@ -37,9 +40,10 @@ class Brand(models.Model):
     )
 
     def __str__(self):
-        return self.name
+        return f'{self.name}'
 
     def get_friendly_name(self):
+        """Brand name"""
         return self.friendly_name
 
 
@@ -56,9 +60,10 @@ class Gender(models.Model):
     )
 
     def __str__(self):
-        return self.name
+        return f'{self.name}'
 
     def get_friendly_name(self):
+        """Gender name"""
         return self.friendly_name
 
 
@@ -138,10 +143,11 @@ class Product(models.Model):
     )
 
     def __str__(self):
-        return self.name
+        return f'{self.name}'
 
     def get_size(self):
-        return self.SIZE_CHOICES[self.get_size]
+        """Size"""
+        return [self.get_size]
 
 
 class Review(models.Model):
@@ -185,8 +191,8 @@ class Review(models.Model):
     )
     approved = models.BooleanField(default=False)
 
-
     class Meta:
+        """Review"""
         ordering = ['id']
 
     def __str__(self):
