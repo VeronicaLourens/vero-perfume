@@ -386,7 +386,6 @@ a.category-badge>span.badge:hover {
     background: #fff;
     clear: left;
     font: 12px Helvetica, Arial, sans-serif;
-    
 }
 
 .brandingLogo img {
@@ -404,10 +403,10 @@ a.category-badge>span.badge:hover {
 }
 
 .footer-link {
-    color: #3A36BF !important;
+    color: white !important;
 }
 
-.copyright-text {
+#footer-container {
     background: #3A36BF;
 }
 
