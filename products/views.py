@@ -103,7 +103,7 @@ def product_detail(request, product_id):
             new_price = round(price, 2)
             prices.append(new_price)
             reduction += Decimal(.30)
-            return size
+            
 
     if request.method == 'POST':
         review_form = ReviewForm(data=request.POST or None)
