@@ -49,11 +49,16 @@
                 {% else %}
                 <small class="text-muted">No Rating</small>
                 {% endif %}
+                <!--Admin can edit or delete the product-->
                 {% if request.user.is_superuser %}
                 <small class="ml-3">
                     <a href="{% url 'edit_product' product.id %}">Edit</a>&nbsp; | &nbsp;
-                    <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                    <a class="text-danger" title="Delete product" data-target="#deleteProduct" data-toggle="modal"
+                        data-target="#deleteProduct">
+                        <i class="fas fa-trash"></i> Delete
+                    </a>
                 </small>
+                {% include 'products/delete_product_modal.html' %}
                 {% endif %}
                 <form class="form" action="{% url 'add_to_cart' product.id %}" method="POST">
                     {% csrf_token %}
