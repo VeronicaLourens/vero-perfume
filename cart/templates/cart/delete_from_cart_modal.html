@@ -1,0 +1,22 @@
+<!-- Modal -->
+<div class="modal fade" id="deleteFromCart" tabindex="-1" aria-labelledby="deleteFromCart" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteFromCart">Delete item</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to delete this item from your shopping cart?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-shop" data-dismiss="modal">NO</button>
+                <a class="remove-item btn btn-shop" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}">
+                    YES
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
