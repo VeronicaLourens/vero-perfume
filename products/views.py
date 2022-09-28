@@ -224,7 +224,7 @@ def add_review(request, product_id):
             review.product = product
             review.save()
 
-            messages.success(request, 'Successfully added review!')
+            messages.info(request, 'Successfully added review!')
             return redirect(reverse('product_detail', args=[product.id]))
 
         else:
@@ -251,6 +251,6 @@ def delete_review(request, review_id):
         product = review.product
         if request.user == review.user:
             review.delete()
-            messages.success(request, 'Successfully deleted review!')
+            messages.info(request, 'Successfully deleted review!')
 
     return redirect(reverse('product_detail', args=[product.id]))

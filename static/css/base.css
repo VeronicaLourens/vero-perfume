@@ -62,10 +62,6 @@ a {
     font-weight: bold;
 }
 
-/* .nav-link i {
-    color: rgb(149, 8, 177);
-} */
-
 .nav-link:hover {
     color: #3A36BF !important;
     text-shadow: 2px 2px 3px #3A36BF;
@@ -289,7 +285,8 @@ a.category-badge>span.badge:hover {
 
 .btt-link,
 .update-link,
-.remove-item {
+.remove-item,
+.delete-review {
     cursor: pointer;
 }
 
