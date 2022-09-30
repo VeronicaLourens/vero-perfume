@@ -282,7 +282,7 @@ Product details page contains image, name, brand tag, star ratings, size, quanti
 * General user views the page with product reviews.
     <details><summary>Product details - general user's view</summary>
 
-    ![Product details with reviews](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/product-detail-general-user.png)
+    ![Product details with reviews](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/general-user-product-details.png)
 
     </detials>
 
@@ -297,7 +297,7 @@ Product details page contains image, name, brand tag, star ratings, size, quanti
 * Signed in user as Chloe views the page with product reviews and post a review form. Signed in user is able to delete own review with a delete link.
      <details><summary>Product details - signed in user's view</summary>
 
-    ![Product details 1](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/product-detail-signin.png)
+    ![Product details 1](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/user-signed-in-product-details.png)
 
     </detials>
 * Store owner views the page with edit, delete, product reviews and post a review form.
