@@ -244,7 +244,7 @@ All of pages has the same navigation menu and the same footer. The navigatoin me
 ## Home Page
 The site's landing page with carousel images to show what the online shop sells perfume.
 
-![Home page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/home-page.png)
+![Home page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/landing-page.png)
 
 [Back to top](#vero-perfume)
 ## Products Page
@@ -303,7 +303,7 @@ Product details page contains image, name, brand tag, star ratings, size, quanti
 * Store owner views the page with edit, delete, product reviews and post a review form.
      <details><summary>Product details - admin's view</summary>
 
-    ![Product details 1](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/product-detail-admin.png)
+    ![Product details 1](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/admin-product-details.png)
 
     </detials>
 
