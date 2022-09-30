@@ -327,19 +327,19 @@ User is able to add product to the cart, update the product quantity and remove 
 
 * <details><summary>Shopping cart overview</summary>
 
-    ![Shopping cart](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/shopping-cart.png)
+    ![Shopping cart](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/cart-list.png)
 
     </detials>
 
 * <details><summary>Update shopping cart</summary>
 
-    ![Update shopping cart](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/shopping-cart-update.png)
+    ![Update shopping cart](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/cart-update.png)
 
     </detials>
 
 * <details><summary>Remove product to shopping cart</summary>
 
-    ![Remove product](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/shopping-cart-remove.png)
+    ![Remove product](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/cart-delete-item.png)
 
     </detials>
 
