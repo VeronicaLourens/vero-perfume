@@ -242,9 +242,9 @@ The Vero Perfume application is a B2C business model that it does the business d
 All of pages has the same navigation menu and the same footer. The navigatoin menu provides an easy way of browsing the site.
 
 ## Home Page
-The site's landing page with carousel images to show what the online shop sells.
+The site's landing page with carousel images to show what the online shop sells perfume.
 
-![Home page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/home-page.png)
+![Home page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/home.png)
 
 [Back to top](#vero-perfume)
 ## Products Page
@@ -253,10 +253,10 @@ Products page contains a list of different perfumes available on the site. Every
 * General user views the page.
     ![Products page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/products.png)
 
-* Store owner views the page with edit and delete links
+* Store owner views the page with an add button on the top left corner, edit and delete links
     <details><summary>Store owner views the page</summary>
 
-    ![Products page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/products-admin.png)
+    ![Products page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/products-page-admin.png)
 
     </detials>
 
@@ -271,40 +271,22 @@ Products page contains a list of different perfumes available on the site. Every
 ## Product Details Page
 Product details page contains image, name, brand tag, star ratings, size, quantity form, description, back and add to cart buttons, wishlist icon link and product reviews.
 
-* General user views the page with product reviews link.
-    <details><summary>Product details 1</summary>
+* General user views the page with product reviews.
+    <details><summary>Product details - general user's view</summary>
 
     ![Product details 1](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/product-detail-general-user.png)
 
     </detials>
-* Signed in user views the page with product reviews and post a review links.
-     <details><summary>Product details 2</summary>
+* Signed in user as Chloe views the page with product reviews and post a review form. Signed in user is able to delete own review with a delete link.
+     <details><summary>Product details - signed in user's view</summary>
 
     ![Product details 1](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/product-detail-signin.png)
 
     </detials>
-* Store owner views the page with edit, delete, product reviews and post a review links.
-     <details><summary>Product details 3</summary>
+* Store owner views the page with edit, delete, product reviews and post a review form.
+     <details><summary>Product details - admin's view</summary>
 
     ![Product details 1](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/product-detail-admin.png)
-
-    </detials>
-* Product reviews popup modal
-    * <details><summary>Product no reviews</summary>
-
-        ![Product no reviews](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/product-no-reviews-modal.png)
-
-    </detials>
-
-   *  <details><summary>Product customer reviews </summary>
-
-        ![Product customer reviews](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/product-reviews-modal.png)
-
-    </detials>
-
-    * <details><summary>Post product reviews</summary>
-
-        ![Post product reviews](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/product-post-review-modal.png)
 
     </detials>
 
@@ -314,7 +296,7 @@ Product details page contains image, name, brand tag, star ratings, size, quanti
 User is able to add product to the cart, update the product quantity and remove the product from the cart as user wishes.
 * <details><summary>Add product to shopping cart</summary>
 
-    ![Add to cart](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/shopping-cart-add.png)
+    ![Add to cart](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/add-to-cart.png)
 
     </detials>
 
