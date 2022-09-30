@@ -244,7 +244,7 @@ All of pages has the same navigation menu and the same footer. The navigatoin me
 ## Home Page
 The site's landing page with carousel images to show what the online shop sells perfume.
 
-![Home page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/home.png)
+![Home page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/home-page.png)
 
 [Back to top](#vero-perfume)
 ## Products Page
@@ -267,6 +267,14 @@ Products page contains a list of different perfumes available on the site. Every
 
     </detials>
 
+* Store owner deletes product modal
+
+    <details><summary>Delete product</summary>
+
+    ![Product details 1](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/admin-delete-product-modal.png)
+
+    </detials>
+
 [Back to top](#vero-perfume)
 ## Product Details Page
 Product details page contains image, name, brand tag, star ratings, size, quantity form, description, back and add to cart buttons, wishlist icon link and product reviews.
@@ -274,9 +282,18 @@ Product details page contains image, name, brand tag, star ratings, size, quanti
 * General user views the page with product reviews.
     <details><summary>Product details - general user's view</summary>
 
-    ![Product details 1](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/product-detail-general-user.png)
+    ![Product details with reviews](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/product-detail-general-user.png)
 
     </detials>
+
+* General user views the page without product reviews.
+    <details><summary>Product details - general user's view</summary>
+
+    ![Product details no reviews](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/produc-details-no-reviews.png)
+
+    </detials>
+
+
 * Signed in user as Chloe views the page with product reviews and post a review form. Signed in user is able to delete own review with a delete link.
      <details><summary>Product details - signed in user's view</summary>
 
@@ -287,6 +304,14 @@ Product details page contains image, name, brand tag, star ratings, size, quanti
      <details><summary>Product details - admin's view</summary>
 
     ![Product details 1](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/product-detail-admin.png)
+
+    </detials>
+
+* Delete reviews modal
+
+    <details><summary>Delete reviews</summary>
+
+    ![Product details 1](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/delete-reviews-modal.png)
 
     </detials>
 
