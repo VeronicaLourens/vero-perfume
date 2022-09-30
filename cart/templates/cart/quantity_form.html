@@ -27,8 +27,6 @@
 <a class="update-link text-info text-muted" title="Update item quantity">
     <small><i class="fas fa-check"></i> Update</small>
 </a>
-<a class="remove-item text-danger pl-2"
-    title="Delete item from cart" data-target="#deleteFromCart" data-toggle="modal"
-    data-target="#deleteFromCart">
+<a class="remove-item text-danger pt-5" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}">
     <small><i class="fas fa-trash"></i> Delete</small>
 </a>

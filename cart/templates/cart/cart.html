@@ -69,7 +69,7 @@
                     </a>
                 </div>
             </div>
-            {% include 'cart/delete_from_cart_modal.html' %}
+           
             <div class="table-responsive rounded d-none d-md-block">
                 <table class="table table-sm table-borderless">
                     <thead class="text-black">
@@ -95,7 +95,7 @@
                         </td>
                         <td class="py-3">
                             {% include 'cart/quantity_form.html' %}
-                            {% include 'cart/delete_from_cart_modal.html' %}
+                            
                         </td>
                         <td class="py-3">
                             <p class="my-0">€ {{ item.product.price | calc_subtotal:item.quantity }}</p>
