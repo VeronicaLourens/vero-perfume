@@ -75,10 +75,9 @@
                             <p>Size:</p>
                             {% if product.size %}
                             <div class="input-group">
-                                
                                 <select class="form-control mx-auto" name="product_size" id="product_size">
                                     {% for size in form.size %}
-                                    <option class="size">{{ size }}</option>
+                                        {{ size }}
                                     {% endfor %}
                                 </select>
                             </div>
