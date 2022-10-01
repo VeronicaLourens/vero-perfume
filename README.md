@@ -237,6 +237,8 @@ The Vero Perfume application is a B2C business model that it does the business d
 * #### Mailchimp newsletter subscription
     Vero Perfume sends out regular newsletters and user can subscribe using email address. This is a great way for store owner to reach out existing and potential customers with any updates or promotions.
 
+    ![Newsletter](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/newsletter.png)
+
 
 # Exisiting Features
 All of pages has the same navigation menu and the same footer. The navigatoin menu provides an easy way of browsing the site.
@@ -423,6 +425,27 @@ Store owner is able to add, delete and edit the product on the site.
     </detials>
 
 [Back to top](#vero-perfume)
+
+## Contact us page
+User is able to contact store owner via the contact us form in the footer.
+
+* <details><summary>Contact us</summary>
+
+    ![Contact us](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/contact-us.png)
+
+    </detials>
+
+## Policy page
+Vero perfume has a detailed privacy policy to let user know the policies.
+
+* <details><summary>Privacy Policy</summary>
+
+    ![Policy](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/policy.png)
+
+    </detials>
+
+[Back to top](#vero-perfume)
+
 
 # Technologies Used
 ## Languages & Frameworks
