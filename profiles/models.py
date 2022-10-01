@@ -6,11 +6,16 @@ from django.core.validators import RegexValidator
 from django.dispatch import receiver
 from products.models import Product
 
+# pylint: disable=no-member
 
-# The user profile model has been adapted from CI Boutique Ado project.
 alpha_only = RegexValidator(
     r'^[a-zA-Z]*$',
     'Only alpha[a-zA-Z] characters are allowed.'
+)
+
+number_only = RegexValidator(
+    r'^[0-9]*$',
+    'Only numbers are allowed.'
 )
 
 
@@ -34,7 +39,8 @@ class UserProfile(models.Model):
     default_phone_number = models.CharField(
         max_length=20,
         null=True,
-        blank=True
+        blank=True,
+        validators=[number_only]
     )
     default_street_address1 = models.CharField(
         max_length=80,
@@ -52,14 +58,15 @@ class UserProfile(models.Model):
         blank=True
     )
     default_county = models.CharField(
-        max_length=80,
+        max_length=40,
         null=True,
         blank=True
     )
     default_postcode = models.CharField(
-        max_length=20,
+        max_length=6,
         null=True,
-        blank=True
+        blank=True,
+        validators=[number_only]
     )
     default_country = CountryField(
         blank_label='Country',

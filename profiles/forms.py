@@ -17,7 +17,9 @@ class UserProfileForm(forms.ModelForm):
         Add placeholders and classes, remove auto-generated
         labels and set autofocus on first field
         """
-        super().__init__(*args, **kwargs)
+        super(UserProfileForm, self).__init__(*args, **kwargs)
+        for key in self.fields:
+            self.fields[key].required = True
         placeholders = {
             'default_full_name': 'Full Name',
             'default_phone_number': 'Phone Number',
