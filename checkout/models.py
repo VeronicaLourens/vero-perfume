@@ -3,15 +3,18 @@ from django.db import models
 from django.db.models import Sum
 from django.conf import settings
 from django.core.validators import RegexValidator
+from django_countries.fields import CountryField
 from products.models import Product
 from profiles.models import UserProfile
-
-from django_countries.fields import CountryField
 
 
 alpha_only = RegexValidator(
     r'^[a-zA-Z]*$',
     'Only alpha[a-zA-Z] characters are allowed.'
+)
+number_only = RegexValidator(
+    r'^[0-9]*$',
+    'Only alphanumeric characters are allowed.'
 )
 
 
@@ -38,14 +41,15 @@ class Order(models.Model):
         validators=[alpha_only]
     )
     email = models.EmailField(
-        max_length=254,
+        max_length=20,
         null=False,
-        blank=False
+        blank=False,
     )
     phone_number = models.CharField(
         max_length=20,
         null=False,
-        blank=False
+        blank=False,
+        validators=[number_only]
     )
     country = CountryField(
         blank_label='Country *',
@@ -53,9 +57,9 @@ class Order(models.Model):
         blank=False
     )
     postcode = models.CharField(
-        max_length=20,
+        max_length=5,
         null=True,
-        blank=True
+        blank=True,
     )
     city = models.CharField(
         max_length=40,

@@ -8,15 +8,13 @@ from django.shortcuts import (
 from django.contrib import messages
 from django.conf import settings
 from django.views.decorators.http import require_POST
-
-from .forms import OrderForm
-from .models import Order, OrderLineItem
-from products.models import Product
-from profiles.models import UserProfile
-from profiles.forms import UserProfileForm
-from cart.contexts import cart_contents
-
 import stripe
+from products.models import Product
+from cart.contexts import cart_contents
+from profiles.forms import UserProfileForm
+from profiles.models import UserProfile
+from .models import Order, OrderLineItem
+from .forms import OrderForm
 import json
 
 
