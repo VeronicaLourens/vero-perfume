@@ -2,11 +2,17 @@ from django.db import models
 from django.contrib.auth.models import User
 from django_countries.fields import CountryField
 from django.db.models.signals import post_save
+from django.core.validators import RegexValidator
 from django.dispatch import receiver
 from products.models import Product
 
 
 # The user profile model has been adapted from CI Boutique Ado project.
+alpha_only = RegexValidator(
+    r'^[a-zA-Z]*$',
+    'Only alpha[a-zA-Z] characters are allowed.'
+)
+
 
 class UserProfile(models.Model):
     """
@@ -22,7 +28,8 @@ class UserProfile(models.Model):
     default_full_name = models.CharField(
         max_length=50,
         null=True,
-        blank=True
+        blank=True,
+        validators=[alpha_only]
     )
     default_phone_number = models.CharField(
         max_length=20,

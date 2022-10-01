@@ -2,10 +2,17 @@ import uuid
 from django.db import models
 from django.db.models import Sum
 from django.conf import settings
+from django.core.validators import RegexValidator
 from products.models import Product
 from profiles.models import UserProfile
 
 from django_countries.fields import CountryField
+
+
+alpha_only = RegexValidator(
+    r'^[a-zA-Z]*$',
+    'Only alpha[a-zA-Z] characters are allowed.'
+)
 
 
 class Order(models.Model):
@@ -27,7 +34,8 @@ class Order(models.Model):
     full_name = models.CharField(
         max_length=50,
         null=False,
-        blank=False
+        blank=False,
+        validators=[alpha_only]
     )
     email = models.EmailField(
         max_length=254,

@@ -114,7 +114,8 @@
                                     {% if request.user.is_superuser %}
                                     <small class="ml-3">
                                         <a href="{% url 'edit_product' product.id %}">Edit</a>&nbsp; | &nbsp;
-                                        <a class="text-danger" title="Delete product" data-target="#deleteProduct"
+                                        <a class="text-danger delete-link" title="Delete product"
+                                            data-target="#deleteProduct"
                                             data-toggle="modal" data-target="#deleteProduct">
                                             <i class="fas fa-trash"></i> Delete
                                         </a>

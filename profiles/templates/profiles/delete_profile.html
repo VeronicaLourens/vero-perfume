@@ -24,8 +24,8 @@
         <form method="POST">
             {% csrf_token %}
             {{ form|crispy }}
-            <a><button class="btn btn-shop text-white font-weight-bold mr-2" type="submit">YES</button></a>
-            <a href="{% url 'profile' %}" class="btn btn-shop text-white font-weight-bold">NO</a>
+            <a><button class="btn btn-shop text-white font-weight-bold mr-2" type="submit">NO</button></a>
+            <a href="{% url 'profile' %}" class="btn btn-shop text-white font-weight-bold">YES</a>
         </form>
     </div>
     <hr>
