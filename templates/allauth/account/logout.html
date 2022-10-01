@@ -9,20 +9,17 @@
 <div class="text-center fw-bold">
   <h3 class="font-weight-bold mb-4">{% trans "Sign Out" %}</h3>
   <hr>
-
   <p class="my-4">{% blocktrans %}Are you sure you want to sign out?{% endblocktrans %}</p>
 </div>
-
-
 <form method="post" action="{% url 'account_logout' %}">
   {% csrf_token %}
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
   {% endif %}
   <div class="form-group my-3 text-center">
+    <a href="{% url 'profile' %}" class="btn btn-shop text-white font-weight-bold mb-3">NO</a>
     <button class="btn btn-shop font-weight-bold mb-3" type=" submit">{% trans 'Sign Out' %}</button>
   </div>
 </form>
-
 
 {% endblock %}

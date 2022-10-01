@@ -373,6 +373,32 @@ Checkout page contains a delivery details form and payment card authorization fo
 
 [Back to top](#vero-perfume)
 
+## User account & Profile page
+
+* <details><summary>Account sign up</summary>
+
+    ![Sign up](https://veroperfume.s3.eu-west-2.amazonaws.com/media/images/sign-up.png)
+
+    </detials>
+
+* <details><summary>Account sign in</summary>
+
+    ![Sign in](https://veroperfume.s3.eu-west-2.amazonaws.com/media/images/sign-in.png)
+
+    </detials>
+
+* <details><summary>Account sign out</summary>
+
+    ![Sign out](https://veroperfume.s3.eu-west-2.amazonaws.com/media/images/sign-out.png)
+
+    </detials>
+
+* <details><summary>Account profile</summary>
+
+    ![Profile](https://veroperfume.s3.eu-west-2.amazonaws.com/media/images/profile.png)
+
+    </detials>
+
 # Technologies Used
 ## Languages & Frameworks
 * [HTML5]() - used to create site.
