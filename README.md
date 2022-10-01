@@ -3,6 +3,9 @@ Vero Perfume is an e-commerce online shop where sells fine fragrance and perfume
 
 Deployed live site: [Vero Perfume](https://veroperfume.herokuapp.com/)
 
+![Screen views](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/screen-view1.png)
+
+
 # UX
 
 ### Epics & User Stories
@@ -282,11 +285,11 @@ Products page contains a list of different perfumes available on the site. Every
 Product details page contains image, name, brand tag, star ratings, size, quantity form, description, back and add to cart buttons, wishlist icon link and product reviews.
 
 * General user views the page with product reviews.
-    <details><summary>Product details - general user's view</summary>
+    
 
     ![Product details with reviews](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/general-user-product-details.png)
 
-    </detials>
+    
 
 * General user views the page without product reviews.
     <details><summary>Product details - general user's view</summary>
@@ -321,11 +324,10 @@ Product details page contains image, name, brand tag, star ratings, size, quanti
 ## Shopping Cart Page
 
 User is able to add product to the cart, update the product quantity and remove the product from the cart as user wishes.
-* <details><summary>Add product to shopping cart</summary>
 
-    ![Add to cart](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/add-to-cart.png)
+![Add to cart](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/add-to-cart.png)
 
-    </detials>
+   
 
 * <details><summary>Shopping cart overview</summary>
 
@@ -349,11 +351,8 @@ User is able to add product to the cart, update the product quantity and remove 
 ## Checkout Page
 Checkout page contains a delivery details form and payment card authorization form for user to fill in for completing the order. There is an order summary where user can clearly see the items and total amount of the order. The site uses the Stripe payment method to process the eletronic money transfer.
 
-* <details><summary>Checkout form</summary>
+![Checkout](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/checkout.png)
 
-    ![Checkout](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/checkout.png)
-
-    </detials>
 
 * <details><summary>Stripe</summary>
 
@@ -377,11 +376,9 @@ Checkout page contains a delivery details form and payment card authorization fo
 
 ## User account & Profile page
 
-* <details><summary>Account sign up</summary>
+![Sign up](https://veroperfume.s3.eu-west-2.amazonaws.com/media/images/sign-up.png)
 
-    ![Sign up](https://veroperfume.s3.eu-west-2.amazonaws.com/media/images/sign-up.png)
-
-    </detials>
+   
 
 * <details><summary>Account sign in</summary>
 
@@ -429,11 +426,9 @@ Store owner is able to add, delete and edit the product on the site.
 ## Contact us page
 User is able to contact store owner via the contact us form in the footer.
 
-* <details><summary>Contact us</summary>
+![Contact us](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/contact-us.png)
 
-    ![Contact us](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/contact-us.png)
-
-    </detials>
+[Back to top](#vero-perfume)
 
 ## Policy page
 Vero perfume has a detailed privacy policy to let user know the policies.
@@ -445,7 +440,6 @@ Vero perfume has a detailed privacy policy to let user know the policies.
     </detials>
 
 [Back to top](#vero-perfume)
-
 
 # Technologies Used
 ## Languages & Frameworks
