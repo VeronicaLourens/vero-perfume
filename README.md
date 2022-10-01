@@ -399,6 +399,31 @@ Checkout page contains a delivery details form and payment card authorization fo
 
     </detials>
 
+[Back to top](#vero-perfume)
+
+## Admin Product management page
+Store owner is able to add, delete and edit the product on the site.
+
+* <details><summary>Admin add product</summary>
+
+    ![Add product](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/admin-add-product.png)
+
+    </detials>
+
+* <details><summary>Admin edit product</summary>
+
+    ![Edit product](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/admin-edit-product.png)
+
+    </detials>
+
+* <details><summary>Admin delete product</summary>
+
+    ![Delete product](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/admin-delete-product.png)
+
+    </detials>
+
+[Back to top](#vero-perfume)
+
 # Technologies Used
 ## Languages & Frameworks
 * [HTML5]() - used to create site.

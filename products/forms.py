@@ -1,7 +1,10 @@
+"""Product forms"""
 from django import forms
+from django.forms import ModelForm
 from .models import Product, Category, Review
 from .widgets import CustomClearableFileInput
-from django.forms import ModelForm
+
+# pylint: disable=no-member
 
 SIZE_CHOICES = [
         ('30ml', '30ml'),
@@ -25,6 +28,7 @@ class ProductForm(forms.ModelForm):
     To manage the product by the shop owner/admin.
     """
     class Meta:
+        """Product form"""
         model = Product
         fields = '__all__'
 
@@ -35,11 +39,13 @@ class ProductForm(forms.ModelForm):
     )
 
     def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
+        super(ProductForm, self).__init__(*args, **kwargs)
         categories = Category.objects.all()
         friendly_names = [(c.id, c.get_friendly_name()) for c in categories]
 
+        self.fields['sku'].widget.attrs['autofocus'] = True
         self.fields['category'].choices = friendly_names
+
         for field_name, field in self.fields.items():
             field.widget.attrs['class'] = 'border-black rounded-0'
 
@@ -49,6 +55,7 @@ class ReviewForm(ModelForm):
     To create review and give rating.
     """
     class Meta:
+        """Review form"""
         model = Review
         fields = (
             'title',
