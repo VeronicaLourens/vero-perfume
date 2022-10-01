@@ -22,7 +22,9 @@ class OrderForm(forms.ModelForm):
         Add placeholders and classes, remove auto-generated
         labels and set autofocus on first field
         """
-        super().__init__(*args, **kwargs)
+        super(OrderForm, self).__init__(*args, **kwargs)
+        for key in self.fields:
+            self.fields[key].required = True
         placeholders = {
             'full_name': 'Full Name',
             'email': 'Email Address',
