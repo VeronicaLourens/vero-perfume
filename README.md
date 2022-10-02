@@ -384,13 +384,13 @@ Checkout page contains a delivery details form and payment card authorization fo
 
 ## User account & Profile page
 
-User signs up an account with filling in the personal details the sign up form. Then Vero Perfume sends an email to the user with a link asking the user to confirm the sign up process. The user's account is completed once the user click the confirm button. And the user is redirected to the sign in page.
+User signs up an account with filling in the personal details the sign up form. Then Vero Perfume sends an email to the user with a link asking the user to verify the email address. The user's account is completed once the user click the confirm button. And the user is redirected to the sign in page.
 
 
 * Account sign up
 ![Sign up](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/account-sign-up.png)
 
-* Sign up feedback
+* Verify email address
 ![Confirmation email](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/verify-email.png)
 
 [Back to top](#vero-perfume)
@@ -562,12 +562,11 @@ The project has been deployed to **Heroku** in the early stage of the proejct de
     8. Click ```Enable Automatic Deploys``` and ```Deploy branch```;
     9. The application was deployed successfully after a few minutes.
 
-    10. <details><summary>Heroku deployment screenshot.</summary>
+    10. Heroku deployment screenshot.
 
         ![Heroku deployment](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/heroku-deployment.png)
 
-    </detials>
-
+[Back to top](#vero-perfume)
 
 * ## Amazon Web Services S3
     The project's static and media files are stored at the cloud-based storage **AWS S3 Bucket**. 
@@ -578,7 +577,6 @@ The project has been deployed to **Heroku** in the early stage of the proejct de
     3. Set up CORS configuration and generate the policy;
     4. Add the AWS keys to Heroku config vars and connect AWS to my Django project in the project's deployment environment;
     5. Create folders to host the files and images;
-    6. 
 
 
 [Back to top](#vero-perfume)
