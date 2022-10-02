@@ -235,7 +235,7 @@ The Vero Perfume application is a B2C business model that it does the business d
 [Back to top](#vero-perfume)
 
 * #### Search Engine Optimisation (SEO)
-    I added two meta tags with names of keywords and description on the page head, and I generated robots.txt and sitemap.xml to make sure Google and search engines crawl the site.
+    I added two meta tags with names of keywords and description on the page head, and I generated robots.txt and sitemap.xml to allow Google and search engines bot crawling.
 
 * #### Mailchimp newsletter subscription
     Vero Perfume sends out regular newsletters and user can subscribe using email address. This is a great way for store owner to reach out existing and potential customers with any updates or promotions.
@@ -471,6 +471,11 @@ Vero perfume has a detailed privacy policy to let user know the policies.
     </detials>
 
 [Back to top](#vero-perfume)
+
+## 404 page
+User is redirected to the ```404 page``` when accessing to any non-existing page. There is a message to user with a ```Return to Home``` button.
+
+![404](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/404.png)
 
 ## Django admin panel
 Admin / store owner is albe to manage the site's data in the admin panel. Admin can add, edit and delete products, brands, categories, add or delete users, reviews, wishlists, see the messages received from the contact form, receives the completed online orders and the payment user made.

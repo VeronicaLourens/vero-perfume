@@ -513,7 +513,8 @@ a.category-badge>span.badge:hover {
     .product-detail-container,
     .add-product-container,
     .edit-product-container,
-    .policy-container {
+    .policy-container,
+    .profile-container {
         margin-top: 100px;
     }
 
@@ -538,13 +539,12 @@ a.category-badge>span.badge:hover {
         margin-top: 90px !important;
     }
 
-    .profile-container {
-        margin-top: 100px;
-    }
-
     .bi-arrow-up-square-fill {
         width: 25px;
         height: 25px;
+    }
+    .error-page-container {
+        margin-top: 130px !important;
     }
 
 }
