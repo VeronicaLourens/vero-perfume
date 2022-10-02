@@ -244,7 +244,7 @@ The Vero Perfume application is a B2C business model that it does the business d
 
 
 # Exisiting Features
-Vero Perfume application contains total 23 pages including the popup modals.
+Vero Perfume application contains total 25 pages including the popup modals.
 
 All of pages have the same navigation menu and the same footer. The dynamic navigatoin menu provides an easy way of browsing all pages with dropdown lists. There are Vero Perfume logo image on the top left, a search bar in the middle, account and wishlist and shopping on the right.
 
@@ -269,12 +269,7 @@ Products page contains a list of different perfumes available on the site. Every
 
     </detials>
 
-* Store owner is able to edit the product through the form
-    <details><summary>Edit product form</summary>
-
-    ![Edit product](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/products-admin-edit.png)
-
-    </detials>
+[Back to top](#vero-perfume)
 
 * Store owner deletes product modal
 
@@ -289,11 +284,10 @@ Products page contains a list of different perfumes available on the site. Every
 Product details page contains image, name, brand tag, star ratings, size, quantity form, description, back and add to cart buttons, wishlist icon link and product reviews.
 
 * General user views the page with product reviews.
-    
 
     ![Product details with reviews](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/general-user-product-details.png)
 
-    
+[Back to top](#vero-perfume)    
 
 * General user views the page without product reviews.
     <details><summary>Product details - general user's view</summary>
@@ -301,7 +295,6 @@ Product details page contains image, name, brand tag, star ratings, size, quanti
     ![Product details no reviews](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/produc-details-no-reviews.png)
 
     </detials>
-
 
 * Signed in user as Chloe views the page with product reviews and post a review form. Signed in user is able to delete own review with a delete link.
      <details><summary>Product details - signed in user's view</summary>
@@ -333,6 +326,7 @@ User is able to add product to the cart, update the product quantity and remove 
     ![Add to cart](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/add-to-cart.png)
 
    
+[Back to top](#vero-perfume)
 
 * Shopping cart overview
 
@@ -344,6 +338,8 @@ User is able to add product to the cart, update the product quantity and remove 
     ![Update shopping cart](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/cart-update.png)
 
     </detials>
+
+[Back to top](#vero-perfume)
 
 * <details><summary>Remove product to shopping cart</summary>
 
@@ -370,6 +366,7 @@ Checkout page contains a delivery details form and payment card authorization fo
 
     ![Checkout](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/checkout-success.png)
 
+[Back to top](#vero-perfume)
 
 * <details><summary>Order details from profile page</summary>
 
@@ -396,28 +393,34 @@ User signs up an account with filling in the personal details the sign up form. 
 * Sign up feedback
 ![Confirmation email](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/verify-email.png)
 
+[Back to top](#vero-perfume)
+
 * Confirmation email
 ![Email with link](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/verify-email-link.png)
 
 * Confirma email page
 ![Confirmation](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/verify-email-confirm.png)
 
+[Back to top](#vero-perfume)
+
 * Sign up confirmed
 ![Sign up confirmed](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/verify-signup-confirm.png)
 
-   
 
-* <details><summary>Account sign in</summary>
-
-    ![Sign in](https://veroperfume.s3.eu-west-2.amazonaws.com/media/images/sign-in.png)
-
-    </detials>
-
-* <details><summary>Account sign out</summary>
+* Account sign out
 
     ![Sign out](https://veroperfume.s3.eu-west-2.amazonaws.com/media/images/sign-out.png)
 
-    </detials>
+
+* Reset account password
+
+    ![Reset password](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/password-reset.png)
+
+[Back to top](#vero-perfume)
+
+* Reset password feedback
+
+    ![Feedback](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/password-reset-fb.png)
 
 * Account profile
 
@@ -436,9 +439,10 @@ Store owner is able to add, delete and edit the product on the site.
 
     </detials>
 
-* <details><summary>Admin edit product</summary>
+* Store owner is able to edit the product through the form
+    <details><summary>Edit product form</summary>
 
-    ![Edit product](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/admin-edit-product.png)
+    ![Edit product](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/products-admin-edit.png)
 
     </detials>
 
@@ -467,6 +471,37 @@ Vero perfume has a detailed privacy policy to let user know the policies.
     </detials>
 
 [Back to top](#vero-perfume)
+
+## Django admin panel
+Admin / store owner is albe to manage the site's data in the admin panel. Admin can add, edit and delete products, brands, categories, add or delete users, reviews, wishlists, see the messages received from the contact form, receives the completed online orders and the payment user made.
+
+* Admin account panel
+![Admin](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/admin1.png)
+
+[Back to top](#vero-perfume)
+
+* Admin delete user
+![Delete user](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/admin-delete-user.png)
+
+[Back to top](#vero-perfume)
+
+* Admin views the list of products
+![Products](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/admin-product.png)
+
+[Back to top](#vero-perfume)
+
+* Admin views the list of orders
+![Orders](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/admin-orders.png)
+
+[Back to top](#vero-perfume)
+
+* Admin views the order details
+![Order details](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/admin-order-details.png)
+
+[Back to top](#vero-perfume)
+
+## Future features to implement
+
 
 # Technologies Used
 ## Languages & Frameworks
@@ -502,6 +537,8 @@ Vero perfume has a detailed privacy policy to let user know the policies.
 [Back to top](#vero-perfume)
 
 # Testing
+
+View the site's testing documentation here [TESTING.md](TESTING.md)
 
 [Back to top](#vero-perfume)
 
@@ -539,11 +576,8 @@ The project has been deployed to **Heroku** in the early stage of the proejct de
     6. 
 
 
-
-
-
 [Back to top](#vero-perfume)
-# Clone Project
+## Clone Project
 
 Steps to clone the project from GitHub as following:
 
@@ -561,6 +595,14 @@ Steps to clone the project from GitHub as following:
     ![Clone project](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/clone.png)
 
 [Back to top](#vero-perfume)
+
+## Fork Project
+
+To fork Vero Perfume's repository:
+* Go to repository ```vero-perfume``` in my Github account;
+* Click the tab ```"Fork"``` on the top right of Githtb page;
+* Then the repository's copy would be in your Github.
+
 # Credit
 
 [Back to top](#vero-perfume)
