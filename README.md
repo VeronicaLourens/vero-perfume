@@ -244,16 +244,20 @@ The Vero Perfume application is a B2C business model that it does the business d
 
 
 # Exisiting Features
-All of pages has the same navigation menu and the same footer. The navigatoin menu provides an easy way of browsing the site.
+Vero Perfume application contains total 23 pages including the popup modals.
+
+All of pages have the same navigation menu and the same footer. The dynamic navigatoin menu provides an easy way of browsing all pages with dropdown lists. There are Vero Perfume logo image on the top left, a search bar in the middle, account and wishlist and shopping on the right.
+
+The search bar provides a quick way of searching for the products. The site provides sorting and filtering functionalities on the products page to search for the products.
 
 ## Home Page
-The site's landing page with carousel images to show what the online shop sells perfume.
+The site's landing page with carousel images to show that the online shop sells perfume.
 
 ![Home page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/landing-page.png)
 
 [Back to top](#vero-perfume)
 ## Products Page
-Products page contains a list of different perfumes available on the site. Every product has name, price, brand tag, gender and star ratings.
+Products page contains a list of different perfumes available on the site. Every product has name, price, brand tag, gender and star ratings. Store owner is able to add products, edit and delete products on the site.
 
 * General user views the page.
     ![Products page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/products.png)
@@ -306,7 +310,6 @@ Product details page contains image, name, brand tag, star ratings, size, quanti
 
     </detials>
 * Store owner views the page with edit, delete, product reviews and post a review form.
-     <details><summary>Product details - admin's view</summary>
 
     ![Product details 1](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/admin-product-details.png)
 
@@ -383,8 +386,24 @@ Checkout page contains a delivery details form and payment card authorization fo
 [Back to top](#vero-perfume)
 
 ## User account & Profile page
+
+User signs up an account with filling in the personal details the sign up form. Then Vero Perfume sends an email to the user with a link asking the user to confirm the sign up process. The user's account is completed once the user click the confirm button. And the user is redirected to the sign in page.
+
+
 * Account sign up
-![Sign up](https://veroperfume.s3.eu-west-2.amazonaws.com/media/images/sign-up.png)
+![Sign up](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/account-sign-up.png)
+
+* Sign up feedback
+![Confirmation email](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/verify-email.png)
+
+* Confirmation email
+![Email with link](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/verify-email-link.png)
+
+* Confirma email page
+![Confirmation](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/verify-email-confirm.png)
+
+* Sign up confirmed
+![Sign up confirmed](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/verify-signup-confirm.png)
 
    
 
