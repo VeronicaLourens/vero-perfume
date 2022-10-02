@@ -1,9 +1,15 @@
+"""
+Checkout app forms
+"""
 from django import forms
 from .models import Order
 
 
 class OrderForm(forms.ModelForm):
+    """Order form"""
+
     class Meta:
+        """Meta class for the order form"""
         model = Order
         fields = (
             'full_name',

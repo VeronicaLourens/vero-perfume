@@ -325,15 +325,16 @@ Product details page contains image, name, brand tag, star ratings, size, quanti
 
 User is able to add product to the cart, update the product quantity and remove the product from the cart as user wishes.
 
-![Add to cart](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/add-to-cart.png)
+* Add product to the shopping cart
+
+    ![Add to cart](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/add-to-cart.png)
 
    
 
-* <details><summary>Shopping cart overview</summary>
+* Shopping cart overview
 
     ![Shopping cart](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/cart-list.png)
 
-    </detials>
 
 * <details><summary>Update shopping cart</summary>
 
@@ -351,7 +352,9 @@ User is able to add product to the cart, update the product quantity and remove 
 ## Checkout Page
 Checkout page contains a delivery details form and payment card authorization form for user to fill in for completing the order. There is an order summary where user can clearly see the items and total amount of the order. The site uses the Stripe payment method to process the eletronic money transfer.
 
-![Checkout](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/checkout.png)
+* Checkout page
+
+    ![Checkout](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/checkout.png)
 
 
 * <details><summary>Stripe</summary>
@@ -360,11 +363,10 @@ Checkout page contains a delivery details form and payment card authorization fo
 
     </detials>
 
-* <details><summary>Checkout success page / order confirmation</summary>
+* Checkout success page / order confirmation
 
     ![Checkout](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/checkout-success.png)
 
-    </detials>
 
 * <details><summary>Order details from profile page</summary>
 
@@ -372,10 +374,16 @@ Checkout page contains a delivery details form and payment card authorization fo
 
     </detials>
 
+* Order confirmation email to the user
+
+    ![Email confirmation](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/gmail-order.png)
+
+   
+
 [Back to top](#vero-perfume)
 
 ## User account & Profile page
-
+* Account sign up
 ![Sign up](https://veroperfume.s3.eu-west-2.amazonaws.com/media/images/sign-up.png)
 
    
@@ -392,7 +400,7 @@ Checkout page contains a delivery details form and payment card authorization fo
 
     </detials>
 
-* <details><summary>Account profile</summary>
+* Account profile
 
     ![Profile](https://veroperfume.s3.eu-west-2.amazonaws.com/media/images/profile.png)
 
