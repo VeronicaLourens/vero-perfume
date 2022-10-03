@@ -95,14 +95,17 @@ def product_detail(request, product_id):
     reviews = product.reviews.all()
     form = AddToCartForm()
 
-    if product.size:
-        reduction = Decimal(1)
-        prices = []
-        for size in SIZE_CHOICES:
-            price = product.price / reduction
-            new_price = round(price, 2)
-            prices.append(new_price)
-            reduction += Decimal(.30)
+    # if product.size:
+    #     reduction = Decimal(1)
+    #     prices = []
+    #     for size in SIZE_CHOICES:
+    #         price = product.price / reduction
+    #         new_price = round(price, 2)
+    #         prices.append(new_price)
+    #         reduction += Decimal(.30)
+
+
+
 
     if request.method == 'POST':
         review_form = ReviewForm(data=request.POST or None)
@@ -128,7 +131,7 @@ def product_detail(request, product_id):
 
     context = {
         'product': product,
-        'prices': prices,
+        # 'prices': prices,
         'form': form,
         'reviews': reviews,
         'review_form': review_form,

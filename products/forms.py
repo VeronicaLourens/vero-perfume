@@ -21,7 +21,7 @@ class AddToCartForm(forms.Form):
     To display product size and pirce.
     """
 
-    size = forms.ChoiceField(choices=SIZE_CHOICES)
+    # size = forms.ChoiceField(choices=SIZE_CHOICES)
     quantity = forms.IntegerField(max_value=10, min_value=1)
 
 
