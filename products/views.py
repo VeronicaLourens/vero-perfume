@@ -94,11 +94,12 @@ def product_detail(request, product_id):
 
     reviews = product.reviews.all()
     form = AddToCartForm()
+    
 
     # if product.size:
     #     reduction = Decimal(1)
     #     prices = []
-    #     for size in SIZE_CHOICES:
+    #     for size in product.has_sizes:
     #         price = product.price / reduction
     #         new_price = round(price, 2)
     #         prices.append(new_price)
