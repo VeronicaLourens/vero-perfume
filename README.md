@@ -334,16 +334,19 @@ Product details page contains image, name, brand tag, star ratings, size, quanti
 
 User is able to add product to the cart, update the product quantity and remove the product from the cart as user wishes.
 
-* Add product to the shopping cart
+* Add product to the shopping cart-1
 
     ![Add to cart](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/add-to-cart.png)
 
+* Add product to the shopping cart-2
+
+    ![Add product to cart](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/add-product-to-cart.png)
    
 [Back to top](#vero-perfume)
 
 * Shopping cart overview desktop
 
-    ![Shopping cart](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/cart-list.png)
+    ![Shopping cart](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/shopping-cart-total.png)
 
 * Shopping cart overview mobile
 
