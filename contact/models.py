@@ -1,3 +1,6 @@
+"""
+Contact us models
+"""
 from django.db import models
 
 

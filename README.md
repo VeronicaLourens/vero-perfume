@@ -326,7 +326,7 @@ Product details page contains image, name, brand tag, star ratings, size, quanti
 
 * Product details mobile
 
-    ![product details mobile](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/product-m.png)
+    ![product details mobile](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/products-mobile.png)
 
 [Back to top](#vero-perfume)
 
@@ -560,6 +560,7 @@ Admin / store owner is albe to manage the site's data in the admin panel. Admin 
 * [Stripe]() - used to process the online payment with webhooks.
 * [AWS Bucket]() - used to host static files.
 * [Sitemap]() - used to generate the sitemap.xml
+* [Privacypolicygenerator.info]() - used to generate the size's privacy policy
 
 [Back to top](#vero-perfume)
 
@@ -642,7 +643,7 @@ To fork Vero Perfume's repository:
 ## Media
 
 * The carousel images and card images are from [Unsplash]().
-* 
+
 
 ## Code
 
@@ -650,7 +651,7 @@ To fork Vero Perfume's repository:
 
 * The CSS code for the total count of the shopping cart is adapted from [How to put the number at top right corner of cart icon?](https://stackoverflow.com/questions/51304169/how-to-put-the-number-at-top-right-corner-of-cart-icon)
 
-* The Wishlist code was inspired and taken from CI Slack channel where fellow coders shared the tips and tricks.
+* The Wishlist code was inspired and taken from ```CI Slack``` channel where fellow coders shared the tips and tricks.
 
 * I learned how to implement the contact form for site users to contact the shop owner on Youtube [Code With Stein](https://www.youtube.com/watch?v=dnhEnF7_RyM)
 

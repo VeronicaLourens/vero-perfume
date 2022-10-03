@@ -12,6 +12,28 @@
 
 ## Responsiveness Testing
 
+* The website has been manually tested and passed on the **Google Chrome Dev Tools** and the **Responsive Design Checker**.
+
+  |       | **Moto G4** | **Galaxy S5** | **iPhone 5** | **iPad** | **iPad Pro** | **Display < 1200px** | **Display <= 4000px** |
+  |-------|:-----------:|:-------------:|:------------:|:--------:|:------------:|:--------------------:|:---------------------:|
+  |Render |  &check;    |   &check;     |   &check;    |  &check; |    &check;   |        &check;       |        &check;        |  
+  |Image  |  &check;    |   &check;     |   &check;    |  &check; |    &check;   |        &check;       |        &check;        |   
+  |Links  |  &check;    |   &check;     |   &check;    |  &check; |    &check;   |        &check;       |        &check;        | 
+
+[Back to top](#testing)
+
+  * The website has been tested and passed on my own devices. It is fully responsive on two desktops, two laptops, iPad Air and  three mobile phones while using Google Chrome, Microsoft Edge and Sarari browsers.
+
+  |       |**Samsung Galaxy S22 Ultra**|**Xiaomi 12 pro**|**Huawei P30 Pro**|**iPad Air**|**Lenovo E540**|**HP Elitebook 850 G5**|**DELL 2407WFP**|**Yiyama ProLite XB3288UHSU**|
+  |-------|:--------------:|:--------------:|:----------------:|:----------:|:-------------:|:---------------------:|:---------------:|:--------------------------:|
+  |Render |    &check;     |   &check;      |      &check;     |   &check;  |    &check;    |        &check;        |     &check;     |        &check;             |
+  |Image  |    &check;     |   &check;      |      &check;     |   &check;  |    &check;    |        &check;        |     &check;     |        &check;             |
+  |Links  |    &check;     |   &check;      |      &check;     |   &check;  |    &check;    |        &check;        |     &check;     |        &check;             |
+
+## Browser Compatibility Testing
+
+Kiwi Piano Studio website has been tested on **Google Chrome**, **Microsoft Edge** and **Safari** browsers. The site's compatibility and the functionality are working fine with no issues.
+
 ## Lighthouse Testing
 
 ## Manual Testing
@@ -85,8 +107,6 @@ To correct the errors and get rid of the warnings, I deleted the duplicated ids,
    ![W3C HTML errors](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/w3c-html.png)
     
 
-
-## Browser Compatibility Testing
 
 ## User Story Testing
 
