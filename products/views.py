@@ -1,14 +1,13 @@
 """
 Products app views
 """
-from decimal import Decimal
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 from django.contrib.auth.decorators import login_required
 from .models import Product, Category, Review
-from .forms import AddToCartForm, SIZE_CHOICES, ProductForm, ReviewForm
+from .forms import AddToCartForm, ProductForm, ReviewForm
 
 
 # pylint: disable=no-member
@@ -94,19 +93,6 @@ def product_detail(request, product_id):
 
     reviews = product.reviews.all()
     form = AddToCartForm()
-    
-
-    # if product.size:
-    #     reduction = Decimal(1)
-    #     prices = []
-    #     for size in product.has_sizes:
-    #         price = product.price / reduction
-    #         new_price = round(price, 2)
-    #         prices.append(new_price)
-    #         reduction += Decimal(.30)
-
-
-
 
     if request.method == 'POST':
         review_form = ReviewForm(data=request.POST or None)
@@ -132,7 +118,6 @@ def product_detail(request, product_id):
 
     context = {
         'product': product,
-        # 'prices': prices,
         'form': form,
         'reviews': reviews,
         'review_form': review_form,

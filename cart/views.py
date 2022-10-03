@@ -1,3 +1,6 @@
+"""
+Shopping cart views
+"""
 from django.shortcuts import (
     render, redirect, reverse,
     HttpResponse, get_object_or_404
@@ -26,9 +29,9 @@ def add_to_cart(request, item_id):
         size = request.POST['product_size']
 
     cart = request.session.get('cart', {})
-    print(f'cart in view at start: {cart}')
+   
     if size:
-        print('has size')
+        
         if item_id in list(cart.keys()):
             if size in cart[item_id]['items_by_size'].keys():
                 cart[item_id]['items_by_size'][size] += quantity
@@ -68,7 +71,7 @@ def add_to_cart(request, item_id):
                     f'Added {product.name} to your cart'
                 )
             )
-    print(f'cart in view at end of function: {cart}')
+   
     request.session['cart'] = cart
     return redirect(redirect_url)
 
