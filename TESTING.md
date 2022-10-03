@@ -1,11 +1,11 @@
 # TESTING
 
 ## Code Validation
-* ### W3C HTML validation report
-    ![W3C HTML](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/w3c-html-no-errors.png)
+### W3C HTML validation report
+![W3C HTML](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/w3c-html-no-errors.png)
 
-* ### W3C CSS validation report
-    ![W3C CSS](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/w3c-css-no-errors.png)
+### W3C CSS validation report
+![W3C CSS](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/w3c-css-no-errors.png)
 
 
 [Back to top](#testing)
@@ -141,11 +141,11 @@ To correct the errors and get rid of the warnings, I deleted the duplicated ids,
 
     | User Story |[#5](https://github.com/VeronicaLourens/vero-perfume/issues/5) Admin receive payment  |
     |:-------:|:--------|
-    |  | This is yet to implement in the future development. |
+    |  | ```This is yet to implement in the future development```. |
 
     | User Story |[#6](https://github.com/VeronicaLourens/vero-perfume/issues/6) Send newsletter  |
     |:-------:|:--------|
-    |    | This is yet to implement in the future development. |
+    |    | ```This is yet to implement in the future development```. |
 
 [Back to top](#testing)
 
@@ -260,7 +260,7 @@ To correct the errors and get rid of the warnings, I deleted the duplicated ids,
 
     | User Story |[#26](https://github.com/VeronicaLourens/vero-perfume/issues/26) Unsubscribe newsletter  |
     |:-------:|:--------|
-    |   | This is yet to implement in the future development. |
+    |   | ```This is yet to implement in the future development```. |
 
     | User Story |[#27](https://github.com/VeronicaLourens/vero-perfume/issues/27) View purchase history  |
     |:-------:|:--------|

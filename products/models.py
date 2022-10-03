@@ -73,7 +73,6 @@ class Product(models.Model):
     """
     To create product with the product details.
     """
-
     MEN = 'Men'
     WOMEN = 'Women'
     UNISEX = 'Unisex'
@@ -82,14 +81,6 @@ class Product(models.Model):
         (MEN, 'Men'),
         (WOMEN, 'Women'),
         (UNISEX, 'Unisex')
-    ]
-
-    SIZE_CHOICES = [
-        ('30ml', '30ml'),
-        ('50ml', '50ml'),
-        ('75ml', '75ml'),
-        ('100ml', '100ml'),
-
     ]
 
     sku = models.CharField(
@@ -121,11 +112,10 @@ class Product(models.Model):
         max_digits=6,
         decimal_places=2
     )
-
-    size = models.CharField(
-        choices=SIZE_CHOICES,
-        max_length=12,
-        default='100ml'
+    has_sizes = models.BooleanField(
+        default=False,
+        null=True,
+        blank=True
     )
     gender = models.CharField(
         choices=GENDER_CHOICES,
@@ -146,10 +136,6 @@ class Product(models.Model):
 
     def __str__(self):
         return f'{self.name}'
-
-    def get_size(self):
-        """Size"""
-        return [self.get_size]
 
 
 class Review(models.Model):

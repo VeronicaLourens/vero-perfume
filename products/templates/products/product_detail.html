@@ -66,20 +66,20 @@
                         <!--Displays product prices dynamically depending on the size selected-->
                         <div class="price-container mt-2">
                             <p id="30ml" class="product-size-hidden font-weight-bold">€ {{ product.price|add:-45 }}</p>
-                            <p id="50ml" class="product-size-hidden font-weight-bold">€ {{ product.price|add:-30 }}</p>
-                            <p id="75ml" class="product-size-hidden font-weight-bold">€ {{ product.price|add:-20 }}</p>
+                            <p id="50ml" class="product-size-hidden font-weight-bold">€ {{ product.price|add:-25 }}</p>
                             <p id="100ml" class="product-size-hidden font-weight-bold">€ {{ product.price }}</p>
                         </div>
                        
                         <!--Display the dropdown list of sizes-->
                         <div class="form-group w-100">
                             <p>Size:</p>
-                            {% if product.size %}
+                            {% with product.has_size as s %}
+                            {% if s%}
                             <div class="input-group">
                                 <select class="form-control mx-auto" name="product_size" id="product_size">
-                                    {% for size in form.size %}
-                                        {{ size }}
-                                    {% endfor %}
+                                    <option value="30ml">30ml</option>
+                                    <option value="50ml">50ml</option>
+                                    <option value="100ml" selected>100ml</option>
                                 </select>
                             </div>
                             {% endif %}
@@ -98,7 +98,7 @@
                                 <label for="qty_input" hidden>Quantity</label>
                                 {% for quantity in form.quantity %}
                                 <input class="form-control qty_input id_qty_{{ product.id }}" id="qty_input"
-                                    type="number" name="quantity" value="1" min="1" max="99"
+                                    type="number" name="quantity" value="1" min="1" max="10"
                                     data-item_id="{{ product.id }}">
                                 {% endfor %}
                                 <div class="input-group-append">
@@ -122,6 +122,7 @@
                                 text-uppercase" value="Add to Cart">
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                        {% endwith %}
                     </div>
                 </form>
             </div>
