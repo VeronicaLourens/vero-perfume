@@ -41,12 +41,6 @@
                 <div class="col-6 justify-content-start">
                     <p class="text-muted mt-1">
                         {{ products|length }} Products
-                        <!--link for admin to add product-->
-                        {% if request.user.is_superuser %}
-                        <a href="{% url 'add_product' %}" class="btn front-weight-bold" title="Add product" aria-label="Add product">
-                            <i class="fas fa-plus"></i>
-                        </a>
-                        {% endif %}
                     </p>
                 </div>
                 <div class="col-6 my-auto order-md-last d-flex justify-content-end">

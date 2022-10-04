@@ -13,10 +13,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-shop" data-dismiss="modal">NO</button>
-                <a href="{% url 'delete_product' product.id %}" class="btn btn-shop" id="remove_{{ item.item_id }}"
-                    data-product_size="{{ item.size }}">
-                    YES
-                </a>
+                <a href="{% url 'delete_product' product.id %}" class="btn btn-shop">YES</a>
             </div>
         </div>
     </div>

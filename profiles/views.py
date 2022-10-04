@@ -22,6 +22,9 @@ def profile(request):
                 request,
                 'Your profile has been updated successfully!'
             )
+        else:
+            messages.error(
+                request, 'Update failed. Please ensure the form is valid.')
     else:
         form = UserProfileForm(instance=profile)
 
