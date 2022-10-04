@@ -11,81 +11,83 @@ Deployed live site: [Vero Perfume](https://veroperfume.herokuapp.com/)
 ### Epics & User Stories
 
 * #### Epic 1 - Site Admin 
-|  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
-| --------------- | -------------- | --------- | --------| -------------|
-| [#1](https://github.com/VeronicaLourens/vero-perfume/issues/1) Admin CRUD | As a shop owner  | I want to navigate the admin panel so that I can create, read, update and delete data on the site. | Django admin | Must Have |
-| [#2](https://github.com/VeronicaLourens/vero-perfume/issues/2) Admin add, update and delete product | As a shop owner  |  I want to add, update and delete product so that I can easily add new product or delete unavailable product on the site as well as update product information.| Django admin | Must Have |
-| [#3](https://github.com/VeronicaLourens/vero-perfume/issues/3) Admin edit product | As a shop owner  |  I want to edit the product so that I can update the product information.| Django admin | Must Have |
-| [#4](https://github.com/VeronicaLourens/vero-perfume/issues/4)  Admin manage reviews | As a shop owner  |  I want to manage the customer review so that I can filter out and approve the reviews that user wants to post on the site.| Django admin | Must Have |
-| [#5](https://github.com/VeronicaLourens/vero-perfume/issues/5)  Admin receive payment| As a shop owner  |  I want to receive payment from customers so that I can enjoy doing business.| Django admin | Must Have |
-| [#6](https://github.com/VeronicaLourens/vero-perfume/issues/6)  Send newsletter| As a shop owner  |  I want to send the newsletters out so that I can promote the products to customer with updates for more business.| Django admin | Should Have |
+    |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
+    | --------------- | -------------- | --------- | --------| -------------|
+    | [#1](https://github.com/VeronicaLourens/vero-perfume/issues/1) Admin CRUD | As a shop owner  | I want to navigate the admin panel so that I can create, read, update and delete data on the site. | Django admin | Must Have |
+    | [#2](https://github.com/VeronicaLourens/vero-perfume/issues/2) Admin add, update and delete product | As a shop owner  |  I want to add, update and delete product so that I can easily add new product or delete unavailable product on the site as well as update product information.| Django admin | Must Have |
+    | [#3](https://github.com/VeronicaLourens/vero-perfume/issues/3) Admin edit product | As a shop owner  |  I want to edit the product so that I can update the product information.| Django admin | Must Have |
+    | [#4](https://github.com/VeronicaLourens/vero-perfume/issues/4)  Admin manage reviews | As a shop owner  |  I want to manage the customer review so that I can filter out and approve the reviews that user wants to post on the site.| Django admin | Must Have |
+    | [#5](https://github.com/VeronicaLourens/vero-perfume/issues/5)  Admin receive payment| As a shop owner  |  I want to receive payment from customers so that I can enjoy doing business.| Django admin | Must Have |
+    | [#6](https://github.com/VeronicaLourens/vero-perfume/issues/6)  Send newsletter| As a shop owner  |  I want to send the newsletters out so that I can promote the products to customer with updates for more business.| Django admin | Should Have |
 
 [Back to top](#vero-perfume)
 
 * #### Epic 2 - Home & Contact app
-|  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
-| --------------- | -------------- | --------- | --------| -------------|
-| [#7](https://github.com/VeronicaLourens/vero-perfume/issues/7)  Navigate the site| As a shopper  |   I want to navigate the site easily so that I know what products the site sells to see if I am interested or not.| home | Must Have |
-| [#8](https://github.com/VeronicaLourens/vero-perfume/issues/8) Access the site | As a shopper  | I want to access the site easily so that I can view the site on any media screens using different browsers.| home | Must Have |
-| [#18](https://github.com/VeronicaLourens/vero-perfume/issues/18) View messages | As a shopper  |  I want to view messages so that I know my activities when updating my shopping cart or make a payment. | home | Should Have |
-| [#31](https://github.com/VeronicaLourens/vero-perfume/issues/31)  Access social media / Facebook page| As a shopper  |  I want to access the shop's social media platform so that I can follow the shop and get updates instantly. | home | Could Have |
-| [#32](https://github.com/VeronicaLourens/vero-perfume/issues/32) Contact site owner | As a shopper  | I want to make contact to the site owner so that I can contact the owner for any questions.  | Contact | Should Have |
-| [#33](https://github.com/VeronicaLourens/vero-perfume/issues/33) Advertise shop / product | As a shop owner  | I want to advertise my shop and product so that I can have more customers to buy my products.  | home | Could Have |
+    |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
+    | --------------- | -------------- | --------- | --------| -------------|
+    | [#7](https://github.com/VeronicaLourens/vero-perfume/issues/7)  Navigate the site| As a shopper  |   I want to navigate the site easily so that I know what products the site sells to see if I am interested or not.| home | Must Have |
+    | [#8](https://github.com/VeronicaLourens/vero-perfume/issues/8) Access the site | As a shopper  | I want to access the site easily so that I can view the site on any media screens using different browsers.| home | Must Have |
+    | [#18](https://github.com/VeronicaLourens/vero-perfume/issues/18) View messages | As a shopper  |  I want to view messages so that I know my activities when updating my shopping cart or make a payment. | home | Should Have |
+    | [#31](https://github.com/VeronicaLourens/vero-perfume/issues/31)  Access social media / Facebook page| As a shopper  |  I want to access the shop's social media platform so that I can follow the shop and get updates instantly. | home | Could Have |
+    | [#32](https://github.com/VeronicaLourens/vero-perfume/issues/32) Contact site owner | As a shopper  | I want to make contact to the site owner so that I can contact the owner for any questions.  | Contact | Should Have |
+    | [#33](https://github.com/VeronicaLourens/vero-perfume/issues/33) Advertise shop / product | As a shop owner  | I want to advertise my shop and product so that I can have more customers to buy my products.  | home | Could Have |
 
 [Back to top](#vero-perfume)
 
 * #### Epic 3 - Products app
-|  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
-| --------------- | -------------- | --------- | --------| -------------|
-| [#9](https://github.com/VeronicaLourens/vero-perfume/issues/9)  View product list| As a shopper  |  I want to view the list of products so that I know what product the site sells. | product | Must Have |
-| [#10](https://github.com/VeronicaLourens/vero-perfume/issues/10) View product details | As a shopper  |  I want to view the product details so that I can have enough information about the individual product before I purchase. | home | Must Have |
-| [#11](https://github.com/VeronicaLourens/vero-perfume/issues/11)  Filter and view search product result| As a shopper  |  I want to filter products so that I can quickly find the products I am looking for. | products | Should Have |
-| [#12](https://github.com/VeronicaLourens/vero-perfume/issues/12) Sort products by a specific category  | As a shopper  |  I want to find the best priced or best rated product in a specific category so that I can easily find what I want. | products | Should Have |
-| [#30](https://github.com/VeronicaLourens/vero-perfume/issues/30) Post / delete review and rate a product | As a registered shopper  | I want to post, delete review or rate a product / shop so that I can share my opinion to the others.  | products | Could Have |
-| [#35](https://github.com/VeronicaLourens/vero-perfume/issues/35) View and select product size | As a shopper  |  I want to view and select the product size so that I can buy the product with the size and the price as I wish.| products | Should Have |
+    |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
+    | --------------- | -------------- | --------- | --------| -------------|
+    | [#9](https://github.com/VeronicaLourens/vero-perfume/issues/9)  View product list| As a shopper  |  I want to view the list of products so that I know what product the site sells. | product | Must Have |
+    | [#10](https://github.com/VeronicaLourens/vero-perfume/issues/10) View product details | As a shopper  |  I want to view the product details so that I can have enough information about the individual product before I purchase. | home | Must Have |
+    | [#11](https://github.com/VeronicaLourens/vero-perfume/issues/11)  Filter and view search product result| As a shopper  |  I want to filter products so that I can quickly find the products I am looking for. | products | Should Have |
+    | [#12](https://github.com/VeronicaLourens/vero-perfume/issues/12) Sort products by a specific category  | As a shopper  |  I want to find the best priced or best rated product in a specific category so that I can easily find what I want. | products | Should Have |
+    | [#30](https://github.com/VeronicaLourens/vero-perfume/issues/30) Post / delete review and rate a product | As a registered shopper  | I want to post, delete review or rate a product / shop so that I can share my opinion to the others.  | products | Could Have |
+    | [#35](https://github.com/VeronicaLourens/vero-perfume/issues/35) View and select product size | As a shopper  |  I want to view and select the product size so that I can buy the product with the size and the price as I wish.| products | Should Have |
 
 [Back to top](#vero-perfume)
 
 * #### Epic 4 - Cart app
-|  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
-| --------------- | -------------- | --------- | --------| -------------|
-| [#14](https://github.com/VeronicaLourens/vero-perfume/issues/14)  Add / delete product in the shopping cart| As a shopper  |  I want to add or delete products from the shopping cart so that I know what products and the amount of products I would buy. | cart | Must Have |
-| [#15](https://github.com/VeronicaLourens/vero-perfume/issues/15) View the total product in the shopping cart | As a shopper  |  I want to view the products in my shopping cart so that I know what I buy and the total cost for the products. | cart | Should Have |
-| [#16](https://github.com/VeronicaLourens/vero-perfume/issues/16)  View policy documents| As a shopper  | I want to view the site's documents so that I know the site's terms and conditions when purchasing the product.  | home | Should Have |
-| [#17](https://github.com/VeronicaLourens/vero-perfume/issues/17) Update quantity in the shopping cart | As a shopper  | I want to update the product quantity in my shopping cart so that I can easily add or delete the same product in my shopping cart.  | cart | Should Have |
+    |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
+    | --------------- | -------------- | --------- | --------| -------------|
+    | [#14](https://github.com/VeronicaLourens/vero-perfume/issues/14)  Add / delete product in the shopping cart| As a shopper  |  I want to add or delete products from the shopping cart so that I know what products and the amount of products I would buy. | cart | Must Have |
+    | [#15](https://github.com/VeronicaLourens/vero-perfume/issues/15) View the total product in the shopping cart | As a shopper  |  I want to view the products in my shopping cart so that I know what I buy and the total cost for the products. | cart | Should Have |
+    | [#16](https://github.com/VeronicaLourens/vero-perfume/issues/16)  View policy documents| As a shopper  | I want to view the site's documents so that I know the site's terms and conditions when purchasing the product.  | home | Should Have |
+    | [#17](https://github.com/VeronicaLourens/vero-perfume/issues/17) Update quantity in the shopping cart | As a shopper  | I want to update the product quantity in my shopping cart so that I can easily add or delete the same product in my shopping cart.  | cart | Should Have |
 
 [Back to top](#vero-perfume)
 
 * #### Epic 5 - Profiles app
-|  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
-| --------------- | -------------- | --------- | --------| -------------|
-| [#13](https://github.com/VeronicaLourens/vero-perfume/issues/13) Add / delete product to wishlist | As a shopper  |  I want to add / delete product to my wish list so that I can easily select the products to purchase. | products | Should Have |
-| [#19](https://github.com/VeronicaLourens/vero-perfume/issues/19)  Register an account| As a shopper  | I want to register an account so that I can manage my activities on the site.  | profiles | Must Have |
-| [#20](https://github.com/VeronicaLourens/vero-perfume/issues/20) Login / log out | As a registered shopper  |   I want to login and logout so that I can access my account and manage my purchase on the site. | profiles | Must Have |
-| [#21](https://github.com/VeronicaLourens/vero-perfume/issues/21)  Edit / delete account profile| As a registered shopper  | I want to edit or delete account so that I can personalize my own account profile or delete my account as I wish.  | profiles | Must Have |
-| [#22](https://github.com/VeronicaLourens/vero-perfume/issues/22) Verify email address | As a shopper  | I want to verify my email address so that I can be sure the security of my account and purchase on the site.  | profiles | Must Have |
-| [#23](https://github.com/VeronicaLourens/vero-perfume/issues/23) Receive feedback | As a  registered shopper  |  I want to receive feedback so that I can verify my activities on the site. | profiles | Should Have |
-| [#24](https://github.com/VeronicaLourens/vero-perfume/issues/24) Reset account password | As a  registered shopper  | I want to reset my account password so that I can be sure that I can access my account again in case I forgot the password.  | profiles | Should Have |
-| [#25](https://github.com/VeronicaLourens/vero-perfume/issues/25) Subscribe newsletter | As a  registered shopper  |   I want to receive newsletters so that I receive regular updates about the products. | home | Could Have |
-| [#26](https://github.com/VeronicaLourens/vero-perfume/issues/26) Unsubscribe newsletter  | As a  registered shopper  | I want to unsubscribe newsletters so that I can no longer receiving regular newsletters.  | home | Could Have |
-| [#27](https://github.com/VeronicaLourens/vero-perfume/issues/27) View purchase history | As a shopper  | I want to view my purchase history so that I can see what I have bought in the past.  | profiles | Should Have |
+    |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
+    | --------------- | -------------- | --------- | --------| -------------|
+    | [#13](https://github.com/VeronicaLourens/vero-perfume/issues/13) Add / delete product to wishlist | As a shopper  |  I want to add / delete product to my wish list so that I can easily select the products to purchase. | products | Should Have |
+    | [#19](https://github.com/VeronicaLourens/vero-perfume/issues/19)  Register an account| As a shopper  | I want to register an account so that I can manage my activities on the site.  | profiles | Must Have |
+    | [#20](https://github.com/VeronicaLourens/vero-perfume/issues/20) Login / log out | As a registered shopper  |   I want to login and logout so that I can access my account and manage my purchase on the site. | profiles | Must Have |
+    | [#21](https://github.com/VeronicaLourens/vero-perfume/issues/21)  Edit / delete account profile| As a registered shopper  | I want to edit or delete account so that I can personalize my own account profile or delete my account as I wish.  | profiles | Must Have |
+    | [#22](https://github.com/VeronicaLourens/vero-perfume/issues/22) Verify email address | As a shopper  | I want to verify my email address so that I can be sure the security of my account and purchase on the site.  | profiles | Must Have |
+    | [#23](https://github.com/VeronicaLourens/vero-perfume/issues/23) Receive feedback | As a  registered shopper  |  I want to receive feedback so that I can verify my activities on the site. | profiles | Should Have |
+    | [#24](https://github.com/VeronicaLourens/vero-perfume/issues/24) Reset account password | As a  registered shopper  | I want to reset my account password so that I can be sure that I can access my account again in case I forgot the password.  | profiles | Should Have |
+    | [#25](https://github.com/VeronicaLourens/vero-perfume/issues/25) Subscribe newsletter | As a  registered shopper  |   I want to receive newsletters so that I receive regular updates about the products. | home | Could Have |
+    | [#26](https://github.com/VeronicaLourens/vero-perfume/issues/26) Unsubscribe newsletter  | As a  registered shopper  | I want to unsubscribe newsletters so that I can no longer receiving regular newsletters.  | home | Could Have |
+    | [#27](https://github.com/VeronicaLourens/vero-perfume/issues/27) View purchase history | As a shopper  | I want to view my purchase history so that I can see what I have bought in the past.  | profiles | Should Have |
 
 [Back to top](#vero-perfume)
 
 * #### Epic 6 - Checkout app
-|  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
-| --------------- | -------------- | --------- | --------| -------------|
-| [#28](https://github.com/VeronicaLourens/vero-perfume/issues/28) Checkout and pay  | As a registered shopper  | I want to check out and pay online so that I can complete the purchase.  | checkout | Must Have |
-| [#29](https://github.com/VeronicaLourens/vero-perfume/issues/29) Receive order confirmation | As a registered shopper  |   I want to receive confirmation after paying so that I know whether my purchase is successful or not. | checkout | Must Have |
-| [#34](https://github.com/VeronicaLourens/vero-perfume/issues/34)  Process online orders| As a shop owner | I want to process orders online so that I can sell products online  | checkout | Must Have |
+    |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
+    | --------------- | -------------- | --------- | --------| -------------|
+    | [#28](https://github.com/VeronicaLourens/vero-perfume/issues/28) Checkout and pay  | As a registered shopper  | I want to check out and pay online so that I can complete the purchase.  | checkout | Must Have |
+    | [#29](https://github.com/VeronicaLourens/vero-perfume/issues/29) Receive order confirmation | As a registered shopper  |   I want to receive confirmation after paying so that I know whether my purchase is successful or not. | checkout | Must Have |
+    | [#34](https://github.com/VeronicaLourens/vero-perfume/issues/34)  Process online orders| As a shop owner | I want to process orders online so that I can sell products online  | checkout | Must Have |
 
 
 [Back to top](#vero-perfume)
 
 ## Wireframes
+
 I used ```Balsamiq``` to create basic site structure to visualize the site’s potential features which helps me to understand better what needs to be done for the project. The end result might slightly different due to the project development.
 
 * ### Desktop
+
     * Home page
     ![Home page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/wireframes/desktop/home.png)
 
@@ -205,13 +207,22 @@ I have chosen the white color for the site's background and using purple and blu
 [Back to top](#vero-perfume)
 
 ## Agile Project Management
+
 I used GitHub Agile project management tool to create user stories using issues and planned the user stories into three different stages using Kanban board with three columns that are ```To do```, ```In progress``` and ```Done```. The user stories are labeled with **MoSCoW** techniques to prioritize the project’s tasks.
 
-![Agile](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/agile.png)
+* Project in progress
+
+    ![Agile](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/agile.png)
+
+* Project done
+
+    ![Future development](../vero-perfume/media/agile-done.png)
 
 ### Database ERD
+
 I used ```Lucidchart``` to create the project's database schema models which helps me to unserstand the relationship between the models. Heroku Postgres database and the SQLite are used for the project.
-    ![ERD](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/ERD.png)
+
+![ERD](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/ERD.png)
 
 #### Models
 * **User** - It is used for user information and purchase history.
@@ -244,6 +255,7 @@ The Vero Perfume application is a B2C business model that it does the business d
 
 
 # Exisiting Features
+
 Vero Perfume application contains total 25 pages including the popup modals.
 
 All of pages have the same navigation menu and the same footer. The dynamic navigatoin menu provides an easy way of browsing all pages with dropdown lists. There are Vero Perfume logo image on the top left, a search bar in the middle, account and wishlist and shopping on the right.
@@ -253,11 +265,11 @@ The search bar provides a quick way of searching for the products. The site prov
 ## Home Page
 The site's landing page with carousel images to show that the online shop sells perfume.
 
-* Home page desktop
+* #### Home page desktop
 
     ![Home page desktop](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/landing-page.png)
 
-* Home page mobile
+* #### Home page mobile
 
     ![Home page mobile](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/home-m.png)
 
@@ -369,7 +381,9 @@ User is able to add product to the cart, update the product quantity and remove 
     </detials>
 
 [Back to top](#vero-perfume)
+
 ## Checkout Page
+
 Checkout page contains a delivery details form and payment card authorization form for user to fill in for completing the order. There is an order summary where user can clearly see the items and total amount of the order. The site uses the Stripe payment method to process the eletronic money transfer.
 
 * Checkout page desktop
@@ -412,42 +426,47 @@ Checkout page contains a delivery details form and payment card authorization fo
 User signs up an account with filling in the personal details the sign up form. Then Vero Perfume sends an email to the user with a link asking the user to verify the email address. The user's account is completed once the user click the confirm button. And the user is redirected to the sign in page.
 
 
-* Account sign up
-![Sign up](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/account-sign-up.png)
+* #### Account sign up
 
-* Verify email address
-![Confirmation email](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/verify-email.png)
+    ![Sign up](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/account-sign-up.png)
 
-[Back to top](#vero-perfume)
+* #### Verify email address
 
-* Confirmation email
-![Email with link](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/verify-email-link.png)
-
-* Confirma email page
-![Confirmation](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/verify-email-confirm.png)
+    ![Confirmation email](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/verify-email.png)
 
 [Back to top](#vero-perfume)
 
-* Sign up confirmed
-![Sign up confirmed](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/verify-signup-confirm.png)
+* #### Confirmation email
+
+    ![Email with link](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/verify-email-link.png)
+
+* #### Confirma email page
+
+    ![Confirmation](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/verify-email-confirm.png)
+
+[Back to top](#vero-perfume)
+
+* #### Sign up confirmed
+
+    ![Sign up confirmed](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/verify-signup-confirm.png)
 
 
-* Account sign out
+* #### Account sign out
 
     ![Sign out](https://veroperfume.s3.eu-west-2.amazonaws.com/media/images/sign-out.png)
 
 
-* Reset account password
+* #### Reset account password
 
     ![Reset password](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/password-reset.png)
 
 [Back to top](#vero-perfume)
 
-* Reset password feedback
+* #### Reset password feedback
 
     ![Feedback](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/password-reset-fb.png)
 
-* Account profile
+* #### Account profile
 
     ![Profile](https://veroperfume.s3.eu-west-2.amazonaws.com/media/images/profile.png)
 
@@ -547,6 +566,12 @@ Admin / store owner is albe to manage the site's data in the admin panel. Admin 
 
 ## Future features to implement
 
+* Send out newsletters can be added to the application;
+* Unsubscribe newsletter feature can be added;
+* Inventory tracking system can be implemented;
+* Store owner can receive the payment;
+* Shipping methods and package tracking can be added to the application;
+
 
 # Technologies Used
 ## Languages & Frameworks
@@ -589,6 +614,7 @@ View the site's testing documentation here [TESTING.md](TESTING.md)
 [Back to top](#vero-perfume)
 
 # Deployment
+
 The project has been deployed to **Heroku** in the early stage of the proejct development just after creating the site's basic functionalities with the base and basic home page. Created **Procfile** and set up environment variables in my project development environment that helped to successfully deploy the project to Heroku.
 
 * ## Heroku App
