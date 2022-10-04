@@ -58,7 +58,6 @@ class TestProductModel(TestCase):
             name='Lourens',
             rating=5,
             price=200,
-            size='100ml',
             gender='gender',
             description='Awesome perfume for everyone',
             notes='roses and spring water',
