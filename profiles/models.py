@@ -89,7 +89,6 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
     instance.userprofile.save()
 
 
-
 class WishList(models.Model):
     """
     To save products on user's wishlist.
