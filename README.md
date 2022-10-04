@@ -6,6 +6,71 @@ Deployed live site: [Vero Perfume](https://veroperfume.herokuapp.com/)
 ![Screen views](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/screen-view1.png)
 
 
+# Table of Content
+
+- [UX](#ux)
+    + [Epics & User Stories](#epics---user-stories)
+      - [Epic 1 - Site Admin](#epic-1---site-admin)
+      - [Epic 2 - Home & Contact app](#epic-2---home---contact-app)
+      - [Epic 3 - Products app](#epic-3---products-app)
+      - [Epic 4 - Cart app](#epic-4---cart-app)
+      - [Epic 5 - Profiles app](#epic-5---profiles-app)
+      - [Epic 6 - Checkout app](#epic-6---checkout-app)
+  * [Wireframes](#wireframes)
+    + [Desktop](#desktop)
+    + [Mobile](#mobile)
+  * [Design Choice](#design-choice)
+    + [Color Scheme](#color-scheme)
+  * [Agile Project Management](#agile-project-management)
+    + [Project in progress](#project-in-progress)
+    + [Project done](#project-done)
+    + [Database ERD](#database-erd)
+      - [Models](#models)
+    + [Business Model](#business-model)
+      - [Marketing](#marketing)
+      - [Search Engine Optimisation (SEO)](#search-engine-optimisation--seo-)
+      - [Mailchimp newsletter subscription](#mailchimp-newsletter-subscription)
+- [Exisiting Features](#exisiting-features)
+  * [Home Page](#home-page)
+      - [Home page desktop](#home-page-desktop)
+      - [Home page mobile](#home-page-mobile)
+  * [Products Page](#products-page)
+  * [Product Details Page](#product-details-page)
+  * [Shopping Cart Page](#shopping-cart-page)
+  * [Checkout Page](#checkout-page)
+  * [User account & Profile page](#user-account---profile-page)
+      - [Account sign up](#account-sign-up)
+      - [Verify email address](#verify-email-address)
+      - [Confirmation email](#confirmation-email)
+      - [Confirma email page](#confirma-email-page)
+      - [Sign up confirmed](#sign-up-confirmed)
+      - [Account sign out](#account-sign-out)
+      - [Reset account password](#reset-account-password)
+      - [Reset password feedback](#reset-password-feedback)
+      - [Account profile](#account-profile)
+  * [Wishlist page](#wishlist-page)
+  * [Admin Product management page](#admin-product-management-page)
+  * [Contact us page](#contact-us-page)
+  * [Policy page](#policy-page)
+  * [404 page](#404-page)
+  * [Django admin panel](#django-admin-panel)
+  * [Future developments](#future-developments)
+- [Technologies Used](#technologies-used)
+  * [Languages & Frameworks](#languages---frameworks)
+  * [Others Programs](#others-programs)
+- [Testing](#testing)
+- [Deployment](#deployment)
+  * [Heroku App](#heroku-app)
+  * [Amazon Web Services S3](#amazon-web-services-s3)
+  * [Clone Project](#clone-project)
+  * [Fork Project](#fork-project)
+- [Credit](#credit)
+  * [Content](#content)
+  * [Media](#media)
+  * [Code](#code)
+- [Acknowledgement](#acknowledgement)
+
+
 # UX
 
 ### Epics & User Stories
@@ -210,13 +275,13 @@ I have chosen the white color for the site's background and using purple and blu
 
 I used GitHub Agile project management tool to create user stories using issues and planned the user stories into three different stages using Kanban board with three columns that are ```To do```, ```In progress``` and ```Done```. The user stories are labeled with **MoSCoW** techniques to prioritize the project’s tasks.
 
-* Project in progress
+### Project in progress
 
-    ![Agile](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/agile.png)
+![Agile](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/agile.png)
 
-* Project done
+### Project done
 
-    ![Future development](../vero-perfume/media/agile-done.png)
+![Future development](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/agile-done.png)
 
 ### Database ERD
 
@@ -564,7 +629,7 @@ Admin / store owner is albe to manage the site's data in the admin panel. Admin 
 
 [Back to top](#vero-perfume)
 
-## Future features to implement
+## Future developments
 
 * Send out newsletters can be added to the application;
 * Unsubscribe newsletter feature can be added;

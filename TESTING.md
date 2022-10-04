@@ -341,6 +341,7 @@ The credit card must be valid to complete the online order.
 
 
 ### W3C HTML validation errors and warnings
+
 To correct the errors and get rid of the warnings, I deleted the duplicated ids, hrefs, script type attribute and the spaces between the names of brands. 
     
 * #### W3C HTML validation errors and warnings
