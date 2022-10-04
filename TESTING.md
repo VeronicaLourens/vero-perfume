@@ -2,7 +2,29 @@
 
 ## Code Validation
 ### W3C HTML validation report
-![W3C HTML](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/w3c-html-no-errors.png)
+* Home page
+    ![W3C HTML](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/w3c-html-no-errors.png)
+
+* Product page
+    ![Product page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/w3c-product.png)
+
+* Product details page
+    ![Product details](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/w3c-product-details.png)
+
+* Add product
+    ![Add product](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/w3c-html-add-no-errors.png)
+
+* Cart page
+    ![Cart](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/w3c-cart.png)
+
+* Checkout page
+    ![Checkout](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/w3c-checkout.png)
+
+* Profile page
+    ![Profile](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/w3c-html-profile-no-errors.png)
+
+* Sign in page
+    ![Sign in](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/w3c-login.png)
 
 ### W3C CSS validation report
 ![W3C CSS](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/w3c-css-no-errors.png)
@@ -37,6 +59,18 @@
 Kiwi Piano Studio website has been tested on **Google Chrome**, **Microsoft Edge** and **Safari** browsers. The site's compatibility and the functionality are working fine with no issues.
 
 ## Lighthouse Testing
+
+Vero Perfume site has been tested on ```Google Chrome Lighthouse``` function on incognito window for the desktop and mobile screens.
+
+* Home - desktop
+
+    ![Home](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/lighthouse-home.png)
+
+* Home - mobile
+
+    The Performance score is 64 for the mobile due to the render blocking resources.
+
+    ![Home-m](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/lighthouse-home-m.png)
 
 ## Manual Testing
 
