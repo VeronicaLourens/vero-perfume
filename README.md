@@ -455,6 +455,21 @@ User signs up an account with filling in the personal details the sign up form. 
 
 [Back to top](#vero-perfume)
 
+## Wishlist page
+Logged in user is able to add and remove the product to the wishlist. There is a link to the product's detail page if user wishes to view the product details. The error message shows up if the item exist in the wishlist.
+
+* Wishlist overview
+    ![Wishlist](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/wishlist-total.png)
+
+* Add product to wishlist
+    ![Add to wishlist](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/wishlist-add.png)
+
+* Remove product from wishlist
+    ![Remove from wishlist](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/wishlist-remove.png)
+
+* wishlist error
+    ![Add error](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/wishlist-error.png)
+
 ## Admin Product management page
 Store owner is able to add, delete and edit the product on the site.
 

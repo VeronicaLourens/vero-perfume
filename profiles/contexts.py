@@ -1,7 +1,6 @@
 """
 Contexts for the wishlist
 """
-from django.conf import settings
 from django.shortcuts import get_object_or_404
 from products.models import Product
 from .models import WishList
@@ -30,6 +29,7 @@ def wishlist_context(request):
     context = {
         'wishlist_items': wishlist_items,
         'wishlist_count': wishlist_count,
+        'wishilist': wishlist,
     }
 
     return context
