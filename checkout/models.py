@@ -43,7 +43,7 @@ class Order(models.Model):
         max_length=50,
         null=False,
         blank=False,
-        validators=[alpha_only]
+ 
     )
     email = models.EmailField(
         max_length=20,

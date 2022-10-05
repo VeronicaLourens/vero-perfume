@@ -16,7 +16,7 @@ class AddToCartForm(forms.Form):
     quantity = forms.IntegerField(max_value=10, min_value=1)
 
 
-class ProductForm(forms.ModelForm):
+class ProductForm(ModelForm):
     """
     To manage the product by the shop owner/admin.
     """
