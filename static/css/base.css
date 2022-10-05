@@ -342,6 +342,14 @@ a.category-badge>span.badge:hover {
     border-radius: 0;
 }
 
+.select-image-btn {
+    height: 40px;
+    width: 130px;
+    font-weight: bold !important;
+    color: white;
+    border-radius: 18px !important;
+}
+
 
 /*--------------------------cart page */
 .cart-container {

@@ -69,9 +69,10 @@
                             <div id="50ml" class="product-size-hidden font-weight-bold">€ {{ product.price|add:-28.59 }}</div>
                             <div id="100ml" class="product-size font-weight-bold">€ {{ product.price }}</div>
                         </div>
+                        
                         <!--Display the dropdown list of sizes-->
-                       
-                       
+                    
+
                         <div class="col-12">
                             <p class="mt-3 font-weight-bold">Size:</p>
                             <select class="form-control mx-auto" name="product_size" id="product_size">
@@ -80,7 +81,7 @@
                                 <option value="100ml" selected>100ml</option>
                             </select>
                         </div>
-                       
+                      
                         <div class="col-12">
                             <p class="mt-3 font-weight-bold">Quantity:</p>
                             <div class="input-group input-group-{{ product.id }}">

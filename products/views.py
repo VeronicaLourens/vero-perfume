@@ -8,6 +8,7 @@ from django.db.models.functions import Lower
 from django.contrib.auth.decorators import login_required
 from .models import Product, Category, Review
 from .forms import AddToCartForm, ProductForm, ReviewForm
+from decimal import Decimal
 
 
 # pylint: disable=no-member
