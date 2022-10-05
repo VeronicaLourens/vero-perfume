@@ -9,7 +9,7 @@ from products.models import Product
 # pylint: disable=no-member
 
 alpha_only = RegexValidator(
-    r'^[a-zA-Z]*$',
+    r'^[a-zA-Z ]*$',
     'Only alpha[a-zA-Z] characters are allowed.'
 )
 

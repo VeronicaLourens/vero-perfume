@@ -100,11 +100,11 @@
                                         </a>
                                     </p>
                                     {% endif %}
-                                    <!-- {% if product.gender %} -->
+                                    {% if product.gender %}
                                     <p class="small mt-1 mb-0 text-muted">
                                        <i class="fas fa-image-portrait mr-1"></i>{{ product.gender }}
                                     </p>
-                                    <!-- {% endif %} -->
+                                    {% endif %}
                                     {% if product.rating %}
                                     <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
                                     {% else %}
