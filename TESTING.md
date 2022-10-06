@@ -1,5 +1,7 @@
 # TESTING
 
+I have conducted both manual and automated testing for Vero Perfume application. 
+
 ## Code Validation
 ### W3C HTML validation report
 * #### Home page
@@ -46,6 +48,10 @@
 
 
 [Back to top](#testing)
+
+### Python code validation
+
+The ```pep8online.com``` was downed for python code validation during the project's code validaion period. So I manually checked all files and the Python code has no issues. However, there are a few lines of code that contains too many characters which I opted to fix it due to the unexpected side effects.
 
 ## Responsiveness Testing
 
@@ -325,28 +331,33 @@ The credit card must be valid to complete the online order.
 
 ## Automated Testing
 
+I have conducted and ran 11 automated testing for the project with the OK result.
+
 ## Unsolved Known Bugs
 
 * #### Product price
 
-    The product prices are displayed dynamically based on the sizes selected when adding product into the cart. However, the price is not corect on the cart overview page and on the checkout. I tried a couple of different ways to solve the problem but I couldn't make it work due to current knowledge and skills.
+    The product prices are displayed dynamically based on the sizes selected when adding product into the cart. However, the price is not correct on the cart page and on the checkout page. I tried a couple of different ways to solve the problem but I couldn't make it work due to current knowledge and the time strain.
+
+* #### Product size
+    The product sizes were displayed when adding product to the shopping cart and the sizes were also displayed on the cart page. However, it doesn't work anymore after reset the project's entire database on the very last stage of the project develoment due to some adjustment.
 
 * #### Wishlist count
 
-    The total count on the wishlist page doesn't work.
-
-* #### Product management form
-
-    The product management forms don't work properly.
+    The total count on the wishlist page doesn't work. I tried the same way of doing the shopping cart count but it didn't work out as expected.
 
 
-### W3C HTML validation errors and warnings
+### Resolved W3C HTML validation errors and warnings
 
 To correct the errors and get rid of the warnings, I deleted the duplicated ids, hrefs, script type attribute and the spaces between the names of brands. 
     
 * #### W3C HTML validation errors and warnings
 
    ![W3C HTML errors](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/w3c-html.png)
+
     
 [Back to top](#testing)
+
+
+[Back to README.md](README.md)
 
