@@ -202,19 +202,24 @@ The credit card must be valid to complete the online order.
 
 * #### Card error-1
 
-    ![Card1](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/card-error1.png)
+    ![Card1](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/card-error1.png)
 
 * #### Card error-2
 
-    ![Card2](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/card-error1.png)
+    ![Card2](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/card-error2.png)
 
 * #### Card error-3
 
-    ![Card3](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/card-error1.png)
+    ![Card3](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/card-error3.png)
 
 [Back to top](#testing)
 
 ## User Story Testing
+
+Vero Perfume e-commerce application has total 35 user stories. The finished site has covered and satisfied the 32 user storeis as I manually tested. The other 3 user stories are left for the future development due the project's current scope. 
+
+The features of user storeis can be views on the [README.md](README.md) page's ```Existing Features``` section.
+
 
 ### Epics & User Stories
 
