@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404, HttpResponse
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from .models import UserProfile, WishList
@@ -96,6 +96,7 @@ def delete_profile(request):
     return render(request, 'profiles/delete_profile.html', context)
 
 
+@login_required()
 def wishlist(request):
     """
     To render wishlist.
@@ -106,8 +107,9 @@ def wishlist(request):
 
     try:
         wishlist = WishList.objects.get(user=request.user)
-    except wishlist.DoesNotExist:
-        pass
+    except Exception as e:
+        messages.error(request, 'Sorry, please login to your account first.')
+        return HttpResponse(content=e, status=500)
     else:
         wishlist_items = wishlist.products.all()
 
