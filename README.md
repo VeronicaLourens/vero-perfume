@@ -1,5 +1,5 @@
 # Vero Perfume
-Vero Perfume is an e-commerce online shop where sells fine fragrance and perfumes. The site provides a smooth online shopping experience to customers. The site processes online orders, online secured payment method and fast delivery service. The site is accessible across all the devices using different browsers. The site sends out marketing newsletters directly to customers and has a Facebook page to promote the selling business.
+Vero Perfume is an e-commerce online shop where sells fine fragrance and perfumes. The site provides a smooth online shopping experience to customers. The site processes online orders, provides online secured payment method and fast delivery service. The site is accessible across all the devices using different browsers. The site sends out marketing newsletters directly to customers and has a Facebook page to promote the selling products. 
 
 Deployed live site: [Vero Perfume](https://veroperfume.herokuapp.com/)
 
@@ -323,9 +323,11 @@ The Vero Perfume application is a B2C business model that it does the business d
 
 Vero Perfume application contains total 25 pages including the popup modals.
 
-All of pages have the same navigation menu and the same footer. The dynamic navigatoin menu provides an easy way of browsing all pages with dropdown lists. There are Vero Perfume logo image on the top left, a search bar in the middle, account and wishlist and shopping on the right.
+All of pages have the same navigation menu and the same footer. The dynamic navigatoin menu provides an easy way of browsing all pages with dropdown lists. Vero Perfume logo image is on the top left, a search bar in the middle, account and wishlist and shopping cart on the right.
 
 The search bar provides a quick way of searching for the products. The site provides sorting and filtering functionalities on the products page to search for the products.
+
+The footer contains a mailchimp newsletter subscription form on the left, the Facebook page, contact us and policy clickable links on the right, the copyright and disclaimer on the bottom.
 
 ## Home Page
 The site's landing page with carousel images to show that the online shop sells perfume.
@@ -431,19 +433,19 @@ User is able to add product to the cart, update the product quantity and remove 
 
 [Back to top](#vero-perfume)
 
-* <details><summary>Update shopping cart</summary>
+* Update shopping cart
 
     ![Update shopping cart](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/cart-update.png)
 
-    </detials>
+   
 
 [Back to top](#vero-perfume)
 
-* <details><summary>Remove product to shopping cart</summary>
+* Remove product to shopping cart
 
     ![Remove product](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/cart-delete-item.png)
 
-    </detials>
+    
 
 [Back to top](#vero-perfume)
 
@@ -472,13 +474,15 @@ Checkout page contains a delivery details form and payment card authorization fo
 
 [Back to top](#vero-perfume)
 
-* <details><summary>Order details from profile page</summary>
+* Order details from profile page
 
     ![Checkout](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/checkout-success-from-profile.png)
 
-    </detials>
+    
 
 * Order confirmation email to the user
+
+    I used my Gmail account and the ```Gmail SMTP server``` to send emails to the user when the user complete the online orders.
 
     ![Email confirmation](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/gmail-order.png)
 
@@ -655,7 +659,7 @@ Admin / store owner is albe to manage the site's data in the admin panel. Admin 
 * [GitPod]() - used to write and push the code for the project.
 * [Balsamiq]() - used to create project's wireframes.
 * [Chrome Dev Tools]() - used to debug and light house testing.
-* [Pep8]() - used to validate the Python code.
+* [Adobe Color]() - used to extract the color theme.
 * [W3C Markup Validation Service]() - used to validate the HTML code.
 * [W3C CSS Validation Service]() - used to validate CSS code.
 * [Am I Responsive]() - used to generate the responsive preview screens.
