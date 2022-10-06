@@ -236,11 +236,18 @@ def delete_review(request, review_id):
     """
     To delete the review on a specific product.
     """
-    if request.user.is_authenticated:
-        review = get_object_or_404(Review, pk=review_id)
-        product = review.product
-        if request.user == review.user:
-            review.delete()
-            messages.info(request, 'Successfully deleted review!')
+    review = get_object_or_404(Review, pk=review_id)
+    product = review.product
+
+    try:
+        review.delete()
+        messages.info(
+            request, (
+                f'Successfully deleted your review of {review.product}')
+        )
+
+    except Exception as e:
+        messages.error(request, f'Error removing review: {e}')
+        return HttpResponse(status=500)
 
     return redirect(reverse('product_detail', args=[product.id]))

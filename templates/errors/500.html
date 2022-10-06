@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_title %}Error{% endblock %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock page_header %}
+
+{% block content %}
+<div class="container error-page-container">
+    <div class="row">
+        <div class="col mt-3">
+            <h3>500 Error <i class="fas fa-exclamation-triangle"></i></h3>
+            <hr class="mb-1">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center mt-5">
+            <h4>Ooops - server error.</h4>
+            <p class="my-3">Try navigating above to another part of the page or <a href="{% url 'home' %}"
+                    class="btn btn-shop mt-3 mt-md-0">Return to Home</a></p>
+        </div>
+    </div>
+</div>
+{% endblock %}
