@@ -214,6 +214,26 @@ The credit card must be valid to complete the online order.
 
 [Back to top](#testing)
 
+### Contact us form
+
+Contact us form has been manually tested. 
+
+* #### Contact form error -1
+
+    ![Contact-1](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/contact-1.png)
+
+* #### Contact form error -2
+
+    ![Contact-2](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/contact-2.png)
+
+* #### Contact form error -3
+
+    ![Contact-3](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/contact-3.png)
+
+* #### Contact form error -4
+
+    ![Contact-4](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/contact-4.png)
+
 ## User Story Testing
 
 Vero Perfume e-commerce application has total 35 user stories. The finished site has covered and satisfied the 32 user storeis as I manually tested. The other user stories ```#5 #6 and #26``` are left for the future development due the project's current scope. 

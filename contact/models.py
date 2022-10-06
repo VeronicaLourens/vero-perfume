@@ -2,6 +2,12 @@
 Contact us models
 """
 from django.db import models
+from django.core.validators import RegexValidator
+
+alpha_only = RegexValidator(
+    r'^[a-zA-Z ]*$',
+    'Only alpha[a-zA-Z] characters are allowed.'
+)
 
 
 class ContactUs(models.Model):
@@ -12,7 +18,8 @@ class ContactUs(models.Model):
         max_length=100,
         null=False,
         blank=False,
-        default=''
+        validators=[alpha_only]
+        
     )
     email = models.EmailField()
     message = models.TextField(
