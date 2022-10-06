@@ -75,7 +75,7 @@ Deployed live site: [Vero Perfume](https://veroperfume.herokuapp.com/)
 
 ### Epics & User Stories
 
-* #### Epic 1 - Site Admin 
+* #### Epic 1 - Django Admin 
     |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
     | --------------- | -------------- | --------- | --------| -------------|
     | [#1](https://github.com/VeronicaLourens/vero-perfume/issues/1) Admin CRUD | As a shop owner  | I want to navigate the admin panel so that I can create, read, update and delete data on the site. | Django admin | Must Have |
@@ -686,7 +686,38 @@ View the site's testing documentation here [TESTING.md](TESTING.md)
 
 The project has been deployed to **Heroku** in the early stage of the proejct development just after creating the site's basic functionalities with the base and basic home page. Created **Procfile** and set up environment variables in my project development environment that helped to successfully deploy the project to Heroku.
 
-* ## Heroku App
+## Heroku App
+
+* ### Set up
+
+1. I used Code Institute GitPod full template to set up an environment to created the project. Installed Django and required packages / libraries using commands in GitPod terminal.
+
+    * ```pip3 install Django==3.2 gunicorn```
+
+    * ```pip3 install dj_database_url psycopg2```
+
+    * ```pip3 install dj3-cloudinary-storage```
+
+    * ```pip3 freeze --local > requirements.txt```
+
+2. Create Procfile
+
+    ![Profile](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/procfile.png)
+
+3. Attach Heroku Postgres
+
+    Navigate to the ```Resources``` tab to attach Heroku Postgres datablse.
+
+    ![Heroku Postgres](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/heroku1.png)
+
+4. Set up Config Vars in Heroku
+
+    UNavigate to the ```Settings``` tab to set up the Config Vars.
+
+    ![Configvars](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/configvars.png)
+
+* ### Steps to deploy Vero Perfume app to Heroku
+
 
     1. Login to my Heroku account and click ```Create new app```;
     2. Give my app a name **veroperfume** and select Europe and click ```Create app``` button;
@@ -704,15 +735,15 @@ The project has been deployed to **Heroku** in the early stage of the proejct de
 
 [Back to top](#vero-perfume)
 
-* ## Amazon Web Services S3
-    The project's static and media files are stored at the cloud-based storage **AWS S3 Bucket**. 
+## Amazon Web Services S3
 
+The project's static and media files are stored at the cloud-based storage **AWS S3 Bucket**. 
 
-    1. Create an account at [AWS Amazon](https://aws.amazon.com/);
-    2. Create a S3 bucket, go to IAM to create a group and user, manually set the bucket settings;
-    3. Set up CORS configuration and generate the policy;
-    4. Add the AWS keys to Heroku config vars and connect AWS to my Django project in the project's deployment environment;
-    5. Create folders to host the files and images;
+1. Create an account at [AWS Amazon](https://aws.amazon.com/);
+2. Create a S3 bucket, go to IAM to create a group and user, manually set the bucket settings;
+3. Set up CORS configuration and generate the policy;
+4. Add the AWS keys to Heroku config vars and connect AWS to my Django project in the project's deployment environment;
+5. Create folders to host the files and images;
 
 
 [Back to top](#vero-perfume)
@@ -740,6 +771,9 @@ Steps to clone the project from GitHub as following:
 To fork Vero Perfume's repository:
 * Go to repository ```vero-perfume``` in my Github account;
 * Click the tab ```"Fork"``` on the top right of Githtb page;
+
+    ![Fork](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/fork.png)
+
 * Then the repository's copy would be in your Github.
 
 # Credit

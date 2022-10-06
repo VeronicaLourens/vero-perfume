@@ -216,7 +216,7 @@ The credit card must be valid to complete the online order.
 
 ## User Story Testing
 
-Vero Perfume e-commerce application has total 35 user stories. The finished site has covered and satisfied the 32 user storeis as I manually tested. The other 3 user stories are left for the future development due the project's current scope. 
+Vero Perfume e-commerce application has total 35 user stories. The finished site has covered and satisfied the 32 user storeis as I manually tested. The other user stories ```#5 #6 and #26``` are left for the future development due the project's current scope. 
 
 The features of user storeis can be views on the [README.md](README.md) page's ```Existing Features``` section.
 
