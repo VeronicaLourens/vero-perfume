@@ -2,6 +2,58 @@
 
 I have conducted both manual and automated testing for Vero Perfume application. 
 
+
+  * [Code Validation](#code-validation)
+    + [W3C HTML validation report](#w3c-html-validation-report)
+      - [Home page](#home-page)
+      - [Product page](#product-page)
+      - [Product details page](#product-details-page)
+      - [Add product](#add-product)
+      - [Cart page](#cart-page)
+      - [Checkout page](#checkout-page)
+      - [Profile page](#profile-page)
+      - [Sign in page](#sign-in-page)
+    + [W3C CSS validation report](#w3c-css-validation-report)
+    + [Python code validation](#python-code-validation)
+  * [Responsiveness Testing](#responsiveness-testing)
+  * [Browser Compatibility Testing](#browser-compatibility-testing)
+  * [Lighthouse Testing](#lighthouse-testing)
+      - [Home - desktop](#home---desktop)
+      - [Home - mobile](#home---mobile)
+  * [Manual Testing](#manual-testing)
+    + [Sign up form](#sign-up-form)
+      - [Sign up error-1](#sign-up-error-1)
+      - [Sign up error-2](#sign-up-error-2)
+      - [Sign up error-3](#sign-up-error-3)
+    + [Sign in form](#sign-in-form)
+      - [Sign in error](#sign-in-error)
+    + [Profile form](#profile-form)
+      - [Profile form error-1](#profile-form-error-1)
+      - [Profile form error-2](#profile-form-error-2)
+      - [Profile form error-3](#profile-form-error-3)
+      - [Profile form error-4](#profile-form-error-4)
+    + [Cart payment](#cart-payment)
+      - [Card error-1](#card-error-1)
+      - [Card error-2](#card-error-2)
+      - [Card error-3](#card-error-3)
+  * [User Story Testing](#user-story-testing)
+    + [Epics & User Stories](#epics---user-stories)
+      - [Epic 1 - Site Admin](#epic-1---site-admin)
+      - [Epic 2 - Home & Contact app](#epic-2---home---contact-app)
+      - [Epic 3 - Products app](#epic-3---products-app)
+      - [Epic 4 - Cart app](#epic-4---cart-app)
+      - [Epic 5 - Profiles app](#epic-5---profiles-app)
+      - [Epic 6 - Checkout app](#epic-6---checkout-app)
+  * [Automated Testing](#automated-testing)
+  * [Unsolved Known Bugs](#unsolved-known-bugs)
+      - [Product price](#product-price)
+      - [Product size](#product-size)
+      - [Wishlist count](#wishlist-count)
+    + [Resolved W3C HTML validation errors and warnings](#resolved-w3c-html-validation-errors-and-warnings)
+      - [W3C HTML validation errors and warnings](#w3c-html-validation-errors-and-warnings)
+
+
+
 ## Code Validation
 ### W3C HTML validation report
 * #### Home page
@@ -332,6 +384,9 @@ The credit card must be valid to complete the online order.
 ## Automated Testing
 
 I have conducted and ran 11 automated testing for the project with the OK result.
+
+![Automated testing](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/auto-test.png)
+
 
 ## Unsolved Known Bugs
 
