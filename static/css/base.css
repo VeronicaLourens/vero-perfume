@@ -402,12 +402,8 @@ a.category-badge>span.badge:hover {
 
 .subscribe-btn,
 .add-review-btn {
-    width: 130px !important;
+    width: 120px !important;
     
-}
-
-.newsletter {
-    box-shadow: 0px 0px 8px 3px rgb(219, 214, 248);
 }
 
 .footer-link {
@@ -556,6 +552,11 @@ a.category-badge>span.badge:hover {
         margin-top: 130px !important;
     }
 
+    .brandingLogo img {
+        width: 120px;
+        border-radius: 10px;
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -610,6 +611,11 @@ a.category-badge>span.badge:hover {
         font-weight: bold !important;
         color: white;
         border-radius: 18px !important;
+    }
+
+    .brandingLogo img {
+        width: 100px;
+        border-radius: 10px;
     }
 }
 
