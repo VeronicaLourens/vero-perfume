@@ -388,7 +388,7 @@ The features of user storeis can be views on the [README.md](README.md) page's `
 
 ## Automated Testing
 
-I have conducted and ran 11 automated testing for the project with the OK result.
+I have conducted and ran 11 automated testing for the project with the OK result. In my Gitpod workspace using command ```python manage.py test```.
 
 ![Automated testing](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/auto-test.png)
 
@@ -407,11 +407,28 @@ I have conducted and ran 11 automated testing for the project with the OK result
     The total count on the wishlist page doesn't work. I tried the same way of doing the shopping cart count but it didn't work out as expected.
 
 
-### Resolved W3C HTML validation errors and warnings
+### Resolved Bugs
 
-To correct the errors and get rid of the warnings, I deleted the duplicated ids, hrefs, script type attribute and the spaces between the names of brands. 
+* #### BadHeaderError
+
+    In ```checkout``` app's confirmation_email foler, deleted the empty line in the confirmation_email_subject.txt file.
+
+* #### Product admin forms
+
+    The add & edit product forms were opening a file when clicking every form fileds. To solve the problem, set the file positon to relative in ```base.css``` file.
+
+* #### Full name form field validation
+
+    Add ```Regexvalidators``` in the profile model to solve the form input problems.
+
+* #### Webhooks bug
+
+    Set the port 8000 to public to make the checkout process smooth with ```Stripe```.
+
     
 * #### W3C HTML validation errors and warnings
+
+    To correct the errors and get rid of the warnings, I deleted the duplicated ids, hrefs, script type attribute and the spaces between the names of brands. 
 
    ![W3C HTML errors](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/w3c-html.png)
 
