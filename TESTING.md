@@ -103,7 +103,18 @@ I have conducted both manual and automated testing for Vero Perfume application.
 
 ### Python code validation
 
-The ```pep8online.com``` was downed for python code validation during the project's code validaion period. So I manually checked all files and the Python code has no issues. However, there are a few lines of code that contains too many characters which I opted to fix it due to the unexpected side effects.
+* The ```pep8online.com``` was not working for python code validation during the project's code validaion period. 
+
+    ![Pep8online](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/pep8.png)
+
+
+* I followed the steps from Slack announcement channel to check the code.
+
+    ![Slack](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/slack-msg.png)
+
+* I manually checked all files with indication on the tab ```PROBLEMS```. Most of the files that the Python code has no issues. However, there are a few lines of code that contains too many characters which I opted to fix it due to the unexpected side effects.
+
+    ![Problems tab](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/problems-1.png)
 
 ## Responsiveness Testing
 
