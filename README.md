@@ -346,14 +346,13 @@ The site's landing page with carousel images to show that the online shop sells 
 Products page contains a list of different perfumes available on the site. Every product has name, price, brand tag, gender and star ratings. Store owner is able to add products, edit and delete products on the site.
 
 * General user views the page.
-    ![Products page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/products.png)
+
+    ![Products page](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/products.png)
 
 * Store owner views the page with an add button on the top left corner, edit and delete links
-    <details><summary>Store owner views the page</summary>
+    
+    ![Products page](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/products-admin.png)
 
-    ![Products page](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/products-page-admin.png)
-
-    </detials>
 
 [Back to top](#vero-perfume)
 

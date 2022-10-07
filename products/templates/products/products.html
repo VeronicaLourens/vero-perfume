@@ -105,25 +105,20 @@
                                        <i class="fas fa-image-portrait mr-1"></i>{{ product.gender }}
                                     </p>
                                     {% endif %}
-                                    {% if product.rating %}
-                                    <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
-                                    {% else %}
-                                    <small class="text-muted">No Rating</small>
-                                    {% endif %}
-                                   
-                                    <!--Admin can edit or delete the product-->
-                                    {% if request.user.is_superuser %}
-                                    <small class="ml-3">
-                                        <a href="{% url 'edit_product' product.id %}">Edit</a>&nbsp; | &nbsp;
-                                        <a class="text-danger delete-link" title="Delete product"
-                                            data-target="#deleteProduct"
-                                            data-toggle="modal" data-target="#deleteProduct">
-                                            <i class="fas fa-trash"></i> Delete
-                                        </a>
-                                    </small>
-                                    {% include 'products/delete_product_modal.html' %}
-                                    {% endif %}
                                 </div>
+                            </div>
+                            <!--Links for Admin to edit or delete products-->
+                            <div class="row">
+                                 {% if request.user.is_superuser %}
+                                 <small class="ml-3">
+                                     <a href="{% url 'edit_product' product.id %}">Edit</a>&nbsp; | &nbsp;
+                                     <a class="text-danger delete-link" title="Delete product"
+                                         data-target="#deleteProduct" data-toggle="modal" data-target="#deleteProduct">
+                                         <i class="fas fa-trash"></i> Delete
+                                     </a>
+                                 </small>
+                                 {% include 'products/delete_product_modal.html' %}
+                                 {% endif %}
                             </div>
                         </div>
                     </div>
