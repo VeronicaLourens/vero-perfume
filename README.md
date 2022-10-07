@@ -358,11 +358,11 @@ Products page contains a list of different perfumes available on the site. Every
 
 * Store owner deletes product modal
 
-    <details><summary>Delete product</summary>
+  
 
     ![Product details 1](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/admin-delete-product-modal.png)
 
-    </detials>
+  
 
 [Back to top](#vero-perfume)
 
@@ -376,31 +376,31 @@ Product details page contains image, name, brand tag, star ratings, size, quanti
 [Back to top](#vero-perfume)    
 
 * General user views the page without product reviews.
-    <details><summary>Product details - general user's view</summary>
+    
 
     ![Product details no reviews](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/produc-details-no-reviews.png)
 
-    </detials>
+    
 
 * Signed in user as Chloe views the page with product reviews and post a review form. Signed in user is able to delete own review with a delete link.
-     <details><summary>Product details - signed in user's view</summary>
+    
 
     ![Product details 1](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/user-signed-in-product-details.png)
 
-    </detials>
+    
 * Store owner views the page with edit, delete, product reviews and post a review form.
 
     ![Product details 1](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/admin-product-details.png)
 
-    </detials>
+   
 
 * Delete reviews modal
 
-    <details><summary>Delete reviews</summary>
+   
 
     ![Product details 1](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/delete-reviews-modal.png)
 
-    </detials>
+    
 
 * Product details mobile
 
@@ -461,11 +461,11 @@ Checkout page contains a delivery details form and payment card authorization fo
     ![Checkout mobile](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/checkout-m.png)
 
 
-* <details><summary>Stripe</summary>
+* Stripe
 
     ![Stripe](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/stripe1.png)
 
-    </detials>
+   
 
 * Checkout success page / order confirmation
 
@@ -538,7 +538,7 @@ User signs up an account with filling in the personal details the sign up form. 
 
     ![Profile](https://veroperfume.s3.eu-west-2.amazonaws.com/media/images/profile.png)
 
-    </detials>
+   
 
 [Back to top](#vero-perfume)
 
@@ -560,11 +560,11 @@ Logged in user is able to add and remove the product to the wishlist. There is a
 ## Admin Product management page
 Store owner is able to add, delete and edit the product on the site.
 
-* <details><summary>Admin add product</summary>
+* Admin add product
 
     ![Add product](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/admin-add-product.png)
 
-    </detials>
+   
 
 * Store owner is able to edit the product through the form
     <details><summary>Edit product form</summary>
@@ -573,11 +573,11 @@ Store owner is able to add, delete and edit the product on the site.
 
     </detials>
 
-* <details><summary>Admin delete product</summary>
+* Admin delete product
 
     ![Delete product](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/admin-delete-product.png)
 
-    </detials>
+    
 
 [Back to top](#vero-perfume)
 
@@ -591,11 +591,11 @@ User is able to contact store owner via the contact us form in the footer.
 ## Policy page
 Vero perfume has a detailed privacy policy to let user know the policies.
 
-* <details><summary>Privacy Policy</summary>
+* 
 
     ![Policy](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/policy.png)
 
-    </detials>
+    
 
 [Back to top](#vero-perfume)
 
