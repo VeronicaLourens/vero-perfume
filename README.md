@@ -349,7 +349,7 @@ Products page contains a list of different perfumes available on the site. Every
 
     ![Products page](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/products.png)
 
-* Store owner views the page with an add button on the top left corner, edit and delete links
+* Store owner views the page with add button on the top left corner, edit and delete links
     
     ![Products page](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/products-admin.png)
 
