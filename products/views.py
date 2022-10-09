@@ -204,18 +204,19 @@ def add_review(request, product_id):
     To add a review.
     """
     product = get_object_or_404(Product, pk=product_id)
-    review = Review.objects.all()
+    review = Review.objects.filter(product=product)
 
-    if request.method == 'POST':
-        review_form = ReviewForm(request.POST or None)
-        if request.user.is_authenticated and review_form.is_valid():
-            review_form.instance.user = request.user
-            review = review_form.save(commit=False)
-            review.product = product
-            review.save()
+    if request.user.is_authenticated:
+        if request.method == 'POST':
+            review_form = ReviewForm(request.POST or None)
+            if review_form.is_valid():
+                review_form.instance.user = request.user
+                review = review_form.save(commit=False)
+                review.product = product
+                review.save()
 
-            messages.info(request, 'Successfully added review!')
-            return redirect(reverse('product_detail', args=[product.id]))
+                messages.info(request, 'Successfully added review!')
+                return redirect(reverse('product_detail', args=[product.id]))
 
         else:
             review_form = ReviewForm()
