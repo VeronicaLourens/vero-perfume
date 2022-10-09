@@ -1,5 +1,8 @@
 # Vero Perfume
-Vero Perfume is an e-commerce online shop where sells fine fragrance and perfumes. The site provides a smooth online shopping experience to customers. The site processes online orders, provides online secured payment method and fast delivery service. The site is accessible across all the devices using different browsers. The site sends out marketing newsletters directly to customers and has a Facebook page to promote the selling products. 
+Vero Perfume is an e-commerce online shop where sells fine fragrance and perfumes. The site provides a smooth online shopping experience to customers. User is able to sign up an account, log in / log out to the account, update account profile, add products to the shopping cart and remove it from the cart, update product item quantity in the cart, delete the item from the cart, add or delete product reviews and ratings. The site processes online orders, provides online secured payment method and fast delivery service. The site is accessible across all the devices using different browsers. The site sends out marketing newsletters directly to customers and has a Facebook page to promote the selling products. 
+
+The following card number can be used to checkout an order:
+4242 4242 4242 4242 04/24 242 42424.
 
 Deployed live site: [Vero Perfume](https://veroperfume.herokuapp.com/)
 
