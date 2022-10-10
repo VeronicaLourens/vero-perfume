@@ -1,8 +1,8 @@
 # TESTING
 
-I have conducted both manual and automated testing for Vero Perfume application. 
+I have conducted both manual and partly automated testing for Vero Perfume application. 
 
-
+# Table of Content
   * [Code Validation](#code-validation)
     + [W3C HTML validation report](#w3c-html-validation-report)
       - [Home page](#home-page)
@@ -36,6 +36,11 @@ I have conducted both manual and automated testing for Vero Perfume application.
       - [Card error-1](#card-error-1)
       - [Card error-2](#card-error-2)
       - [Card error-3](#card-error-3)
+    + [Contact us form](#contact-us-form)
+      - [Contact form error -1](#contact-form-error--1)
+      - [Contact form error -2](#contact-form-error--2)
+      - [Contact form error -3](#contact-form-error--3)
+      - [Contact form error -4](#contact-form-error--4)
   * [User Story Testing](#user-story-testing)
     + [Epics & User Stories](#epics---user-stories)
       - [Epic 1 - Site Admin](#epic-1---site-admin)
@@ -49,13 +54,19 @@ I have conducted both manual and automated testing for Vero Perfume application.
       - [Product price](#product-price)
       - [Product size](#product-size)
       - [Wishlist count](#wishlist-count)
-    + [Resolved W3C HTML validation errors and warnings](#resolved-w3c-html-validation-errors-and-warnings)
+      - [Lighthouse performance bugs](#lighthouse-performance-bugs)
+    + [Resolved Bugs](#resolved-bugs)
+      - [BadHeaderError](#badheadererror)
+      - [Product admin forms](#product-admin-forms)
+      - [Full name form field validation](#full-name-form-field-validation)
+      - [Webhooks bug](#webhooks-bug)
       - [W3C HTML validation errors and warnings](#w3c-html-validation-errors-and-warnings)
 
 
-
 ## Code Validation
+
 ### W3C HTML validation report
+
 * #### Home page
 
     ![W3C HTML](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/w3c-html-no-errors.png)
@@ -161,7 +172,9 @@ Vero Perfume site has been tested on ```Google Chrome Lighthouse``` function on 
 ## Manual Testing
 
 ### Sign up form
+
 The form fields are required to fill in with valid data. It provides error messages. The email addresses and the password must be filled in with the same email addresses or the same password. The email address must be a valid email address. If account with the username and email address already exist, it gives user hints.
+
 * #### Sign up error-1
 
     ![Sign up error](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/sign-up-err1.png)
@@ -177,6 +190,7 @@ The form fields are required to fill in with valid data. It provides error messa
 [Back to top](#testing)
 
 ### Sign in form
+
 The username and the password must be correct when signing into the account.
 
 * #### Sign in error
@@ -186,6 +200,7 @@ The username and the password must be correct when signing into the account.
 [Back to top](#testing)
 
 ### Profile form
+
 The fields are required in the profile form. Full name must be only letters and the phone number must be only numbers.
 
 * #### Profile form error-1
@@ -209,6 +224,7 @@ The fields are required in the profile form. Full name must be only letters and 
 [Back to top](#testing)
 
 ### Cart payment
+
 The credit card must be valid to complete the online order.
 
 * #### Card error-1
@@ -309,6 +325,7 @@ The features of user storeis can be views on the [README.md](README.md) page's `
     | &check; | Store owner is able advertise the shop on ```Google``` and ```Facebook```. |
 
 [Back to top](#testing)
+
 * #### Epic 3 - Products app
 
     | User Story |[#9](https://github.com/VeronicaLourens/vero-perfume/issues/9) View product list  |
@@ -402,6 +419,7 @@ The features of user storeis can be views on the [README.md](README.md) page's `
 [Back to top](#testing)
 
 * #### Epic 6 - Checkout app
+
     | User Story |[#28](https://github.com/VeronicaLourens/vero-perfume/issues/28)  Checkout and pay  |
     |:-------:|:--------|
     | &check; | User is able to checkout and pay while completing the online orders. |
@@ -431,11 +449,18 @@ I have conducted and ran 11 automated testing for the project with the OK result
     The product prices are displayed dynamically based on the sizes selected when adding product into the cart. However, the price is not correct on the cart page and on the checkout page. I tried a couple of different ways to solve the problem but I couldn't make it work due to current knowledge and the time strain.
 
 * #### Product size
+
     The product sizes were displayed when adding product to the shopping cart and the sizes were also displayed on the cart page. However, it doesn't work anymore after reset the project's entire database on the very last stage of the project develoment due to some adjustment.
 
 * #### Wishlist count
 
     The total count on the wishlist page doesn't work. I tried the same way of doing the shopping cart count but it didn't work out as expected.
+
+* #### Lighthouse performance bugs
+
+    The issues of Lighhouse testing performance were not solved.
+
+    ![Lighthouse performace issues](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/lighthouse-error.png)
 
 
 ### Resolved Bugs

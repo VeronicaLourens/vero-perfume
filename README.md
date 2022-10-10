@@ -1,5 +1,9 @@
 # Vero Perfume
-Vero Perfume is an e-commerce online shop where sells fine fragrance and perfumes. The site provides a smooth online shopping experience to customers. User is able to sign up an account, log in / log out to the account, update account profile, add products to the shopping cart and remove it from the cart, update product item quantity in the cart, delete the item from the cart, add or delete product reviews and ratings. The site processes online orders, provides online secured payment method and fast delivery service. The site is accessible across all the devices using different browsers. The site sends out marketing newsletters directly to customers and has a Facebook page to promote the selling products. 
+Vero Perfume is an e-commerce online shop where sells fine fragrance and perfumes. The site provides a smooth online shopping experience to customers. 
+
+User is able to sign up an account, log in / log out to the account, update account profile, add products to the shopping cart and remove it from the cart, update product item quantity in the cart, delete the item from the cart. Signed in user is able to add or delete product reviews and ratings. Signed in user is able to add or delete the product to the wishlist. 
+
+The site processes online orders, provides online secured payment method and fast delivery service. Signed in user is able to checkout and pay for the order. The site is accessible across the devices tested using different browsers. The site sends out marketing newsletters directly to customers and has a Facebook page to promote the products. 
 
 The following card number can be used to checkout an order:
 4242 4242 4242 4242 04/24 242 42424.
@@ -13,7 +17,7 @@ Deployed live site: [Vero Perfume](https://veroperfume.herokuapp.com/)
 
 - [UX](#ux)
     + [Epics & User Stories](#epics---user-stories)
-      - [Epic 1 - Site Admin](#epic-1---site-admin)
+      - [Epic 1 - Django Admin](#epic-1---django-admin)
       - [Epic 2 - Home & Contact app](#epic-2---home---contact-app)
       - [Epic 3 - Products app](#epic-3---products-app)
       - [Epic 4 - Cart app](#epic-4---cart-app)
@@ -64,6 +68,8 @@ Deployed live site: [Vero Perfume](https://veroperfume.herokuapp.com/)
 - [Testing](#testing)
 - [Deployment](#deployment)
   * [Heroku App](#heroku-app)
+    + [Set up](#set-up)
+    + [Steps to deploy Vero Perfume app to Heroku](#steps-to-deploy-vero-perfume-app-to-heroku)
   * [Amazon Web Services S3](#amazon-web-services-s3)
   * [Clone Project](#clone-project)
   * [Fork Project](#fork-project)
