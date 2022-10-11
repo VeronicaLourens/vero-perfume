@@ -4,7 +4,6 @@ I have conducted both manual and partly automated testing for Vero Perfume appli
 
 # Table of Content
 
-
   * [Code Validation](#code-validation)
     + [W3C HTML validation report](#w3c-html-validation-report)
       - [Home page](#home-page)
@@ -55,6 +54,7 @@ I have conducted both manual and partly automated testing for Vero Perfume appli
   * [Unsolved Known Bugs](#unsolved-known-bugs)
       - [Product price](#product-price)
       - [Wishlist count](#wishlist-count)
+      - [Product forms validations](#product-forms-validations)
       - [Lighthouse performance bugs](#lighthouse-performance-bugs)
     + [Resolved Bugs](#resolved-bugs)
       - [Product size](#product-size)
@@ -468,13 +468,17 @@ I have conducted and ran 11 automated testing for the project with the OK result
 
     The product prices are displayed dynamically based on the sizes selected when adding product into the cart. However, the prices are not correct on the cart page and on the checkout page. I tried a couple of different ways to solve the problem but I couldn't make it work due to current knowledge and the time strain. 
 
-    ![Product price](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/ad-cart.png)
+    ![Product price](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/price-bug.png)
 
 [Back to top](#testing)
 
 * #### Wishlist count
 
     The total count on the wishlist page doesn't work. I tried the same way of doing the shopping cart count but it didn't work out as expected.
+
+* #### Product forms validations
+
+    The add / edit product forms for store owners to add or edit product are not validated.
 
 * #### Lighthouse performance bugs
 
@@ -497,6 +501,7 @@ I have conducted and ran 11 automated testing for the project with the OK result
     In ```checkout``` app's confirmation_email foler, deleted the empty line in the confirmation_email_subject.txt file.
 
 [Back to top](#testing)
+
 * #### Product admin forms
 
     The add & edit product forms were opening a file when clicking every form fileds. To solve the problem, set the file positon to relative in ```base.css``` file.
