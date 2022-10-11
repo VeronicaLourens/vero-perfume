@@ -113,7 +113,7 @@ class Product(models.Model):
         decimal_places=2
     )
     has_sizes = models.BooleanField(
-        default=False,
+        default=True,
         null=True,
         blank=True
     )
