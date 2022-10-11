@@ -3,6 +3,8 @@
 I have conducted both manual and partly automated testing for Vero Perfume application. 
 
 # Table of Content
+
+
   * [Code Validation](#code-validation)
     + [W3C HTML validation report](#w3c-html-validation-report)
       - [Home page](#home-page)
@@ -52,10 +54,10 @@ I have conducted both manual and partly automated testing for Vero Perfume appli
   * [Automated Testing](#automated-testing)
   * [Unsolved Known Bugs](#unsolved-known-bugs)
       - [Product price](#product-price)
-      - [Product size](#product-size)
       - [Wishlist count](#wishlist-count)
       - [Lighthouse performance bugs](#lighthouse-performance-bugs)
     + [Resolved Bugs](#resolved-bugs)
+      - [Product size](#product-size)
       - [BadHeaderError](#badheadererror)
       - [Product admin forms](#product-admin-forms)
       - [Full name form field validation](#full-name-form-field-validation)
@@ -179,9 +181,13 @@ The form fields are required to fill in with valid data. It provides error messa
 
     ![Sign up error](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/sign-up-err1.png)
 
+[Back to top](#testing)
+
 * #### Sign up error-2
 
     ![Sign up error2](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/sign-up-err2.png)
+
+[Back to top](#testing)
 
 * #### Sign up error-3
 
@@ -207,6 +213,8 @@ The fields are required in the profile form. Full name must be only letters and 
 
     ![Profile1](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/profile-form-validations.png)
 
+[Back to top](#testing)
+
 * #### Profile form error-2
 
     ![Profile2](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/profile-form-validations1.png)
@@ -231,6 +239,8 @@ The credit card must be valid to complete the online order.
 
     ![Card1](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/card-error1.png)
 
+[Back to top](#testing)
+
 * #### Card error-2
 
     ![Card2](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/card-error2.png)
@@ -249,17 +259,25 @@ Contact us form has been manually tested.
 
     ![Contact-1](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/contact-1.png)
 
+[Back to top](#testing)
+
 * #### Contact form error -2
 
     ![Contact-2](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/contact-2.png)
+
+[Back to top](#testing)
 
 * #### Contact form error -3
 
     ![Contact-3](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/contact-3.png)
 
+[Back to top](#testing)
+
 * #### Contact form error -4
 
     ![Contact-4](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/contact-4.png)
+
+[Back to top](#testing)
 
 ## User Story Testing
 
@@ -267,6 +285,7 @@ Vero Perfume e-commerce application has total 35 user stories. The finished site
 
 The features of user storeis can be views on the [README.md](README.md) page's ```Existing Features``` section.
 
+[Back to top](#testing)
 
 ### Epics & User Stories
 
@@ -441,16 +460,17 @@ I have conducted and ran 11 automated testing for the project with the OK result
 
 ![Automated testing](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/auto-test.png)
 
+[Back to top](#testing)
 
 ## Unsolved Known Bugs
 
 * #### Product price
 
-    The product prices are displayed dynamically based on the sizes selected when adding product into the cart. However, the price is not correct on the cart page and on the checkout page. I tried a couple of different ways to solve the problem but I couldn't make it work due to current knowledge and the time strain.
+    The product prices are displayed dynamically based on the sizes selected when adding product into the cart. However, the prices are not correct on the cart page and on the checkout page. I tried a couple of different ways to solve the problem but I couldn't make it work due to current knowledge and the time strain. 
 
-* #### Product size
+    ![Product price](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/ad-cart.png)
 
-    The product sizes were displayed when adding product to the shopping cart and the sizes were also displayed on the cart page. However, it doesn't work anymore after reset the project's entire database on the very last stage of the project develoment due to some adjustment.
+[Back to top](#testing)
 
 * #### Wishlist count
 
@@ -462,13 +482,21 @@ I have conducted and ran 11 automated testing for the project with the OK result
 
     ![Lighthouse performace issues](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/lighthouse-error.png)
 
+[Back to top](#testing)
 
 ### Resolved Bugs
+
+* #### Product size
+
+    The product sizes were displayed when adding product to the shopping cart and the sizes were also displayed on the cart page in the first place. However, it doesn't work anymore after reset the project's entire database on the very last stage of the project develoment due to some adjustment. 
+    
+    The issues were resolved again in the end when set the product size default to True and manually set the has_size file to YES in the database.
 
 * #### BadHeaderError
 
     In ```checkout``` app's confirmation_email foler, deleted the empty line in the confirmation_email_subject.txt file.
 
+[Back to top](#testing)
 * #### Product admin forms
 
     The add & edit product forms were opening a file when clicking every form fileds. To solve the problem, set the file positon to relative in ```base.css``` file.

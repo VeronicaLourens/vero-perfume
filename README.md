@@ -1,12 +1,14 @@
 # Vero Perfume
-Vero Perfume is an e-commerce online shop where sells fine fragrance and perfumes. The site provides a smooth online shopping experience to customers. 
+
+Vero Perfume is a full stack web application. The site is an e-commerce online shop where sells fine fragrance and perfumes. It provides a smooth online shopping experience to the end users / customers. 
 
 User is able to sign up an account, log in / log out to the account, update account profile, add products to the shopping cart and remove it from the cart, update product item quantity in the cart, delete the item from the cart. Signed in user is able to add or delete product reviews and ratings. Signed in user is able to add or delete the product to the wishlist. 
 
-The site processes online orders, provides online secured payment method and fast delivery service. Signed in user is able to checkout and pay for the order. The site is accessible across the devices tested using different browsers. The site sends out marketing newsletters directly to customers and has a Facebook page to promote the products. 
+The site processes online orders, provides online secured payment method Stripe and fast delivery service. Signed in user is able to checkout and pay for the order. The site is accessible across the devices tested using different browsers. The site sends out marketing newsletters directly to customers and has a Facebook page to promote the products. 
 
 The following card number can be used to checkout an order:
-4242 4242 4242 4242 04/24 242 42424.
+
+4242 4242 4242 4242 - 04/24 242 42424.
 
 Deployed live site: [Vero Perfume](https://veroperfume.herokuapp.com/)
 
@@ -271,6 +273,7 @@ I used ```Balsamiq``` to create basic site structure to visualize the site’s p
 [Back to top](#vero-perfume)
 
 ## Design Choice
+
 The site uses white background with high quality colorful images in a carousel sideshow for the landing page. The site is intuitive with great color contrast which is very user friendly. The project is designed for potentially being used in a real e-commerce online web shop that can be used for both the shopper and the site owner. The application was created using Django MVC structure.
 
 ### Color Scheme
@@ -380,26 +383,26 @@ Product details page contains image, name, brand tag, star ratings, size, quanti
 
 * General user views the page with product reviews.
 
-    ![Product details with reviews](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/general-user-product-details.png)
+    ![Product details with reviews](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/g-detail.png)
 
 [Back to top](#vero-perfume)    
 
 * General user views the page without product reviews.
     
 
-    ![Product details no reviews](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/produc-details-no-reviews.png)
+    ![Product details no reviews](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/g-detail-n.png)
 
     
 
-* Signed in user as Chloe views the page with product reviews and post a review form. Signed in user is able to delete own review with a delete link.
+* Signed in user views the page with product reviews and post a review form. Signed in user is able to delete own review with a delete link.
     
 
-    ![Product details 1](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/user-signed-in-product-details.png)
+    ![Product details 1](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/s-detail.png)
 
     
 * Store owner views the page with edit, delete, product reviews and post a review form.
 
-    ![Product details 1](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/admin-product-details.png)
+    ![Product details 1](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/adm-detail.png)
 
    
 
@@ -423,7 +426,7 @@ User is able to add product to the cart, update the product quantity and remove 
 
 * Add product to the shopping cart-1
 
-    ![Add to cart](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/add-to-cart.png)
+    ![Add to cart](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/ad-cart.png)
 
 * Add product to the shopping cart-2
 
