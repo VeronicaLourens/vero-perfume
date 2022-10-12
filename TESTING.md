@@ -143,7 +143,7 @@ I have conducted both manual and partly automated testing for Vero Perfume appli
 
     * profiles app
 
-        ![Products app](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/profiles-p.png)
+        ![Profiles app](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/profile-p.png)
  
 
 ## Responsiveness Testing
