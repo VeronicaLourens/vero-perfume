@@ -7,7 +7,7 @@ class TestHomeViews(TestCase):
     """
     def test_home_page(self):
         """
-        To check the home page 
+        To check the home page
         """
         response = self.client.get('')
         self.assertEqual(response.status_code, 200)

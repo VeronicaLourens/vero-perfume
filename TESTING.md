@@ -127,9 +127,24 @@ I have conducted both manual and partly automated testing for Vero Perfume appli
 
     ![Slack](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/slack-msg.png)
 
-* I manually checked all files with indication on the tab ```PROBLEMS```. Most of the files that the Python code has no issues. However, there are a few lines of code that contains too many characters which I opted to fix it due to the unexpected side effects.
+* I manually checked all files with indication under the tab ```PROBLEMS``` in my GitPod workspace. The ```home, cart and contact apps``` that the Python code files have no issues. 
 
-    ![Problems tab](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/problems-1.png)
+    ![Proflem-free](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/cart-p.png)
+
+* However, there are a few lines of code that contains too many characters which I opted to fix it due to the unexpected side effects.
+
+    * checkout app
+
+        ![Checkout app](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/checkout-p.png)
+
+    * products app
+
+        ![Products app](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/products-p.png)
+
+    * profiles app
+
+        ![Products app](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/profiles-p.png)
+ 
 
 ## Responsiveness Testing
 

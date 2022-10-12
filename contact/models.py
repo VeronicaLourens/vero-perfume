@@ -18,9 +18,7 @@ class ContactUs(models.Model):
         max_length=100,
         null=False,
         blank=False,
-        validators=[alpha_only]
-        
-    )
+        validators=[alpha_only])
     email = models.EmailField()
     message = models.TextField(
         max_length=250,
