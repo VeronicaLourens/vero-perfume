@@ -654,6 +654,7 @@ Admin / store owner is albe to manage the site's data in the admin panel. Admin 
 
 
 # Technologies Used
+
 ## Languages & Frameworks
 * [HTML5]() - used to create site.
 * [CSS]() -used to add individual styling.
@@ -662,8 +663,11 @@ Admin / store owner is albe to manage the site's data in the admin panel. Admin 
 * [Django]() - used to build the project.
 * [Bootstrap]() - used to style the websie.
 
+    ![Requirements.txt](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/r-txt.png)
+
 
 ## Others Programs
+
 * [Heroku]() - used to deploy and host the project's live site.
 * [Heroku PostgreSQL]()  - used to connect the project to the database.
 * [GitHub Git]() - used to host the project's code and version control.
@@ -758,6 +762,7 @@ The project's static and media files are stored at the cloud-based storage **AWS
 
 
 [Back to top](#vero-perfume)
+
 ## Clone Project
 
 Steps to clone the project from GitHub as following:
@@ -798,6 +803,7 @@ To fork Vero Perfume's repository:
 * I couldn't find the perfume images from the famous brands on the free image website so that I use the official websites to get the product images and other information. Credit to [Gucci](https://www.gucci.com/us/en/ca/beauty/fragrances/fragrances-for-women-c-fragrances-for-women), [Hugo Boss](https://www.hugoboss.com/fragrances-men/),  [DIOR](https://www.dior.com/nl_nl/beauty/geuren/damesgeur/alle-producten), [Chloé](https://www.chloe.com/nl/fragrance_cod46568417bo.html).
 
 [Back to top](#vero-perfume)
+
 ## Media
 
 * The carousel images and card images are from [Unsplash]().
@@ -814,6 +820,7 @@ To fork Vero Perfume's repository:
 * I learned how to implement the contact form for site users to contact the shop owner on Youtube [Code With Stein](https://www.youtube.com/watch?v=dnhEnF7_RyM)
 
 [Back to top](#vero-perfume)
+
 # Acknowledgement
 
 Whilst I have tried to deviate as much as possible, I have taken the certain code from the walk through e-commerce project ```Boutique Ado``` at Code Institute which I learn how to build the e-commerce website for a real world application.
