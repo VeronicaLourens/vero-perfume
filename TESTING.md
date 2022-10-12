@@ -64,7 +64,7 @@ I have conducted both manual and partly automated testing for Vero Perfume appli
       - [Full name form field validation](#full-name-form-field-validation)
       - [Webhooks bug](#webhooks-bug)
       - [W3C HTML validation errors and warnings](#w3c-html-validation-errors-and-warnings)
-
+  
 
 
 ## Code Validation
