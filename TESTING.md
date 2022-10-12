@@ -4,6 +4,7 @@ I have conducted both manual and partly automated testing for Vero Perfume appli
 
 # Table of Content
 
+
   * [Code Validation](#code-validation)
     + [W3C HTML validation report](#w3c-html-validation-report)
       - [Home page](#home-page)
@@ -63,6 +64,7 @@ I have conducted both manual and partly automated testing for Vero Perfume appli
       - [Full name form field validation](#full-name-form-field-validation)
       - [Webhooks bug](#webhooks-bug)
       - [W3C HTML validation errors and warnings](#w3c-html-validation-errors-and-warnings)
+
 
 
 ## Code Validation
@@ -233,7 +235,7 @@ The fields are required in the profile form. Full name must be only letters and 
 
 ### Cart payment
 
-The credit card must be valid to complete the online order.
+The order form and the credit card must be valid to complete the online order.
 
 * #### Card error-1
 

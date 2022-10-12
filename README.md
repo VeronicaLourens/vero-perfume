@@ -62,6 +62,7 @@ Deployed live site: [Vero Perfume](https://veroperfume.herokuapp.com/)
   * [Contact us page](#contact-us-page)
   * [Policy page](#policy-page)
   * [404 page](#404-page)
+  * [Server error 500 page](#server-error-500-page)
   * [Django admin panel](#django-admin-panel)
   * [Future developments](#future-developments)
 - [Technologies Used](#technologies-used)
@@ -80,6 +81,7 @@ Deployed live site: [Vero Perfume](https://veroperfume.herokuapp.com/)
   * [Media](#media)
   * [Code](#code)
 - [Acknowledgement](#acknowledgement)
+
 
 
 # UX
@@ -302,18 +304,24 @@ I used ```Lucidchart``` to create the project's database schema models which hel
 ![ERD](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/ERD.png)
 
 #### Models
-* **User** - It is used for user information and purchase history.
+
 * **Django User** - It is the Django built-in User model.
+* **UserProfile** - It is used for user information and purchase history.
 * **Product** - It is used for the product information.
 * **Catagory** - It is used for the category of the products.
 * **Brand** - It is used for the product's brand.
 * **OrderLineItem** - It is used for combining the product with the order.
 * **Order** - It is used for the order placed by the user when processing online purchase.
-* **Review** - It is used for the customer to review the product / shop.
-* **Wishlist** - It is used for the shopper to save a product on their wishlist for easy access.
+* **Review** - It is used for the user to review and give a rating to the product.
+* **Wishlist** - It is used for the user to save a product on their wishlist for easy access.
+* **ContactUs** - It is used for the user to contact the store owner.
+
 ### Business Model
+
 The Vero Perfume application is a B2C business model that it does the business directly with the end customer. Customer is able to search the product on the site, complete the order, make a payment through secured payment system and receive goods in the end.
+
 * #### Marketing
+
     Vero Perfume has a Facebook page for reaching all the customers instantly. Shop owner is able to post any updates or promotions to gather sales. The Facebook page provides a great effective way of communicating with shoppers.
 
     I created ```Vero Perfume Facebook page```. However, the page was only for the education purpose of the e-commerce project and it's not a real business page. Therefore, I made a screenshot of the Facebook page and deleted it afterwards in order to avoid any problems under Facebook's rules. The Facebook link in the footer opens the link to Facebook but not the actual ```Vero Perfume Facebook page```. Here is the one but deleted page.
@@ -323,9 +331,11 @@ The Vero Perfume application is a B2C business model that it does the business d
 [Back to top](#vero-perfume)
 
 * #### Search Engine Optimisation (SEO)
+
     I added two meta tags with names of keywords and description on the page head, and I generated robots.txt and sitemap.xml to allow Google and search engines bot crawling.
 
 * #### Mailchimp newsletter subscription
+
     Vero Perfume sends out regular newsletters and user can subscribe using email address. This is a great way for store owner to reach out existing and potential customers with any updates or promotions.
 
     ![Newsletter](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/newsletter.png)
@@ -342,6 +352,7 @@ The search bar provides a quick way of searching for the products. The site prov
 The footer contains a mailchimp newsletter subscription form on the left, the Facebook page, contact us and policy clickable links on the right, the copyright and disclaimer on the bottom.
 
 ## Home Page
+
 The site's landing page with carousel images to show that the online shop sells perfume.
 
 * #### Home page desktop
@@ -355,6 +366,7 @@ The site's landing page with carousel images to show that the online shop sells 
 [Back to top](#vero-perfume)
 
 ## Products Page
+
 Products page contains a list of different perfumes available on the site. Every product has name, price, brand tag, gender and star ratings. Store owner is able to add products, edit and delete products on the site.
 
 * General user views the page.
@@ -379,6 +391,7 @@ Products page contains a list of different perfumes available on the site. Every
 [Back to top](#vero-perfume)
 
 ## Product Details Page
+
 Product details page contains image, name, brand tag, star ratings, size, quantity form, description, back and add to cart buttons, wishlist icon link and product reviews.
 
 * General user views the page with product reviews.
@@ -555,6 +568,7 @@ User signs up an account with filling in the personal details the sign up form. 
 [Back to top](#vero-perfume)
 
 ## Wishlist page
+
 Logged in user is able to add and remove the product to the wishlist. There is a link to the product's detail page if user wishes to view the product details. The error message shows up if the item exist in the wishlist.
 
 * Wishlist overview
@@ -570,6 +584,7 @@ Logged in user is able to add and remove the product to the wishlist. There is a
     ![Add error](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/wishlist-error.png)
 
 ## Admin Product management page
+
 Store owner is able to add, delete and edit the product on the site.
 
 * Admin add product
@@ -594,6 +609,7 @@ Store owner is able to add, delete and edit the product on the site.
 [Back to top](#vero-perfume)
 
 ## Contact us page
+
 User is able to contact store owner via the contact us form in the footer.
 
 ![Contact us](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/contact-us.png)
@@ -601,22 +617,29 @@ User is able to contact store owner via the contact us form in the footer.
 [Back to top](#vero-perfume)
 
 ## Policy page
+
 Vero perfume has a detailed privacy policy to let user know the policies.
 
-* 
-
-    ![Policy](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/policy.png)
+![Policy](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/policy.png)
 
     
-
 [Back to top](#vero-perfume)
 
 ## 404 page
+
 User is redirected to the ```404 page``` when accessing to any non-existing page. There is a message to user with a ```Return to Home``` button.
 
 ![404](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/404.png)
 
+
+## Server error 500 page
+
+User is redirected to the ```Server error 500 page``` when there is a server error. There is a message to user with a ```Return to Home``` button.
+
+![500](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/500.JPG)
+
 ## Django admin panel
+
 Admin / store owner is albe to manage the site's data in the admin panel. Admin can add, edit and delete products, brands, categories, add or delete users, reviews, wishlists, see the messages received from the contact form, receives the completed online orders and the payment user made.
 
 * Admin account panel
@@ -656,6 +679,7 @@ Admin / store owner is albe to manage the site's data in the admin panel. Admin 
 # Technologies Used
 
 ## Languages & Frameworks
+
 * [HTML5]() - used to create site.
 * [CSS]() -used to add individual styling.
 * [JavaScript]() - used to add interactive features.
