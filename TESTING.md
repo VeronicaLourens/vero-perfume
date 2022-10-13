@@ -65,6 +65,7 @@ I have conducted both manual and partly automated testing for Vero Perfume appli
       - [Webhooks bug](#webhooks-bug)
       - [W3C HTML validation errors and warnings](#w3c-html-validation-errors-and-warnings)
 
+  
 
 ## Code Validation
 
@@ -130,7 +131,7 @@ I have conducted both manual and partly automated testing for Vero Perfume appli
 
     ![Proflem-free](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/cart-p.png)
 
-* However, there are a few lines of code that contains too many characters which I opted to fix it due to the unexpected side effects.
+* However, there are a few lines of code that contains too many characters which I opted to fix it due to the unexpected side effects. And some lines in the settings.py and env.py contain the value with a large amount characters.
 
     * checkout app
 
@@ -147,6 +148,11 @@ I have conducted both manual and partly automated testing for Vero Perfume appli
     * settings.py
 
         ![Settings.py](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/settings.png)
+
+     * env.py 
+
+        ![env.py](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/env.png)
+ 
  
 
 ## Responsiveness Testing
