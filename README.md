@@ -1,10 +1,14 @@
 # Vero Perfume
 
-Vero Perfume is a full stack web application. The site is an e-commerce online shop where sells fine fragrance and perfumes. It provides a smooth online shopping experience to the end users / customers. 
+Vero Perfume is a full stack web application. The application is an e-commerce online shop where sells fine fragrance and perfumes. It provides a smooth online shopping experience to the end users / customers. 
 
 User is able to sign up an account, log in / log out to the account, update account profile, add products to the shopping cart and remove it from the cart, update product item quantity in the cart, delete the item from the cart. Signed in user is able to add or delete product reviews and ratings. Signed in user is able to add or delete the product to the wishlist. 
 
-The site processes online orders, provides online secured payment method Stripe and fast delivery service. Signed in user is able to checkout and pay for the order. The site is accessible across the devices tested using different browsers. The site sends out marketing newsletters directly to customers and has a Facebook page to promote the products. 
+The site processes online orders, provides online secured payment method Stripe and fast delivery service. Signed in user is able to checkout and pay for the order. Vero Perfume sends the order confirmation email directly to the user's email address. User is able to contact the store owner via the contact form. The store owner is able to add, edit or delete the product both on the frontend and on the backend.
+
+The site is accessible across the devices tested using different browsers. The site sends out marketing newsletters directly to customers and has a Facebook page to promote the products.
+
+
 
 The following card number can be used to checkout an order:
 

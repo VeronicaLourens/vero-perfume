@@ -35,14 +35,14 @@ I have conducted both manual and partly automated testing for Vero Perfume appli
       - [Profile form error-3](#profile-form-error-3)
       - [Profile form error-4](#profile-form-error-4)
     + [Cart payment](#cart-payment)
-      - [Card error-1](#card-error-1)
-      - [Card error-2](#card-error-2)
-      - [Card error-3](#card-error-3)
+      - [Card error 1](#card-error-1)
+      - [Card error 2](#card-error-2)
+      - [Card error 3](#card-error-3)
     + [Contact us form](#contact-us-form)
-      - [Contact form error -1](#contact-form-error--1)
-      - [Contact form error -2](#contact-form-error--2)
-      - [Contact form error -3](#contact-form-error--3)
-      - [Contact form error -4](#contact-form-error--4)
+      - [Contact form error 1](#contact-form-error-1)
+      - [Contact form error 2](#contact-form-error-2)
+      - [Contact form error 3](#contact-form-error-3)
+      - [Contact form error 4](#contact-form-error-4)
   * [User Story Testing](#user-story-testing)
     + [Epics & User Stories](#epics---user-stories)
       - [Epic 1 - Site Admin](#epic-1---site-admin)
@@ -64,7 +64,6 @@ I have conducted both manual and partly automated testing for Vero Perfume appli
       - [Full name form field validation](#full-name-form-field-validation)
       - [Webhooks bug](#webhooks-bug)
       - [W3C HTML validation errors and warnings](#w3c-html-validation-errors-and-warnings)
-
 
 
 ## Code Validation
@@ -127,7 +126,7 @@ I have conducted both manual and partly automated testing for Vero Perfume appli
 
     ![Slack](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/slack-msg.png)
 
-* I manually checked all files with indication under the tab ```PROBLEMS``` in my GitPod workspace. The ```home, cart and contact apps``` that the Python code files have no issues. 
+* I manually checked all files with indication under the tab ```PROBLEMS``` in my GitPod workspace. The **home**, **cart** and **contact** apps that the Python code files have no issues. 
 
     ![Proflem-free](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/cart-p.png)
 
@@ -232,11 +231,15 @@ The fields are required in the profile form. Full name must be only letters and 
 
 * #### Profile form error-1
 
+The empty spaces are not allowed .
+
     ![Profile1](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/profile-form-validations.png)
 
 [Back to top](#testing)
 
 * #### Profile form error-2
+
+The specail characters are not allowed for the full name field. The phone number and postcode fields accept only numbers.
 
     ![Profile2](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/profile-form-validations1.png)
 
@@ -248,6 +251,8 @@ The fields are required in the profile form. Full name must be only letters and 
 
 * #### Profile form error-4
 
+The full name field is not allowed to have numbers.
+
     ![Profile4](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/profile-form-validations3.png)
 
 [Back to top](#testing)
@@ -256,17 +261,23 @@ The fields are required in the profile form. Full name must be only letters and 
 
 The order form and the credit card must be valid to complete the online order.
 
-* #### Card error-1
+* #### Card error 1
+
+The form must be valid with valid value in the form fields.
 
     ![Card1](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/card-error1.png)
 
 [Back to top](#testing)
 
-* #### Card error-2
+* #### Card error 2
+
+The card must be valid to checkout orders.
 
     ![Card2](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/card-error2.png)
 
-* #### Card error-3
+* #### Card error 3
+
+The card number must be complete.
 
     ![Card3](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/card-error3.png)
 
@@ -276,25 +287,33 @@ The order form and the credit card must be valid to complete the online order.
 
 Contact us form has been manually tested. 
 
-* #### Contact form error -1
+* #### Contact form error 1 
+
+Empty space is now allowed and email address must be valid
 
     ![Contact-1](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/contact-1.png)
 
 [Back to top](#testing)
 
-* #### Contact form error -2
+* #### Contact form error 2
+
+Special signs and characters are not allowed
 
     ![Contact-2](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/contact-2.png)
 
 [Back to top](#testing)
 
-* #### Contact form error -3
+* #### Contact form error 3
+
+Numbers are not allowed and email address must not be empty
 
     ![Contact-3](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/contact-3.png)
 
 [Back to top](#testing)
 
-* #### Contact form error -4
+* #### Contact form error 4
+
+Email address must contain an '@'
 
     ![Contact-4](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/contact-4.png)
 
