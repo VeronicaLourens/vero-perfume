@@ -22,8 +22,11 @@
         </div>
     </div>
     <div class="row">
+        <!--Display cart overview-->
         <div class="col">
             {% if cart_items %}
+
+            <!--To display cart overview only on mobile screens-->
                 <div class="d-block d-md-none">
                     <div class="row">
                         <div class="col">
@@ -69,7 +72,7 @@
                     </a>
                 </div>
             </div>
-           
+           <!--To display cart overview on the medium and larger screens-->
             <div class="table-responsive rounded d-none d-md-block">
                 <table class="table table-sm table-borderless">
                     <thead class="text-black">
@@ -115,6 +118,7 @@
                 </table>
             </div>
             {% else %}
+            <!--To display a message if the cart is empty-->
             <p class="lead mb-5">Your cart is empty.</p>
             <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
                 <span class="icon">

@@ -13,6 +13,7 @@
 <div class="overlay"></div>
 <div class="container-fluid product-page-container">
     <div class="row mt-5 pt-5">
+        <!--To display the products with categories-->
         <div class="col text-center mt-3">
             {% if current_categories %}
                 <div class="col text-center">
@@ -23,6 +24,7 @@
                     {% endfor %}
                 </div>
             {% endif %}
+            <!--To display the products with brands-->
             {% if brands %}
                 <div class="col text-center">
                         {% for b in brands %}
@@ -40,6 +42,7 @@
             <div class="row my-2 mx-3 mb-4 justify-content-center">
                 <div class="col-6 justify-content-start">
                     <p class="text-muted mt-1">
+                        <!--To display the total amount of products-->
                         {{ products|length }} Products
                         <!--link for admin to add product-->
                         {% if request.user.is_superuser %}
@@ -51,6 +54,7 @@
                     </p>
                 </div>
                 <div class="col-6 my-auto order-md-last d-flex justify-content-end">
+                    <!--To display the result of sorting products-->
                     <div class="sort-select-wrapper w-50">
                         <select id="sort-selector"
                             class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
