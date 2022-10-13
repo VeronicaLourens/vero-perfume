@@ -21,6 +21,7 @@ Deployed live site: [Vero Perfume](https://veroperfume.herokuapp.com/)
 
 # Table of Content
 
+
 - [UX](#ux)
     + [Epics & User Stories](#epics---user-stories)
       - [Epic 1 - Django Admin](#epic-1---django-admin)
@@ -597,7 +598,8 @@ Store owner is able to add, delete and edit the product on the site.
 
    
 
-* Store owner is able to edit the product through the form
+* Admin edit the product through the form
+
     <details><summary>Edit product form</summary>
 
     ![Edit product](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/products-admin-edit.png)
@@ -614,7 +616,7 @@ Store owner is able to add, delete and edit the product on the site.
 
 ## Contact us page
 
-User is able to contact store owner via the contact us form in the footer.
+User is able to contact store owner via the contact us form in the footer. 
 
 ![Contact us](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/contact-us.png)
 
@@ -647,27 +649,40 @@ User is redirected to the ```Server error 500 page``` when there is a server err
 Admin / store owner is albe to manage the site's data in the admin panel. Admin can add, edit and delete products, brands, categories, add or delete users, reviews, wishlists, see the messages received from the contact form, receives the completed online orders and the payment user made.
 
 * Admin account panel
-![Admin](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/admin1.png)
+
+    ![Admin](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/admin1.png)
 
 [Back to top](#vero-perfume)
 
 * Admin delete user
-![Delete user](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/admin-delete-user.png)
+
+    ![Delete user](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/admin-delete-user.png)
 
 [Back to top](#vero-perfume)
 
 * Admin views the list of products
-![Products](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/admin-product.png)
+
+    ![Products](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/admin-product.png)
 
 [Back to top](#vero-perfume)
 
 * Admin views the list of orders
-![Orders](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/admin-orders.png)
+
+    ![Orders](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/admin-orders.png)
 
 [Back to top](#vero-perfume)
 
 * Admin views the order details
-![Order details](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/admin-order-details.png)
+
+    ![Order details](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/admin-order-details.png)
+
+[Back to top](#vero-perfume)
+
+* Admin recevies emails.
+
+    Admin / store owner is able to see the emails / messages sent via the contact us form.
+
+    ![Emails](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/ad-contact.png)
 
 [Back to top](#vero-perfume)
 

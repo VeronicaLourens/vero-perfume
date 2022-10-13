@@ -33,6 +33,7 @@ class ContactUs(models.Model):
         """
         Meta data for the contact.
         """
+        verbose_name_plural = 'Contact Us'
         ordering = ('-date_sent',)
 
     def __str__(self):
