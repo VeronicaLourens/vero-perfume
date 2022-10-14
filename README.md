@@ -350,7 +350,7 @@ The Vero Perfume application is a B2C business model that it does the business d
 
 Vero Perfume application contains total 25 pages including the popup modals.
 
-All of pages have the same navigation menu and the same footer. The dynamic navigatoin menu provides an easy way of browsing all pages with dropdown lists. Vero Perfume logo image is on the top left, a search bar in the middle, account and wishlist and shopping cart on the right.
+All of pages have the same navigation menu and the same footer. The dynamic navigatoin menu provides an easy way of browsing all pages with dropdown lists. Vero Perfume logo image is on the top left, a search bar in the middle, account and shopping cart on the right. The wishlist icon is present when user is logged in.
 
 The search bar provides a quick way of searching for the products. The site provides sorting and filtering functionalities on the products page to search for the products.
 
@@ -362,11 +362,11 @@ The site's landing page with carousel images to show that the online shop sells 
 
 * #### Home page desktop
 
-    ![Home page desktop](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/landing-page.png)
+    ![Home page desktop](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/home-lg.png)
 
 * #### Home page mobile
 
-    ![Home page mobile](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/home-m.png)
+    ![Home page mobile](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/home-s.png)
 
 [Back to top](#vero-perfume)
 
