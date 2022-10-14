@@ -25,7 +25,8 @@
                         <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}No-Image.png" alt="{{ product.name }}">
                     </a>
                 {% endif %}
-                <!--For saving / adding product to the wishlist-->
+                <!--For logged in user to save / add product to the wishlist-->
+                {% if request.user.is_authenticated %}
                 <form action="{% url 'add_to_wishlist' product.id %}" method="POST">
                     {% csrf_token %}
                     <input type="hidden" name="product_id" value="{{ product.id }}">
@@ -33,6 +34,7 @@
                         <i class="fas fa-heart fa-lg text-center"></i>
                     </button>
                 </form>
+                {% endif %}
             </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
