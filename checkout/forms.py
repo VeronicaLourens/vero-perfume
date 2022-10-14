@@ -6,7 +6,9 @@ from .models import Order
 
 
 class OrderForm(forms.ModelForm):
-    """Order form"""
+    """
+    Order form
+    """
 
     class Meta:
         """Meta class for the order form"""
