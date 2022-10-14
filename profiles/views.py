@@ -39,17 +39,6 @@ def profile(request):
     return render(request, template, context)
 
 
-def personal_details(request):
-    """
-    To render the personal details page.
-    """
-    template = 'profiles/personal_details.html'
-    context = {
-        'form': UserProfileForm
-    }
-    return render(request, template, context)
-
-
 def order_history(request, order_number):
     """
     To render the order list.
@@ -96,7 +85,6 @@ def delete_profile(request):
     return render(request, 'profiles/delete_profile.html', context)
 
 
-@login_required()
 def wishlist(request):
     """
     To render wishlist.

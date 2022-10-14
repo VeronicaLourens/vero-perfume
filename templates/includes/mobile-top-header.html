@@ -47,6 +47,7 @@
         {% endif %}
     </div>
 </div>
+{% if request.user.is_authenticated %}
 <div class="list-inline-item">
     <a class="text-black nav-link d-block d-lg-none" href="#"
         aria-haspopup="true" aria-expanded="false" aria-label="favorite">
@@ -55,6 +56,7 @@
         </div>
     </a>
 </div>
+{% endif %}
 <div class="list-inline-item">
     <a class="text-black nav-link d-block d-lg-none" href="{% url 'view_cart' %}" aria-haspopup="true"
         aria-expanded="false" aria-label="cart">

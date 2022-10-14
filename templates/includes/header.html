@@ -48,6 +48,7 @@
                         {% endif %}
                     </div>
                 </li>
+                {% if request.user.is_authenticated %}
                 <li class="list-inline-item">
                     <a class="text-black nav-link" href="{% url 'wishlist' %}" title="WishList">
                         <div class="text-center">
@@ -60,6 +61,7 @@
                         </div>
                     </a>
                 </li>
+                {% endif %}
                 <li class="list-inline-item">
                     <a class="{% if grand_total %}fa-sm{% else %}text-black{% endif %} nav-link"
                         href="{% url 'view_cart' %}">
