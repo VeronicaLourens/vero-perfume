@@ -239,7 +239,7 @@ The fields are required in the profile form. Full name must be only letters and 
 
 The empty spaces are not allowed .
 
-    ![Profile1](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/profile-form-validations.png)
+![Profile1](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/profile-form-validations.png)
 
 [Back to top](#testing)
 
@@ -247,7 +247,7 @@ The empty spaces are not allowed .
 
 The specail characters are not allowed for the full name field. The phone number and postcode fields accept only numbers.
 
-    ![Profile2](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/profile-form-validations1.png)
+![Profile2](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/profile-form-validations1.png)
 
 [Back to top](#testing)
 
@@ -259,7 +259,7 @@ The specail characters are not allowed for the full name field. The phone number
 
 The full name field is not allowed to have numbers.
 
-    ![Profile4](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/profile-form-validations3.png)
+![Profile4](https://veroperfume.s3.eu-west-2.amazonaws.com/media/readme-pics/profile-form-validations3.png)
 
 [Back to top](#testing)
 
@@ -271,7 +271,7 @@ The order form and the credit card must be valid to complete the online order.
 
 The form must be valid with valid value in the form fields.
 
-    ![Card1](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/card-error1.png)
+![Card1](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/card-error1.png)
 
 [Back to top](#testing)
 
@@ -279,13 +279,13 @@ The form must be valid with valid value in the form fields.
 
 The card must be valid to checkout orders.
 
-    ![Card2](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/card-error2.png)
+![Card2](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/card-error2.png)
 
 * #### Card error 3
 
 The card number must be complete.
 
-    ![Card3](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/card-error3.png)
+![Card3](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/card-error3.png)
 
 [Back to top](#testing)
 
@@ -297,7 +297,7 @@ Contact us form has been manually tested.
 
 Empty space is now allowed and email address must be valid
 
-    ![Contact-1](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/contact-1.png)
+![Contact-1](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/contact-1.png)
 
 [Back to top](#testing)
 
@@ -305,7 +305,7 @@ Empty space is now allowed and email address must be valid
 
 Special signs and characters are not allowed
 
-    ![Contact-2](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/contact-2.png)
+![Contact-2](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/contact-2.png)
 
 [Back to top](#testing)
 
@@ -313,7 +313,7 @@ Special signs and characters are not allowed
 
 Numbers are not allowed and email address must not be empty
 
-    ![Contact-3](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/contact-3.png)
+![Contact-3](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/contact-3.png)
 
 [Back to top](#testing)
 
@@ -321,7 +321,7 @@ Numbers are not allowed and email address must not be empty
 
 Email address must contain an '@'
 
-    ![Contact-4](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/contact-4.png)
+![Contact-4](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/contact-4.png)
 
 [Back to top](#testing)
 
