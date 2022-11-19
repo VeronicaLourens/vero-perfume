@@ -7,7 +7,7 @@ from .models import Order
 
 class OrderForm(forms.ModelForm):
     """
-    Order form
+    Order form to be filled in with delivery details
     """
 
     class Meta:

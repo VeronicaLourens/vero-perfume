@@ -770,7 +770,7 @@ The project has been deployed to **Heroku** in the early stage of the proejct de
 
 4. Set up Config Vars in Heroku
 
-    UNavigate to the ```Settings``` tab to set up the Config Vars.
+    Navigate to the ```Settings``` tab to set up the Config Vars.
 
     ![Configvars](https://github.com/VeronicaLourens/vero-perfume/blob/main/media/configvars.png)
 
