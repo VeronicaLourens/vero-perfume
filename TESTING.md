@@ -179,7 +179,7 @@ I have conducted both manual and partly automated testing for Vero Perfume appli
 
 ## Browser Compatibility Testing
 
-Kiwi Piano Studio website has been tested on **Google Chrome**, **Microsoft Edge** and **Safari** browsers. The site's compatibility and the functionality are working fine with no issues.
+Vero Perfume website has been tested on **Google Chrome**, **Microsoft Edge** and **Safari** browsers. The site's compatibility and the functionality are working fine with no issues.
 
 ## Lighthouse Testing
 
