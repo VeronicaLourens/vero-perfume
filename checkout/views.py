@@ -92,6 +92,15 @@ def checkout(request):
             request.session['save_info'] = 'save-info' in request.POST
             return redirect(reverse('checkout_success', args=[order.order_number]))
         else:
+            # if form is invalid, the view needs an intent created
+            current_cart = cart_contents(request)
+            total = current_cart['grand_total']
+            stripe_total = round(total * 100)
+            stripe.api_key = stripe_secret_key
+            intent = stripe.PaymentIntent.create(
+                amount=stripe_total,
+                currency=settings.STRIPE_CURRENCY,
+            )
             print(order_form.errors)
             messages.error(request, 'There was an error with your form. \
                 Please double check your information.')

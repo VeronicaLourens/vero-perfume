@@ -46,7 +46,7 @@ class Order(models.Model):
 
     )
     email = models.EmailField(
-        max_length=20,
+        max_length=254,
         null=False,
         blank=False,
     )
